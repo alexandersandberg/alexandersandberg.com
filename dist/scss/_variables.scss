@@ -1,0 +1,40 @@
+$font-family-base: "PT Serif", Georgia, serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Following three must be same as in site.js!
+$html-size-base: 20px;
+$font-size-base: 1rem;
+$font-scale: 1.414213562373095;
+
+$line-height-base: 1.5;
+$font-weight-base: 400;
+$font-weight-bold: 600;
+$dt-font-weight: $font-weight-bold;
+
+$body-bg: #fbfbfb;
+$subtle-bg: rgba(0,0,0,0.075);
+
+$body-color: #222222;
+$theme-color-primary: #20c997;
+$faded-text: #666666;
+$text-muted: $faded-text;
+$border-color: #cccccc;
+$link-color: $theme-color-primary;
+
+$link-decoration: none;
+$link-hover-color: tomato;
+$link-hover-decoration: underline;
+$border-width-small: 3px;
+$small-dent: 0.5em;
+$table-cell-padding: $small-dent * 1.5;
+
+$spacer: 1.5rem;
+$large-spacer: $spacer * 3;
+$headings-margin-top: $spacer * $font-scale;
+$headings-margin-bottom: $spacer;
+$paragraph-margin-bottom: $spacer;
+$tight-paragraphs: false;
+
+$page-content-width: 640px;
+$page-padding: 30px;
+$page-full-width: $page-content-width + $page-padding * 2;
+$max-image-width: 1280px;

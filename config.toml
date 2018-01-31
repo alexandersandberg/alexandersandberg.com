@@ -1,0 +1,22 @@
+baseURL = "https://alexandersandberg.com"
+title = "Alexander Sandberg - Industrial design student"
+
+enableRobotsTXT = true
+defaultContentLanguage = "en"
+
+[permalinks]
+	post = "/:slug/"
+
+[params]
+	googleAnalyticsId = "UA-29679247-2" # Uses the new gtag.js
+
+[languages]
+	[languages.en]
+	lang = "en"
+	languageName = "English"
+	weight = 1
+
+	[languages.sv]
+	lang = "sv"
+	languageName = "Svenska"
+	weight = 2
