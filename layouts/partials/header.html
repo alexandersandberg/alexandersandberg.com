@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{ with .Site.Params.googleAnalyticsId }}
+            <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '{{ . }}');
+            </script>
+        {{ end }}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{{ .Title }}</title>
+        <meta name="description" content="{{ .Description }}">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|PT+Serif+Caption:400,400i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="/css/styles.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/js/flowtype.js"></script>
+        <script src="/js/site.js"></script>
+    </head>
+    <body>
