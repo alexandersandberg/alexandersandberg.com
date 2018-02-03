@@ -12,8 +12,13 @@ $(document).ready(function() {
     var introTextWidth = 367.89; // (px) Calculated value of 100% - ((370px / $intro-content-width) * 100%) - 6%;
 
     $('section, section > div').flowtype({
+        minFont: 15,
+        maxFont: htmlSizeBase,
+        fontRatio: maxPostWidth / htmlSizeBase
+    });
+    $('.post main').flowtype({
         minFont: 18,
-        maxFont: 22,
+        maxFont: htmlSizeBase,
         fontRatio: maxPostWidth / htmlSizeBase
     });
     $('.intro-text h1').flowtype({
@@ -23,11 +28,11 @@ $(document).ready(function() {
     });
     $('.intro-text p').flowtype({
         minFont: 16,
-        maxFont: 22,
+        maxFont: htmlSizeBase,
         fontRatio: introTextWidth / htmlSizeBase
     });
-    $('.post-langs, .post main').flowtype({
-        minFont: 16,
+    $('.post-langs').flowtype({
+        minFont: 15,
         maxFont: htmlSizeBase,
         fontRatio: maxPostWidth / htmlSizeBase
     });

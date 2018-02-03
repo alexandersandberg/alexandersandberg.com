@@ -31,17 +31,17 @@
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ end }}{{ end }}" />
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:image" content="/img/me-landscape.jpg" />
+    <meta property="og:image" content="{{ `img/me-landscape.jpg` | relURL }}" />
     {{ with .Site.Language }}<meta property="og:locale" content="{{ .Lang }}" />{{ end }}
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Playfair+Display+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|PT+Serif+Caption:400,400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="stylesheet" href="{{ `css/main.min.css` | relURL }}">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/js/flowtype.js"></script>
-    <script src="/js/site.js"></script>
+    <script src="{{ `js/flowtype.js` | relURL }}"></script>
+    <script src="{{ `js/site.js` | relURL }}"></script>
     <noscript>
-        <script src="/css/noscript.min.css"></script>
+        <link rel="stylesheet" href="{{ `css/noscript.min.css` | relURL }}"></script>
     </noscript>
 </head>
