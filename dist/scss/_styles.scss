@@ -1,20 +1,43 @@
+//main: main.scss
+
 html {
     font-size: $html-size-base;
     -moz-osx-font-smoothing: grayscale;
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0,0,0,0.01) 0 0 1px;
+}
+.post {
+    figure, hr, ol, ul, dl, pre, address, cite, table, img {
+        margin-bottom: $spacer;
+    }
 }
 body:not(input):not(abbr):not(acronym):not(blockquote):not(code):not(kbd):not(q):not(samp):not(var) {
     -webkit-hyphens: auto;
         -ms-hyphens: auto;
             hyphens: auto;
 }
-figure, hr, ol, ul, dl, blockquote, pre, address, cite, table, img {
-    margin: 0 0 $spacer;
+body {
+    -webkit-animation: load 0.5s;
+            animation: load 0.5s;
+}
+@-webkit-keyframes load {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes load {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 a[href^="http"]:empty::before {
     content: attr(href);
+}
+a {
+    -webkit-transition: opacity 0.25s ease;
+            transition: opacity 0.25s ease;
+    &:hover {
+        opacity: 0.4;
+    }
 }
 img {
     display: block;
@@ -26,7 +49,7 @@ img {
 hr {
     display: block;
     border: 0 none;
-    border-top: $border-width-small solid $border-color;
+    border-top: 3px solid $color-faded;
     width: 100%;
 }
 ::-moz-selection {
@@ -35,87 +58,135 @@ hr {
 ::selection {
     background-color: $subtle-bg;
 }
-
-h1, h2, h3, h4, h5, h6 {
-    margin-top: $headings-margin-top;
-    font-family: 'Playfair Display', Palatino, serif;
-    font-weight: 700;
-}
 h1 {
+    margin: 0 0 $spacer / 3;
+}
+h2, h3, h4, h5 {
+    margin: $spacer / 1.5 0 $spacer / 3;
+}
+.post h1 {
     font-size: $font-scale * $font-scale * $font-scale * $font-scale * 1rem;
     line-height: 1.1;
 }
-h2 {
+.post h2, .intro h1 {
     font-size: $font-scale * $font-scale * $font-scale * 1rem;
     line-height: 1.2;
 }
-h3, blockquote p {
+.post h3, .stylish-title, .post blockquote p, .post-item h3 {
     font-size: $font-scale * $font-scale * 1rem;
     line-height: 1.3;
 }
-h4 {
+.post h4 {
     font-size: $font-scale * 1rem;
     line-height: 1.4;
 }
-h5 {
-    font-size: 1 / $font-scale * 1rem;
-    line-height: 1.6;
+.post h5 {
+    font-size: 1rem;
+    line-height: 1.5;
 }
-h6 {
-    font-size: 1 / $font-scale / $font-scale * 1rem;
-    line-height: 1.7;
+h1, h2, h3, h4, h5, .post main p:first-of-type::first-letter, blockquote p {
+    font-family: 'Playfair Display', Palatino, serif;
 }
-small, figcaption, caption {
-    font-size: 0.727em;
+h1, h2, h3, h4, h5, .post main p:first-of-type::first-letter {
+    font-weight: 700;
 }
-header h1, article main > *:first-child {
-    margin-top: 0;
-}
-.lead {
-    font-size: 1 + (($font-scale - 1) / 2) * 1rem;
-    line-height: 1.35;
-}
-.drop-cap::first-letter {
-  float: left;
-  margin-top: -.1em;
-  padding: 0 .25em 0 0;
-  font-size: 4.6em;
-  text-indent: 0;
-  background: transparent;
-  color: inherit;
-  font-family: 'Playfair Display';
-  font-weight: 700;
-  line-height: 1;
-}
-.lead.drop-cap::first-letter {
-    margin-top: -.175em;
+.post main p:first-of-type::first-letter {
+    float: left;
+    margin-top: -.1em;
+    padding: 0 .15em 0 0;
     font-size: 4.5em;
+    text-indent: 0;
+    background: transparent;
+    color: inherit;
+    line-height: 1;
 }
-@if $tight-paragraphs {
-    p + p {
-        margin-top: -$spacer;
-        text-indent: $spacer;
+nav, pre, code, kbd, samp, .post-langs span, .small, figcaption, caption {
+    font-size: 0.909em;
+}
+small {
+    font-size: 0.707em;
+}
+small, .faded {
+    color: $color-faded;
+}
+cite {
+    font-family: $font-family-base;
+    font-style: italic;
+    font-size: 0.707em;
+    margin-top: $spacer / 1.5;
+}
+.stylish-title {
+    font-family: 'Playfair Display SC', Palatino, serif;
+    color: $color-grey;
+    line-height: 1.5; // Prevent letters from clipping
+    font-weight: 400;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: $spacer;
+    &:before, &:after {
+        content: "";
+        background-color: $color-faded;
+        opacity: .7;
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    &:before {
+        right: $spacer / 2;
+        margin-left: -50%;
+    }
+    &:after {
+        left: $spacer / 2;
+        margin-right: -50%;
     }
 }
-abbr[title], abbr[data-original-title] {
-    border-bottom: 1px dashed $faded-text;
-    text-decoration: none;
+nav, pre, code, kbd, samp, .post-langs {
+    font-family: 'Roboto Mono', Consolas, monospace;
 }
+nav {
+    color: $color-grey;
+    overflow: hidden;
+    text-align: center;
+    &:before, &:after {
+        content: "";
+        background-color: $color-faded;
+        opacity: .7;
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 100%;
+    }
+    &:before {
+        right: $spacer;
+        margin-left: -100%;
+    }
+    &:after {
+        left: $spacer;
+        margin-right: -100%;
+    }
+}
+.post-item + nav {
+    margin-top: $spacer * 3;
+}
+
 abbr, .small-caps {
-    /* Remove small caps feature added by normalize-opentype.css (it's not recommended) */
+    // Remove small caps feature added by normalize-opentype.css (since not recommended)
     -webkit-font-feature-settings: "smcp" 0, "c2sc" 0;
-       -moz-font-feature-settings: "smcp" 0, "c2sc" 0;
-            font-feature-settings: "smcp" 0, "c2sc" 0;
+       -webkit-font-feature-settings: "smcp" 0, "c2sc" 0;
+               font-feature-settings: "smcp" 0, "c2sc" 0;
     font-family: 'PT Serif Caption';
     font-size: 0.8125em;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
-
-pre, code, kbd, samp {
-    font-family: 'Roboto Mono', Consolas, monospace;
-    font-size: 0.909em;
+abbr[title], abbr[data-original-title] {
+    border-bottom: 1px dashed $color-faded;
+    text-decoration: none;
 }
+
 code {
     border-radius: 3px;
     background: $subtle-bg;
@@ -127,25 +198,17 @@ pre {
 }
 pre code {
     display: inline-block;
-    padding: 1em 1.5em;
+    padding: $spacer / 1.5 $spacer;
     min-width: 100%;
-}
-
-figcaption, caption {
-    padding: $small-dent * 1.5 0 0;
-    color: $faded-text;
-    font-style: italic;
-    text-align: center;
 }
 
 blockquote {
     margin-right: $spacer;
     margin-left: $spacer;
-    color: $faded-text;
+    color: $color-faded;
     font-style: italic;
 }
 blockquote p {
-    font-family: 'Playfair Display', Palatino, serif;
     margin-top: $large-spacer;
     margin-bottom: $large-spacer;
 }
@@ -155,17 +218,23 @@ q {
 }
 cite {
     display: block;
-    color: $faded-text;
-    font-size: 0.909em;
+    color: $color-faded;
     text-align: right;
 }
 cite::before {
-    margin-right: $small-dent / 2;
+    margin-right: $spacer / 6;
     content: '\2014';
 }
-blockquote + cite, pre + figcaption {
-    margin-top: -$spacer;
+figcaption, caption {
+    max-width: $page-content-width;
+    padding: 0 $page-padding;
+    margin-left: auto;
+    margin-right: auto;
+    color: $color-faded;
+    font-style: italic;
+    text-align: center;
 }
+
 table {
     width: 100%;
 }
@@ -173,8 +242,8 @@ table thead {
     font-weight: 700;
 }
 table td, table th {
-    border: 1px solid $border-color;
-    padding: $small-dent;
+    border: 1px solid $color-faded;
+    padding: $spacer / 3;
 }
 
 ul, ol, dl {
@@ -194,52 +263,143 @@ ol ol {
     list-style-type: lower-latin;
 }
 
-/* Styling */
-article h1 {
-    margin: calc(10vh + 5vw) $page-padding 1.5em;
-}
-article header {
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-article main, article footer {
-    margin: 0 auto;
+section {
+    margin: $large-spacer auto;
     padding: 0 $page-padding;
-    max-width: $page-full-width;
-}
-article main .release {
-    margin-right: calc(-50vw + 50% + #{$page-padding});
-    margin-left: calc(-50vw + 50% + #{$page-padding});
-}
-article main .release figcaption {
-    max-width: $page-full-width;
-    margin-left: auto;
-    margin-right: auto;
-}
-article main img {
-    margin-top: $large-spacer;
-    margin-bottom: $large-spacer;
-    -webkit-box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
-            box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
-}
-.post-meta {
-    font-family: 'Roboto Mono', Consolas, monospace;
-    font-size: 0.75em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: #aaa;
-}
-.post-meta a {
-    color: inherit;
-}
-blockquote + cite, article main img + figcaption {
-    margin-top: -$large-spacer * 0.8;
-    margin-bottom: $large-spacer;
+    &:not(.break) {
+        max-width: $page-full-width;
+    }
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 }
 
-@media (min-width: $page-full-width) {
-    article main > ul, article main > ol, article main > dl {
-        margin-left: $spacer;
+.intro {
+    padding: 0;
+    margin-top: 0;
+    max-width: $intro-full-width;
+}
+.intro-photo { // Prevent .intro-text from jumping during image load
+    max-width: 100%;
+    display: block;
+    height: 0;
+    padding-bottom: 75%;
+}
+.intro-text {
+    margin-top: -$large-spacer * 1.75;
+    padding: 0 $page-padding;
+}
+.intro-text h1 {
+    margin-top: 0.25em;
+}
+
+.full-width-bg {
+    background: $theme-color-primary;
+    margin: 0;
+    max-width: 100% !important;
+    padding: $large-spacer * 0.75 calc((100% - #{$page-full-width}) / 2);
+    > div {
+        margin: 0 auto;
+        padding: 0 $page-padding;
+    }
+    * {
+        color: $color-white !important;
+    }
+    nav:before, nav:after {
+        background-color: $color-white !important;
+        opacity: .8;
+    }
+    .post-item + nav {
+        margin-top: $spacer * 2;
+    }
+}
+.post-item {
+    h3 {
+        margin: $spacer 0 $spacer / 6;
+    }
+    &:first-of-type h3 {
+        margin-top: 0;
+    }
+    .post-langs {
+        color: $color-grey;
+        span:not(:first-of-type)::before {
+            content: ' / ';
+        }
+    }
+    .read-icon {
+        height: 1.2em;
+        margin-right: 1em;
+        vertical-align: text-bottom;
+        max-width: 65px; // Fix weird width when loading
+    }
+}
+
+.post {
+    main {
+        margin: 0 auto;
+        max-width: $page-content-width;
+    }
+    header {
+        text-align: center;
+        max-width: $post-header-width;
+        margin: 0 auto;
+    }
+    h1 {
+        margin: 0 0 $spacer / 1.5;
+    }
+    h2, h3, h4, h5 {
+        margin: $spacer / 1.5 0 $spacer / 3;
+    }
+    .release {
+        margin-right: calc(-50vw + 50%);
+        margin-left: calc(-50vw + 50%);
+    }
+    figure {
+        margin-top: $large-spacer;
+        margin-bottom: $large-spacer;
+    }
+    img {
+        -webkit-box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
+                box-shadow: 0 0 50px 0 rgba(0,0,0,0.2);
+    }
+}
+
+.list-page {
+    background: $theme-color-primary;
+    * {
+        color: $color-white !important;
+    }
+    .stylish-title:before, .stylish-title:after, nav:before, nav:after {
+        background-color: $color-white !important;
+        opacity: .8;
+    }
+}
+
+@media (min-width: 580px) {
+    .intro {
+        padding: 0 $page-padding;
+        margin-top: $large-spacer;
+    }
+    .intro-photo {
+        float: left;
+        margin-right: 6%;
+        width: 370px;
+        max-width: 46%;
+        max-width: (370px / $intro-content-width) * 100%;
+        padding: 0;
+        height: auto;
+        min-height: 1px; // Prevent .intro-text from jumping during image load
+    }
+    .intro-text {
+        float: left;
+        max-width: 100% - ((370px / $intro-content-width) * 100%) - 6%;
+        margin: 0;
+        padding: 0;
+    }
+    .post .release {
+        margin-right: calc(-50vw + 50% + #{$page-padding});
+        margin-left: calc(-50vw + 50% + #{$page-padding});
     }
 }

@@ -1,3 +1,8 @@
-[category]
-one = "Kategori"
-other = "Kategorier"
+[home]
+other = "Hem"
+
+[journal]
+other = "Journal"
+
+[show-more]
+other = "Visa fler"

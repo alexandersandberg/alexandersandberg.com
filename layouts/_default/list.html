@@ -1,18 +1,7 @@
-{{ partial "header" . }}
+{{ define "main" }}
 
-{{ range first 10 .Data.Pages }}
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+{{ range .Site.AllPages }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
 {{ end }}
 
-{{ if .IsTranslated }}
-<h4>{{ i18n "translations" }}</h4>
-<ul>
-    {{ range .Translations }}
-    <li>
-        <a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
-    </li>
-    {{ end}}
-</ul>
 {{ end }}
-
-{{ partial "header" . }}

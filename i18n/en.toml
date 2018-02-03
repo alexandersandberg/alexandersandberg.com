@@ -1,3 +1,8 @@
-[category]
-one = "Category"
-other = "Categories"
+[home]
+other = "Home"
+
+[journal]
+other = "Journal"
+
+[show-more]
+other = "Show more"

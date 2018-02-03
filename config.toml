@@ -1,11 +1,15 @@
 baseURL = "https://alexandersandberg.com"
-title = "Alexander Sandberg - Industrial design student"
+title = "alexandersandberg.com"
 
 enableRobotsTXT = true
 defaultContentLanguage = "en"
+relativeURLs = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+enableEmoji = true
 
 [permalinks]
-	post = "/:slug/"
+	page = "/:slug/"
+	posts = "/:slug/"
 
 [params]
 	googleAnalyticsId = "UA-29679247-2" # Uses the new gtag.js
