@@ -1,7 +1,6 @@
 ---
-date: "{{ .Date }}"
 title: "{{ replace .TranslationBaseName '-' ' ' | title }}"
-categories:
-tags:
-draft: true
+date: "{{ .Date }}"
+lastmod: "{{ .Date }}"
+description:
 ---

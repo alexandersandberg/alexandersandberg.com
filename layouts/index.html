@@ -1,22 +1,25 @@
-<code>Development in progress. Welcome back later! o/</code><br>
-<code>Contact: hi@alexandersandberg.com</code>
+{{ define "main" }}
 
-
-<!--{{ partial "header" . }}
-
-<h1>posts</h1>
-{{ range first 10 .Site.Pages }}
-    {{ if eq .Type "post"}}
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+<section class="intro break">
+    <picture class="intro-photo">
+        <source media="(max-width: 580px)" srcset="/img/me-landscape.jpg">
+        <source srcset="/img/me-portrait.jpg">
+        <img src="/img/me-portrait.jpg" alt="Photo of Alexander Sandberg">
+    </picture>
+    <div class="intro-text">
+        {{ .Content }}
+    </div>
+</section>
+<section>
+    <h2 class="stylish-title">{{ i18n "journal" }}</h2>
+    {{ $.Scratch.Set "counter" 0 }}
+    {{ range where .Site.AllRegularPages "Section" "posts" }}
+        {{ if and (or (and (gt (len .AllTranslations) 1) (eq .Lang $.Site.Language.Lang)) (eq (len .AllTranslations) 1)) (lt ($.Scratch.Get "counter") 3) }} <!-- Last number equals amount of posts to get -->
+            {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+            {{- partial "post-item" (dict "title" .Title "translations" .AllTranslations "fill" "#7c7b79") -}}
+        {{ end }}
     {{ end }}
+    <nav><a href="{{ `posts` | relLangURL }}/">{{ i18n "show-more" }}</a></nav>
+</section>
+
 {{ end }}
-
-
-<ul>
-    {{ range $.Site.Home.AllTranslations }}
-        <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-    {{ end }}
-</ul>
-
-{{ partial "footer" . }}
--->
