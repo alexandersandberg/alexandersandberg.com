@@ -36,6 +36,11 @@ $(document).ready(function() {
         maxFont: htmlSizeBase,
         fontRatio: maxPostWidth / htmlSizeBase
     });
+    $('.subscription-form').flowtype({
+        minFont: 18,
+        maxFont: htmlSizeBase,
+        fontRatio: 400 / htmlSizeBase
+    });
     $('.post h1').flowtype({
         minFont: getFontRatio(4) / 2,
         maxFont: getFontRatio(4),
@@ -56,5 +61,41 @@ $(document).ready(function() {
         maxFont: getFontRatio(2),
         fontRatio: (maxPostWidth - 66) / getFontRatio(2)
     });
+
+    var $form = $('#mc-embedded-subscribe-form');
+    if ( $form.length>0) {
+        $form.find('input[type="submit"]').bind('click', function (event) {
+            if(event) event.preventDefault();
+            register($form);
+        });
+    }
+
+    function register($form){
+        $.ajax({
+            type: $form.attr('method'),
+            url: $form.attr('action'),
+            data: $form.serialize(),
+            cache: false,
+            dataType: 'json',
+            contentType: "application/json; charset=utf-8",
+            error: function(err){ alert("Could not connect to the registration server. Please try again later."); },
+            success: function(data){
+                if (data.result != "success") {
+                    if ($('html').attr('lang') == 'sv') {
+                        alert('Oj, något gick fel! Har du skrivit in din emailadress rätt?');
+                    }else{
+                        alert('Ops, something went wrong! Have you entered your email correctly?');
+                    }
+                } else {
+                    $form.find('input[type="email"]').val('');
+                    if ($('html').attr('lang') == 'sv') {
+                        alert('Din email har blivit registrerad. Tack! :)');
+                    }else{
+                        alert('Your email has been registered. Thank you! :)');
+                    }
+                }
+            }
+        });
+    }
 
 });
