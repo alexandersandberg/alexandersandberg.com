@@ -34,6 +34,16 @@
     <meta property="og:image" content="{{ `img/me-landscape.jpg` | relURL }}" />
     {{ with .Site.Language }}<meta property="og:locale" content="{{ .Lang }}" />{{ end }}
 
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ `img/apple-touch-icon.png` | relURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ `img/favicon-32x32.png` | relURL }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ `img/favicon-16x16.png` | relURL }}">
+    <link rel="manifest" href="{{ `img/site.webmanifest` | relURL }}">
+    <link rel="mask-icon" href="{{ `img/safari-pinned-tab.svg` | relURL }}" color="#9f675f">
+    <link rel="shortcut icon" href="{{ `img/favicon.ico` | relURL }}">
+    <meta name="msapplication-TileColor" content="#9f675f">
+    <meta name="msapplication-config" content="{{ `img/browserconfig.xml` | relURL }}">
+    <meta name="theme-color" content="#ffffff">
+
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Playfair+Display+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|PT+Serif+Caption:400,400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
