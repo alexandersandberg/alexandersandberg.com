@@ -19,7 +19,19 @@
             {{- partial "post-item" (dict "title" .Title "translations" .AllTranslations "fill" "#7c7b79") -}}
         {{ end }}
     {{ end }}
-    <nav><a href="{{ `posts` | relLangURL }}/">{{ i18n "show-more" }}</a></nav>
+    <nav><a href="{{ `posts` | relLangURL }}">{{ i18n "show-more" }}</a></nav>
+</section>
+<section class="subscription-form-section">
+    {{- partial "subscription-form" . -}}
+</section>
+<section class="footer">
+{{ if eq $.Site.Language.Lang "en" }}
+        <p lang="sv">Föredrar du <a href="https://alexandersandberg.com/sv/">svenska</a>?</p>
+    {{ else }}
+        <p lang="en">Do you prefer <a href="https://alexandersandberg.com/">english</a>?</p>
+    {{ end }}
+    <p>{{ i18n "footer-text" | safeHTML }}</p>
+
 </section>
 
 {{ end }}

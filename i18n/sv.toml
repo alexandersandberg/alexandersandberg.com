@@ -6,3 +6,12 @@ other = "Journal"
 
 [show-more]
 other = "Visa fler"
+
+[subscription-text]
+other = "Vill du att jag ska skicka ett mail till dig när jag lägger upp något nytt?"
+
+[subscription-text-note]
+other = "Ha inte för stora förväntningar..."
+
+[footer-text]
+other = "Den här statiska hemsidan var byggd med ❤️ av mig och genererad av <a href='http://gohugo.io' target='_blank'>Hugo</a> / Kontakt: hi@alexandersandberg.com"
