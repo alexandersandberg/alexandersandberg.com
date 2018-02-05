@@ -392,8 +392,9 @@ section {
         padding: 0.2em 0.85em;
         float: left;
         height: 40px;
-        border: 1px solid $theme-color-primary;
+        border: 2px solid $theme-color-primary;
         border-right: none;
+        border-radius: 0;
     }
     input[type="submit"] {
         display: none;
@@ -422,6 +423,9 @@ section {
 .footer p {
     color: $color-faded;
     text-align: center;
+}
+.heart {
+    font-family: Georgia, serif;
 }
 
 @media (min-width: 580px) {

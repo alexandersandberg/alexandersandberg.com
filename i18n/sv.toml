@@ -14,4 +14,4 @@ other = "Vill du att jag ska skicka ett mail till dig när jag lägger upp någo
 other = "Ha inte för stora förväntningar..."
 
 [footer-text]
-other = "Den här statiska hemsidan var byggd med ❤️ av mig.<br><a href='https://github.com/alexandersandberg/alexandersandberg.com'>Källkod</a> / Kontakt: hi@alexandersandberg.com"
+other = "Den här statiska hemsidan var byggd med <span class='heart'>♥</span> av mig. / <a href='https://github.com/alexandersandberg/alexandersandberg.com'>Källkod</a> / Kontakt: hi@alexandersandberg.com"
