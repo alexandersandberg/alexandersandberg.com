@@ -3,6 +3,5 @@
     {{- partial "head.html" . -}}
     <body {{ if and .IsNode (eq .Section "posts") }}class="list-page"{{ end }}>
         {{- block "main" . }}{{- end }}
-        {{- partial "footer.html" . -}}
     </body>
 </html>

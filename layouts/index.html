@@ -25,13 +25,12 @@
     {{- partial "subscription-form" . -}}
 </section>
 <section class="footer">
-{{ if eq $.Site.Language.Lang "en" }}
+    {{ if eq $.Site.Language.Lang "en" }}
         <p lang="sv">Föredrar du <a href="https://alexandersandberg.com/sv/">svenska</a>?</p>
     {{ else }}
         <p lang="en">Do you prefer <a href="https://alexandersandberg.com/">english</a>?</p>
     {{ end }}
     <p>{{ i18n "footer-text" | safeHTML }}</p>
-
 </section>
 
 {{ end }}
