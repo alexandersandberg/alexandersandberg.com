@@ -36,10 +36,10 @@ $(document).ready(function() {
         maxFont: htmlSizeBase,
         fontRatio: maxPostWidth / htmlSizeBase
     });
-    $('.subscription-form').flowtype({
-        minFont: 18,
-        maxFont: htmlSizeBase,
-        fontRatio: 400 / htmlSizeBase
+    $('.subscription-form p').flowtype({
+        minFont: getFontRatio(1) / 2,
+        maxFont: getFontRatio(1),
+        fontRatio: maxPostWidth / getFontRatio(1)
     });
     $('.post h1').flowtype({
         minFont: getFontRatio(4) / 2,
