@@ -2,10 +2,10 @@
 other = "Hem"
 
 [journal]
-other = "Journal"
+other = "Blogg"
 
 [show-more]
-other = "Visa fler"
+other = "Visa fler inlägg"
 
 [subscription-text]
 other = "Vill du att jag ska skicka ett mail till dig när jag lägger upp något nytt?"

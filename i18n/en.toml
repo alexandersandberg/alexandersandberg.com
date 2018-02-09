@@ -2,10 +2,10 @@
 other = "Home"
 
 [journal]
-other = "Journal"
+other = "Blog"
 
 [show-more]
-other = "Show more"
+other = "Show more posts"
 
 [subscription-text]
 other = "Want me to send you an email whenever I publish something new?"
