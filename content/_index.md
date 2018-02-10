@@ -1,5 +1,5 @@
 ---
-title: "Alexander Sandberg / Industrial Design Engineering Student"
+title: "Alexander Sandberg / Industrial Design Engineering student"
 date: "2018-02-02T12:06:07+01:00"
 lastmod: "2018-02-02T12:06:07+01:00"
 description: "A 24-year-old industrial design engineering student at Luleå University of Technology, in northern Sweden. This is my personal website where I occasionally share some interesting stuff with the world."
