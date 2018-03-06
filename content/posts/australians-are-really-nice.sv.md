@@ -7,7 +7,7 @@ draft: false
 slug: "australiensare-riktigt-trevliga"
 ---
 
-N<span class="small-caps">är man reser till ett land med en kultur</span> som skiljer sig från sin egen är det viktigt att landa med ett öppet och fördomsfritt sinne. Innan jag flyttade till Sydney hade jag inte ens tänkt tanken på hur australienserna var som folk. Men då jag undermedvetet inte hade några större förhoppningar än det typiska amerikanska betéendet (<small>inget illa menat!</small>) blev jag positivt överraskad då jag insåg hur trevliga alla var.
+N<span class="small-caps">är man reser till ett land med en kultur</span> som skiljer sig från sin egen är det viktigt att landa med ett öppet och fördomsfritt sinne. Innan jag flyttade till Sydney hade jag inte ens tänkt tanken på hur australiensarna var som folk. Men då jag undermedvetet inte hade några större förhoppningar än det typiska amerikanska betéendet (<small>inget illa menat!</small>) blev jag positivt överraskad då jag insåg hur trevliga alla var.
 
 Istället för ett vanligt *”hello”* som man är van med i Sverige (<small>fast *”hej”* såklart</small>), får man även ofta ett *”how is’t going?”* eller *”how are you?”* på köpet. Jag har ännu inte riktigt lärt mig vara lika artig tillbaka då jag fortfarande är något överraskad varje gång jag hör det. Istället blir det ofta bara ett *”hello”* tillbaka, men jag jobbar på det.
 
