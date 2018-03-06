@@ -13,7 +13,7 @@ Då jag sökte till utbytesstudier hade <abbr>LTU</abbr> endast två platser til
 
 ## Resan till Sydney
 
-Måndag den 12e februari (neeej jag missar fettisdagen!) påbörjar jag min färd från Luleå. 27 timmar och 10 minuter senare exklusive ~~eventuella~~ garanterade förseningar landar jag i Sydney, efter två mellanlandningar; Stockholm och Doha (<small>för framtida referenser… <abbr>ARN-SYD</abbr> enkel väg: 4631 <abbr>SEK</abbr> med Qatar Airways</small>). Här nedan har jag skissat en extremt noggrann visualisering av min flygrutt, för att det alltid är roligare med bilder än en massa tråkig text.
+Måndag den 12e februari (<small>neeej jag missar fettisdagen!</small>) påbörjar jag min färd från Luleå. 27 timmar och 10 minuter senare exklusive ~~eventuella~~ garanterade förseningar landar jag i Sydney, efter två mellanlandningar; Stockholm och Doha (<small>för framtida referenser… <abbr>ARN-SYD</abbr> enkel väg: 4631 <abbr>SEK</abbr> med Qatar Airways</small>). Här nedan har jag skissat en extremt noggrann visualisering av min flygrutt, för att det alltid är roligare med bilder än en massa tråkig text.
 
 <figure class="release">
     <img
@@ -27,7 +27,7 @@ Måndag den 12e februari (neeej jag missar fettisdagen!) påbörjar jag min fär
     <figcaption>Min flygrutt från Luleå till Sydney.</figcaption>
 </figure>
 
-Boendesituationen är fortfarande “work in progress”, men jag har iallafall lyckats hitta en lägenhet via Airbnb som jag kan bo i första veckan, medan jag letar en mer permanent bostad. Jag återkommer om det i ett senare inlägg.
+Boendesituationen är fortfarande *“work in progress”*, men jag har iallafall lyckats hitta en lägenhet via Airbnb som jag kan bo i första veckan, medan jag letar en mer permanent bostad. Jag återkommer om det i ett senare inlägg.
 
 ## Varför en blogg?
 

@@ -9,7 +9,7 @@ slug: "exchange-studies-unsw-sydney"
 
 A<span class="small-caps">bout a year ago i was nominated</span> by my home university, Luleå University of Technology <abbr>(LTU)</abbr> in northern Sweden, for exchange studies at University of New South Wales <abbr>(UNSW)</abbr> in Sydney, Australia. Even before I started studying at <abbr>LTU</abbr> I had plans for exchange studies before I graduated. I think it's my interest in personal development and my urge to see new things that has inspired me to pursue this. Luleå is a great city, but it's going to be exciting with a change in environment and culture, since I've spent most of my life there.
 
-When I applied for exchange studies, <abbr>LTU</abbr> only had two spots available at <abbr>UNSW</abbr>, and somehow I managed to get one of those (<small>THANKS!</small>). All <abbr>LTU</abbr>-students who went for exchange studies this school year decided to go during the autumn term, except for me of course who chose the spring term. In other words I'll be the only LTU-student down in Australia this next semester, which is going to be exciting!
+When I applied for exchange studies, <abbr>LTU</abbr> only had two spots available at <abbr>UNSW</abbr>, and somehow I managed to get one of those (<small>THANKS!</small>). All <abbr>LTU</abbr>-students who went for exchange studies this school year decided to go during the autumn term, except for me of course who chose the spring term. In other words I'll be the only <abbr>LTU</abbr>-student down in Australia this next semester, which is going to be exciting!
 
 ## Travelling to sydney
 
@@ -27,7 +27,7 @@ Monday February 12th I'll start my journey from Luleå. 27 hours and 10 minutes 
     <figcaption>My itinerary from Luleå to Sydney.</figcaption>
 </figure>
 
-The living situation in Sydney is still a “work in progress”, but I've found an apartment on Airbnb for the first week at least, while I look around for a more permanent place to stay at. I'll come back to this in a later post.
+The living situation in Sydney is still a *“work in progress”*, but I've found an apartment on Airbnb for the first week at least, while I look around for a more permanent place to stay at. I'll come back to this in a later post.
 
 ## Why a blog?
 
