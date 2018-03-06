@@ -7,9 +7,9 @@ draft: false
 slug: "australians-are-really-nice"
 ---
 
-W<span class="small-caps">hen you're travlling to a country with a culture</span> that differs from your own it's important to go with an open mind, free of prejudices. Before I moved to Sydney I hadn't even thought what kind of people the Australians were. But when I subconsciously didn't have any bigger expectations than the Americans (<small>no offence!</small>) I was positively surprised when I realised how nice everyone were.
+W<span class="small-caps">hen you're travelling to a country</span> with a culture that differs from your own it's important to go with an open mind, free of prejudices. Before I moved to Sydney I hadn't even thought what kind of people the Australians were. But when I subconsciously didn't have any bigger expectations than the Americans (<small>no offense!</small>) I was positively surprised when I realised how nice everyone were.
 
-Instead of the regular *”hello”* that you are used to being greeted with in Sweden, you usually get a complimentary *”how is’t going?”* or *”how are you?”* as well. I haven't really learned to be as polite in return since I'm still slightly suprised every time I hear it. Instead I often just express a simple *”hello”* back, but I'm working on it.
+Instead of the regular *”hello”* that you are used to being greeted with in Sweden, you usually get a complimentary *”how is’t going?”* or *”how are you?”* as well. I haven't really learned to be as polite in return since I'm still slightly surprised every time I hear it. Instead I often just express a simple *”hello”* back, but I'm working on it.
 
 During my soon three weeks in Sydney I have at multiple occasions gone up to strangers on the street asking all sorts of questions. I have yet to get a less than nice reply back. It seems like everyone is more than happy to help a lost foreigner out. All the Australians I've met at the university, on the beach, and at bars and clubs have all been really nice as well.
 
