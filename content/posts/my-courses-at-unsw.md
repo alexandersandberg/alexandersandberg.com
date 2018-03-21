@@ -7,7 +7,7 @@ draft: false
 slug: "my-courses-at-unsw"
 ---
 
-One of the requirements for exchange studies is that you're studying full time. At <abbr>UNSW</abbr> this would be 24 <abbr>UOC</abbr>, but it differs between universities in Australia. If you don't follow the rules about full time studies, you'll unfortunately lose your student visa.
+O<span class="small-caps">ne of the requirements for exchange studies</span> is that you're studying full time. At <abbr>UNSW</abbr> this would be 24 <abbr>UOC</abbr>, but it differs between universities in Australia. If you don't follow the rules about full time studies, you'll unfortunately lose your student visa.
 
 After a lot of consideration I ended up applying for three courses, since one of them was worth 12 <abbr>UOC</abbr>; *Introductory Japanese A*, *Spatial Design: Experimental Domestic Spaces* and *Design Studio 3: Production*. When I looked closer at the last one I noticed it was pretty much the same as one of the courses I have taken at my home university, so I decided to change that one. Since I've had an interest in photography for a while, but never had much experience with it, I decided to switch to two photography courses instead. Both courses were unfortunately full since several months back, but after a few emails to the course convenor I managed to get a spot in each one anyways.
 
