@@ -14,7 +14,7 @@
     <h2 class="stylish-title">{{ i18n "journal" }}</h2>
     {{ $.Scratch.Set "counter" 0 }}
     {{ range where .Site.AllRegularPages "Section" "posts" }}
-        {{ if and (or (and (gt (len .AllTranslations) 1) (eq .Lang $.Site.Language.Lang)) (eq (len .AllTranslations) 1)) (lt ($.Scratch.Get "counter") 3) }} <!-- Last number equals amount of posts to get -->
+        {{ if and (or (and (gt (len .AllTranslations) 1) (eq .Lang $.Site.Language.Lang)) (eq (len .AllTranslations) 1)) (lt ($.Scratch.Get "counter") 5) }} <!-- Last number equals amount of posts to get -->
             {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
             {{- partial "post-item" (dict "title" .Title "translations" .AllTranslations "fill" "#7c7b79") -}}
         {{ end }}

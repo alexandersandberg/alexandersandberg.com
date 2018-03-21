@@ -7,7 +7,7 @@ draft: false
 slug: "mina-kurser-vid-unsw"
 ---
 
-Ett av kraven för utbytesstudier är att man studerar på heltid (30 <abbr>hp</abbr>/termin). Vid <abbr>UNSW</abbr> motsvarar 30 <abbr>hp</abbr> 24 <abbr>UOC</abbr>, men det är olika på varje universitet i Australien. Följer man inte regler om heltidsstudier blir man tyvärr av med sitt studentvisum.
+E<span class="small-caps">tt av kraven för utbytesstudier</span> är att man studerar på heltid (30 hp/termin). Vid <abbr>UNSW</abbr> motsvarar 30 hp 24 <abbr>UOC</abbr>, men det är olika på varje universitet i Australien. Följer man inte regler om heltidsstudier blir man tyvärr av med sitt studentvisum.
 
 Efter att man har blivit nominerad till utbytesstudier av (i mitt fall) <abbr>LTU</abbr>, gör man sedan ytterligare en ansökan till utbytesunviersitetet. Här väljer man bland annat vilka kurser man ska läsa. Du behöver alltså inte veta exakt vilka kurser du vill läsa när du skickar in din första ansökan.
 
