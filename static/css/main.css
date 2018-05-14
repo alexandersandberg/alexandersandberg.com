@@ -1,0 +1,181 @@
+html, body, p, blockquote, cite, figure, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 18px;
+}
+body {
+    font-family: Georgia, serif;
+    line-height: 1.5;
+    color: #252414;
+    background-color: #ffffff;
+    max-width: 580px;
+    margin: 0 auto;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+hr {
+    margin: 2em 0;
+    border: 0;
+    height: 1px;
+    background: #bbbbbb;
+    opacity: 0.75;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td,
+th {
+    padding: 0;
+    text-align: left;
+}
+
+section {
+    margin: 60px 30px;
+}
+section::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.break-line {
+    height: 1px;
+    background: #bbbbbb;
+}
+.stylish {
+    font-weight: 400;
+    overflow: hidden;
+    text-align: center;
+    color: #888888;
+}
+h2.stylish {
+    font-family: 'Playfair Display SC', Palatino, serif;
+    margin-bottom: 1.5em;
+}
+.stylish:before, .stylish:after {
+    content: "";
+    background-color: #bbbbbb;
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.stylish:before {
+    right: 20px;
+    margin-left: -50%;
+}
+.stylish:after {
+    left: 20px;
+    margin-right: -50%;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", Palatino, serif;
+    font-weight: 700;
+}
+h1 {
+    font-size: 2.828em;
+    line-height: 1.2;
+}
+h2, .latest h3 {
+    font-size: 2em;
+    line-height: 1.3;
+}
+h3 {
+    font-size: 1.414em;
+    line-height: 1.4;
+}
+h1 a, h2 a, h3 a {
+    text-decoration: none;
+}
+article h2, article h3, p {
+    margin-top: 1em;
+}
+a {
+    color: inherit;
+    text-decoration: underline;
+    -webkit-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+}
+a:hover {
+    opacity: 0.4;
+}
+small, cite {
+    font-size: 80%;
+}
+article small {
+    color: #888888;
+    margin-top: 0;
+    line-height: 1;
+}
+.faded {
+    color: #888888;
+}
+blockquote {
+    font-weight: 700;
+    font-size: 1.207em;
+    margin: 0 0.75em;
+    font-style: italic;
+}
+cite {
+    font-family: Georgia, serif;
+    display: block;
+    color: #888888;
+    text-align: right;
+    font-weight: 400;
+}
+
+.intro div {
+    padding-top: 10px;
+}
+.more .next {
+    width: 47%;
+    float: left;
+}
+.more .previous {
+    width: 47%;
+    text-align: right;
+    float: right;
+}
+
+.footer {
+    font-family: "Roboto Mono", Consolas, monospace;
+    color: #888888;
+    text-align: center;
+    font-size: 13px;
+}
+.heart {
+    font-family: Georgia, serif;
+}
+
+@media (min-width: 581px) {
+    section {
+        margin: 100px 50px;
+    }
+    .intro {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .intro picture {
+        max-width: 265px;
+        float: left;
+    }
+    .intro div {
+        padding-left: 40px;
+        padding-right: 20px;
+        max-width: 315px;
+        float: left;
+    }
+}

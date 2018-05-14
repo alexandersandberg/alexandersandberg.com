@@ -1,36 +1,36 @@
 {{ define "main" }}
 
-<section class="intro break">
-    <picture class="intro-photo">
-        <source media="(max-width: 580px)" srcset="/img/me-landscape-v2.jpg">
-        <source srcset="/img/me-portrait-v2.jpg">
-        <img src="/img/me-portrait-v2.jpg" alt="Photo of Alexander Sandberg">
+<section class="intro">
+    <picture>
+        <source media="(max-width: 580px)" srcset="/img/me-landscape.jpg">
+        <source srcset="/img/me-portrait.jpg">
+        <img src="/img/me-portrait.jpg" alt="Photo of Alexander Sandberg">
     </picture>
-    <div class="intro-text">
-        {{ .Content }}
+    <div>
+        <h1>Alexander Sandberg</h1>
+        <p>I'm a 24-year-old industrial design engineering student at Luleå University of Technology, in northern Sweden.</p>
+        <p>Here I <i>occasionally</i> publish random<span class="faded">*</span> stuff I find worth sharing with the world.<br><small class="faded">*You've been warned</small></p>
     </div>
 </section>
+<section class="latest">
+    <h2 class="stylish">Journal</h2>
+    {{ range first 1 .Data.Pages }}
+        <article>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <small>{{ .Date.Format "January 2, 2006" }}</small>
+            {{ .Content }}
+        </article>
+    {{ end }}
+</section>
+<section class="break-line"></section>
 <section>
-    <h2 class="stylish-title">{{ i18n "journal" }}</h2>
-    {{ $.Scratch.Set "counter" 0 }}
-    {{ range where .Site.AllRegularPages "Section" "posts" }}
-        {{ if and (or (and (gt (len .AllTranslations) 1) (eq .Lang $.Site.Language.Lang)) (eq (len .AllTranslations) 1)) (lt ($.Scratch.Get "counter") 5) }} <!-- Last number equals amount of posts to get -->
-            {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-            {{- partial "post-item" (dict "title" .Title "translations" .AllTranslations "fill" "#7c7b79") -}}
-        {{ end }}
+    {{ range after 1 .Data.Pages }}
+        <article>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <small>{{ .Date.Format "January 2, 2006" }}</small>
+        </article>
     {{ end }}
-    <nav><a href="{{ `posts` | relLangURL }}">{{ i18n "show-more" }}</a></nav>
 </section>
-<section class="subscription-form-section">
-    {{- partial "subscription-form" . -}}
-</section>
-<section class="footer">
-    {{ if eq $.Site.Language.Lang "en" }}
-        <p lang="sv">Föredrar du <a href="https://alexandersandberg.com/sv/">svenska</a>?</p>
-    {{ else }}
-        <p lang="en">Do you prefer <a href="https://alexandersandberg.com/">english</a>?</p>
-    {{ end }}
-    <p>{{ i18n "footer-text" | safeHTML }}</p>
-</section>
+<section class="break-line"></section>
 
 {{ end }}
