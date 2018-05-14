@@ -1,6 +1,6 @@
 {
-    "name": "Alexander Sandberg",
-    "short_name": "Alexander Sandberg",
+    "name": "",
+    "short_name": "",
     "icons": [
         {
             "src": "/img/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#252414",
+    "background_color": "#252414",
     "display": "standalone"
 }

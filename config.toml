@@ -4,8 +4,8 @@ title = "alexandersandberg.com"
 enableRobotsTXT = true
 defaultContentLanguage = "en"
 relativeURLs = true
-disableKinds = ["taxonomy", "taxonomyTerm"]
 enableEmoji = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [permalinks]
 	page = "/:slug/"
@@ -14,13 +14,5 @@ enableEmoji = true
 [params]
 	googleAnalyticsId = "UA-29679247-2" # Uses the new gtag.js
 
-[languages]
-	[languages.en]
-	lang = "en"
-	languageName = "English"
-	weight = 1
-
-	[languages.sv]
-	lang = "sv"
-	languageName = "Svenska"
-	weight = 2
+[blackfriday]
+	hrefTargetBlank = true

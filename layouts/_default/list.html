@@ -1,6 +1,7 @@
 {{ define "main" }}
 
-{{ range .Site.AllPages }}
+<h2 class="stylish">{{ .Title }}</h2>
+{{ range .Data.Pages }}
     <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
 {{ end }}
 
