@@ -22,7 +22,7 @@ $(document).ready(function(){
                     alert('Ops, something went wrong! Have you entered your email correctly?');
                 } else {
                     $form.find('input[type="email"]').val('');
-                    alert('Your email has been registered. Thank you! :)');
+                    alert('Your email has been registered. Enjoy! :)');
                 }
             }
         });
