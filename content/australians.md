@@ -2,6 +2,7 @@
 title: "Australians Are Really Nice"
 date: "2018-03-06T22:05:44+11:00"
 publishDate: "2018-03-06T22:05:44+11:00"
+lastmod: "2018-03-06T22:05:44+11:00"
 draft: false
 slug: "australians"
 ---
