@@ -2,6 +2,7 @@
 title: "My courses at UNSW"
 date: "2018-03-20T21:48:20+11:00"
 publishDate: "2018-03-20T21:48:20+11:00"
+lastmod: "2018-03-20T21:48:20+11:00"
 draft: false
 slug: "courses"
 ---

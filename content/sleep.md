@@ -2,6 +2,7 @@
 title: "The Importance of Sleep"
 date: "2018-05-12T14:21:49+10:00"
 publishDate: "2018-05-12T14:21:49+10:00"
+lastmod: "2018-05-12T14:21:49+10:00"
 draft: false
 slug: "sleep"
 ---

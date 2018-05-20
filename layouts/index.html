@@ -14,10 +14,10 @@
 </section>
 <section class="latest">
     <h2 class="stylish">Latest</h2>
-    {{ range first 1 .Data.Pages }}
+    {{ range first 1 .Data.Pages.ByLastmod.Reverse }}
         <article>
             <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            <small>{{ .Date.Format "January 2, 2006" }}</small>
+            <small>{{ .Lastmod.Format "January 2, 2006" }}</small>
             {{ .Content }}
         </article>
     {{ end }}
@@ -51,10 +51,10 @@
 </section>
 <section>
     <h2 class="stylish">More posts</h2>
-    {{ range after 1 .Data.Pages }}
+    {{ range after 1 .Data.Pages.ByLastmod.Reverse }}
         <article>
             <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            <small>{{ .Date.Format "January 2, 2006" }}</small>
+            <small>{{ .Lastmod.Format "January 2, 2006" }}</small>
         </article>
     {{ end }}
 </section>
