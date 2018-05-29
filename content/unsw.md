@@ -11,4 +11,4 @@ About a year ago I was nominated by my home university, Luleå University of Tec
 
 When I applied for exchange studies, LTU only had two spots available at UNSW, and somehow I managed to get one of those (THANKS!). All LTU-students who went for exchange studies this school year decided to go during the autumn term, except for me of course who chose the spring term. In other words I'll be the only LTU-student down in Australia this next semester, which is going to be exciting!
 
-If you have any questions regarding exchange studies, UNSW, Sydney, or *almost* anything else, I'd love to [hear from you](mailto:hi@alexandersandberg.com). If I'm lazy (always) there's a chance I'll just post something on Instagram ([@sandbergalexander](https://instagram.com/sandbergalexander)) instead of writing a blog post.
+If you have any questions regarding exchange studies, UNSW, Sydney, or *almost* anything else, I'd love to [hear from you](mailto:alexandberg@gmail.com). If I'm lazy (always) there's a chance I'll just post something on Instagram ([@sandbergalexander](https://instagram.com/sandbergalexander)) instead of writing a blog post.
