@@ -8,8 +8,7 @@ slug: "sleep"
 keywords:
     - learning
     - books
-    - podcast
-    - sleep
+    - podcasts
     - matthew walker
     - joe rogan
     - kevin rose

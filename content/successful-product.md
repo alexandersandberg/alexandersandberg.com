@@ -18,8 +18,9 @@ People don't care about your product, only the *result* that comes from using it
 3. Create a brand behind the product that portrays the right message
 4. Deliver the promised *result*
 
-The following quote by Simon Sinek does a good job explaining step 3:
+The following quote does a good job explaining step 3:
 
 > "People don’t buy what you do, they buy why you do it."
+> <cite>– Simon Sinek</cite>
 
 But don't forget, you should never start something with the sole intention of making money.
