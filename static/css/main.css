@@ -88,6 +88,7 @@ h1, h2, h3 {
 h1 {
     font-size: 2.828em;
     line-height: 1.2;
+    margin-bottom: 0.25em;
 }
 h2, .latest h3 {
     font-size: 2em;
@@ -136,6 +137,15 @@ cite {
     text-align: right;
     font-weight: 400;
 }
+.nl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nl li {
+    list-style: none;
+    margin: 0;
+}
 
 .intro div {
     padding-top: 10px;
@@ -148,6 +158,35 @@ cite {
     width: 47%;
     text-align: right;
     float: right;
+}
+
+.sm {
+    height: 20px;
+    color: #252414;
+    fill: #252414;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.sm svg {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    -webkit-transition: opacity 0.25s ease;
+            transition: opacity 0.25s ease;
+
+}
+.sm svg:hover {
+    opacity: 0.4;
+}
+.keyword {
+    font-family: "Roboto Mono", Consolas, monospace;
+    display: inline;
+    white-space: nowrap;
+    line-height: 1.5;
+}
+.keyword:not(:last-child)::after {
+    content: ', ';
 }
 
 .footer {

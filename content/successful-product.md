@@ -5,6 +5,11 @@ publishDate: "2018-05-14T13:45:11+10:00"
 lastmod: "2018-05-14T13:45:11+10:00"
 draft: false
 slug: "successful-product"
+keywords:
+    - business
+    - success
+    - product development
+    - simon sinek
 ---
 People don't care about your product, only the *result* that comes from using it.
 

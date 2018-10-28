@@ -5,6 +5,9 @@ publishDate: "2018-05-14T13:34:33+10:00"
 lastmod: "2018-05-14T13:34:33+10:00"
 draft: false
 slug: "forgetting"
+keywords:
+    - learning
+    - books
 ---
 Most of the books I read nowadays are non-fiction books on personal development. For an avid student of life, the pursuit of gathering more knowledge is like an obsession, but I don’t think there’s anything wrong with that.
 
