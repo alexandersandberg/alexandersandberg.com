@@ -21,6 +21,6 @@ People don't care about your product, only the *result* that comes from using it
 The following quote does a good job explaining step 3:
 
 > "People don’t buy what you do, they buy why you do it."
-> <cite>– Simon Sinek</cite>
+> <cite>— Simon Sinek</cite>
 
 But don't forget, you should never start something with the sole intention of making money.
