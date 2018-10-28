@@ -5,4 +5,5 @@ publishDate: "{{ .Date }}"
 lastmod: "{{ .Date }}"
 draft: true
 slug: "{{ .TranslationBaseName }}"
+keywords: 
 ---

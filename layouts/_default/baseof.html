@@ -21,12 +21,12 @@
         <link rel="canonical" href="{{ .Permalink }}">
 
         <title>{{ if not .IsHome }}{{ .Title }} / {{ end }}Alexander Sandberg</title>
-        {{ if .IsHome }}<meta name="description" content="A 24-year-old industrial design engineering student at Luleå University of Technology, in northern Sweden. This is my personal website where I occasionally share some interesting stuff with the world." />{{ end }}
+        {{ if .IsHome }}<meta name="description" content="I'm a fourth-year industrial design engineering student at Luleå University of Technology in northern Sweden. This is my personal website where I occasionally share some interesting stuff with the world." />{{ end }}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@alexandberg" />
         <meta name="twitter:creator" content="@alexandberg" />
         <meta property="og:title" content="{{ .Title }}" />
-        {{ if .IsHome }}<meta property="og:description" content="A 24-year-old industrial design engineering student at Luleå University of Technology, in northern Sweden. This is my personal website where I occasionally share some interesting stuff with the world." />{{ end }}
+        {{ if .IsHome }}<meta property="og:description" content="I'm a fourth-year industrial design engineering student at Luleå University of Technology in northern Sweden. This is my personal website where I occasionally share some interesting stuff with the world." />{{ end }}
         <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
         <meta property="og:url" content="{{ .Permalink }}" />
         <meta property="og:image" content="/img/me-landscape.jpg" />
@@ -36,10 +36,8 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
         <link rel="manifest" href="/img/site.webmanifest">
         <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#252414">
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <meta name="msapplication-TileColor" content="#252414">
-        <meta name="msapplication-config" content="/img/browserconfig.xml">
-        <meta name="theme-color" content="#252414">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
 
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Playfair+Display+SC:400" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
@@ -50,7 +48,7 @@
     <body>
         {{- block "main" . }}{{- end }}
         <section class="footer">
-            <p>This static website was built with <span class="heart">♥</span> by me.<br><a href="https://github.com/alexandersandberg/alexandersandberg.com">Source code</a> / {{ if .Site.RSSLink }}<a href="{{ .Site.RSSLink }}">RSS</a> / {{ end }}alexandberg@gmail.com</p>
+            <p>This static website was built with <span class="heart">♥</span> by me.<br><a href="https://github.com/alexandersandberg/alexandersandberg.com" target="_blank">Source code</a> / {{ if .Site.RSSLink }}<a href="{{ .Site.RSSLink }}">RSS</a> / {{ end }}alex@minimaldesign.se</p>
         </section>
     </body>
 </html>

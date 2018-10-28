@@ -3,7 +3,13 @@
 <section class="single">
     <article>
         <h1>{{ .Title }}</h1>
-        <small>{{ .Date.Format "January 2, 2006" }}</small>
+        <small>
+            <ul class="nl">
+                {{ range .Params.keywords }}
+                    <li class="keyword">{{ . }}</li>
+                {{ end }}
+            </ul>
+        </small>
         {{ .Content }}
     </article>
 </section>
