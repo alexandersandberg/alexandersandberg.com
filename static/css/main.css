@@ -125,17 +125,23 @@ article small {
     color: #888888;
 }
 blockquote {
-    font-weight: 700;
-    font-size: 1.207em;
+    font-family: "Playfair Display", Palatino, serif;
+    font-weight: 400;
+    font-size: 1.414em;
     margin: 0 30px;
     font-style: italic;
+    text-align: center;
+}
+blockquote p {
+    margin: 1em 0;
 }
 cite {
-    font-family: Georgia, serif;
+    font-family: "Playfair Display", Palatino, serif;
     display: block;
     color: #888888;
     text-align: right;
-    font-weight: 400;
+    font-size: 0.65em;
+    font-style: normal;
 }
 .nl {
     list-style: none;
@@ -150,16 +156,6 @@ cite {
 .intro div {
     padding-top: 10px;
 }
-.more .next {
-    width: 47%;
-    float: left;
-}
-.more .previous {
-    width: 47%;
-    text-align: right;
-    float: right;
-}
-
 .sm {
     height: 20px;
     color: #252414;
@@ -179,6 +175,7 @@ cite {
 .sm svg:hover {
     opacity: 0.4;
 }
+
 .keyword {
     font-family: "Roboto Mono", Consolas, monospace;
     display: inline;
@@ -187,6 +184,16 @@ cite {
 }
 .keyword:not(:last-child)::after {
     content: ', ';
+}
+
+.more .next {
+    width: 47%;
+    float: left;
+}
+.more .previous {
+    width: 47%;
+    text-align: right;
+    float: right;
 }
 
 .footer {
@@ -198,6 +205,7 @@ cite {
 .heart {
     font-family: Georgia, serif;
 }
+
 .subscribe p {
     font-size: 1.207em;
 }
@@ -259,5 +267,12 @@ input[type="submit"] {
         padding-right: 20px;
         max-width: 315px;
         float: left;
+    }
+    blockquote {
+        font-size: 2em;
+        margin: 0 -30px;
+    }
+    cite {
+        font-size: 0.5em;
     }
 }
