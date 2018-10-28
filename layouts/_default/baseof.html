@@ -21,12 +21,14 @@
         <link rel="canonical" href="{{ .Permalink }}">
 
         <title>{{ if not .IsHome }}{{ .Title }} / {{ end }}Alexander Sandberg</title>
-        {{ if .IsHome }}<meta name="description" content="I'm a fourth-year industrial design engineering student at Luleå University of Technology in northern Sweden. This is my personal website where I occasionally share some interesting stuff with the world." />{{ end }}
+        <meta name="description" content="{{ if .IsHome }}I'm a fourth-year industrial design engineering student at Luleå University of Technology in northern Sweden. This is my personal website where I occasionally share some interesting stuff with the world.{{ else }}{{ .Page.Summary }}{{ end }}" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@alexandberg" />
         <meta name="twitter:creator" content="@alexandberg" />
+        <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/me-landscape.jpg" />
+        <meta name="twitter:description" content="{{ if .IsHome }}I'm a fourth-year industrial design engineering student at Luleå University of Technology in northern Sweden. This is my personal website where I occasionally share some interesting stuff with the world.{{ else }}{{ .Page.Summary }}{{ end }}" />
         <meta property="og:title" content="{{ .Title }}" />
-        {{ if .IsHome }}<meta property="og:description" content="I'm a fourth-year industrial design engineering student at Luleå University of Technology in northern Sweden. This is my personal website where I occasionally share some interesting stuff with the world." />{{ end }}
+        <meta property="og:description" content="{{ if .IsHome }}I'm a fourth-year industrial design engineering student at Luleå University of Technology in northern Sweden. This is my personal website where I occasionally share some interesting stuff with the world.{{ else }}{{ .Page.Summary }}{{ end }}" />
         <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
         <meta property="og:url" content="{{ .Permalink }}" />
         <meta property="og:image" content="{{ .Site.BaseURL }}/img/me-landscape.jpg" />
