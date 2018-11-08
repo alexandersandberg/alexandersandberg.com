@@ -15,16 +15,16 @@
 </section>
 <section class="break-line"></section>
 <section class="more">
-    {{ if .Prev }}
+    {{ if .NextPage }}
     <div class="next">
         <span class="faded">Next</span>
-        <h3><a href="{{ .Prev.RelPermalink }}">{{ .Prev.Title }}</a></h3>
+        <h3><a href="{{ .NextPage.RelPermalink }}">{{ .NextPage.Title }}</a></h3>
     </div>
     {{ end }}
-    {{ if .Next }}
+    {{ if .PrevPage }}
     <div class="previous">
         <span class="faded">Previous</span>
-        <h3><a href="{{ .Next.RelPermalink }}">{{ .Next.Title }}</a></h3>
+        <h3><a href="{{ .PrevPage.RelPermalink }}">{{ .PrevPage.Title }}</a></h3>
     </div>
     {{ end }}
 </section>
