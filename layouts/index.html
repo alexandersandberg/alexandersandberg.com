@@ -20,7 +20,7 @@
     <h2 class="stylish">Latest</h2>
     {{ range first 1 .Data.Pages.ByLastmod.Reverse }}
         <article>
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
             <small>
                 <ul class="nl">
                     {{ range .Params.keywords }}
