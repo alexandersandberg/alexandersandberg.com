@@ -1,5 +1,5 @@
 ---
-title: "Motivation comes from action"
+title: "Motivation comes from taking action"
 date: "2018-11-09T21:14:04+01:00"
 publishDate: "2018-11-09T21:14:04+01:00"
 lastmod: "2018-11-09T21:14:04+01:00"
