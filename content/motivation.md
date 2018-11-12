@@ -32,7 +32,7 @@ Once you realize this, you can take advantage of this and shift the starting poi
 
 When thinking back myself, I notice that I've been using the same principle many times before. It has been applied on everything from studying and work, to workouts and cleaning, with this post being the most recent example.
 
-> "The way to get started is to quit talking and begin doing"
+> "The way to get started is to quit talking and begin doing."
 > <cite>— Walt Disney</cite>
 
 So instead of waiting for that surge of motivation, just start somewhere. Embrace the uncertainty that follows, and never be afraid of making mistakes. Failing is one of the best opportunities for learning, and therefore a fast way to eventually reaching success.
