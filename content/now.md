@@ -14,6 +14,6 @@ Most of my free time at the moment is (like always) spent on side-projects that 
 
 I finally got serious with **LinkedIn** and set up a proper account ([let's connect!](https://www.linkedin.com/in/sandbergalex/)), since I wanted to take advantage of the potential there for me—in my current situation, close to graduating—to find opportunities for the future.
 
-I also started **writing more**, and you can find my latest posts on [inspiration for creativity](https://alexandersandberg.com/inspiration/) and [motivation](https://alexandersandberg.com/motivation/) here on the website.
+I also started **writing** more, and you can find my latest posts on [inspiration for creativity](https://alexandersandberg.com/inspiration/) and [motivation](https://alexandersandberg.com/motivation/) here on the website.
 
-<small>This is part of the ["now page"-movement](https://nownownow.com/about) by Derek Sivers.</small>
+<small>This post is part of the ["now page"-movement](https://nownownow.com/about) by Derek Sivers.</small>
