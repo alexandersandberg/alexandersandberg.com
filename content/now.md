@@ -6,14 +6,10 @@ lastmod: "2018-01-01T00:00:00+01:00"
 draft: false
 slug: "now"
 keywords:
-    - updated november 14th, 2018
+    - updated february 12th, 2019
 ---
-I recently started my fourth year out of five of my Industrial design engineering degree. It's exciting knowing that around a year and two months from now, I'll be **graduating** and getting my life started for real (<small>or at least that's what it feels like</small>).
+In less than a year from now I'll be **graduating** from university with a master's degree in *industrial design engineering*. I'm currently looking for opportunities for a master's thesis project, and actually have a pretty interesting plan to do this. I won't go into details now, but it involves ads.
 
-Most of my free time at the moment is (like always) spent on side-projects that will help me grow as a designer and human being.
-
-I finally got serious with **LinkedIn** and set up a proper account ([let's connect!](https://www.linkedin.com/in/sandbergalex/)), since I wanted to take advantage of the potential there for me—in my current situation, close to graduating—to find opportunities for the future.
-
-I also started **writing** more, and you can find my latest posts on [inspiration for creativity](https://alexandersandberg.com/inspiration/) and [motivation](https://alexandersandberg.com/motivation/) here on the website.
+I'm working on a really exciting project with **[minimal design](http://minimaldesign.se)** for a client. I think it's going to be huge. I'm also casually trying to **write articles** here and there. I recently posted [The unexpected power of daydreaming](https://alexandersandberg.com/daydreaming/), which I really enjoyed putting together.
 
 <small>This post is part of the ["now page"-movement](https://nownownow.com/about) by Derek Sivers.</small>
