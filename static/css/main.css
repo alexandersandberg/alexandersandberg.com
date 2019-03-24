@@ -163,16 +163,13 @@ cite {
     margin: 0;
     padding: 0;
     cursor: pointer;
-}
-.sm svg {
-    width: 40px;
-    height: 40px;
-    padding: 2px;
+	font-size: 26px;
+    padding: 5px;
     -webkit-transition: opacity 0.25s ease;
-            transition: opacity 0.25s ease;
-
+    transition: opacity 0.25s ease;
+	margin: 0 5px;
 }
-.sm svg:hover {
+.sm:hover {
     opacity: 0.4;
 }
 
