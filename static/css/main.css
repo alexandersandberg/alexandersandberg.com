@@ -1,283 +1,320 @@
-html, body, p, blockquote, cite, figure, h1, h2, h3 {
-    margin: 0;
-    padding: 0;
+html,
+body,
+p,
+blockquote,
+cite,
+figure,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
 }
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 18px;
+  font-size: 18px;
 }
 body {
-    font-family: Georgia, serif;
-    line-height: 1.5;
-    color: #252414;
-    background-color: #ffffff;
-    max-width: 580px;
-    margin: 0 auto;
+  font-family: Georgia, serif;
+  line-height: 1.5;
+  color: #252414;
+  background-color: #ffffff;
+  max-width: 580px;
+  margin: 0 auto;
 }
 img {
-    height: auto;
-    max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 hr {
-    margin: 2em 0;
-    border: 0;
-    height: 1px;
-    background: #bbbbbb;
-    opacity: 0.75;
+  margin: 2em 0;
+  border: 0;
+  height: 1px;
+  background: #bbbbbb;
+  opacity: 0.75;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 td,
 th {
-    padding: 0;
-    text-align: left;
+  padding: 0;
+  text-align: left;
 }
 
 section {
-    margin: 60px 30px;
+  margin: 60px 30px;
 }
-section::after, .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+section::after,
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
 }
 .break-line {
-    height: 1px;
-    background: #bbbbbb;
+  height: 1px;
+  background: #bbbbbb;
 }
 .stylish {
-    font-weight: 400;
-    overflow: hidden;
-    text-align: center;
-    color: #888888;
+  font-weight: 400;
+  overflow: hidden;
+  text-align: center;
+  color: #888888;
 }
 h2.stylish {
-    font-family: 'Playfair Display SC', Palatino, serif;
-    margin-bottom: 1.5em;
+  font-family: 'Playfair Display SC', Palatino, serif;
+  margin-bottom: 1.5em;
 }
-.stylish:before, .stylish:after {
-    content: "";
-    background-color: #bbbbbb;
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 50%;
+.stylish:before,
+.stylish:after {
+  content: '';
+  background-color: #bbbbbb;
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
 }
 .stylish:before {
-    right: 20px;
-    margin-left: -50%;
+  right: 20px;
+  margin-left: -50%;
 }
 .stylish:after {
-    left: 20px;
-    margin-right: -50%;
+  left: 20px;
+  margin-right: -50%;
 }
 
-h1, h2, h3 {
-    font-family: "Playfair Display", Palatino, serif;
-    font-weight: 700;
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', Palatino, serif;
+  font-weight: 700;
 }
 h1 {
-    font-size: 2.828em;
-    line-height: 1.2;
-    margin-bottom: 0.25em;
+  font-size: 2.828em;
+  line-height: 1.2;
+  margin-bottom: 0.25em;
 }
 h2 {
-    font-size: 2em;
-    line-height: 1.3;
+  font-size: 2em;
+  line-height: 1.3;
 }
 h3 {
-    font-size: 1.414em;
-    line-height: 1.4;
+  font-size: 1.414em;
+  line-height: 1.4;
 }
-h1 a, h2 a, h3 a {
-    text-decoration: none;
+h1 a,
+h2 a,
+h3 a {
+  text-decoration: none;
 }
-article h2, article h3, p {
-    margin-top: 1em;
+article h2,
+article h3,
+p {
+  margin-top: 1em;
 }
 a {
-    color: inherit;
-    text-decoration: underline;
-    -webkit-transition: opacity 0.25s ease;
-    transition: opacity 0.25s ease;
+  color: inherit;
+  text-decoration: underline;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
 }
 a:hover {
-    opacity: 0.4;
+  opacity: 0.4;
 }
-small, cite {
-    font-size: 80%;
+small,
+cite {
+  font-size: 80%;
 }
 article small {
-    color: #888888;
-    margin-top: 0;
-    line-height: 1;
+  color: #888888;
+  margin-top: 0;
+  line-height: 1;
+}
+pre {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  overflow-x: auto;
+  background: #eee;
+  padding: 20px;
+  border-radius: 2px;
+}
+p code {
+  background: #eee;
+  padding: 3px 6px;
+  border-radius: 2px;
 }
 .faded {
-    color: #888888;
+  color: #888888;
 }
 blockquote {
-    font-family: "Playfair Display", Palatino, serif;
-    font-weight: 400;
-    font-size: 1.414em;
-    margin: 0 30px;
-    font-style: italic;
-    text-align: center;
+  font-family: 'Playfair Display', Palatino, serif;
+  font-weight: 400;
+  font-size: 1.414em;
+  margin: 0 30px;
+  font-style: italic;
+  text-align: center;
 }
 blockquote p {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 cite {
-    font-family: "Playfair Display", Palatino, serif;
-    display: block;
-    color: #888888;
-    text-align: right;
-    font-size: 0.65em;
-    font-style: normal;
+  font-family: 'Playfair Display', Palatino, serif;
+  display: block;
+  color: #888888;
+  text-align: right;
+  font-size: 0.65em;
+  font-style: normal;
 }
 .nl {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .nl li {
-    list-style: none;
-    margin: 0;
+  list-style: none;
+  margin: 0;
 }
 
 .intro div {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 .sm {
-    height: 20px;
-    color: #252414;
-    fill: #252414;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-	font-size: 26px;
-    padding: 5px;
-    -webkit-transition: opacity 0.25s ease;
-    transition: opacity 0.25s ease;
-	margin: 0 5px;
+  height: 20px;
+  color: #252414;
+  fill: #252414;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  font-size: 26px;
+  padding: 5px;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
+  margin: 0 5px;
 }
 .sm:hover {
-    opacity: 0.4;
+  opacity: 0.4;
 }
 
 .keyword {
-    font-family: "Roboto Mono", Consolas, monospace;
-    display: inline;
-    white-space: nowrap;
-    line-height: 1.5;
+  font-family: 'Roboto Mono', Consolas, monospace;
+  display: inline;
+  white-space: nowrap;
+  line-height: 1.5;
 }
 .keyword:not(:last-child)::after {
-    content: ', ';
+  content: ', ';
 }
 
 .more .next {
-    width: 47%;
-    float: left;
+  width: 47%;
+  float: left;
 }
 .more .previous {
-    width: 47%;
-    text-align: right;
-    float: right;
+  width: 47%;
+  text-align: right;
+  float: right;
 }
 
 .footer {
-    font-family: "Roboto Mono", Consolas, monospace;
-    color: #888888;
-    text-align: center;
-    font-size: 13px;
+  font-family: 'Roboto Mono', Consolas, monospace;
+  color: #888888;
+  text-align: center;
+  font-size: 13px;
 }
 .heart {
-    font-family: Georgia, serif;
+  font-family: Georgia, serif;
 }
 
 .subscribe p {
-    font-size: 1.207em;
+  font-size: 1.207em;
 }
 #mc_embed_signup {
-    max-width: 320px;
-    margin-top: 0.5em;
+  max-width: 320px;
+  margin-top: 0.5em;
 }
-input[type="email"] {
-    font-family: inherit;
-    font-size: 15px;
-    width: calc(100% - 40px);
-    display: block;
-    padding: 0.2em 0.8em;
-    float: left;
-    height: 40px;
-    border: 1px solid #252414;
-    border-right: none;
-    border-radius: 0;
+input[type='email'] {
+  font-family: inherit;
+  font-size: 15px;
+  width: calc(100% - 40px);
+  display: block;
+  padding: 0.2em 0.8em;
+  float: left;
+  height: 40px;
+  border: 1px solid #252414;
+  border-right: none;
+  border-radius: 0;
 }
-input[type="submit"] {
-    display: none;
+input[type='submit'] {
+  display: none;
 }
 .send {
-    width: 40px;
-    height: 40px;
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 0;
-    background: #252414;
-    cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  background: #252414;
+  cursor: pointer;
 }
 .send svg {
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-    -webkit-transition: opacity 0.25s ease;
-            transition: opacity 0.25s ease;
-
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  -webkit-transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
 }
 .send svg:hover {
-    opacity: 0.4;
+  opacity: 0.4;
 }
 
 .release {
-	margin: 2em -30px;
+  margin: 2em -30px;
 }
 
 @media (min-width: 581px) {
-    section {
-        margin: 100px 50px;
-    }
-    .intro {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .intro picture {
-        max-width: 265px;
-        float: left;
-    }
-    .intro div {
-        padding-left: 40px;
-        padding-right: 20px;
-        max-width: 315px;
-        float: left;
-    }
-    blockquote {
-        font-size: 2em;
-        margin: 0 -30px;
-    }
-    cite {
-        font-size: 0.5em;
-    }
-	.release {
-		margin-left: -60px;
-		margin-right: -60px;
-	}
+  section {
+    margin: 100px 50px;
+  }
+  .intro {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .intro picture {
+    max-width: 265px;
+    float: left;
+  }
+  .intro div {
+    padding-left: 40px;
+    padding-right: 20px;
+    max-width: 315px;
+    float: left;
+  }
+  pre {
+    max-width: calc(100% + 100px);
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  blockquote {
+    font-size: 2em;
+    margin: 0 -30px;
+  }
+  cite {
+    font-size: 0.5em;
+  }
+  .release {
+    margin-left: -60px;
+    margin-right: -60px;
+  }
 }
