@@ -148,11 +148,13 @@ pre {
   background: #eee;
   padding: 20px;
   border-radius: 2px;
+  font-size: 16px;
 }
 p code {
   background: #eee;
   padding: 3px 6px;
   border-radius: 2px;
+  font-size: 16px;
 }
 .faded {
   color: #888888;
