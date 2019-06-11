@@ -16,7 +16,7 @@ keywords:
 
 ---
 
-So called _dark mode_ layouts have been getting a lot of attention and hype lately, as more and more companies have implemented an optional design of their websites and products. I've personally been using macOS Mojave's dark mode since release, and I'm completely sold on `prefers-color-scheme`.
+So called _dark mode_ layouts have been getting a lot of attention and hype lately, as more and more companies have implemented an optional design of their websites and products. I've personally been using macOS Mojave's dark mode since release, and I'm completely sold on it.
 
 Ever since Safari released [their new @media feature `prefers-color-scheme`](https://webkit.org/blog/8475/release-notes-for-safari-technology-preview-68/), I've seen a lot of people experimenting with implementing this on their own websites. This new media feature - which is [now supported by Firefox](https://caniuse.com/#feat=prefers-color-scheme) as well - gave us a way to automatically detect the user's preference with some simple CSS.]
 
