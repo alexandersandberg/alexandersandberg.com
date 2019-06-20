@@ -1,8 +1,8 @@
 ---
 title: "What I'm doing now"
-date: "2018-01-01T00:00:00+01:00"
-publishDate: "2018-01-01T00:00:00+01:00"
-lastmod: "2018-04-07T00:00:00+01:00"
+date: "2018-01-01T01:00:00+01:00"
+publishDate: "2018-01-01T01:00:00+01:00"
+lastmod: "2019-04-07T00:00:00+01:00"
 draft: false
 slug: "now"
 keywords:
@@ -18,4 +18,8 @@ The coming months, I'll finish up my last university courses, improve my skills 
 
 I'm super excited.
 
-<small>This post is part of the ["now page"-movement](https://nownownow.com/about) by Derek Sivers.</small>
+—
+
+Want to learn more about me? [Read this next](/about)
+
+<small>This post is part of the ['now page'-movement](https://nownownow.com/about) by Derek Sivers.</small>
