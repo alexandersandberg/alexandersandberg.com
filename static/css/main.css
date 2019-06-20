@@ -10,25 +10,25 @@ h3 {
   margin: 0;
   padding: 0;
 }
+
 html {
+  font-size: 18px;
   box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-
-html {
-  font-size: 18px;
-}
 body {
   font-family: Georgia, serif;
   line-height: 1.5;
   color: #252414;
   background-color: #ffffff;
-  max-width: 580px;
-  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
 }
 img {
   height: auto;
@@ -51,6 +51,10 @@ th {
   text-align: left;
 }
 
+.page {
+  max-width: 580px;
+  margin: 0 auto;
+}
 section {
   margin: 60px 30px;
 }
@@ -188,9 +192,6 @@ cite {
   margin: 0;
 }
 
-.intro div {
-  padding-top: 10px;
-}
 .sm {
   height: 20px;
   color: #252414;
@@ -198,14 +199,18 @@ cite {
   margin: 0;
   padding: 0;
   cursor: pointer;
-  font-size: 26px;
   padding: 5px;
   -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
   margin: 0 5px;
 }
-.sm:hover {
-  opacity: 0.4;
+
+.sm.icon {
+  font-size: 26px;
+}
+
+.sm:not(.icon) {
+  vertical-align: text-bottom;
 }
 
 .keyword {
@@ -285,23 +290,27 @@ input[type='submit'] {
   margin: 2em -30px;
 }
 
+.circle-right {
+  display: none;
+}
+
 @media (min-width: 581px) {
   section {
     margin: 100px 50px;
   }
   .intro {
+    display: flex;
+    align-items: center;
     margin-left: 0;
     margin-right: 0;
   }
   .intro picture {
     max-width: 265px;
-    float: left;
   }
   .intro div {
     padding-left: 40px;
     padding-right: 20px;
     max-width: 315px;
-    float: left;
   }
   pre {
     max-width: calc(100% + 100px);
@@ -318,5 +327,14 @@ input[type='submit'] {
   .release {
     margin-left: -60px;
     margin-right: -60px;
+  }
+
+  .circle-right {
+    margin: -170px -100px 10px 10px;
+    display: inline;
+    float: right;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
   }
 }
