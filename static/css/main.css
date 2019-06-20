@@ -331,7 +331,7 @@ input[type='submit'] {
 
   .circle-right {
     margin: -170px -100px 10px 10px;
-    display: inline;
+    display: block;
     float: right;
     width: 300px;
     height: 300px;
