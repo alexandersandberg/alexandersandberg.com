@@ -8,19 +8,18 @@
   </picture>
   <div>
     <h1>Alexander Sandberg</h1>
-    <p>I'm a fourth-year <em>industrial design engineering</em> student and <em>front-end developer</em> from northern
-      Sweden.</p>
-    <p>Here I <em>occasionally</em> publish random<span class="faded">*</span> stuff I find worth sharing with the
-      world.<br><small class="faded">*You've been warned</small></p>
+    <p>I'm a last-year <em>MSc student in product design</em> and a <em>front-end developer</em> from Sweden.</p>
+    <p>Here I <em>occasionally</em> publish random<span class="faded">*</span> stuff I find worth sharing with the world.<br><small class="faded">*You've been warned</small></p>
     <p>
-      <a class="sm" href="https://github.com/alexandersandberg" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a class="sm" href="https://twitter.com/alexandberg" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a class="sm icon" href="https://github.com/alexandersandberg" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a class="sm icon" href="https://twitter.com/alexandberg" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a class="sm" href="/about" title="Read more about Alexander Sandberg">More about me</a>
     </p>
   </div>
 </section>
 <section class="latest">
   <h2 class="stylish">Latest</h2>
-  {{ range first 1 .Data.Pages.ByLastmod.Reverse }}
+  {{ range first 1 .Data.Pages.ByPublishDate.Reverse }}
   <article>
     <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
     <small>
@@ -67,7 +66,7 @@
 </section>
 <section>
   <h2 class="stylish">More posts</h2>
-  {{ range after 1 .Data.Pages.ByLastmod.Reverse }}
+  {{ range after 1 .Data.Pages.ByPublishDate.Reverse }}
   <article>
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     <small>
