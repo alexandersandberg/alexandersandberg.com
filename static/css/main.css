@@ -229,14 +229,9 @@ cite {
   font-family: 'Playfair Display', Palatino, serif;
 }
 
-.more .next {
-  width: 47%;
-  float: left;
-}
-.more .previous {
-  width: 47%;
+.previous {
+  margin-top: 30px;
   text-align: right;
-  float: right;
 }
 
 .footer {
@@ -292,6 +287,10 @@ input[type='submit'] {
   opacity: 0.4;
 }
 
+.more {
+  max-width: 100%;
+}
+
 .release {
   margin: 2em -30px;
 }
@@ -333,6 +332,21 @@ input[type='submit'] {
   .release {
     margin-left: -60px;
     margin-right: -60px;
+  }
+
+  .more {
+    display: flex;
+    justify-content: space-between;
+  }
+  .next, .previous {
+    flex: 1;
+  }
+  .next {
+    padding-right: 15px;
+  }
+  .previous {
+    padding-left: 15px;
+    margin-top: 0;
   }
 
   .circle-right {
