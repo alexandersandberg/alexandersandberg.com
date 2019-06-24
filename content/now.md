@@ -22,4 +22,4 @@ If you, or someone you know, might be interested in collaborating with me on thi
 
 You can find some more information about me and my work on my ['About me' page](/about).
 
-<small>This post is part of the ['now page'-movement](https://nownownow.com/about) by Derek Sivers.</small>
+<small>This post is part of the ['now page' movement](https://nownownow.com/about) by Derek Sivers.</small>
