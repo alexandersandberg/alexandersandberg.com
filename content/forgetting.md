@@ -1,10 +1,11 @@
 ---
 title: "Learning and forgetting"
+slug: "forgetting"
 date: "2018-05-14T13:34:33+10:00"
 publishDate: "2018-05-14T13:34:33+10:00"
 lastmod: "2018-05-14T13:34:33+10:00"
 draft: false
-slug: "forgetting"
+summarize: false
 keywords:
     - learning
     - books

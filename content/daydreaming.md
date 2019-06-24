@@ -1,10 +1,11 @@
 ---
 title: "The unexpected power of daydreaming"
+slug: "daydreaming"
 date: "2019-01-28T16:02:31+01:00"
 publishDate: "2019-01-28T16:02:31+01:00"
 lastmod: "2019-01-28T16:02:31+01:00"
 draft: false
-slug: "daydreaming"
+summarize: false
 keywords:
     - daydreaming
     - productivity

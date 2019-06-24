@@ -1,10 +1,11 @@
 ---
 title: 'Creating a website theme switcher with CSS only'
+slug: 'theme-switcher'
 date: '2019-05-13T17:35:35+02:00'
 publishDate: '2019-05-13T17:35:35+02:00'
 lastmod: '2019-05-13T17:35:35+02:00'
 draft: false
-slug: 'theme-switcher'
+summarize: true
 keywords:
   - webdev
   - css
@@ -23,6 +24,8 @@ Ever since Safari released [their new @media feature `prefers-color-scheme`](htt
 What most, if not all, of these solutions have in common however, is the need for a tiny bit of JavaScript to switch between themes. With [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties), it's only a matter of listening for a button click and setting a `dark-mode` class or data attribute on `<body>`.
 
 _Buuuutttt…_ where's the fun in doing that when you can achieve the same thing with _CSS only_, am I right?? 🙌
+
+<!--more-->
 
 ## The magic revealed
 

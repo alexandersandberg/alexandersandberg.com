@@ -1,10 +1,11 @@
 ---
 title: "What I'm doing now"
+slug: "now"
 date: "2018-01-01T01:00:00+01:00"
 publishDate: "2018-01-01T01:00:00+01:00"
 lastmod: "2019-04-07T00:00:00+01:00"
 draft: false
-slug: "now"
+summarize: false
 keywords:
     - updated april 7th, 2019
 ---

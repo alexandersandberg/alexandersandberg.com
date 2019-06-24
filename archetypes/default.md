@@ -1,9 +1,10 @@
 ---
 title: "{{ .TranslationBaseName }}"
+slug: "{{ .TranslationBaseName }}"
 date: "{{ .Date }}"
 publishDate: "{{ .Date }}"
 lastmod: "{{ .Date }}"
 draft: true
-slug: "{{ .TranslationBaseName }}"
-keywords: 
+summarize: false
+keywords:
 ---
