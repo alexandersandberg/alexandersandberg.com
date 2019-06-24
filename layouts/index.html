@@ -29,7 +29,28 @@
         {{ end }}
       </ul>
     </small>
-    {{ .Content }}
+    {{ if .Params.summarize }}
+      {{ .Summary }}
+      <br>
+      <a class="read" href="{{ .RelPermalink }}">Read the article</a>
+    {{ else }}
+      {{ .Content }}
+    {{ end }}
+  </article>
+  {{ end }}
+</section>
+<section>
+  <h2 class="stylish">More posts</h2>
+  {{ range after 1 .Data.Pages.ByPublishDate.Reverse }}
+  <article>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <small>
+      <ul class="nl">
+        {{ range .Params.keywords }}
+        <li class="keyword">{{ . }}</li>
+        {{ end }}
+      </ul>
+    </small>
   </article>
   {{ end }}
 </section>
@@ -63,21 +84,6 @@
       </div>
     </form>
   </div>
-</section>
-<section>
-  <h2 class="stylish">More posts</h2>
-  {{ range after 1 .Data.Pages.ByPublishDate.Reverse }}
-  <article>
-    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    <small>
-      <ul class="nl">
-        {{ range .Params.keywords }}
-        <li class="keyword">{{ . }}</li>
-        {{ end }}
-      </ul>
-    </small>
-  </article>
-  {{ end }}
 </section>
 <section class="break-line"></section>
 

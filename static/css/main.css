@@ -223,6 +223,12 @@ cite {
   content: ', ';
 }
 
+.read {
+  font-size: 1.414em;
+  font-weight: 700;
+  font-family: 'Playfair Display', Palatino, serif;
+}
+
 .more .next {
   width: 47%;
   float: left;

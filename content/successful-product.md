@@ -1,10 +1,11 @@
 ---
 title: "The simple steps behind a successful product"
+slug: "successful-product"
 date: "2018-05-14T13:45:11+10:00"
 publishDate: "2018-05-14T13:45:11+10:00"
 lastmod: "2018-05-14T13:45:11+10:00"
 draft: false
-slug: "successful-product"
+summarize: false
 keywords:
     - business
     - success

@@ -1,10 +1,11 @@
 ---
 title: "About me"
+slug: "about"
 date: "2018-01-01T00:00:00+01:00"
 publishDate: "2018-01-01T00:00:00+01:00"
 lastmod: "2019-06-19T17:30:13+02:00"
 draft: false
-slug: "about"
+summarize: false
 keywords:
     - who? what? why?
 ---

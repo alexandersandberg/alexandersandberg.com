@@ -1,10 +1,11 @@
 ---
 title: "Comparison kills creativity"
+slug: "comparison"
 date: "2018-10-28T09:48:35+01:00"
 publishDate: "2018-10-28T09:48:35+01:00"
 lastmod: "2018-10-28T09:48:35+01:00"
 draft: false
-slug: "comparison"
+summarize: false
 keywords:
     - creativity
     - design
