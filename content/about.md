@@ -19,6 +19,8 @@ I’m an *extroverted introvert*. I love meeting and chatting with new people an
 
 I’m an avid *student of life*. If I’m not constantly improving my skills or knowledge of the world, I get bored. When I don’t understand I ask why, and set out to find an answer.
 
+I'm a *self-taught front-end developer* and last-year *MSc student in product design*, [looking for an opportunity](https://alexandersandberg.com/now/).
+
 ## Mission
 Thanks to my curiosity, I’ve had the opportunity and will to pursue many different creative things; web development, graphic design, industrial design, writing, programming, photography, lettering, CAD, among others.
 
