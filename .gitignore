@@ -4,8 +4,4 @@
 
 public/
 
-deploy-s3.sh
-deploy-dev-s3.sh
-cheatsheet.txt
-
 .vscode

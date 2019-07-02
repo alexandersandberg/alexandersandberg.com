@@ -1,0 +1,10 @@
+# Cheat sheet for website deployment
+
+# Test website changes
+hugo server
+
+# New blog post
+hugo new "post.md"
+
+# Push to alexandersandberg.com
+sh deploy-s3.sh
