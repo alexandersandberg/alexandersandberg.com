@@ -54,6 +54,6 @@ I thought Chase put it perfectly when he said in his post that *"...there's just
 ## Conclusion — Accessible first, personal preference second
 By defaulting to tabs, we make sure that everyone has a great experience working together with others, no matter their own abilities.
 
-And if you prefer spaces, feel free to use an auto formatting tool that converts tabs to spaces when opening a file (all modern editors have these). Just make sure that the spaces get converted back to tabs before anyone else has to work on your code.
+And if you prefer spaces, feel free to use an auto-formatting tool that converts tabs to spaces when opening a file (all modern editors have these). Just make sure that the spaces get converted back to tabs before anyone else has to work on your code.
 
 > Only by making sure everyone has the same capability can we maximize our combined potential ❤️
