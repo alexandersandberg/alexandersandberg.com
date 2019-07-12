@@ -14,13 +14,13 @@ keywords:
     - inclusive design
 ---
 
-I'm sure you've come across the age-old, opinion based debate of 'Tabs vs. Spaces' for *indentation* before. It has been going since forever, and there seems to be valid reasons for both sides:
+I'm sure you've come across the age-old, opinion-based debate of 'Tabs vs. Spaces' for *indentation* before. It has been going since forever, and there seem to be valid reasons for both sides:
 
 **Tabs...**
 
 - smaller files because it's just 1 character
 - that's what they're used for
-- you can customize your own identation width (👈 keep this one in mind)
+- you can customize your own indentation width (👈 keep this one in mind)
 
 **Spaces...**
 
@@ -36,13 +36,13 @@ In his post, Chase explains his own experience of using spaces at his workplace,
 
 One of his co-workers uses a tab-width of `1`, to avoid huge indentations when using a large font-size.
 
-Another co-worked of his is using a tab-width of `8`, because that works best for his situation with a wide monitor.
+Another co-worked of his is using a tab-width of `8` because that works best for his situation with a wide monitor.
 
 > I see people saying "tabs lets us customize our tab-width", as though we do this "for fun" — Chase
 
 By using tabs in our projects, we allow these kinds of customizations that are *essential* for people with visual impairment. Custom tab-widths might seem like an unnecessary thing to most, but some people rely on it—and we *can not* ignore that.
 
-## Accessibile first
+## Accessible first
 We simply can't "convert" everyone to one side or the other, there's no question about it. Everyone has their own preferences, and we should celebrate that freedom—that we have the ability to make our own choices.
 
 But with that said, we should also make sure to include *everyone*, and that means respecting and using accessible tools like the Tab-character.
@@ -54,6 +54,6 @@ I thought Chase put it perfectly when he said in his post that *"...there's just
 ## Conclusion — Accessible first, personal preference second
 By defaulting to tabs, we make sure that everyone has a great experience working together with others, no matter their own abilities.
 
-And I you prefer spaces, feel free to use an auto formatting tool that converts tabs to spaces when opening a file (all modern editors have these). Just make sure that the spaces get converted back to tabs before anyone else has to work on your code.
+And if you prefer spaces, feel free to use an auto formatting tool that converts tabs to spaces when opening a file (all modern editors have these). Just make sure that the spaces get converted back to tabs before anyone else has to work on your code.
 
 > Only by making sure everyone has the same capability can we maximize our combined potential ❤️
