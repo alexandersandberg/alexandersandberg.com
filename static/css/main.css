@@ -244,49 +244,6 @@ cite {
   font-family: Georgia, serif;
 }
 
-.subscribe p {
-  font-size: 1.207em;
-}
-#mc_embed_signup {
-  max-width: 320px;
-  margin-top: 0.5em;
-}
-input[type='email'] {
-  font-family: inherit;
-  font-size: 15px;
-  width: calc(100% - 40px);
-  display: block;
-  padding: 0.2em 0.8em;
-  float: left;
-  height: 40px;
-  border: 1px solid #252414;
-  border-right: none;
-  border-radius: 0;
-}
-input[type='submit'] {
-  display: none;
-}
-.send {
-  width: 40px;
-  height: 40px;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  background: #252414;
-  cursor: pointer;
-}
-.send svg {
-  width: 40px;
-  height: 40px;
-  padding: 8px;
-  -webkit-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
-}
-.send svg:hover {
-  opacity: 0.4;
-}
-
 .more {
   max-width: 100%;
 }
