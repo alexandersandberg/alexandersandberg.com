@@ -68,4 +68,4 @@ Meanwhile, I want to help bring humanity forward in some way, either directly th
 
 You can find some of my webdev projects [on GitHub](https://github.com/alexandersandberg).
 
-<a href="/doc/cv2019-06_alexander-sandberg.pdf" target="_blank">View CV</a> <small>(PDF, 70KB)</small> / <a href="/doc/portfolio2019-06_alexander-sandberg.pdf" target="_blank">View Portfolio</a> <small>(PDF, 16.4MB)</small>
+<a href="/doc/cv2019-06_alexander-sandberg.pdf">View CV</a> <small>(PDF, 70KB)</small> / <a href="/doc/portfolio2019-06_alexander-sandberg.pdf">View Portfolio</a> <small>(PDF, 16.4MB)</small>
