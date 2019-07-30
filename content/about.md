@@ -3,7 +3,7 @@ title: "About me"
 slug: "about"
 date: "2018-01-01T00:00:00+01:00"
 publishDate: "2018-01-01T00:00:00+01:00"
-lastmod: "2019-06-19T17:30:13+02:00"
+lastmod: "2019-07-30T21:55:00+02:00"
 draft: false
 summarize: false
 keywords:
@@ -19,7 +19,7 @@ I’m an *extroverted introvert*. I love meeting and chatting with new people an
 
 I’m an avid *student of life*. If I’m not constantly improving my skills or knowledge of the world, I get bored. When I don’t understand I ask why, and set out to find an answer.
 
-I'm a *self-taught front-end developer* and last-year *MSc student in product design*, [looking for an opportunity](https://alexandersandberg.com/now/).
+I'm a *self-taught front-end developer* and last-year *MSc student in product design*, with an interest in <abbr title="User Experience">UX</abbr> and <abbr title="Accessibility">a11y</abbr>; creating *user-friendly and accessible experiences for everyone*.
 
 ## Mission
 Thanks to my curiosity, I’ve had the opportunity and will to pursue many different creative things; web development, graphic design, industrial design, writing, programming, photography, lettering, CAD, among others.
