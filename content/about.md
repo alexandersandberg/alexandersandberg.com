@@ -3,7 +3,7 @@ title: "About me"
 slug: "about"
 date: "2018-01-01T00:00:00+01:00"
 publishDate: "2018-01-01T00:00:00+01:00"
-lastmod: "2019-07-30T21:55:00+02:00"
+lastmod: "2019-08-06T21:51:00+02:00"
 draft: false
 summarize: false
 keywords:
@@ -64,8 +64,4 @@ Meanwhile, I want to help bring humanity forward in some way, either directly th
 
 **Other**: Apple iWork, Google Suite, Microsoft Office
 
-## CV/Portfolio
-
 You can find some of my webdev projects [on GitHub](https://github.com/alexandersandberg).
-
-<a href="/doc/cv2019-06_alexander-sandberg.pdf">View CV</a> <small>(PDF, 70KB)</small> / <a href="/doc/portfolio2019-06_alexander-sandberg.pdf">View Portfolio</a> <small>(PDF, 16.4MB)</small>
