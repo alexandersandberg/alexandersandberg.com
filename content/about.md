@@ -1,9 +1,17 @@
 ---
+<<<<<<< HEAD
 title: 'About me'
 slug: 'about'
 date: '2018-01-01T00:00:00+01:00'
 publishDate: '2018-01-01T00:00:00+01:00'
 lastmod: '2019-07-30T21:55:00+02:00'
+=======
+title: "About me"
+slug: "about"
+date: "2018-01-01T00:00:00+01:00"
+publishDate: "2018-01-01T00:00:00+01:00"
+lastmod: "2019-09-01T12:31:00+01:00"
+>>>>>>> 6c140a2529c9b604b5295e87fa839f10bd75ab7c
 draft: false
 summarize: false
 keywords:
