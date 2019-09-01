@@ -15,4 +15,4 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 	googleAnalyticsId = "UA-29679247-2" # Uses the new gtag.js
 
 [blackfriday]
-	hrefTargetBlank = true
+	hrefTargetBlank = false
