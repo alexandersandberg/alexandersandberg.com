@@ -1,9 +1,9 @@
 ---
-title: 'About me'
-slug: 'about'
-date: '2018-01-01T00:00:00+01:00'
-publishDate: '2018-01-01T00:00:00+01:00'
-lastmod: '2019-09-01T12:32:00+01:00'
+title: "About me"
+slug: "about"
+date: "2018-01-01T00:00:00+01:00"
+publishDate: "2018-01-01T00:00:00+01:00"
+lastmod: "2019-10-12T12:00:00+01:00"
 draft: false
 summarize: false
 keywords:
@@ -24,13 +24,11 @@ I'm a _self-taught Front-End Developer_ with a soon completed _MSc in Product De
 
 ## Mission
 
-Thanks to my curiosity, I’ve had the opportunity and will to pursue many different creative things; web development, graphic design, industrial design, writing, programming, photography, lettering, CAD, among others.
+Thanks to my curiosity, I’ve had the opportunity and will to pursue many different creative things; web development, graphic design, industrial design, writing, programming, lettering, CAD, among many others.
 
-This pursuit of new knowledge has made me into the interdisciplinary, borderless creative that I am today. I’ve learned to work and communicate among people with different backgrounds.
+This pursuit of new knowledge has made me into the _interdisciplinary, borderless creative_ that I am today. I’ve learned to work and communicate with people from different backgrounds.
 
-My goal is to find a job/mission that I not just want to do, but _live_; something that I don’t mind sacrificing my free time for. Something I would do even if money was not an issue.
-
-Meanwhile, I want to help bring humanity forward in some way, either directly through my life’s work, or indirectly by donating time or money to a relevant cause.
+My goal is to apply this knowledge in a way that helps _bring humanity forward_, in some way, either directly through my life’s work or indirectly by donating time or money to a relevant cause.
 
 ## Timeline
 
@@ -58,11 +56,11 @@ Meanwhile, I want to help bring humanity forward in some way, either directly th
 
 ## Things I've worked with
 
-**Webdev**: HTML, CSS, JavaScript, jQuery, PHP, SQL, Git, SEO, S3, Route53, DNS, Hugo, JAMstack, CodeIgniter, MVC, React, Wordpress, Drupal, Squarespace, Bootstrap, VS Code, npm, Vue
+**Webdev**: HTML, CSS, JavaScript, jQuery, PHP, SQL, Git, SEO, S3, Route53, DNS, Hugo, JAMstack, CodeIgniter, MVC, React, Wordpress, Drupal, Squarespace, Bootstrap, VS Code, npm, Vue, Nuxt
 
 **Programming**: Java, Haskell
 
-**UI+UX/2D**: Sketch, InDesign, Photoshop, Illustrator, Framer
+**UI+UX/2D**: XD, Sketch, InDesign, Photoshop, Illustrator, Framer
 
 **CAD/3D**: Siemens NX, Catia, Keyshot, Alias, Maya, VRED
 
