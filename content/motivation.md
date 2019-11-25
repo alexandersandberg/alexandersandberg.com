@@ -7,12 +7,13 @@ lastmod: "2018-11-09T21:14:04+01:00"
 draft: false
 summarize: false
 keywords:
-    - motivation
-    - learning
-    - productivity
-    - success
-    - mark manson
+  - motivation
+  - learning
+  - productivity
+  - success
+  - mark manson
 ---
+
 While reading Mark Manson's book _"The Subtle Art of Not Giving a Fuck"_, I came across an interesting point:
 
 > "Action isn't just the effect of motivation, it's also the cause of it."

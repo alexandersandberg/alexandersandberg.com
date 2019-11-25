@@ -2,7 +2,5 @@
 
 <h2 class="stylish">{{ .Title }}</h2>
 {{ range .Data.Pages }}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
-{{ end }}
-
-{{ end }}
+<a href="{{ .RelPermalink }}">{{ .Title }}</a><br />
+{{ end }} {{ end }}

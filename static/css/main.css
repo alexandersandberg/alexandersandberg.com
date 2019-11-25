@@ -60,7 +60,7 @@ section {
 }
 section::after,
 .clearfix::after {
-  content: '';
+  content: "";
   clear: both;
   display: table;
 }
@@ -75,12 +75,12 @@ section::after,
   color: #888888;
 }
 h2.stylish {
-  font-family: 'Playfair Display SC', Palatino, serif;
+  font-family: "Playfair Display SC", Palatino, serif;
   margin-bottom: 1.5em;
 }
 .stylish:before,
 .stylish:after {
-  content: '';
+  content: "";
   background-color: #bbbbbb;
   display: inline-block;
   height: 1px;
@@ -100,7 +100,7 @@ h2.stylish {
 h1,
 h2,
 h3 {
-  font-family: 'Playfair Display', Palatino, serif;
+  font-family: "Playfair Display", Palatino, serif;
   font-weight: 700;
 }
 h1 {
@@ -164,7 +164,7 @@ p code {
   color: #888888;
 }
 blockquote {
-  font-family: 'Playfair Display', Palatino, serif;
+  font-family: "Playfair Display", Palatino, serif;
   font-weight: 400;
   font-size: 1.414em;
   margin: 0 30px;
@@ -175,7 +175,7 @@ blockquote p {
   margin: 1em 0;
 }
 cite {
-  font-family: 'Playfair Display', Palatino, serif;
+  font-family: "Playfair Display", Palatino, serif;
   display: block;
   color: #888888;
   text-align: right;
@@ -214,19 +214,19 @@ cite {
 }
 
 .keyword {
-  font-family: 'Roboto Mono', Consolas, monospace;
+  font-family: "Roboto Mono", Consolas, monospace;
   display: inline;
   white-space: nowrap;
   line-height: 1.5;
 }
 .keyword:not(:last-child)::after {
-  content: ', ';
+  content: ", ";
 }
 
 .read {
   font-size: 1.414em;
   font-weight: 700;
-  font-family: 'Playfair Display', Palatino, serif;
+  font-family: "Playfair Display", Palatino, serif;
 }
 
 .previous {
@@ -235,7 +235,7 @@ cite {
 }
 
 .footer {
-  font-family: 'Roboto Mono', Consolas, monospace;
+  font-family: "Roboto Mono", Consolas, monospace;
   color: #888888;
   text-align: center;
   font-size: 13px;
@@ -295,7 +295,8 @@ cite {
     display: flex;
     justify-content: space-between;
   }
-  .next, .previous {
+  .next,
+  .previous {
     flex: 1;
   }
   .next {
