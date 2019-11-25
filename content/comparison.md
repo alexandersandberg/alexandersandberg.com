@@ -7,12 +7,13 @@ lastmod: "2018-10-28T09:48:35+01:00"
 draft: false
 summarize: false
 keywords:
-    - creativity
-    - design
-    - product development
-    - learning
-    - motivation
+  - creativity
+  - design
+  - product development
+  - learning
+  - motivation
 ---
+
 For some time now I've had a few product ideas waiting to be worked on, but I've been lacking both time and motivation to get started on them.
 
 A few days ago I came up with an idea to fix the motivation part; I simply had to immerse myself in the stuff, whatever I was doing. Trying to maximize my product development productivity levels basically.

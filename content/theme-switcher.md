@@ -1,9 +1,9 @@
 ---
-title: 'Creating a website theme switcher with CSS only'
-slug: 'theme-switcher'
-date: '2019-05-13T17:35:35+02:00'
-publishDate: '2019-05-13T17:35:35+02:00'
-lastmod: '2019-05-13T17:35:35+02:00'
+title: "Creating a website theme switcher with CSS only"
+slug: "theme-switcher"
+date: "2019-05-13T17:35:35+02:00"
+publishDate: "2019-05-13T17:35:35+02:00"
+lastmod: "2019-05-13T17:35:35+02:00"
 draft: false
 summarize: true
 keywords:

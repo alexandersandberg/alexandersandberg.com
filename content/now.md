@@ -1,9 +1,9 @@
 ---
 title: "What I'm doing now"
-slug: 'now'
-date: '2018-01-01T01:00:00+01:00'
-publishDate: '2018-01-01T01:00:00+01:00'
-lastmod: '2019-09-01T12:12:00+01:00'
+slug: "now"
+date: "2018-01-01T01:00:00+01:00"
+publishDate: "2018-01-01T01:00:00+01:00"
+lastmod: "2019-09-01T12:12:00+01:00"
 draft: false
 summarize: false
 keywords:
