@@ -7,10 +7,10 @@ lastmod: "2019-11-24T19:21:49+01:00"
 draft: false
 summarize: false
 keywords:
-	- life
-	- minimalism
-	- simple living
-	- home
+  - life
+  - minimalism
+  - simple living
+  - home
 ---
 
 Almost three months have passed since I left Sweden for Austria, and in the process left most of my belongings behind.
