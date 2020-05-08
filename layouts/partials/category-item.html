@@ -1,0 +1,10 @@
+<article class="article in-list">
+  <h3 class="h2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  
+  <span class="article-details">
+    {{ len .Pages }} post
+    {{- if not (eq (len .Pages) 1) -}}
+      s
+    {{- end -}}
+  </span>
+</article>

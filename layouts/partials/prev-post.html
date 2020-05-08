@@ -1,0 +1,10 @@
+{{ with .context.PrevInSection }}
+  {{ if .Params.categories }}
+    {{ if eq (index .Params.categories 0) $.category }}
+      <hr>
+      {{ partial "article-more.html" (dict "context" . "inList" false) }}
+    {{ else }}
+      {{ partial "prev-post.html" (dict "context" . "category" $.category) }}
+    {{ end }}
+  {{ end }}
+{{ end }}

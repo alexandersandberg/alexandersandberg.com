@@ -1,76 +1,46 @@
 {{ define "main" }}
 
-<section class="intro">
-  <picture>
-    <source media="(max-width: 580px)" srcset="/img/me-landscape.jpg" />
-    <source srcset="/img/me-portrait.jpg" />
+  <div class="intro">
     <img src="/img/me-portrait.jpg" alt="Photo of Alexander Sandberg" />
-  </picture>
-  <div>
-    <h1>Alexander Sandberg</h1>
-    <p>
-      I'm a swedish <em>Front-End Developer</em> with an
-      <em>MSc in Product Design</em>, based in Linz, Austria. 🇦🇹
-    </p>
-    <p>
-      Here I <em>occasionally</em> publish random<span class="faded">*</span>
-      stuff I find worth sharing with the world.<br /><small class="faded"
-        >*You've been warned</small
-      >
-    </p>
-    <p>
-      <a
-        class="sm icon"
-        href="https://github.com/alexandersandberg"
-        title="GitHub"
-        ><i class="fab fa-github"></i
-      ></a>
-      <a class="sm icon" href="https://twitter.com/alexandberg" title="Twitter"
-        ><i class="fab fa-twitter"></i
-      ></a>
-      <a class="sm icon" href="https://dev.to/alexandersandberg" title="Dev.to"
-        ><i class="fab fa-dev"></i
-      ></a>
-      <a class="sm" href="/about" title="Read more about Alexander Sandberg"
-        >About me</a
-      >
-    </p>
+    <div>
+      <h1>Alexander Sandberg</h1>
+      <p>I'm a swedish <em>Front-End Developer</em> with an <em>MSc in Product Design</em>, based in Linz, Austria. 🇦🇹</p>
+      <p>Here I <em>occasionally</em> publish random stuff I find worth sharing with the world.</p>
+      <p><a href="/about">About me</a> / <a href="/now">What I'm doing now</a></p>
+    
+      <ul class="reset social-links">
+        <li>
+          <a href="https://twitter.com/alexandberg" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/alexandersandberg" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://dev.to/alexandersandberg" title="Dev.to">
+            <i class="fab fa-dev"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/sandbergalex/" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-</section>
-<section class="latest">
-  <h2 class="stylish">Latest</h2>
-  {{ range first 1 .Data.Pages.ByPublishDate.Reverse }}
-  <article>
-    <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-    <small>
-      <ul class="nl">
-        {{ range .Params.keywords }}
-        <li class="keyword">{{ . }}</li>
-        {{ end }}
-      </ul>
-    </small>
-    {{ if .Params.summarize }} {{ .Summary }}
-    <br />
-    <a class="read" href="{{ .RelPermalink }}">Read the article</a>
-    {{ else }} {{ .Content }} {{ end }}
-  </article>
+
+  <h2 class="hr">Latest</h2>
+  {{ range first 1 (where .Site.RegularPages.ByPublishDate.Reverse "Section" "posts") }}
+    {{ partial "article.html" (dict "context" . "isHome" true) }}
   {{ end }}
-</section>
-<section>
-  <h2 class="stylish">More posts</h2>
-  {{ range after 1 .Data.Pages.ByPublishDate.Reverse }}
-  <article>
-    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-    <small>
-      <ul class="nl">
-        {{ range .Params.keywords }}
-        <li class="keyword">{{ . }}</li>
-        {{ end }}
-      </ul>
-    </small>
-  </article>
+
+  <h2 class="hr">More posts</h2>
+  {{ range after 1 (where .Site.RegularPages.ByPublishDate.Reverse "Section" "posts") }}
+    {{ partial "article-item.html" . }}
   {{ end }}
-</section>
-<section class="break-line"></section>
 
 {{ end }}

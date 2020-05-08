@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+<h1 class="hr">{{ title .Title }}</h1>
+
+{{ range .Data.Pages }}
+  {{ partial "article-item.html" . }}
+{{ end }}
+
+{{ end }}

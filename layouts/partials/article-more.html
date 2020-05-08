@@ -1,0 +1,12 @@
+<article class="article in-list">
+  <span class="article-details">
+    {{ if .context.Params.categories }}
+      {{ if not .inList }}
+        next
+      {{ end }}
+      in #<a href="/{{ index .context.Params.categories 0 | urlize }}">{{ index .context.Params.categories 0 }}</a>
+    {{ end }}
+  </span>
+
+  <h3 class="h2"><a href="{{ .context.RelPermalink }}">{{ .context.Title }}</a></h3>
+</article>

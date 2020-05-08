@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<h1 class="hr">{{ title .Title }}</h1>
+
+{{ range .Data.Pages }}
+  {{ partial "article-item.html" . }}
+{{ end }}
+
+<h2 class="hr">Other posts</h2>
+
+{{ range .Site.Taxonomies.categories }}
+  {{ $category := .Page.Title }}
+  {{ if not (eq $.Page.Title $category) }}
+    {{ with ($.Site.GetPage (printf "/%s" $category)) }}
+      {{ range first 1 .Pages.ByPublishDate.Reverse }}
+        {{ partial "article-more.html" (dict "context" . "inList" true) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ end }}

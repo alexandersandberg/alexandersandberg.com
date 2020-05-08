@@ -1,6 +1,9 @@
 {{ define "main" }}
 
-<h2 class="stylish">{{ .Title }}</h2>
+<h1 class="hr">{{ title .Title }}</h1>
+
 {{ range .Data.Pages }}
-<a href="{{ .RelPermalink }}">{{ .Title }}</a><br />
-{{ end }} {{ end }}
+  {{ partial "article-item.html" . }}
+{{ end }}
+
+{{ end }}

@@ -5,14 +5,18 @@ enableRobotsTXT = true
 defaultContentLanguage = "en"
 relativeURLs = true
 enableEmoji = true
-disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[taxonomies]
+	category = "categories"
 
 [permalinks]
-	page = "/:slug/"
+	pages = "/:slug/"
 	posts = "/:slug/"
+	categories = "/:slug/"
 
 [params]
-	googleAnalyticsId = "UA-29679247-2" # Uses the new gtag.js
+	googleAnalyticsId = "UA-29679247-2"
+	metaDescription = "I'm a swedish Front-End Developer with an MSc in Product Design, based in Linz, Austria. This is my personal website where I occasionally share some interesting stuff with the world."
 
-[blackfriday]
-	hrefTargetBlank = false
+[markup.goldmark.renderer]
+	unsafe = true
