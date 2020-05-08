@@ -275,6 +275,10 @@ footer li:not(:last-child)::after {
   content: ' / ';
 }
 
+.cut-off-shadow-hack {
+  padding: var(--space-1) 0;
+}
+
 .theme-switch {
   position: absolute !important;
   height: 1px;
