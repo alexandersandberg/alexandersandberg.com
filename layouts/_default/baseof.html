@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Site.Language.Lang }}">
   <head>
-    {{- with .Site.Params.googleAnalyticsId -}}
+    {{ with .Site.Params.googleAnalyticsId }}
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id={{ . }}"
@@ -14,14 +14,15 @@
       gtag("js", new Date())
       gtag("config", "{{ . }}")
     </script>
-    {{- end -}}
+    {{ end }}
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    {{ .Hugo.Generator }} {{- if .Site.RSSLink -}}
+    {{ hugo.Generator }}
+    {{ if .Site.RSSLink }}
     <link
       href="{{ .Site.RSSLink }}"
       rel="alternate"
@@ -34,15 +35,15 @@
       type="application/rss+xml"
       title="{{ .Site.Title }}"
     />
-    {{- end -}}
+    {{ end }}
     <link rel="canonical" href="{{ .Permalink }}" />
 
     <title>
-      {{ if not .IsHome }}{{ .Title }} / {{ end }}Alexander Sandberg
+      {{ if not .IsHome }}{{ .Title }} / {{ end }}{{ .Site.Title }}
     </title>
     <meta
       name="description"
-      content="{{ if .IsHome }}I'm a swedish Front-End Developer with an MSc in Product Design, based in Linz, Austria. This is my personal website where I occasionally share some interesting stuff with the world.{{ else }}{{ .Page.Summary }}{{ end }}"
+      content="{{ if .IsHome }}{{ .Site.Params.metaDescription }}{{ else }}{{ .Page.Summary }}{{ end }}"
     />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@alexandberg" />
@@ -53,12 +54,12 @@
     />
     <meta
       name="twitter:description"
-      content="{{ if .IsHome }}I'm a swedish Front-End Developer with an MSc in Product Design, based in Linz, Austria. This is my personal website where I occasionally share some interesting stuff with the world.{{ else }}{{ .Page.Summary }}{{ end }}"
+      content="{{ if .IsHome }}{{ .Site.Params.metaDescription }}{{ else }}{{ .Page.Summary }}{{ end }}"
     />
     <meta property="og:title" content="{{ .Title }}" />
     <meta
       property="og:description"
-      content="{{ if .IsHome }}I'm a swedish Front-End Developer with an MSc in Product Design, based in Linz, Austria. This is my personal website where I occasionally share some interesting stuff with the world.{{ else }}{{ .Page.Summary }}{{ end }}"
+      content="{{ if .IsHome }}{{ .Site.Params.metaDescription }}{{ else }}{{ .Page.Summary }}{{ end }}"
     />
     <meta
       property="og:type"
@@ -95,7 +96,7 @@
     <meta name="theme-color" content="#ffffff" />
 
     <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Playfair+Display+SC:400|Roboto+Mono"
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Roboto+Mono"
       rel="stylesheet"
     />
     <link
@@ -107,25 +108,42 @@
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <div class="page">
-      {{- block "main" . }}{{- end }}
-      <section class="footer">
-        <p>
-          Questions, thoughts? <i>I'd love to hear from you!</i><br />Get in
-          touch with me at hi@alexandersandberg.com.
-        </p>
-        <p>
-          This static website was built with <span class="heart">♥</span> by me.
-          <br />
-          <a href="https://github.com/alexandersandberg/alexandersandberg.com"
-            >Source code</a
-          >
-          {{ if .Site.RSSLink }} /
-          <a href="{{ .Site.RSSLink }}">RSS</a> {{ end }} /
-          <a href="/about">About me</a> /
-          <a href="/now">Now</a>
-        </p>
-      </section>
-    </div>
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ if .IsHome }}
+      <hr>
+    {{ else }}
+      <nav class="hr"><a href="/">Home</a></nav>
+    {{ end }}
+    
+    <footer>
+      <p>Questions, thoughts? <em>I'd love to hear from you!</em> Get in touch with me at hi@alexandersandberg.com.</p>
+      <nav>
+        <ul class="reset">
+          <li><a href="/about">About me</a></li>
+          <li><a href="https://github.com/alexandersandberg/alexandersandberg.com">Source code</a></li>
+          <li><input type="checkbox" id="theme-switch" class="theme-switch" /><label for="theme-switch" class="switch-label"></label></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script>
+      const themeSwitch = document.querySelector('.theme-switch');
+
+      if (localStorage.getItem('theme')) {
+        themeSwitch.checked = localStorage.getItem('theme') === 'dark';
+        document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
+      } else if (matchMedia('(prefers-color-scheme: dark)').matches){
+        themeSwitch.checked = true;
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+      
+      themeSwitch.addEventListener('change', function(e) {
+        localStorage.setItem('theme', e.currentTarget.checked ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
+      });
+    </script>
   </body>
 </html>

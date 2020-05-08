@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+{{ partial "article.html" (dict "context" . "isHome" false) }}
+
+{{ if .Params.categories }}
+  {{ partial "prev-post.html" (dict "context" $.Page "category" (index .Params.categories 0)) }}
+{{ end }}
+
+{{ end }}
