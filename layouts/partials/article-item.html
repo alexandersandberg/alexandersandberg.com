@@ -1,6 +1,6 @@
 <article class="article in-list">
   {{ if and .context.Params.bookCover (not .isHome) }}
-    {{ $image := resources.Get (print "img/books/" .context.Params.bookCover ) }}
+    {{ $image := resources.Get .context.Params.bookCover }}
     {{ $resizedImage := $image.Resize "x480 q100" }}
     <img class="book-cover" src="{{ $resizedImage.RelPermalink }}" alt="Book cover of '{{ .context.Title }}'">
   {{ end }}
