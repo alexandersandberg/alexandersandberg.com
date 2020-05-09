@@ -14,7 +14,7 @@ keywords:
   - learning
   - motivation
 categories:
-  - book notes
+  - thoughts
 ---
 
 For some time now I've had a few product ideas waiting to be worked on, but I've been lacking both time and motivation to get started on them.
