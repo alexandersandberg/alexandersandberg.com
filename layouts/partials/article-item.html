@@ -1,5 +1,12 @@
 <article class="article in-list">
-  <h3 class="h2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  {{ if and .context.Params.bookCover (not .isHome) }}
+    <img class="book-cover" src="/img/books/{{ .context.Params.bookCover }}">
+  {{ end }}
+  <h3 class="h2"><a href="{{ .context.RelPermalink }}">{{ .context.Title }}</a></h3>
   
-  {{ partial "article-details.html" . }}
+  {{ partial "article-details.html" .context }}
+
+  {{ if and .context.Params.bookSummary (not .isHome) }}
+    {{ .context.Params.bookSummary }}
+  {{ end }}
 </article>

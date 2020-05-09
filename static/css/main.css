@@ -220,6 +220,10 @@ p code {
   font-size: var(--text-3);
 }
 
+.intro img {
+  display: none;
+}
+
 .article {
   margin: var(--space-3) 0 var(--space-4);
 }
@@ -245,8 +249,17 @@ p code {
   margin-bottom: var(--space-3);
 }
 
+.article-details .fa-star {
+  margin-right: 0.375rem;
+}
+
 .article hr {
   margin: var(--space-3) 0;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  font-style: italic;
 }
 
 .read {
@@ -254,6 +267,22 @@ p code {
   margin-top: var(--space-2);
   font-family: 'Playfair Display', Palatino, serif;
   font-size: var(--text-3);
+}
+
+.book-cover {
+  max-height: 14.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid var(--color-bg-secondary)
+}
+
+.in-list .book-cover {
+  display: none;
+}
+
+.book-cover.smaller {
+  max-height: 11.75rem;
 }
 
 footer {
@@ -269,10 +298,6 @@ footer nav {
 
 footer li {
   display: inline;
-}
-
-footer li:not(:last-child)::after {
-  content: ' / ';
 }
 
 .cut-off-shadow-hack {
@@ -296,10 +321,6 @@ footer li:not(:last-child)::after {
 .switch-label:hover::before,
 .theme-switch:focus + .switch-label::before {
   text-shadow: 0 0 0.5rem var(--color-text);
-}
-
-.intro img {
-  display: none;
 }
 
 @media (min-width: 40rem) {
@@ -342,5 +363,15 @@ footer li:not(:last-child)::after {
 
   .intro div h1 {
     margin-top: 0;
+  }
+
+  .book-cover {
+    float: right;
+    margin: 0 0 var(--space-1) var(--space-1);
+  }
+
+  .in-list .book-cover {
+    max-height: 8.25rem;
+    display: block;
   }
 }

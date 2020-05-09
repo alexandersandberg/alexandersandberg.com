@@ -3,7 +3,7 @@
 <h1 class="hr">{{ title .Title }}</h1>
 
 {{ range .Data.Pages }}
-  {{ partial "article-item.html" . }}
+  {{ partial "article-item.html" (dict "context" . "isHome" false) }}
 {{ end }}
 
 {{ end }}

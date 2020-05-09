@@ -1,5 +1,8 @@
 <article class="article">
   {{ if .isHome }}
+    {{ with .context.Params.bookCover }}
+      <img class="book-cover smaller" src="/img/books/{{ . }}">
+    {{ end }}
     <h3 class="h1"><a href="{{ .context.RelPermalink }}">{{ .context.Title }}</a></h3>
   {{ else }}
     <h1>{{ .context.Title }}</h1>
@@ -7,10 +10,16 @@
 
   {{ partial "article-details.html" .context }}
 
-  {{ if and .context.Params.summarize .isHome }}
+  {{ if and .context.Params.bookSummary .isHome }}
+    <p>{{ .context.Params.bookSummary }}</p>
+    <a class="read" href="{{ .context.RelPermalink }}">Read the notes</a>
+  {{ else if and .context.Params.summarize .isHome }}
     {{ .context.Summary }}
     <a class="read" href="{{ .context.RelPermalink }}">Read the article</a>
   {{ else }}
+    {{ with .context.Params.bookCover }}
+      <img class="book-cover" src="/img/books/{{ . }}">
+    {{ end }}
     {{ .context.Content }}
   {{ end }}
 </article>

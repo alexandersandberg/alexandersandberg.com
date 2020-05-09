@@ -40,7 +40,7 @@
 
   <h2 class="hr">More posts</h2>
   {{ range after 1 (where .Site.RegularPages.ByPublishDate.Reverse "Section" "posts") }}
-    {{ partial "article-item.html" . }}
+    {{ partial "article-item.html" (dict "context" . "isHome" true) }}
   {{ end }}
 
 {{ end }}
