@@ -1,6 +1,7 @@
 baseURL = "https://alexandersandberg.com"
 title = "alexandersandberg.com"
 
+assetDir = "static"
 enableRobotsTXT = true
 defaultContentLanguage = "en"
 relativeURLs = true
