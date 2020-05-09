@@ -1,0 +1,48 @@
+---
+label: books
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+  config:
+    required: true
+- type: text
+  name: slug
+  label: slug
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: date
+- type: datetime
+  name: publishDate
+  label: publishDate
+- type: datetime
+  name: lastmod
+  label: lastmod
+- type: list
+  name: categories
+  label: categories
+  hidden: true
+  default:
+  - books
+  config:
+    required: true
+- type: file
+  name: bookCover
+  label: bookCover
+- type: text
+  name: bookAuthor
+  label: bookAuthor
+- type: text
+  name: bookType
+  label: bookType
+- type: text
+  name: bookRating
+  label: bookRating
+- type: text
+  name: bookSummary
+  label: bookSummary
+pages:
+- content/posts/remote.md

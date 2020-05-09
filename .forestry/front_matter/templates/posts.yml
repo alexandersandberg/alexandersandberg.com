@@ -1,0 +1,25 @@
+---
+label: posts
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: slug
+  label: slug
+- type: datetime
+  name: date
+  label: date
+- type: datetime
+  name: publishDate
+  label: publishDate
+- type: datetime
+  name: lastmod
+  label: lastmod
+- type: boolean
+  name: summarize
+  label: summarize
+- type: list
+  name: categories
+  label: categories
