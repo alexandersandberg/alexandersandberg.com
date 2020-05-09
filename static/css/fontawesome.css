@@ -16,6 +16,9 @@
 	 text-rendering: auto;
 	 line-height: 1; }
 
+.fa-star:before {
+	content: "\f005"; }
+	
 .fa-twitter:before {
 	content: "\f099" }
 
