@@ -1,8 +1,8 @@
 ---
 title: "Default to tabs instead of spaces for an 'accessible first' environment"
+subtitle:
 slug: "tabs-for-accessibility"
 date: "2019-07-11T15:09:04+02:00"
-publishDate: "2019-07-11T15:09:04+02:00"
 lastmod: "2019-07-11T15:09:04+02:00"
 draft: false
 summarize: true

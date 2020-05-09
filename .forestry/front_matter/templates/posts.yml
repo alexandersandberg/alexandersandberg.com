@@ -5,15 +5,19 @@ fields:
 - type: text
   name: title
   label: title
+  config:
+    required: true
+- type: text
+  name: subtitle
+  label: subtitle
 - type: text
   name: slug
   label: slug
+  config:
+    required: true
 - type: datetime
   name: date
   label: date
-- type: datetime
-  name: publishDate
-  label: publishDate
 - type: datetime
   name: lastmod
   label: lastmod
@@ -23,3 +27,5 @@ fields:
 - type: list
   name: categories
   label: categories
+  config:
+    required: true

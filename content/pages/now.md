@@ -3,7 +3,6 @@ title: "What I'm doing now"
 subtitle: "updated feburary 9th, 2020"
 slug: "now"
 date: "2018-01-01T01:00:00+01:00"
-publishDate: "2018-01-01T01:00:00+01:00"
 lastmod: "2020-02-09T12:12:00+01:00"
 draft: false
 ---

@@ -1,8 +1,8 @@
 ---
 title: "I don't miss my TV"
+subtitle:
 slug: "my-tv"
 date: "2019-11-24T19:21:49+01:00"
-publishDate: "2019-11-24T19:21:49+01:00"
 lastmod: "2019-11-24T19:21:49+01:00"
 draft: false
 summarize: true

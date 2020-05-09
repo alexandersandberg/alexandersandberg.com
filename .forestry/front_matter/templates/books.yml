@@ -15,9 +15,8 @@ fields:
 - type: datetime
   name: date
   label: date
-- type: datetime
-  name: publishDate
-  label: publishDate
+  config:
+    required: true
 - type: datetime
   name: lastmod
   label: lastmod

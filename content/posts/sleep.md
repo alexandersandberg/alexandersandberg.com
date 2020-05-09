@@ -1,18 +1,11 @@
 ---
 title: "The Importance of Sleep"
+subtitle:
 slug: "sleep"
 date: "2018-05-12T14:21:49+10:00"
-publishDate: "2018-05-12T14:21:49+10:00"
 lastmod: "2018-05-12T14:21:49+10:00"
 draft: false
 summarize: false
-keywords:
-  - learning
-  - books
-  - podcasts
-  - matthew walker
-  - joe rogan
-  - kevin rose
 categories:
   - thoughts
 ---

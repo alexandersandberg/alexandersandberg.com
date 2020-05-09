@@ -2,7 +2,6 @@
 title: "Remote: Office not required"
 slug: "remote"
 date: "2020-05-09T11:36:51+02:00"
-publishDate: "2020-05-09T11:36:51+02:00"
 lastmod: "2020-05-09T11:36:51+02:00"
 draft: false
 categories:
