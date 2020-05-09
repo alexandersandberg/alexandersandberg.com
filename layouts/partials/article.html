@@ -1,7 +1,7 @@
 <article class="article">
   {{ if .isHome }}
     {{ with .context.Params.bookCover }}
-      <img class="book-cover smaller" src="/img/books/{{ . }}">
+      <img class="book-cover smaller" src="/img/books/{{ . }}" alt="Book cover of '{{ $.context.Params.Title }}'">
     {{ end }}
     <h3 class="h1"><a href="{{ .context.RelPermalink }}">{{ .context.Title }}</a></h3>
   {{ else }}
@@ -10,15 +10,24 @@
 
   {{ partial "article-details.html" .context }}
 
-  {{ if and .context.Params.bookSummary .isHome }}
-    <p>{{ .context.Params.bookSummary }}</p>
-    <a class="read" href="{{ .context.RelPermalink }}">Read the notes</a>
-  {{ else if and .context.Params.summarize .isHome }}
-    {{ .context.Summary }}
-    <a class="read" href="{{ .context.RelPermalink }}">Read the article</a>
+  {{ if .isHome }}
+    {{ if and .context.Params.bookSummary .isHome }}
+      <p>{{ .context.Params.bookSummary }}</p>
+      <a class="read" href="{{ .context.RelPermalink }}">Read the notes</a>
+    {{ else if and .context.Params.summarize .isHome }}
+      {{ .context.Summary }}
+      <a class="read" href="{{ .context.RelPermalink }}">Read the article</a>
+    {{ end }}
   {{ else }}
     {{ with .context.Params.bookCover }}
-      <img class="book-cover" src="/img/books/{{ . }}">
+      <img class="book-cover" src="/img/books/{{ . }}" alt="Book cover of '{{ $.context.Params.Title }}'">
+    {{ end }}
+    {{ with .context.Params.bookSummary }}
+      <p>{{ . }}</p>
+      {{ with $.context.Params.bookAuthor }}
+        <p class="subtitle">By {{ . }}</p>
+      {{ end }}
+      <h2 class="hr in-book-notes">Notes</h2>
     {{ end }}
     {{ .context.Content }}
   {{ end }}
