@@ -3,7 +3,6 @@ title: "About me"
 subtitle: "who? what? why?"
 slug: "about"
 date: "2018-01-01T00:00:00+01:00"
-publishDate: "2018-01-01T00:00:00+01:00"
 lastmod: "2020-02-09T12:00:00+01:00"
 draft: false
 ---

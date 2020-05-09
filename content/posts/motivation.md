@@ -1,17 +1,11 @@
 ---
 title: "Motivation comes from taking action"
+subtitle:
 slug: "motivation"
 date: "2018-11-09T21:14:04+01:00"
-publishDate: "2018-11-09T21:14:04+01:00"
 lastmod: "2018-11-09T21:14:04+01:00"
 draft: false
 summarize: false
-keywords:
-  - motivation
-  - learning
-  - productivity
-  - success
-  - mark manson
 categories:
   - thoughts
 ---
