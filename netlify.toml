@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "hugo"
+  command = "hugo --gc"
 
 [build.processing]
   skip_processing = false
