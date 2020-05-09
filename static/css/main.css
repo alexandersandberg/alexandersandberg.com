@@ -276,21 +276,14 @@ p code {
 }
 
 .book-cover {
-  max-height: 14.5rem;
-  max-width: 14.5rem;
+  max-height: 15rem;
+  max-width: 15rem;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   border: 1px solid var(--color-bg-secondary)
 }
 
 .in-list .book-cover {
   display: none;
-}
-
-.book-cover.smaller {
-  max-height: 11.75rem;
-  max-width: 11.75rem;
 }
 
 footer {
