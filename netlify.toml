@@ -1,12 +1,23 @@
 [build]
   publish = "public"
-  command = "hugo --minify"
+  command = "hugo"
+
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = true
+[build.processing.js]
+  bundle = true
+  minify = true
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true
 
 [context.production.environment]
   HUGO_VERSION = "0.69.0"
-
 [context.deploy-preview.environment]
   HUGO_VERSION = "0.69.0"
-
 [context.branch-deploy.environment]
   HUGO_VERSION = "0.69.0"
