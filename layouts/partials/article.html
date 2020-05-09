@@ -1,6 +1,6 @@
 <article class="article">
   {{ with .context.Params.bookCover }}
-    {{ $image := resources.Get (print "img/books/" . ) }}
+    {{ $image := resources.Get . }}
     {{ $resizedImage := $image.Resize "x480 q100" }}
     <img class="book-cover" src="{{ $resizedImage.RelPermalink }}" alt="Book cover of '{{ $.context.Params.Title }}'">
   {{ end }}

@@ -6,7 +6,7 @@ lastmod: "2020-05-09T11:36:51+02:00"
 draft: false
 categories:
   - books
-bookCover: remote.jpg
+bookCover: /img/remote.jpg
 bookAuthor: Jason Fried and Daniel Heinemeier Hansson
 bookType: non-fiction
 bookRating: 4/5
