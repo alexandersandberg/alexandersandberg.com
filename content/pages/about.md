@@ -7,6 +7,8 @@ lastmod: "2020-02-09T12:00:00+01:00"
 draft: false
 ---
 
+<img class="about-me" src="/img/about-me.jpg" alt="Photo of Alex at his desk." />
+
 I’m always looking for the _simplest possible solution_ to problems and to life in general. Reducing complexity often has the highest return on investment. Some call me a ’minimalist’, but I don’t like labels.
 
 I’m _open-minded_. I despise prejudices against people. I find opposing views to my own fascinating, not threatening.

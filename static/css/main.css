@@ -56,6 +56,11 @@ h3 {
   box-sizing: inherit;
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: var(--color-bg);
   color: var(--color-text);
@@ -329,6 +334,10 @@ footer li:not(:last-child)::after {
   text-shadow: 0 0 0.5rem var(--color-text);
 }
 
+img.about-me {
+  display: none;
+}
+
 @media (min-width: 40rem) {
   article h1 {
     margin-top: var(--space-5);
@@ -380,5 +389,15 @@ footer li:not(:last-child)::after {
     max-height: 8.25rem;
     max-width: 8.25rem;
     display: block;
+  }
+
+  img.about-me {
+    display: block;
+    width: 18rem;
+    height: 18rem;
+    float: right;
+    margin: -10rem -6rem var(--space-1) var(--space-1);
+    border-radius: 50%;
+    shape-outside: circle(-9rem);
   }
 }
