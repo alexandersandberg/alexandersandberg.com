@@ -49,14 +49,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Roboto+Mono" rel="stylesheet" />
-    {{ $fontawesome := resources.Get "css/fontawesome.css" }}
-    {{ $css := resources.Get "css/main.css" }}
-    {{ if hugo.IsProduction }}
-      {{ $fontawesome = $fontawesome | minify | fingerprint }}
-      {{ $css = $css | minify | fingerprint }}
-    {{ end }}
-    <link href="{{ $fontawesome.RelPermalink }}" rel="stylesheet" />
-    <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
+    <link href="/css/fontawesome.css" rel="stylesheet" />
+    <link href="/css/main.css" rel="stylesheet" />
   </head>
   <body>
     <main>
