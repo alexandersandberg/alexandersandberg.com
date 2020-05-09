@@ -6,6 +6,15 @@
   {{ with .Params.subtitle }}
     {{ . }}
   {{ else }}
-    {{ .ReadingTime }} min read
+    {{ if and .Params.categories (eq (index .Params.categories 0) "books") }}
+      {{ with .Params.bookType }}
+        {{ . }} · 
+      {{ end }}
+      {{ with .Params.bookRating }}
+        <i class="fa fa-star"></i>{{ . }}
+      {{ end }}
+    {{ else }}
+      {{ .ReadingTime }} min read
+    {{ end }}
   {{ end }}
 </span>

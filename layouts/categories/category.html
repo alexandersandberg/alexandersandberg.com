@@ -2,8 +2,12 @@
 
 <h1 class="hr">{{ title .Title }}</h1>
 
+{{ if eq .Params.Title "books" }}
+  <p class="subtitle">This is a collection of notes from some of the books I’ve read.</p>
+{{ end }}
+
 {{ range .Data.Pages }}
-  {{ partial "article-item.html" . }}
+  {{ partial "article-item.html" (dict "context" . "isHome" false) }}
 {{ end }}
 
 <h2 class="hr">Other posts</h2>
