@@ -9,11 +9,16 @@ sections:
   label: Posts
   create: all
   match: "**/*"
+  templates:
+  - posts
+  - books
 - type: directory
   path: content/pages
   label: Pages
   create: all
   match: "**/*"
+  templates:
+  - pages
 upload_dir: static/img
 public_path: "/img"
 front_matter_path: ''
