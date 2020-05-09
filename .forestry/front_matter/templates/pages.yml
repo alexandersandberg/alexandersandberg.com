@@ -23,3 +23,6 @@ fields:
 - type: datetime
   name: lastmod
   label: lastmod
+pages:
+- content/pages/about.md
+- content/pages/now.md
