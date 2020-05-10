@@ -1,18 +1,18 @@
 ---
 title: "What I'm doing now"
-subtitle: "updated feburary 9th, 2020"
+subtitle: "updated may 10th, 2020"
 slug: "now"
-date: "2018-01-01T01:00:00+01:00"
-lastmod: "2020-02-09T12:12:00+01:00"
+date: "2018-01-01T00:00:00+01:00"
+lastmod: "2020-05-10T00:00:00+01:00"
 draft: false
 ---
 
-I **finished my MSc in Product Design**, one semester earlier than scheduled. I hope to finally find some time for personal projects again, now that my master's thesis is finished.
+I'm doing fine, despite the COVID-19 situation. The last 2 months almost have been spent mostly at home, including work. But I'm grateful to have chosen a career where I'm only dependent on a laptop and an internet connection.
 
-At work, I'm now mainly focusing on developing apps for both iOS and Android using React Native, as the new **Head of App Development**. I'm really enjoying this new responsibility.
+Austria in general has done well during these times though, and life is starting to get back to (kinda) normal… for now.
 
-I hope to find the motivation to **write more in the coming months**, as I truly enjoy the practice of putting my thoughts into writing. But we'll see whether that's on this blog or in my personal journal.
+The last few days I worked on **updating this website**. My main goal was to make changes that would both make it easier to and also inspire me to post more content.
 
-Other than that, **life in Linz is amazing**. I can't imagine a better place to be in right now. I'm very grateful for everything that has happened to me since moving here, and I'm really excited to see what the future will bring.
+I also made some design changes, implemented dark mode, and refactored the whole website.
 
 <small>This post is part of the ['now page' movement](https://nownownow.com/about) by Derek Sivers.</small>
