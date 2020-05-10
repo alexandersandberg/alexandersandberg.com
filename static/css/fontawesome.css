@@ -29,7 +29,10 @@
 	content: "\f09b" }
 
 .fa-linkedin-in:before {
-	content: "\f0e1" }
+  content: "\f0e1" }
+  
+.fa-instagram:before {
+	content: "\f16d" }
 
 @font-face {
   font-family: 'Font Awesome 5 Brands';
