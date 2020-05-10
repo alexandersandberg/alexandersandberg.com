@@ -7,5 +7,7 @@
     {{ else }}
       {{ partial "prev-post.html" (dict "context" $page "category" $.category) }}
     {{ end }}
+  {{ else }}
+    {{ partial "prev-post.html" (dict "context" $page "category" $.category) }}
   {{ end }}
 {{ end }}
