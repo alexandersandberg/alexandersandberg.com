@@ -1,20 +1,22 @@
 <span class="article-details">
-  {{ if .Params.categories }}
-    #<a href="/{{ index .Params.categories 0 | urlize }}">{{ index .Params.categories 0 }}</a> / 
+  {{ range first 1 (.GetTerms "categories") }}
+    #<a href="{{ .Permalink }}">{{ .LinkTitle }}</a> / 
   {{ end }}
 
   {{ with .Params.subtitle }}
     {{ . }}
   {{ else }}
-    {{ if and .Params.categories (eq (index .Params.categories 0) "books") }}
-      {{ with .Params.bookType }}
-        {{ . }} · 
+    {{ range first 1 (.GetTerms "categories") }}
+      {{ if eq .LinkTitle "books" }}
+        {{ with $.Params.bookType }}
+          {{ . }} · 
+        {{ end }}
+        {{ with $.Params.bookRating }}
+          <i class="rating-icon fa fa-star"></i>{{ . }}
+        {{ end }}
+      {{ else }}
+        {{ $.ReadingTime }} min read
       {{ end }}
-      {{ with .Params.bookRating }}
-        <i class="rating-icon fa fa-star"></i>{{ . }}
-      {{ end }}
-    {{ else }}
-      {{ .ReadingTime }} min read
     {{ end }}
   {{ end }}
 </span>

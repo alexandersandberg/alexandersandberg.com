@@ -2,8 +2,8 @@
 
 {{ partial "article.html" (dict "context" . "isHome" false) }}
 
-{{ if .Params.categories }}
-  {{ partial "prev-post.html" (dict "context" $.Page "category" (index .Params.categories 0)) }}
+{{ range first 1 (.GetTerms "categories") }}
+  {{ partial "prev-post.html" (dict "context" $.Page "category" .LinkTitle) }}
 {{ end }}
 
 {{ end }}
