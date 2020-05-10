@@ -244,8 +244,8 @@ p code {
 }
 
 .article.in-list {
-  overflow: hidden;
   margin-bottom: var(--space-3);
+  clear: both;
 }
 
 .article h2 a,
