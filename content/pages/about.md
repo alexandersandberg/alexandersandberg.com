@@ -3,7 +3,7 @@ title: "About me"
 subtitle: "who? what? why?"
 slug: "about"
 date: "2018-01-01T00:00:00+01:00"
-lastmod: "2020-02-09T12:00:00+01:00"
+lastmod: "2020-05-10T00:00:00+01:00"
 draft: false
 ---
 
@@ -17,15 +17,63 @@ I’m an _extroverted introvert_. While I love meeting new people and exploring 
 
 I’m an avid _student of life_. If I’m not improving my skills or knowledge of the world on a regular basis I get bored. When I don’t understand I ask why, and set out to find an answer.
 
-I'm a _self-taught Front-End Developer_ with an _MSc in Product Design_. I'm currently mainly working as Head of App Development, creating great user experiences using React Native for both iOS and Android.
+I'm a _self-taught Front-End Developer_ with an _MSc in Product Design_ who loves to create.
 
-## Mission
+## My mission
 
-Thanks to my curiosity, I’ve had the opportunity and will to pursue different paths; web development, graphic design, industrial design, writing, programming, lettering, CAD, among many others.
+Thanks to my curiosity, I’ve had the opportunity and will to pursue different paths; web and app development, graphic design, industrial design, writing, programming, lettering, 3D modeling and rendering, among many others.
 
 This pursuit of new knowledge has made me into the _interdisciplinary, borderless creative_ that I am today. By understanding how to work and communicate with people from different backgrounds, I've learned to see potential _outside my own main focus_.
 
 My goal is to apply this knowledge in a way that helps _bring humanity forward_, in some way, either directly through my life’s work or indirectly by donating my time or my money to a relevant cause.
+
+## What I'm focusing on currently
+
+I'm currently working full-time at [Newsadoo](https://newsadoo.com), where I mainly create great user experiences using React Native for iOS and Android.
+
+I read books, lately more fiction than I normally do, and recently started posting [notes from some of the books I've read](/books/) on this website.
+
+I try to write as much as possible, as it's something I've always enjoyed. I occasionally post something I find worth sharing on this website. Here you can find [a collection of posts](/posts/) I've published.
+
+I still spend time on side-projects, and you can find some of my projects [on GitHub](https://github.com/alexandersandberg).
+
+I'm enjoying life as much as possible. For the first time in many years, I'm not engaged in professional work amounting to more than 40 hours a week, which gives me a lot of time to do whatever I feel like—even if that's doing _"nothing"_.
+
+For now I'm not trying to optimize or maximize my free time, just living life one day at a time without expectations. It's great.
+
+## Online presence
+
+I want to reduce my online presence to give more time to what really matters the most to me. Even though I don't spend much time on social media and the like anymore, I still find it to be a distraction of my attention.
+
+But for now you can still find me at the following links, if you want:
+
+<ul class="reset social-links">
+  <li>
+    <a href="https://twitter.com/alexandberg" title="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/alexandersandberg" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://dev.to/alexandersandberg" title="Dev.to">
+      <i class="fab fa-dev"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.linkedin.com/in/sandbergalex/" title="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.instagram.com/sandbergalexander/" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </li>
+</ul>
 
 ## Timeline
 
@@ -45,22 +93,8 @@ My goal is to apply this knowledge in a way that helps _bring humanity forward_,
 
 **2017**: I signed with a modeling agency in Stockholm, and worked as a model. I traveled quite a bit, mostly to Stockholm, but also to Paris and Milan. I worked as a library assistant at my university.
 
-**2018**: I started [minimal design](http://minimaldesign.se). I began putting my thoughts into writing through articles and journaling. I moved to Sydney for an exchange semester at the University of New South Wales, to gain new perspectives on my engineering-based education by taking art courses. I worked as a CAD process analyst consultant.
+**2018**: I started freelancing as a designer and full-stack developer. I began putting my thoughts into writing through articles and journaling. I moved to Sydney for an exchange semester at the University of New South Wales, to gain new perspectives on my engineering-based education by taking art courses. I worked as a CAD process analyst consultant.
 
 **2019**: I realized I wanted to focus my career on Front-End Development. I moved 2,000 km south to Linz, Austria 🇦🇹, and began working full-time as a Front-End Developer at [Newsadoo](https://newsadoo.com).
 
-**2020**: I graduated with an MSc in Product Design, in four and a half years, after completing my master's thesis on the side of my full-time work. I got promoted to Head of App Development and focused more on creating great user experiences using React Native for iOS and Android.
-
-## Things I've worked with
-
-**Web dev**: HTML, CSS, JavaScript, React, React Native, Vue.js, Nuxt, Git, jQuery, PHP, SQL, SEO, AWS, Netlify, Hugo, JAMstack, Express, CodeIgniter, MVC, Wordpress, Drupal, Squarespace, Bootstrap
-
-**Programming**: Java, Haskell
-
-**UI+UX/2D**: XD, Sketch, InDesign, Photoshop, Illustrator, Framer
-
-**CAD/3D**: Siemens NX, Catia, Keyshot, Alias, Maya, VRED
-
-**Other**: Apple iWork, Google Suite, Microsoft Office
-
-You can find some of my web development projects [on GitHub](https://github.com/alexandersandberg).
+**2020**: I graduated with an MSc in Product Design, one semester ahead of schedule, after completing my master's thesis on the side of my full-time work. I got promoted to Head of App Development and focused more on creating great user experiences using React Native for iOS and Android.
