@@ -1,10 +1,11 @@
 {{ with .context.PrevInSection }}
-  {{ if .Params.categories }}
-    {{ if eq (index .Params.categories 0) $.category }}
+  {{ $page := . }}
+  {{ range first 1 (.GetTerms "categories") }}
+    {{ if eq .LinkTitle $.category }}
       <hr>
-      {{ partial "article-more.html" (dict "context" . "inList" false) }}
+      {{ partial "article-more.html" (dict "context" $page "inList" false) }}
     {{ else }}
-      {{ partial "prev-post.html" (dict "context" . "category" $.category) }}
+      {{ partial "prev-post.html" (dict "context" $page "category" $.category) }}
     {{ end }}
   {{ end }}
 {{ end }}

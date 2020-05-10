@@ -1,10 +1,10 @@
 <article class="article in-list">
   <span class="article-details">
-    {{ if .context.Params.categories }}
-      {{ if not .inList }}
+    {{ range first 1 (.context.GetTerms "categories") }}
+      {{ if not $.inList }}
         next
       {{ end }}
-      in #<a href="/{{ index .context.Params.categories 0 | urlize }}">{{ index .context.Params.categories 0 }}</a>
+      in #<a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
     {{ end }}
   </span>
 
