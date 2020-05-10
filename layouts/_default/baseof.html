@@ -25,7 +25,7 @@
     {{ end }}
     <link rel="canonical" href="{{ .Permalink }}" />
 
-    <title> {{ if not .IsHome }}{{ .Title }} / {{ end }}{{ .Site.Title }} </title>
+    <title>{{ if not .IsHome }}{{ .Title }} / {{ end }}{{ .Site.Title }}</title>
     <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.metaDescription }}{{ else }}{{ .Page.Summary }}{{ end }}" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@alexandberg" />
@@ -67,7 +67,7 @@
       <p>Questions, thoughts? <em>I'd love to hear from you!</em> Get in touch with me at hi@alexandersandberg.com.</p>
       <nav>
         <ul class="reset">
-          <li><a href="/about">About me</a></li>
+          <li><a href="/about/">About me</a></li>
           <li><a href="https://github.com/alexandersandberg/alexandersandberg.com">Source code</a></li>
           <li class="cut-off-shadow-hack"><input type="checkbox" id="theme-switch" class="theme-switch" /><label for="theme-switch" class="switch-label"></label></li>
         </ul>
