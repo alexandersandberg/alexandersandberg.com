@@ -15,7 +15,7 @@
 {{ range .Site.Taxonomies.categories }}
   {{ $category := .Page.Title }}
   {{ if not (eq $.Page.Title $category) }}
-    {{ with ($.Site.GetPage (printf "/%s" $category)) }}
+    {{ with ($.Site.GetPage (printf "/%s" $category | urlize)) }}
       {{ range first 1 .Pages.ByDate.Reverse }}
         {{ partial "article-more.html" (dict "context" . "inList" true) }}
       {{ end }}
