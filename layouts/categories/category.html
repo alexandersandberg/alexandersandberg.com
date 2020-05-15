@@ -16,7 +16,7 @@
   {{ $category := .Page.Title }}
   {{ if not (eq $.Page.Title $category) }}
     {{ with ($.Site.GetPage (printf "/%s" $category)) }}
-      {{ range first 1 .Pages.ByPublishDate.Reverse }}
+      {{ range first 1 .Pages.ByDate.Reverse }}
         {{ partial "article-more.html" (dict "context" . "inList" true) }}
       {{ end }}
     {{ end }}

@@ -39,12 +39,12 @@
   </div>
 
   <h2 class="hr">Latest</h2>
-  {{ range first 1 (where .Site.RegularPages.ByPublishDate.Reverse "Section" "posts") }}
+  {{ range first 1 (where .Site.RegularPages.ByDate.Reverse "Section" "posts") }}
     {{ partial "article.html" (dict "context" . "isHome" true) }}
   {{ end }}
 
   <h2 class="hr">More posts</h2>
-  {{ range after 1 (where .Site.RegularPages.ByPublishDate.Reverse "Section" "posts") }}
+  {{ range after 1 (where .Site.RegularPages.ByDate.Reverse "Section" "posts") }}
     {{ partial "article-item.html" (dict "context" . "isHome" true) }}
   {{ end }}
 
