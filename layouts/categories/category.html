@@ -4,6 +4,9 @@
 
 {{ if eq .Params.Title "books" }}
   <p class="subtitle">This is a collection of my notes from some of the books I’ve read.</p>
+{{ else if eq .Params.Title "life lessons" }}
+  <p class="subtitle">My 'life lessons' are notes that I've gathered over the years from books, podcasts, movies, etc. that align with my values in life, and that I wanted to bring along with me on the journey.</p>
+  <p class="subtitle">I regularly read through these notes whenever I feel lost or need some inspiration. I hope you can find them useful as well.</p>
 {{ end }}
 
 {{ range .Data.Pages }}
