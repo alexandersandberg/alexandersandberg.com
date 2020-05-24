@@ -24,7 +24,7 @@ Once one is able to provide for basic physical needs (food, shelter, and so on),
 
 > The more you desperately want to be rich, the more poor and unworthy you feel—regardless of how much money you actually make.
 
-You won’t get rich renting out your time. you must own equity in a business to gain financial freedom.
+You won’t get rich renting out your time. You must own equity in a business to gain financial freedom.
 
 Wealth is having assets that earn while you sleep.
 
