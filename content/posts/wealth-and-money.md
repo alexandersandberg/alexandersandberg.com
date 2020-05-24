@@ -2,8 +2,8 @@
 title: "Wealth and Money"
 subtitle: "updated may 15th, 2020"
 slug: "wealth-and-money"
-date: "2020-05-15T21:38:29+02:00"
-lastmod: "2020-05-15T21:38:29+02:00"
+date: "2020-05-24T20:08:29+02:00"
+lastmod: "2020-05-15T20:08:29+02:00"
 draft: false
 summarize: false
 categories:

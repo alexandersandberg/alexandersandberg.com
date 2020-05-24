@@ -2,7 +2,7 @@
 title: "Career and purpose"
 subtitle: updated may 24th, 2020
 slug: "career-and-purpose"
-date: "2020-05-24T19:26:48+02:00"
+date: "2020-05-24T20:07:48+02:00"
 lastmod: "2020-05-24T19:26:48+02:00"
 draft: false
 summarize: false

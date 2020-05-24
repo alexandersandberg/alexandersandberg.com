@@ -2,8 +2,8 @@
 title: "Curiosity and Learning"
 subtitle: updated may 24th, 2020
 slug: "curiosity-and-learning"
-date: "2020-05-24T19:40:07+02:00"
-lastmod: "2020-05-24T19:40:07+02:00"
+date: "2020-05-24T20:09:07+02:00"
+lastmod: "2020-05-24T20:09:07+02:00"
 draft: false
 summarize: false
 categories:
