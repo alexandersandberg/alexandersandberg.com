@@ -21,11 +21,11 @@ Can be difficult for managers to not make sure everyone actually does their job,
 
 Instead of asking your workers what they did today, just ask them to show what they did. In many cases you can evaluate based on the progress, not the approach.
 
-The job of a manager is not to herd cats, but to lead and verify the work.
+> The job of a manager is not to herd cats, but to lead and verify the work.
 
 “If you can’t let your employees work from home out of fear they’ll slack off without your supervision, you’re a babysitter, not a manager.” Remote work is then very likely the least of your problems; you shouldn’t hire people you don’t trust, or work for bosses who don’t trust you. _If you’re not trusted to work remotely, why are you trusted to do anything at all?_
 
-If the company is full of people whom nobody trusts to make decisions without layers of managerial review, then the company is full of the wrong people.
+> If the company is full of people whom nobody trusts to make decisions without layers of managerial review, then the company is full of the wrong people.
 
 With remote work comes a lot of freedom. You can explore the world as long as you—for many jobs—have a laptop and an internet connection. Something that most people dream of, instead of staying at their current miserable place, where nothing exciting is going on.
 
@@ -39,7 +39,7 @@ Make sure you have a good work-life balance. A typical manager worries about the
 
 Give remote work a real chance, or it’ll never work. It’s ok to start small, but make sure it’s meaningful.
 
-Being a good writer is an essential part of being a good remote worker, since most arguments are settled over email or chats. _Make sure to hire people that can properly express their thoughts in writing._
+> Being a good writer is an essential part of being a good remote worker, since most arguments are settled over email or chats. _Make sure to hire people that can properly express their thoughts in writing._
 
 > “In thirty years’ time, as technology moves forward even further, people are going to look back and wonder why offices ever existed.”
 > <cite>— Richard Branson</cite>
