@@ -179,6 +179,10 @@ blockquote {
   text-align: center;
 }
 
+blockquote em {
+  font-weight: bold;
+}
+
 cite {
   display: block;
   margin-top: var(--space-1);
