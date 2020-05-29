@@ -1,8 +1,10 @@
 <article class="article in-list">
   {{ if and .context.Params.bookCover (not .isHome) }}
     {{ $image := resources.Get .context.Params.bookCover }}
-    {{ $resizedImage := $image.Resize "x480 q100" }}
-    <img class="book-cover" src="{{ $resizedImage.RelPermalink }}" alt="Book cover of '{{ .context.Title }}'">
+    {{ if $image }}
+      {{ $resizedImage := $image.Resize "x480 q100" }}
+      <img class="book-cover" src="{{ $resizedImage.RelPermalink }}" alt="Book cover of '{{ .context.Title }}'">
+    {{ end }}
   {{ end }}
   <h3 class="h2"><a href="{{ .context.RelPermalink }}">{{ .context.Title }}</a></h3>
   
