@@ -50,12 +50,6 @@ h3 {
   padding: 0;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 html {
   width: 100%;
   overflow-x: hidden;
@@ -68,7 +62,15 @@ body {
   margin: var(--space-4) auto;
   padding: 0 var(--space-1);
   box-sizing: border-box;
+  word-break: break-word;
   max-width: 36rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  word-break: inherit;
 }
 
 img {
