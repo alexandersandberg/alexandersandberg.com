@@ -1,6 +1,6 @@
 ---
 title: "Creating a website theme switcher with CSS only"
-subtitle:
+subtitle: "published may 13th, 2019"
 slug: "theme-switcher"
 date: "2019-05-13T17:35:35+02:00"
 lastmod: "2019-05-13T17:35:35+02:00"
