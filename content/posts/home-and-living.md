@@ -12,6 +12,8 @@ categories:
 
 ”The sense of home is heightened when we are warm in bed yet can hear the rain on the roof and the wind whistling under the eaves. The contrast between inside and outside accentuates the meaning of being inside; the sense of cold outside makes warmth meaningful. The unfamiliar and insecure world may threaten, but it is at the interface between it and the ordered center that we find all new experience, and hence the excitement and adventure of life. _To live fully one must both journey out and return_.”
 
+---
+
 **What to look and ask for when renting:**
 - outlets in good locations
 - what’s included in the price. heat? electricity? internet?
