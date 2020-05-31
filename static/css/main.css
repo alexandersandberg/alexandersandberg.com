@@ -58,7 +58,7 @@ html {
 body {
   background: var(--color-bg);
   color: var(--color-text);
-  font: var(--text-2)/1.5 Georgia, serif;
+  font: var(--text-2)/1.6 Georgia, serif;
   margin: var(--space-4) auto;
   padding: 0 var(--space-1);
   box-sizing: border-box;
@@ -94,7 +94,7 @@ a:hover {
 }
 
 p {
-  margin-top: var(--space-1);
+  margin-top: var(--space-2);
 }
 
 h1,
