@@ -106,7 +106,7 @@ h3 {
 
 p + h2,
 p + h3 {
-  margin-top: var(--space-2)
+  margin-top: var(--space-4)
 }
 
 h1,
