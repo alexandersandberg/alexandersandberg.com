@@ -300,6 +300,12 @@ p code {
   max-width: 15rem;
   display: block;
   border: 1px solid var(--color-bg-secondary);
+  filter: grayscale(1);
+  transition: filter 0.25s ease;
+}
+
+.book-cover:hover {
+  filter: grayscale(0);
 }
 
 .in-list .book-cover {
