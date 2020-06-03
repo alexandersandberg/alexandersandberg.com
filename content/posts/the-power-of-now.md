@@ -177,8 +177,8 @@ As long as they are their mind, what they fear and resist most is their own awak
 
 ---
 
-How much more pain do you need before you can make the choice?
+The mind always adheres to the known. The unknown is dangerous because it has no control over it.
 
 ---
 
-The mind always adheres to the known. The unknown is dangerous because it has no control over it.
+> How much more pain do you need before you can make the choice?
