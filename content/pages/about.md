@@ -97,4 +97,4 @@ But for now you can still find me at the following links, if you want:
 
 **2019**: I realized I wanted to focus my career on Front-End Development. I moved 2,000 km south to Linz, Austria 🇦🇹, and began working full-time as a Front-End Developer at [Newsadoo](https://newsadoo.com).
 
-**2020**: I graduated with an MSc in Product Design, one semester ahead of schedule, after completing my master's thesis on the side of my full-time work. I got promoted to Head of App Development and focused more on creating great user experiences using React Native for iOS and Android.
+**2020**: I graduated with an MSc in Product Design, one semester ahead of schedule, after completing my master's thesis on the side of my full-time work. I got promoted to Head of App Development and focused more on creating great user experiences using React Native for iOS and Android. I got promoted (again) to Head of Product Experience, taking on the responsibility of creating the best possible experience for our users, while still being the lone App developer at my company.
