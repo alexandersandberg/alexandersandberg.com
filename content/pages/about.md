@@ -17,7 +17,7 @@ I’m an _extroverted introvert_. While I love meeting new people and exploring 
 
 I’m an avid _student of life_. If I’m not improving my skills or knowledge of the world on a regular basis I get bored. When I don’t understand I ask why, and set out to find an answer.
 
-I'm a _self-taught Front-End Developer_ with an _MSc in Product Design_ who loves to create.
+I'm a _self-taught Front-End Developer_ and _Mobile Engineer_ with an _MSc in Product Design_ who loves to learn and create.
 
 ## My mission
 
@@ -71,6 +71,11 @@ But for now you can still find me at the following links, if you want:
   <li>
     <a href="https://www.instagram.com/sandbergalexander/" title="Instagram">
       <i class="fab fa-instagram"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.producthunt.com/@alexandberg" title="Product Hunt">
+      <i class="fab fa-product-hunt"></i>
     </a>
   </li>
 </ul>
