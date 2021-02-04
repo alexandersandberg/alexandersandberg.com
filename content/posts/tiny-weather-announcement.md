@@ -5,7 +5,7 @@ slug: "tiny-weather-announcement"
 date: "2021-02-04T16:17:06+01:00"
 lastmod: "2021-02-04T16:17:06+01:00"
 draft: false
-summarize: false
+summarize: true
 categories:
   - dev
 ---
@@ -13,6 +13,8 @@ categories:
 Last year I started working on a small app project to improve my skills in React Native, TypeScript, and automated testing.
 
 It was also a chance for me to help do something about all the ad-heavy, cluttered, complicated, privacy-lacking weather apps there are on the app stores. And _”the best way to complain is to make something"_, so that's what I did.
+
+<!--more-->
 
 I'm making an app that primarily focuses on solving _my own needs_. I think that's a good approach to making a great product. It's a lot more difficult to try to solve someone else's needs.
 
