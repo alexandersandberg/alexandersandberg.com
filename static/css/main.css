@@ -21,7 +21,7 @@
   --space-3: 2.25rem;
   --space-4: 4rem;
   --space-5: 10rem;
-  --border-radius: 0.25rem;
+  --border-radius: 1rem;
 
   --switch-icon: var(--light-switch-icon);
   --color-text: var(--light-text);
