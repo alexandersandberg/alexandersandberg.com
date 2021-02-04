@@ -12,9 +12,9 @@ categories:
 
 Last year I started working on a small app project to improve my skills in React Native, TypeScript, and automated testing.
 
-It was also a chance for me to help do something about all the ad-heavy, cluttered, complicated, privacy lacking weather apps there are on the app stores. And _”the best way to complain is to make something"_, so that's what I did.
+It was also a chance for me to help do something about all the ad-heavy, cluttered, complicated, privacy-lacking weather apps there are on the app stores. And _”the best way to complain is to make something"_, so that's what I did.
 
-I'm making an app that primarly focuses on solving _my own needs_. I think that's a good approach to making a great product. It's a lot more difficult to try to solve someone else's needs.
+I'm making an app that primarily focuses on solving _my own needs_. I think that's a good approach to making a great product. It's a lot more difficult to try to solve someone else's needs.
 
 ![The tinyweather.app landing page](/img/tw-preview.png)
 
