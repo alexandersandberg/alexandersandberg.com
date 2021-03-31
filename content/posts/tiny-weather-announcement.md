@@ -1,5 +1,5 @@
 ---
-title: "Tiny Weather"
+title: "Tiny Weather announcement"
 subtitle: "my upcoming app, launching soon 🚀"
 slug: "tiny-weather-announcement"
 date: "2021-02-04T16:17:06+01:00"
