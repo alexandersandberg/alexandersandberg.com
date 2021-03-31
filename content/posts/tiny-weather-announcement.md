@@ -29,3 +29,5 @@ And please let me know if you're interested in beta testing the app. I would be 
 I also made a quick landing page which I will update over time as I get closer to launch: [tinyweather.app](https://tinyweather.app)
 
 I will get back to work now. 👨‍💻
+
+_**Edit:** Tiny Weather is now [released and available for download](/tiny-weather)._
