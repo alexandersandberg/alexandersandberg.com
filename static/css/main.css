@@ -1,3 +1,39 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../webfonts/Inter-Regular.woff2?v=3.17") format("woff2"),
+       url("../webfonts/Inter-Regular.woff?v=3.17") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../webfonts/Inter-Italic.woff2?v=3.17") format("woff2"),
+       url("../webfonts/Inter-Italic.woff?v=3.17") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../webfonts/Inter-SemiBold.woff2?v=3.17") format("woff2"),
+       url("../webfonts/Inter-SemiBold.woff?v=3.17") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../webfonts/Inter-SemiBoldItalic.woff2?v=3.17") format("woff2"),
+       url("../webfonts/Inter-SemiBoldItalic.woff?v=3.17") format("woff");
+}
+
 :root {
   --light-switch-icon: '🌚';
   --light-text: #161619;
@@ -58,7 +94,7 @@ html {
 body {
   background: var(--color-bg);
   color: var(--color-text);
-  font: var(--text-2)/1.6 Georgia, serif;
+  font: var(--text-2)/1.6 'Inter', sans-serif;
   margin: var(--space-4) auto;
   padding: 0 var(--space-1);
   box-sizing: border-box;
@@ -71,6 +107,9 @@ body {
 *:after {
   box-sizing: inherit;
   word-break: inherit;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -100,8 +139,8 @@ p {
 h1,
 h2,
 h3 {
-  font-family: 'Playfair Display', Palatino, serif;
-  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
 }
 
 p + h2,
@@ -291,7 +330,6 @@ p code {
 .read {
   display: inline-block;
   margin-top: var(--space-2);
-  font-family: 'Playfair Display', Palatino, serif;
   font-size: var(--text-3);
 }
 
