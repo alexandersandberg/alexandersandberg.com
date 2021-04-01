@@ -36,4 +36,4 @@ I'm happy to announce that I'm today **joining Tempo as a React Native Developer
 
 Working on an exciting product together with like-minded people that share my own values is such a great source of inspiration and motivation. There is also a great community around Tempo that I can't wait to engage more in.
 
-I'm looking forward to see what we can accomplish together!
+I'm looking forward to seeing what we can accomplish together!
