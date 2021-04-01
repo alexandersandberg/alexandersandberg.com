@@ -3,7 +3,7 @@ title: "About me"
 subtitle: "who? what? why?"
 slug: "about"
 date: "2018-01-01T00:00:00+01:00"
-lastmod: "2020-05-10T00:00:00+01:00"
+lastmod: "2021-04-01T00:00:00+01:00"
 draft: false
 ---
 
@@ -29,13 +29,15 @@ My goal is to apply this knowledge in a way that helps _bring humanity forward_,
 
 ## What I'm focusing on currently
 
-I'm currently working full-time at [Newsadoo](https://newsadoo.com), where I mainly create great user experiences using React Native for iOS and Android.
+I'm currently working full-time at [Tempo](https://yourtempo.co) as a React Native Developer where I spend most of my time working on the Tempo mobile app.
 
 I read books, lately more fiction than I normally do, and recently started posting [notes from some of the books I've read](/books/) on this website.
 
 I try to write as much as possible, as it's something I've always enjoyed. I occasionally post something I find worth sharing on this website. Here you can find [a collection of posts](/posts/) I've published.
 
 I still spend time on side-projects, and you can find some of my projects [on GitHub](https://github.com/alexandersandberg).
+
+I recently launched my first own app called [Tiny Weather](/tiny-weather)—a simple and free weather app.
 
 I'm enjoying life as much as possible. For the first time in many years, I'm not engaged in professional work amounting to more than 40 hours a week, which gives me a lot of time to do whatever I feel like—even if that's doing _"nothing"_.
 
@@ -103,3 +105,5 @@ But for now you can still find me at the following links, if you want:
 **2019**: I realized I wanted to focus my career on Front-End Development. I moved 2,000 km south to Linz, Austria 🇦🇹, and began working full-time as a Front-End Developer at [Newsadoo](https://newsadoo.com).
 
 **2020**: I graduated with an MSc in Product Design, one semester ahead of schedule, after completing my master's thesis on the side of my full-time work. I got promoted to Head of App Development and focused more on creating great user experiences using React Native for iOS and Android. I got promoted (again) to Head of Product Experience, taking on the responsibility of creating the best possible experience for our users, while still being the lone App developer at my company.
+
+**2021**: I set a goal for myself to transition to working full-time on a product that I love at a company with values similar to my own. A few months later I joined [Tempo](https://yourtempo.co) as a React Native Developer.
