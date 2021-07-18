@@ -16,7 +16,6 @@ enableEmoji = true
 	categories = "/:slug/"
 
 [params]
-	googleAnalyticsId = "UA-29679247-2"
 	metaDescription = "Self-taught Front-End Developer and Mobile Engineer with an MSc in Product Design, based in Linz, Austria. This is my personal website where I occasionally share some interesting stuff with the world."
 
 [markup.goldmark.renderer]
