@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
   <head>
-    {{ with .Site.Params.googleAnalyticsId }}
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id={{ . }}"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || []
-        function gtag() {
-          dataLayer.push(arguments)
-        }
-        gtag("js", new Date())
-        gtag("config", "{{ . }}")
-      </script>
-    {{ end }}
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     {{ hugo.Generator }}
@@ -51,6 +36,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" />
     <link href="/css/fontawesome.css" rel="stylesheet" />
     <link href="/css/main.css" rel="stylesheet" />
+
+		<script defer data-domain="alexandersandberg.com" src="https://plausible.io/js/plausible.js"></script>
   </head>
   <body>
     <main>
