@@ -1,6 +1,6 @@
 ---
 title: "What I'm doing now"
-subtitle: "updated april 1st, 2021"
+subtitle: "updated september 9th, 2021"
 slug: "now"
 date: "2018-01-01T00:00:00+01:00"
 lastmod: "2021-09-09T00:00:00+01:00"
