@@ -50,36 +50,21 @@ I want to reduce my online presence to give more time to what really matters the
 But for now you can still find me at the following links, if you want:
 
 <ul class="reset social-links">
-  <li>
-    <a href="https://twitter.com/alexandberg" title="Twitter">
-      <i class="fab fa-twitter"></i>
-    </a>
-  </li>
-  <li>
-    <a href="https://github.com/alexandersandberg" title="GitHub">
-      <i class="fab fa-github"></i>
-    </a>
-  </li>
-  <li>
-    <a href="https://dev.to/alexandersandberg" title="Dev.to">
-      <i class="fab fa-dev"></i>
-    </a>
-  </li>
-  <li>
-    <a href="https://www.linkedin.com/in/sandbergalex/" title="LinkedIn">
-      <i class="fab fa-linkedin-in"></i>
-    </a>
-  </li>
-  <li>
-    <a href="https://www.instagram.com/sandbergalexander/" title="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-  </li>
-  <li>
-    <a href="https://www.producthunt.com/@alexandberg" title="Product Hunt">
-      <i class="fab fa-product-hunt"></i>
-    </a>
-  </li>
+	<li>
+		<a href="https://twitter.com/alexandberg" title="Twitter">
+			<i class="fab fa-twitter"></i>
+		</a>
+	</li>
+	<li>
+		<a href="https://github.com/alexandersandberg" title="GitHub">
+			<i class="fab fa-github"></i>
+		</a>
+	</li>
+	<li>
+		<a href="https://www.linkedin.com/in/sandbergalex/" title="LinkedIn">
+			<i class="fab fa-linkedin-in"></i>
+		</a>
+	</li>
 </ul>
 
 ## Timeline
