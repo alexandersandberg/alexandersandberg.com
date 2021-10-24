@@ -22,21 +22,12 @@
 .fa-twitter:before {
 	content: "\f099" }
 
-.fa-dev:before {
-	content: "\f6cc" }
-
 .fa-github:before {
 	content: "\f09b" }
 
 .fa-linkedin-in:before {
   content: "\f0e1" }
   
-.fa-instagram:before {
-	content: "\f16d" }
-
-.fa-product-hunt:before {
-	content: "\f288" }
-
 @font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
