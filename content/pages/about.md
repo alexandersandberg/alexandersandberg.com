@@ -3,7 +3,7 @@ title: "About me"
 subtitle: "who? what? why?"
 slug: "about"
 date: "2018-01-01T00:00:00+01:00"
-lastmod: "2021-04-01T00:00:00+01:00"
+lastmod: "2021-11-03T00:00:00+01:00"
 draft: false
 ---
 
@@ -29,7 +29,7 @@ My goal is to apply this knowledge in a way that helps _bring humanity forward_,
 
 ## What I'm focusing on currently
 
-I'm currently working full-time at [Tempo](https://yourtempo.co) as a React Native Developer where I spend most of my time working on the Tempo mobile app.
+I'm currently taking a break from full-time roles after having to [sunset Tempo](/sunsetting-tempo) to spend more time on my own things, like [Tiny Weather](https://tinyweather.app).
 
 I read books, lately more fiction than I normally do, and recently started posting [notes from some of the books I've read](/books/) on this website.
 
