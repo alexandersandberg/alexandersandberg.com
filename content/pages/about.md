@@ -17,7 +17,7 @@ I’m an _extroverted introvert_. While I love meeting new people and exploring 
 
 I’m an avid _student of life_. If I’m not improving my skills or knowledge of the world on a regular basis I get bored. When I don’t understand I ask why, and set out to find an answer.
 
-I'm a _self-taught Front-End Developer_ and _Mobile Engineer_ with an _MSc in Product Design_ who loves to learn and create.
+I'm a _product-minded Mobile Engineer_ with an _MSc in Product Design_ who loves to learn and create.
 
 ## My mission
 
@@ -29,7 +29,7 @@ My goal is to apply this knowledge in a way that helps _bring humanity forward_,
 
 ## What I'm focusing on currently
 
-I'm currently taking a break from full-time roles after having to [sunset Tempo](/sunsetting-tempo) to spend more time on my own things, like [Tiny Weather](https://tinyweather.app).
+I'm currently working at [Practice](https://practice.do) as an iOS Developer where I'm working on the [Practice iOS app](https://apps.apple.com/app/practice/id1554481402).
 
 I read books, lately more fiction than I normally do, and recently started posting [notes from some of the books I've read](/books/) on this website.
 
