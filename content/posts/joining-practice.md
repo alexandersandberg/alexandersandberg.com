@@ -3,7 +3,7 @@ title: "Joining Practice"
 subtitle:
 slug: "joining-practice"
 date: "2021-11-09T20:14:01+01:00"
-lastmod: "2021-11-09T20:14:01+01:00"
+lastmod: "2021-11-11T19:14:01+01:00"
 draft: false
 summarize: true
 categories:
