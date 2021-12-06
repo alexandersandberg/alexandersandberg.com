@@ -11,6 +11,7 @@
 			--background-color: #ffffff;
 			--slider-thumb-color: #ffffff;
 			--off-opacity: 0;
+			--brightness-opacity: 1;
 		}
 
 		* {
@@ -18,7 +19,6 @@
 		}
 
 		body {
-			background-color: var(--background-color);
 			padding: 2rem;
 			font-family: monospace;
 			font-size: 1.5rem;
@@ -26,16 +26,39 @@
 			color: #000;
 		}
 
+		.layer {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+
+
+		#brightnessLayer {
+			background-color: #000;
+			z-index: -2;
+		}
+
+		#softboxLayer {
+			background-color: var(--background-color);
+			opacity: var(--brightness-opacity);
+			z-index: -1;
+		}
+		
 		.flex {
 			display: flex;
 			align-items: center;
+			padding-bottom: 0.75rem;
 		}
 
-		#kelvin {
+		.rangeLabel {
+			color: var(--range-label-color);
 			margin-left: 1rem;
 		}
 
 		input[type=range] {
+			margin: 0;
 			-webkit-appearance: none;
 			background-color: white;
 			max-width: 20rem;
@@ -69,7 +92,6 @@
 			cursor: pointer;
 		}
 		#buttons {
-			padding-top: 0.5rem;
 			max-width: 20rem;
 		}
 		#buttons > button:not(:last-child) {
@@ -84,9 +106,15 @@
 	<script defer data-domain="alexandersandberg.com" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
+	<div id="brightnessLayer" class="layer"></div>
+	<div id="softboxLayer" class="layer"></div>
 	<div class="flex">
-		<input type="range" id="range" name="range" min="2000" max="10000" value="0" step="100">
-		<span id="kelvin"></span>
+		<input type="range" id="temperature" name="temperature" min="2000" max="10000" value="0" step="100">
+		<span id="kelvin" class="rangeLabel"></span>
+	</div>
+	<div class="flex">
+		<input type="range" id="brightness" name="brightness" min="0" max="1" value="1" step="0.01">
+		<span id="percent" class="rangeLabel"></span>
 	</div>
 	<div id="buttons" class="flex">
 		<button id="button1" class="colorButton">Warm</button>
@@ -96,10 +124,13 @@
 	</div>
 
 	<script>
-		const defaultValue = 4000;
+		const defaultKelvin = 4000;
+		const defaultPercent = 1;
 
-		const range = document.getElementById("range");
+		const temperature = document.getElementById("temperature");
+		const brightness = document.getElementById("brightness");
 		const kelvin = document.getElementById("kelvin");
+		const percent = document.getElementById("percent");
 		const button1 = document.getElementById("button1");
 		const button2 = document.getElementById("button2");
 		const button3 = document.getElementById("button3");
@@ -111,12 +142,25 @@
 			const { red, green, blue } = colorTemperature2rgbUsingTH(kelvinValue);
 
 			document.documentElement.style.setProperty('--background-color', `rgb(${red}, ${green}, ${blue})`);
-			range.value = kelvinValue;
-			localStorage.setItem('storedValue', kelvinValue);
+			temperature.value = kelvinValue;
+			localStorage.setItem('storedKelvin', kelvinValue);
 		};
 
-		range.addEventListener("input", () => {
-			setToKelvin(range.value);
+		function setToBrightness(brightnessValue) {
+			percent.innerHTML = Math.round(brightnessValue * 100) + "%";
+			document.documentElement.style.setProperty('--range-label-color', brightness.value < 0.5 ? '#fff' : '#000');
+
+			document.documentElement.style.setProperty('--brightness-opacity', brightness.value);
+			brightness.value = kelvinValue;
+			localStorage.setItem('storedBrightness', kelvinValue);
+		}
+
+		temperature.addEventListener("input", () => {
+			setToKelvin(temperature.value);
+		});
+
+		brightness.addEventListener("input", () => {
+			setToBrightness(brightness.value);
 		});
 
 		button1.addEventListener("click", () => setToKelvin(4000));
@@ -126,13 +170,14 @@
 			let isOff = document.documentElement.style.getPropertyValue('--background-color') === '#000';
 
 			if (isOff) {
-				setToKelvin(localStorage.getItem('storedValue') || defaultValue );
+				setToKelvin(localStorage.getItem('storedKelvin') || defaultKelvin);
 			} else {
 				document.documentElement.style.setProperty('--background-color', '#000');
 			}
 		});
 
-		setToKelvin(localStorage.getItem('storedValue') || defaultValue);
+		setToKelvin(localStorage.getItem('storedKelvin') || defaultKelvin);
+		setToBrightness(localStorage.getItem('storedBrightness') || defaultPercent);
 
 		/**
 		*  color-temperature.js
