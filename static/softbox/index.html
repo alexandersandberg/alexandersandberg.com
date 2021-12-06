@@ -137,22 +137,26 @@
 		const offSwitch = document.getElementById("offSwitch");
 
 		function setToKelvin(kelvinValue) {
+			temperature.value = kelvinValue;
+			
 			kelvin.innerHTML = kelvinValue + "K";
 
 			const { red, green, blue } = colorTemperature2rgbUsingTH(kelvinValue);
 
 			document.documentElement.style.setProperty('--background-color', `rgb(${red}, ${green}, ${blue})`);
-			temperature.value = kelvinValue;
 			localStorage.setItem('storedKelvin', kelvinValue);
+
+			setToBrightness(localStorage.getItem('storedBrightness') || defaultPercent);
 		};
 
 		function setToBrightness(brightnessValue) {
+			brightness.value = brightnessValue;
+
 			percent.innerHTML = Math.round(brightnessValue * 100) + "%";
 			document.documentElement.style.setProperty('--range-label-color', brightness.value < 0.5 ? '#fff' : '#000');
 
 			document.documentElement.style.setProperty('--brightness-opacity', brightness.value);
-			brightness.value = kelvinValue;
-			localStorage.setItem('storedBrightness', kelvinValue);
+			localStorage.setItem('storedBrightness', brightnessValue);
 		}
 
 		temperature.addEventListener("input", () => {
@@ -167,12 +171,13 @@
 		button2.addEventListener("click", () => setToKelvin(6500));
 		button3.addEventListener("click", () => setToKelvin(10000));
 		offSwitch.addEventListener("click", () => {
-			let isOff = document.documentElement.style.getPropertyValue('--background-color') === '#000';
+			let isOff = document.documentElement.style.getPropertyValue('--brightness-opacity') === '0';
 
 			if (isOff) {
-				setToKelvin(localStorage.getItem('storedKelvin') || defaultKelvin);
+				setToBrightness(localStorage.getItem('storedBrightness') || defaultPercent);
 			} else {
-				document.documentElement.style.setProperty('--background-color', '#000');
+				document.documentElement.style.setProperty('--brightness-opacity', 0);
+			document.documentElement.style.setProperty('--range-label-color', '#000');
 			}
 		});
 
