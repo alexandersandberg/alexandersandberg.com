@@ -164,7 +164,8 @@ button:active {
 }
 
 .store-badges {
-	margin-top: 2rem;
+	margin: 1.5rem 0 3rem;
+	display: flex;
 }
 
 .store-badges a {
@@ -173,7 +174,7 @@ button:active {
 }
 
 .store-badges a:not(:last-child) {
-	margin-bottom: 1rem;
+	margin-right: 1rem;
 }
 
 .store-badges a img {
@@ -311,14 +312,6 @@ footer {
 	.tw-preview {
 		max-width: 360px;
 		margin: 3rem;
-	}
-
-	.store-badges a {
-		display: inline-block;
-	}
-
-	.store-badges a:not(:last-child) {
-		margin-right: 1rem;
 	}
 
 	.app-icon {
