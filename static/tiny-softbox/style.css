@@ -61,7 +61,7 @@ a {
 
 p a,
 li a {
-	color: #E1CBFF;
+	color: #9e61f3;
 }
 
 p {
@@ -117,8 +117,8 @@ h1 + span {
 }
 
 h1 + span {
-	background: #E1CBFF;
-	background: linear-gradient(to right, #E1CBFF 0%, #B69FF6 100%);
+	background: #9e61f3;
+	background: linear-gradient(to right, #9e61f3 0%, #7335ca 100%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -378,5 +378,19 @@ footer {
 	#tw-preview-dm,
 	#app-icon-dm {
 		display: block;
+	}
+
+	p a,
+	li a {
+		color: #E1CBFF;
+	}
+
+	h1 + span {
+		background: #E1CBFF;
+		background: linear-gradient(to right, #E1CBFF 0%, #B69FF6 100%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-webkit-box-decoration-break: clone; /* hack for multi-line text bug */
 	}
 }
