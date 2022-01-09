@@ -1,12 +1,13 @@
 ---
 title: "Joining Practice"
-subtitle:
+subtitle: 
 slug: "joining-practice"
 date: "2021-11-09T20:14:01+01:00"
 lastmod: "2021-11-11T19:14:01+01:00"
 draft: false
 summarize: true
 categories:
+  - life
 ---
 
 After [sunsetting Tempo](https://alexandersandberg.com/sunsetting-tempo/) just over two weeks ago, it didn't take long before I was longing for something new. Working on a product that I loved together with talented people inspired me to look for my next exciting opportunity.
