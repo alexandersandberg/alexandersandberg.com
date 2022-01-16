@@ -144,7 +144,11 @@ h3 {
 }
 
 p + h2,
-p + h3 {
+p + h3,
+li + h2,
+li + h3,
+ol + h2,
+ol + h3 {
   margin-top: var(--space-4)
 }
 
