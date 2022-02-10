@@ -61,7 +61,7 @@ But for now you can still find me at the following links, if you want:
 		</a>
 	</li>
 	<li>
-		<a href="https://www.linkedin.com/in/sandbergalex/" title="LinkedIn">
+		<a href="https://www.linkedin.com/in/alexandberg/" title="LinkedIn">
 			<i class="fab fa-linkedin-in"></i>
 		</a>
 	</li>
