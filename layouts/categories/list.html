@@ -1,9 +1,0 @@
-{{ define "main" }}
-
-<h1 class="hr">{{ title .Title }}</h1>
-
-{{ range .Data.Pages }}
-  {{ partial "category-item.html" . }}
-{{ end }}
-
-{{ end }}
