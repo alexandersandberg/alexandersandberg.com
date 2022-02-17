@@ -1,0 +1,51 @@
+---
+layout: layouts/home.njk
+title: Alexander Sandberg
+description:
+---
+
+{% set pageNumber = pages.home.number %}
+{% if pageNumber | isNumber %}
+	<p>Nº {{ pageNumber | pad(2) }}</p>
+{% endif %}
+
+<h1>Alexander Sandberg</h1>
+
+<p>I’m a self-taught, product-minded  iOS/macOS Developer with a background in web development and product design.</p>
+<p>When asked to describe myself with one word, I often reply with ‘curious’.</p>
+
+<p>
+	<a href="/{{ pages.about.path }}">Learn more about me →</a>
+</p>
+
+<p>I sometimes write articles as a way to understand things better, because the person who says he knows what he thinks but cannot express it usually does not know what he thinks.⁽¹⁾</p>
+
+<p>
+	<a href="/{{ pages.articles.path }}">Read the articles →</a>
+</p>
+
+<p>Occasionally, I also publish other random stuff that I find worth sharing with the world on my blog.</p>
+
+<p>
+	<a href="/{{ pages.blog.path }}">Visit the blog →</a>
+</p>
+
+<p>I’ve always been an avid learner who loves to seek new knowledge through books and podcasts. Over the years, I’ve collected many ‘life lessons’ that I want to bring along with me on this journey we call life. I share them here to hopefully inspire others.</p>
+
+<p>
+	<a href="/{{ pages.lessons.path }}">Explore the life lessons →</a>
+</p>
+
+<p>I like to solve problems by building things, because the best way to complain is to make something.⁽²⁾</p>
+
+<p>
+	<a href="/{{ pages.projects.path }}">View the projects ↓</a>
+</p>
+
+{% include "partials/social-links.njk" %}
+
+{% for project in projects %}
+	<h2>{{ project.title }}</h2>
+	<p>{{ project.subtitle }}</p>
+	<a href="{{ project.link }}">{{ project.link }} →</a>
+{% endfor %}

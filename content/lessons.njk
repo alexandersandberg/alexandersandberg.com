@@ -1,0 +1,24 @@
+---
+layout: layouts/page.njk
+permalink: "{{ pages.lessons.path }}"
+description: Notes that I've gathered over the years from books, podcasts, movies, etc. that I want to bring along with me on this journey that we call ‘life’.
+eleventyComputed:
+  title: "{{ pages.lessons.title }}"
+---
+
+{% for category in lessonCategories %}
+	{% set categoryLessons = lessons | withCategorySlug(category.slug) %}
+
+	{% if categoryLessons.length > 0 %}
+		<a href="/{{ pages.lessons.path }}{{ category.slug }}"><h2>{{ category.title }} ({{ categoryLessons.length }})</h2></a>
+
+		{% for lesson in categoryLessons | head(2) %}
+			<a href="/{{ pages.lessons.path }}{{ lesson.id }}/">
+				<p>{{ lesson.body }}</p>
+				<p>— {{ lesson.source }}</p>
+			</a>
+		{% endfor %}
+
+		<p><a href="/{{ pages.lessons.path }}{{ category.slug }}">See all lessons →</a></p>
+	{% endif %}
+{% endfor %}

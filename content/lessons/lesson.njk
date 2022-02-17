@@ -1,0 +1,15 @@
+---
+layout: layouts/lesson.njk
+pagination:
+  data: lessons
+  size: 1
+  alias: lesson
+  addAllPagesToCollections: true
+permalink: "{{ pages.lessons.path }}/{{ lesson.id }}/"
+eleventyComputed:
+  itemNumber: "{{ lesson.category.number }}.{{ lesson.id | pad(2) }}"
+  title: "{{ pages.lesson.title }} #{{ lesson.id | pad(2) }} from {{ lesson.source }}"
+  description: "{{ lesson.body }}"
+---
+
+<p>{{ lesson.body }}</p>

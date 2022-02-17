@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+---
+
+<header>
+	<p>
+		<a href="/{{ pages[pages[page.fileSlug].back].path }}">← {{ pages[pages[page.fileSlug].back].title }}</a>
+	</p>
+
+	{% set pageNumber = pages[page.fileSlug].number %}
+	{% if pageNumber | isNumber %}
+		<p>Nº {{ pageNumber | pad(2) }}{{ "." + itemNumber if itemNumber else "" }}</p>
+	{% endif %}
+
+	{% if title %}
+		<h1>{{ title }}</h1>
+	{% endif %}
+
+	{% if description %}
+		<p>{{ description }}</p>
+	{% endif %}
+</header>
+
+<main>
+	{{ content | safe }}
+</main>
+
+{% include "partials/footer.njk" %}

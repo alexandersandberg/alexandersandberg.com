@@ -1,0 +1,14 @@
+---
+layout: layouts/page.njk
+permalink: "{{ pages.blog.path }}"
+description:
+eleventyComputed:
+  title: "{{ pages.blog.title }}"
+---
+
+{% for post in posts %}
+	<a href="/{{ pages.blog.path }}{{ post.slug }}/">
+		<h2>{{ post.title }}</h2>
+		<p>{{ post.excerpt }}</p>
+	</a>
+{% endfor %}

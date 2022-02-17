@@ -1,0 +1,14 @@
+---
+layout: layouts/page.njk
+pagination:
+  data: posts
+  size: 1
+  alias: post
+  addAllPagesToCollections: true
+permalink: "{{ pages.blog.path }}/{{ post.slug }}/"
+eleventyComputed:
+  itemNumber: "{{ post.id }}"
+  title: "{{ post.title }}"
+---
+
+<p>{{ post.body }}</p>

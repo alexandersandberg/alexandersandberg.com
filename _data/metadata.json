@@ -1,0 +1,25 @@
+{
+	"title": "Alexander Sandberg",
+	"url": "https://alexandersandberg.com/",
+	"language": "en",
+	"description": "iOS/macOS Developer",
+	"source": "https://github.com/alexandersandberg/alexandersandberg.com",
+	"feed": {
+		"subtitle": "iOS/macOS Developer",
+		"filename": "feed.xml",
+		"path": "/feed/feed.xml",
+		"id": "https://alexandersandberg.com/"
+	},
+	"jsonfeed": {
+		"path": "/feed/feed.json",
+		"url": "https://alexandersandberg.com/feed/feed.json"
+	},
+	"author": {
+		"name": "Alexander Sandberg",
+		"email": "hi@alexandersandberg.com",
+		"url": "https://alexandersandberg.com/",
+		"twitter": "alexandberg",
+		"github": "alexandersandberg",
+		"linkedin": "alexandberg"
+	}
+}
