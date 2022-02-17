@@ -1,0 +1,14 @@
+---
+layout: layouts/page.njk
+pagination:
+  data: articles
+  size: 1
+  alias: article
+  addAllPagesToCollections: true
+permalink: "{{ pages.articles.path }}/{{ article.slug }}/"
+eleventyComputed:
+  itemNumber: "{{ article.id }}"
+  title: "{{ article.title }}"
+---
+
+<p>{{ article.body }}</p>

@@ -1,0 +1,25 @@
+{
+  "name": "alexandersandberg.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandersandberg/alexandersandberg.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandersandberg/alexandersandberg.com/issues"
+  },
+  "homepage": "https://github.com/alexandersandberg/alexandersandberg.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "contentful": "^9.1.10",
+    "dotenv": "^16.0.0"
+  }
+}

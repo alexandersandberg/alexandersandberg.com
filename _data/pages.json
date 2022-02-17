@@ -1,0 +1,62 @@
+{
+	"home": {
+		"title": "Home",
+		"path": "",
+		"number": 0,
+		"back": null
+	},
+	"about": {
+		"title": "About me",
+		"path": "about/",
+		"number": 1,
+		"back": "home"
+	},
+	"articles": {
+		"title": "Articles",
+		"path": "articles/",
+		"number": 2,
+		"back": "home"
+	},
+	"blog": {
+		"title": "Blog",
+		"path": "blog/",
+		"number": 3,
+		"back": "home"
+	},
+	"lessons": {
+		"title": "Life lessons",
+		"path": "life-lessons/",
+		"number": 4,
+		"back": "home"
+	},
+	"projects": {
+		"title": "Projects",
+		"path": "#projects",
+		"number": 5,
+		"back": "home"
+	},
+	"article": {
+		"title": "Article",
+		"path": null,
+		"number": 2,
+		"back": "articles"
+	},
+	"post": {
+		"title": "Blog post",
+		"path": null,
+		"number": 3,
+		"back": "blog"
+	},
+	"category": {
+		"title": "Life lesson category",
+		"path": null,
+		"number": 4,
+		"back": "lessons"
+	},
+	"lesson": {
+		"title": "Life lesson",
+		"path": null,
+		"number": 4,
+		"back": null
+	}
+}

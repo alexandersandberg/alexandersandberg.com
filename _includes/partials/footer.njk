@@ -1,0 +1,45 @@
+{% set isHome = page.fileSlug === "" %}
+
+<footer>
+	<nav aria-label="Website">
+		<ul>
+			<li>
+				<a href="/{{ pages.about.path }}">About →</a>
+			</li>
+			<li>
+				<a href="/{{ pages.articles.path }}">Articles →</a>
+			</li>
+			<li>
+				<a href="/{{ pages.blog.path }}">Blog →</a>
+			</li>
+			<li>
+				<a href="/{{ pages.lessons.path }}">Life lessons →</a>
+			</li>
+			<li>
+				<a href="/{{ pages.projects.path }}">Projects {{ "↑" if isHome else "→" }}</a>
+			</li>
+		</ul>
+	</nav>
+
+	<nav aria-label="External">
+		<ul>
+			<li>
+				<a href="https://twitter.com/{{ metadata.author.twitter }}">Twitter ↗</a>
+			</li>
+			<li>
+				<a href="https://github.com/{{ metadata.author.github }}">GitHub ↗</a>
+			</li>
+			<li>
+				<a href="https://linkedin.com/in/{{ metadata.author.linkedin }}">LinkedIn ↗</a>
+			</li>
+			<li>
+				<a href="mailto:{{ metadata.author.email }}">Email ↗</a>
+			</li>
+			<li>
+				<a href="{{ metadata.source }}">Source code ↗</a>
+			</li>
+		</ul>
+	</nav>
+
+	<p>© Alexander Sandberg 2022</p>
+</footer>

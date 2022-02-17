@@ -1,0 +1,14 @@
+---
+layout: layouts/page.njk
+permalink: "{{ pages.articles.path }}"
+description:
+eleventyComputed:
+  title: "{{ pages.articles.title }}"
+---
+
+{% for article in articles %}
+	<a href="/{{ pages.articles.path }}{{ article.slug }}/">
+		<h2>{{ article.title }}</h2>
+		<p>{{ article.excerpt }}</p>
+	</a>
+{% endfor %}

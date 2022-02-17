@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+---
+
+<header>
+	<p>
+		<a href="/{{ pages.lessons.path }}{{ lesson.category.slug }}">← {{ lesson.category.title }}</a>
+	</p>
+
+	{% set pageNumber = pages[page.fileSlug].number %}
+	{% if pageNumber | isNumber %}
+		<p>Nº {{ pageNumber | pad(2) }}{{ "." + itemNumber if itemNumber else "" }}</p>
+	{% endif %}
+</header>
+
+<main>
+	{{ content | safe }}
+</main>
+
+{% include "partials/footer.njk" %}
