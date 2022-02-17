@@ -8,7 +8,7 @@ module.exports = async () => {
 		const lessons = response.items
 			.map((lesson, index) => ({
 				...lesson.fields,
-				source: lesson.source || "Unknown",
+				source: lesson.fields.source || "Unknown",
 				id: index + 1,
 				updatedAt: new Date(lesson.sys.updatedAt),
 				category: lesson.fields.category.fields
