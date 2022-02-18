@@ -3,7 +3,7 @@
 	--font-mono: Menlo, monospace;
 
 	--foreground: #ffffff;
-	--foreground-secondary: #cccccc;
+	--foreground-secondary: #dddddd;
 	--foreground-tertiary: #999999;
 	--background: #000000;
 	--background-secondary: #222222;
@@ -51,7 +51,7 @@ html {
 
 body {
 	background: var(--background);
-	color: var(--foreground);
+	color: var(--foreground-secondary);
 	margin: 0 auto;
 	padding: var(--space-xl) var(--space-sides);
 	box-sizing: border-box;
@@ -69,12 +69,24 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	color: var(--foreground);
+}
+
+p {
+	color: var(--foreground-secondary);
+}
+
 a {
-	color: inherit;
+	color: var(--foreground);
 	text-decoration: none;
 }
 
 p a {
+	color: inherit;
 	text-decoration: underline;
 }
 
