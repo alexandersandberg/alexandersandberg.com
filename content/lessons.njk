@@ -12,9 +12,11 @@ eleventyComputed:
 	{% set categoryLessons = lessons | withCategorySlug(category.slug) %}
 
 	{% if categoryLessons.length > 0 %}
-		<a href="/{{ pages.lessons.path }}{{ category.slug }}">
-			<h2>{{ category.title }} ({{ categoryLessons.length }})</h2>
-		</a>
+		<h2>
+			<a href="/{{ pages.lessons.path }}{{ category.slug }}">
+				{{ category.title }} ({{ categoryLessons.length }})
+			</a>
+		</h2>
 
 		{{ lessonsList(categoryLessons | head(2)) }}
 
