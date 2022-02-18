@@ -6,7 +6,7 @@ eleventyComputed:
   title: "{{ pages.lessons.title }}"
 ---
 
-{% from 'components/lessons-list.njk' import lessonsList %}
+{% from 'components/lessons-list.njk' import lessonsList with context %}
 
 {% for category in lessonCategories %}
 	{% set categoryLessons = lessons | withCategorySlug(category.slug) %}
