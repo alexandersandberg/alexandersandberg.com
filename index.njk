@@ -18,7 +18,7 @@ description:
 <p>When asked to describe myself with one word, I often reply with <em>curious</em>.</p>
 <div class="spacer-s"></div>
 <div class="link-with-detail">
-	<span class="detail background-secondary">Nº {{ pages.about.number }}</span>
+	<span class="detail background-secondary">Nº {{ pages.about.number | pad(2) }}</span>
 	<a href="/{{ pages.about.path }}">
 		<b>Learn more about me →</b>
 	</a>
@@ -33,7 +33,7 @@ description:
 </p>
 <div class="spacer-s"></div>
 <div class="link-with-detail">
-	<span class="detail background-secondary">Nº {{ pages.articles.number }}</span>
+	<span class="detail background-secondary">Nº {{ pages.articles.number | pad(2) }}</span>
 	<a href="/{{ pages.articles.path }}">
 		<b>Read the articles →</b>
 	</a>
@@ -44,7 +44,7 @@ description:
 <p>Occasionally, I also publish other random stuff that I find worth sharing with the world on my blog.</p>
 <div class="spacer-s"></div>
 <div class="link-with-detail">
-	<span class="detail background-secondary">Nº {{ pages.blog.number }}</span>
+	<span class="detail background-secondary">Nº {{ pages.blog.number | pad(2) }}</span>
 	<a href="/{{ pages.blog.path }}">
 		<b>Visit the blog →</b>
 	</a>
@@ -55,7 +55,7 @@ description:
 <p>I’ve always been an avid learner who loves to seek new knowledge through books and podcasts. Over the years, I’ve collected many ‘life lessons’ that I want to bring along with me on this journey we call life. I share them here to hopefully inspire others.</p>
 <div class="spacer-s"></div>
 <div class="link-with-detail">
-	<span class="detail background-secondary">Nº {{ pages.lessons.number }}</span>
+	<span class="detail background-secondary">Nº {{ pages.lessons.number | pad(2) }}</span>
 	<a href="/{{ pages.lessons.path }}">
 		<b>Explore the life lessons →</b>
 	</a>
@@ -70,7 +70,7 @@ description:
 </p>
 <div class="spacer-s"></div>
 <div class="link-with-detail">
-	<span class="detail background-secondary">Nº {{ pages.projects.number }}</span>
+	<span class="detail background-secondary">Nº {{ pages.projects.number | pad(2) }}</span>
 	<a href="/{{ pages.projects.path }}">
 		<b>View the projects ↓</b>
 	</a>
