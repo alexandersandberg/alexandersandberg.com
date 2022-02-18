@@ -12,7 +12,7 @@ eleventyComputed:
   description: "{{ category.description }}"
 ---
 
-{% from 'components/lessons-list.njk' import lessonsList %}
+{% from 'components/lessons-list.njk' import lessonsList with context %}
 
 {% set categoryLessons = lessons | withCategorySlug(category.slug) %}
 {{ lessonsList(categoryLessons) }}
