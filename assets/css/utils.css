@@ -2,15 +2,19 @@
 .foreground {
 	color: var(--foreground);
 }
+
 .foreground-secondary {
 	color: var(--foreground-secondary);
 }
+
 .foreground-tertiary {
 	color: var(--foreground-tertiary);
 }
+
 .background {
 	color: var(--background);
 }
+
 .background-secondary {
 	color: var(--background-secondary);
 }
@@ -21,23 +25,35 @@
 	width: var(--space-xs);
 	flex-shrink: 0;
 }
+
 .spacer-s {
 	height: var(--space-s);
 	width: var(--space-s);
 	flex-shrink: 0;
 }
+
 .spacer-m {
 	height: var(--space-m);
 	width: var(--space-m);
 	flex-shrink: 0;
 }
+
 .spacer-l {
 	height: var(--space-l);
 	width: var(--space-l);
 	flex-shrink: 0;
 }
+
 .spacer-xl {
 	height: var(--space-xl);
 	width: var(--space-xl);
 	flex-shrink: 0;
+}
+
+/* Other */
+.flex {
+	display: flex;
+}
+.flex > *:not(:last-child) {
+	margin-right: var(--space-l);
 }

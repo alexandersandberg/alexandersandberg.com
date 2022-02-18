@@ -4,53 +4,52 @@ body {
 	font-weight: normal;
 	line-height: 1.4;
 }
+
+.mono {
+	font-family: var(--font-mono);
+}
+
 h1,
 .large-title {
 	font-size: 48px;
 	font-weight: 800;
 	line-height: 1.2;
 }
+
 h2,
 .title1 {
 	font-size: 36px;
 	font-weight: 800;
 	line-height: 1.3;
 }
+
 h3,
 .title2 {
 	font-size: 24px;
 	font-weight: bold;
 	line-height: 1.4;
 }
+
 h4,
 .title3 {
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 1.4;
 }
+
 .large-body {
 	font-size: 24px;
 	font-weight: normal;
 	line-height: 1.4;
 }
-.large-detail {
-	font-family: var(--font-mono);
-	font-size: 24px;
-	font-weight: normal;
-	line-height: 1.3;
-}
+
 p,
 .body {
 	font-size: 18px;
 	font-weight: normal;
 	line-height: 1.4;
 }
-.detail {
-	font-family: var(--font-mono);
-	font-size: 18px;
-	font-weight: normal;
-	line-height: 1.4;
-}
+
 .subhead {
 	font-size: 16px;
 	font-weight: normal;
@@ -64,53 +63,48 @@ p,
 		font-weight: normal;
 		line-height: 1.4;
 	}
+
 	h1,
 	.large-title {
 		font-size: 96px;
 		font-weight: 800;
 		line-height: 1;
 	}
+
 	h2,
 	.title1 {
 		font-size: 48px;
 		font-weight: 800;
 		line-height: 1.2;
 	}
+
 	h3,
 	.title2 {
 		font-size: 36px;
 		font-weight: bold;
 		line-height: 1.3;
 	}
+
 	h4,
 	.title3 {
 		font-size: 24px;
 		font-weight: bold;
 		line-height: 1.4;
 	}
+
 	.large-body {
 		font-size: 36px;
 		font-weight: normal;
 		line-height: 1.3;
 	}
-	.large-detail {
-		font-family: var(--font-mono);
-		font-size: 36px;
-		font-weight: normal;
-		line-height: 1.3;
-	}
+
 	p,
 	.body {
 		font-size: 24px;
 		font-weight: normal;
 		line-height: 1.4;
 	}
-	.detail {
-		font-family: var(--font-mono);
-		font-size: 24px;
-		font-weight: normal;
-		line-height: 1.4;
-	}
+
 	.subhead {
 		font-size: 20px;
 		font-weight: normal;

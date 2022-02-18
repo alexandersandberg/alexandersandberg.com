@@ -16,7 +16,7 @@ layout: layouts/base.njk
 
 	{% set pageNumber = pages[page.fileSlug].number %}
 	{% if pageNumber | isNumber %}
-		<p class="large-detail background-secondary">Nº {{ pageNumber | pad(2) }}{{ "." + itemNumber if itemNumber else "" }}</p>
+		<p class="large-body mono background-secondary">Nº {{ pageNumber | pad(2) }}{{ "." + itemNumber if itemNumber else "" }}</p>
 		<div class="spacer-xs"></div>
 	{% endif %}
 

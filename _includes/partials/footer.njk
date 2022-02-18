@@ -1,45 +1,69 @@
 {% set isHome = page.fileSlug === "" %}
 
 <footer>
-	<nav aria-label="Website">
-		<ul>
-			<li>
-				<a href="/{{ pages.about.path }}">About →</a>
-			</li>
-			<li>
-				<a href="/{{ pages.articles.path }}">Articles →</a>
-			</li>
-			<li>
-				<a href="/{{ pages.blog.path }}">Blog →</a>
-			</li>
-			<li>
-				<a href="/{{ pages.lessons.path }}">Life lessons →</a>
-			</li>
-			<li>
-				<a href="/{{ pages.projects.path }}">Projects {{ "↑" if isHome else "→" }}</a>
-			</li>
-		</ul>
-	</nav>
+	<div class="flex">
+		<nav aria-label="Site">
+			<ul>
+				<li>
+					<a href="/{{ pages.about.path }}">
+						<b>About →</b>
+					</a>
+				</li>
+				<li>
+					<a href="/{{ pages.articles.path }}">
+						<b>Articles →</b>
+					</a>
+				</li>
+				<li>
+					<a href="/{{ pages.blog.path }}">
+						<b>Blog →</b>
+					</a>
+				</li>
+				<li>
+					<a href="/{{ pages.lessons.path }}">
+						<b>Life lessons →</b>
+					</a>
+				</li>
+				<li>
+					<a href="/{{ pages.projects.path }}">
+						<b>Projects {{ "↑" if isHome else "→" }}</b>
+					</a>
+				</li>
+			</ul>
+		</nav>
 
-	<nav aria-label="External">
-		<ul>
-			<li>
-				<a href="https://twitter.com/{{ metadata.author.twitter }}">Twitter ↗</a>
-			</li>
-			<li>
-				<a href="https://github.com/{{ metadata.author.github }}">GitHub ↗</a>
-			</li>
-			<li>
-				<a href="https://linkedin.com/in/{{ metadata.author.linkedin }}">LinkedIn ↗</a>
-			</li>
-			<li>
-				<a href="mailto:{{ metadata.author.email }}">Email ↗</a>
-			</li>
-			<li>
-				<a href="{{ metadata.source }}">Source code ↗</a>
-			</li>
-		</ul>
-	</nav>
+		<nav aria-label="External">
+			<ul>
+				<li>
+					<a href="https://twitter.com/{{ metadata.author.twitter }}">
+						<b>Twitter ↗</b>
+					</a>
+				</li>
+				<li>
+					<a href="https://github.com/{{ metadata.author.github }}">
+						<b>GitHub ↗</b>
+					</a>
+				</li>
+				<li>
+					<a href="https://linkedin.com/in/{{ metadata.author.linkedin }}">
+						<b>LinkedIn ↗</b>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:{{ metadata.author.email }}">
+						<b>Email ↗</b>
+					</a>
+				</li>
+				<li>
+					<a href="{{ metadata.source }}">
+						<b>Source code ↗</b>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 
-	<p>© Alexander Sandberg 2022</p>
+	<div class="spacer-m"></div>
+
+	<p class="subhead mono foreground-tertiary">© Alexander Sandberg 2022</p>
 </footer>
