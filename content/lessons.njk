@@ -6,18 +6,15 @@ eleventyComputed:
   title: "{{ pages.lessons.title }}"
 ---
 
+{% from 'components/lessons-list.njk' import lessonsList %}
+
 {% for category in lessonCategories %}
 	{% set categoryLessons = lessons | withCategorySlug(category.slug) %}
 
 	{% if categoryLessons.length > 0 %}
 		<a href="/{{ pages.lessons.path }}{{ category.slug }}"><h2>{{ category.title }} ({{ categoryLessons.length }})</h2></a>
 
-		{% for lesson in categoryLessons | head(2) %}
-			<a href="/{{ pages.lessons.path }}{{ lesson.id }}/">
-				<p>{{ lesson.body }}</p>
-				<p>— {{ lesson.source }}</p>
-			</a>
-		{% endfor %}
+		{{ lessonsList(categoryLessons | head(2)) }}
 
 		<p><a href="/{{ pages.lessons.path }}{{ category.slug }}">See all lessons →</a></p>
 	{% endif %}

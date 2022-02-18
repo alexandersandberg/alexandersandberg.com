@@ -9,15 +9,10 @@ permalink: "{{ pages.lessons.path }}{{ category.slug }}/"
 eleventyComputed:
   itemNumber: "{{ category.number }}"
   title: "{{ category.title }}"
+  description: "{{ category.description }}"
 ---
 
-<p>{{ category.description }}</p>
+{% from 'components/lessons-list.njk' import lessonsList %}
 
 {% set categoryLessons = lessons | withCategorySlug(category.slug) %}
-
-{% for lesson in categoryLessons %}
-	<a href="/{{ pages.lessons.path }}{{ lesson.id }}/">
-		<p>{{ lesson.body }}</p>
-		<p>— {{ lesson.source }}</p>
-	</a>
-{% endfor %}
+{{ lessonsList(categoryLessons) }}
