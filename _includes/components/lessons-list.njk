@@ -1,0 +1,13 @@
+{% macro lessonsList(lessons) %}
+	{% for lesson in lessons %}
+		<article>
+			<a href="/{{ pages.lessons.path }}{{ lesson.id }}/">
+				<p>{{ lesson.body }}</p>
+				<p>— {{ lesson.source }}</p>
+			</a>
+		</article>
+		{% if loop.index != lessons.length %}
+			<div class="spacer-l"></div>
+		{% endif %}
+	{% endfor %}
+{% endmacro %}
