@@ -3,13 +3,21 @@ layout: layouts/base.njk
 ---
 
 <header>
-	<p class="link">
-		<a href="/{{ pages[pages[page.fileSlug].back].path }}">← {{ pages[pages[page.fileSlug].back].title }}</a>
-	</p>
+	{% set backPage = pages[pages[page.fileSlug].back] %}
+	{% if backPage %}
+		<div>
+			<a href="/{{ backPage.path }}">
+				<b>← {{ backPage.title }}</b>
+			</a>
+		</div>
+	{% endif %}
+
+	<div class="spacer-l"></div>
 
 	{% set pageNumber = pages[page.fileSlug].number %}
 	{% if pageNumber | isNumber %}
 		<p class="large-detail background-secondary">Nº {{ pageNumber | pad(2) }}{{ "." + itemNumber if itemNumber else "" }}</p>
+		<div class="spacer-xs"></div>
 	{% endif %}
 
 	{% if title %}
@@ -17,12 +25,17 @@ layout: layouts/base.njk
 	{% endif %}
 
 	{% if description %}
+		<div class="spacer-l"></div>
 		<p>{{ description }}</p>
 	{% endif %}
 </header>
 
+<div class="spacer-xl"></div>
+
 <main>
 	{{ content | safe }}
 </main>
+
+<div class="spacer-xl"></div>
 
 {% include "partials/footer.njk" %}
