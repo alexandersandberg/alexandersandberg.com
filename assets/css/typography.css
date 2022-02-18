@@ -5,6 +5,29 @@ body {
 	line-height: 1.4;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	color: var(--foreground);
+}
+
+p {
+	color: var(--foreground-secondary);
+}
+
+a {
+	color: var(--foreground);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+p a {
+	color: inherit;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
 .mono {
 	font-family: var(--font-mono);
 }
