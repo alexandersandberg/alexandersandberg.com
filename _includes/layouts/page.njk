@@ -3,13 +3,13 @@ layout: layouts/base.njk
 ---
 
 <header>
-	<p>
+	<p class="link">
 		<a href="/{{ pages[pages[page.fileSlug].back].path }}">← {{ pages[pages[page.fileSlug].back].title }}</a>
 	</p>
 
 	{% set pageNumber = pages[page.fileSlug].number %}
 	{% if pageNumber | isNumber %}
-		<p>Nº {{ pageNumber | pad(2) }}{{ "." + itemNumber if itemNumber else "" }}</p>
+		<p class="large-detail background-secondary">Nº {{ pageNumber | pad(2) }}{{ "." + itemNumber if itemNumber else "" }}</p>
 	{% endif %}
 
 	{% if title %}
