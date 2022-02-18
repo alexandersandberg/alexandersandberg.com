@@ -3,7 +3,7 @@
 		<article>
 			<a href="/{{ pages.lessons.path }}{{ lesson.id }}/">
 				<p>{{ lesson.body }}</p>
-				<p>— {{ lesson.source }}</p>
+				<p class="foreground-tertiary">— {{ lesson.source }}</p>
 			</a>
 		</article>
 		{% if loop.index != lessons.length %}
