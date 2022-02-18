@@ -1,0 +1,15 @@
+.link-with-detail {
+	position: relative;
+}
+.link-with-detail .detail {
+	position: absolute;
+	right: 0;
+}
+
+@media screen and (min-width: 600px) {
+	.link-with-detail .detail {
+		transform: translateX(-100%);
+		left: calc(var(--space-sides) * -1);
+		right: auto;
+	}
+}

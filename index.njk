@@ -6,41 +6,75 @@ description:
 
 {% set pageNumber = pages.home.number %}
 {% if pageNumber | isNumber %}
-	<p>Nº {{ pageNumber | pad(2) }}</p>
+	<p class="large-detail background-secondary">Nº {{ pageNumber | pad(2) }}</p>
+	<div class="spacer-xs"></div>
 {% endif %}
 
 <h1>Alexander Sandberg</h1>
 
+<div class="spacer-l"></div>
+
 <p>I’m a self-taught, product-minded  iOS/macOS Developer with a background in web development and product design.</p>
-<p>When asked to describe myself with one word, I often reply with ‘curious’.</p>
+<p>When asked to describe myself with one word, I often reply with <em>curious</em>.</p>
+<div class="spacer-s"></div>
+<div class="link-with-detail">
+	<span class="detail background-secondary">Nº {{ pages.about.number }}</span>
+	<a href="/{{ pages.about.path }}">
+		<b>Learn more about me →</b>
+	</a>
+</div>
 
-<p>
-	<a href="/{{ pages.about.path }}">Learn more about me →</a>
+<div class="spacer-m"></div>
+
+<p>I sometimes write articles as a way to understand things better, because <em>the person who says he knows what he thinks but cannot express it usually does not know what he thinks.</em>
+	<a class="subhead foreground-tertiary" href="">
+		<sup>(1)</sup>
+	</a>
 </p>
+<div class="spacer-s"></div>
+<div class="link-with-detail">
+	<span class="detail background-secondary">Nº {{ pages.articles.number }}</span>
+	<a href="/{{ pages.articles.path }}">
+		<b>Read the articles →</b>
+	</a>
+</div>
 
-<p>I sometimes write articles as a way to understand things better, because the person who says he knows what he thinks but cannot express it usually does not know what he thinks.⁽¹⁾</p>
-
-<p>
-	<a href="/{{ pages.articles.path }}">Read the articles →</a>
-</p>
+<div class="spacer-m"></div>
 
 <p>Occasionally, I also publish other random stuff that I find worth sharing with the world on my blog.</p>
+<div class="spacer-s"></div>
+<div class="link-with-detail">
+	<span class="detail background-secondary">Nº {{ pages.blog.number }}</span>
+	<a href="/{{ pages.blog.path }}">
+		<b>Visit the blog →</b>
+	</a>
+</div>
 
-<p>
-	<a href="/{{ pages.blog.path }}">Visit the blog →</a>
-</p>
+<div class="spacer-m"></div>
 
 <p>I’ve always been an avid learner who loves to seek new knowledge through books and podcasts. Over the years, I’ve collected many ‘life lessons’ that I want to bring along with me on this journey we call life. I share them here to hopefully inspire others.</p>
+<div class="spacer-s"></div>
+<div class="link-with-detail">
+	<span class="detail background-secondary">Nº {{ pages.lessons.number }}</span>
+	<a href="/{{ pages.lessons.path }}">
+		<b>Explore the life lessons →</b>
+	</a>
+</div>
 
-<p>
-	<a href="/{{ pages.lessons.path }}">Explore the life lessons →</a>
+<div class="spacer-m"></div>
+
+<p>I like to solve problems by building things, because <em>the best way to complain is to make something.</em>
+	<a class="subhead foreground-tertiary" href="">
+		<sup>(2)</sup>
+	</a>
 </p>
-
-<p>I like to solve problems by building things, because the best way to complain is to make something.⁽²⁾</p>
-
-<p>
-	<a href="/{{ pages.projects.path }}">View the projects ↓</a>
-</p>
+<div class="spacer-s"></div>
+<div class="link-with-detail">
+	<span class="detail background-secondary">Nº {{ pages.projects.number }}</span>
+	<a href="/{{ pages.projects.path }}">
+		<b>View the projects ↓</b>
+	</a>
+</div>
 
 {% include "partials/social-links.njk" %}
 
