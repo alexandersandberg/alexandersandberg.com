@@ -69,27 +69,6 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4 {
-	color: var(--foreground);
-}
-
-p {
-	color: var(--foreground-secondary);
-}
-
-a {
-	color: var(--foreground);
-	text-decoration: none;
-}
-
-p a {
-	color: inherit;
-	text-decoration: underline;
-}
-
 h2 + p,
 h3 + p,
 h4 + p,
