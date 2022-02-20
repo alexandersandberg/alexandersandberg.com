@@ -7,8 +7,8 @@ pagination:
   addAllPagesToCollections: true
 permalink: "{{ pages.lessons.path }}/{{ lesson.id }}/"
 eleventyComputed:
-  itemNumber: "{{ lesson.id | pad(2) }}"
-  title: "{{ pages.lesson.title }} #{{ lesson.id | pad(2) }} from {{ lesson.source }}"
+  itemNumber: "{{ lesson.id | pad(3) }}"
+  title: "{{ pages.lesson.title }} #{{ lesson.id | pad(3) }} from {{ lesson.source }}"
   description: "{{ lesson.body }}"
 ---
 
