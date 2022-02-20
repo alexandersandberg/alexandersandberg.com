@@ -6,10 +6,36 @@
 	right: 0;
 }
 
+.lessons-grid {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+	gap: var(--space-l) 0;
+	grid-auto-flow: column;
+	grid-template-areas: ". .";
+}
+
+.lesson-details {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.lesson-details > span:not(:last-child) {
+	margin-right: var(--space-s);
+}
+
 @media screen and (min-width: 600px) {
 	.link-with-detail .detail {
 		transform: translateX(-100%);
 		left: calc(var(--space-sides) * -1);
 		right: auto;
+	}
+
+	.lessons-grid {
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+		grid-template-rows: minmax(0, 1fr);
+		gap: 0 var(--space-xl);
+		grid-auto-flow: row;
 	}
 }

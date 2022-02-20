@@ -12,16 +12,21 @@ eleventyComputed:
 	{% set categoryLessons = lessons | withCategorySlug(category.slug) %}
 
 	{% if categoryLessons.length > 0 %}
-		<article>
+		<article class="separator-xl">
 			<h2>
 				<a href="/{{ pages.lessons.path }}{{ category.slug }}">
 					{{ category.title }} ({{ categoryLessons.length }})
 				</a>
 			</h2>
 
-			{{ lessonsList(categoryLessons | head(2)) }}
+			<div class="spacer-m"></div>
+
+			<div class="lessons-grid">
+				{{ lessonsList(categoryLessons | head(2)) }}
+			</div>
 
 			<div class="spacer-m"></div>
+
 			<div>
 				<a href="/{{ pages.lessons.path }}{{ category.slug }}">
 					See all lessons →

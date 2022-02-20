@@ -7,8 +7,10 @@ eleventyComputed:
 ---
 
 {% for article in articles %}
-	<a href="/{{ pages.articles.path }}{{ article.slug }}/">
-		<h2>{{ article.title }}</h2>
-		<p>{{ article.excerpt }}</p>
-	</a>
+	<article class="separator-xl">
+		<a href="/{{ pages.articles.path }}{{ article.slug }}/">
+			<h2>{{ article.title }}</h2>
+			<p>{{ article.excerpt }}</p>
+		</a>
+	</article>
 {% endfor %}

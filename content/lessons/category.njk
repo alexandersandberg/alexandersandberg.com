@@ -15,4 +15,4 @@ eleventyComputed:
 {% from 'components/lessons-list.njk' import lessonsList with context %}
 
 {% set categoryLessons = lessons | withCategorySlug(category.slug) %}
-{{ lessonsList(categoryLessons) }}
+{{ lessonsList(categoryLessons, "separator-xl") }}
