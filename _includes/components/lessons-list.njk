@@ -1,9 +1,13 @@
-{% macro lessonsList(lessons) %}
+{% macro lessonsList(lessons, articleClass = "") %}
 	{% for lesson in lessons %}
-		<article>
+		<article {% if articleClass %}class="{{ articleClass }}"{% endif %}>
 			<a href="/{{ pages.lessons.path }}{{ lesson.id }}/">
 				<p>{{ lesson.body }}</p>
-				<p class="foreground-tertiary">— {{ lesson.source }}</p>
+				{# TODO: Truncate body to 4(?) lines if possible #}
+				<p class="lesson-details">
+					<span class="foreground-tertiary dont-break-words truncate">— {{ lesson.source }}</span>
+					<span class="mono background-secondary dont-break-words">#{{ lesson.id | pad(3) }}</span>
+				</p>
 			</a>
 		</article>
 	{% endfor %}
