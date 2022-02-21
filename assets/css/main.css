@@ -17,6 +17,7 @@
 	--value-space-m: 32px;
 	--value-space-l: 48px;
 	--value-space-xl: 96px;
+	--value-space-xxl: 192px;
 	--value-space-sides: 20px;
 
 	--space-multiplier: 1;
@@ -26,6 +27,7 @@
 	--space-m: calc(var(--value-space-m) * var(--space-multiplier));
 	--space-l: calc(var(--value-space-l) * var(--space-multiplier));
 	--space-xl: calc(var(--value-space-xl) * var(--space-multiplier));
+	--space-xxl: calc(var(--value-space-xxl) * var(--space-multiplier));
 	--space-sides: calc(
 		var(--value-space-sides) * var(--space-multiplier) * var(--space-multiplier)
 	);
