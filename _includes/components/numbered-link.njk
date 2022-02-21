@@ -1,0 +1,8 @@
+{% macro numberedLink(type, label) %}
+	<div class="numbered-link">
+		<span class="number mono background-secondary">Nº {{ pages[type].number | pad(2) }}</span>
+		<a href="/{{ pages[type].path }}">
+			{{ label }} →
+		</a>
+	</div>
+{% endmacro %}
