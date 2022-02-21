@@ -7,53 +7,63 @@ eleventyComputed:
 
 {% from 'components/numbered-link.njk' import numberedLink with context %}
 
-{% set pageNumber = pages.home.number %}
-{% if pageNumber | isNumber %}
-	<p class="large-body mono background-secondary">Nº {{ pageNumber | pad(2) }}</p>
-	<div class="spacer-xs"></div>
-{% endif %}
+<div id="intro">
+	<div id="intro-aside">
+		<img src="{{ '/assets/img/intro.jpg' | url }}" alt="Photo of Alexander Sandberg"/>
+	</div>
 
-<h1>Alexander Sandberg</h1>
-<div class="spacer-l"></div>
+	<div id="intro-main">
+		<div class="spacer-m"></div>
 
-<div class="separator-m">
-	<p>I’m a self-taught, product-minded  iOS/macOS Developer with a background in web development and product design.</p>
-	<p>When asked to describe myself with one word, I often reply with <em>curious</em>.</p>
-	<div class="spacer-s"></div>
-	{{ numberedLink("about", "Learn more about me →") }}
-</div>
+		{% set pageNumber = pages.home.number %}
+		{% if pageNumber | isNumber %}
+			<p class="large-body mono background-secondary">Nº {{ pageNumber | pad(2) }}</p>
+			<div class="spacer-xs"></div>
+		{% endif %}
 
-<div class="separator-m">
-	<p>I sometimes write articles as a way to understand things better, because <em>the person who says he knows what he thinks but cannot express it usually does not know what he thinks.</em>
-		<a class="subhead foreground-tertiary" href="">
-			<sup>(1)</sup>
-		</a>
-	</p>
-	<div class="spacer-s"></div>
-	{{ numberedLink("articles", "Read the articles →") }}
+		<h1>Alexander Sandberg</h1>
+		<div class="spacer-l"></div>
 
-</div>
+		<div class="separator-m">
+			<p>I’m a self-taught, product-minded  iOS/macOS Developer with a background in web development and product design.</p>
+			<p>When asked to describe myself with one word, I often reply with <em>curious</em>.</p>
+			<div class="spacer-s"></div>
+			{{ numberedLink("about", "Learn more about me →") }}
+		</div>
 
-<div class="separator-m">
-	<p>Occasionally, I also publish other random stuff that I find worth sharing with the world on my blog.</p>
-	<div class="spacer-s"></div>
-	{{ numberedLink("blog", "Visit the blog →") }}
-</div>
+		<div class="separator-m">
+			<p>I sometimes write articles as a way to understand things better, because <em>the person who says he knows what he thinks but cannot express it usually does not know what he thinks.</em>
+				<a class="subhead foreground-tertiary" href="">
+					<sup>(1)</sup>
+				</a>
+			</p>
+			<div class="spacer-s"></div>
+			{{ numberedLink("articles", "Read the articles →") }}
 
-<div class="separator-m">
-	<p>I’ve always been an avid learner who loves to seek new knowledge through books and podcasts. Over the years, I’ve collected many ‘life lessons’ that I want to bring along with me on this journey we call life. I share them here to hopefully inspire others.</p>
-	<div class="spacer-s"></div>
-	{{ numberedLink("lessons", "Explore the life lessons →") }}
-</div>
+		</div>
 
-<div class="separator-m">
-	<p>I like to solve problems by building things, because <em>the best way to complain is to make something.</em>
-		<a class="subhead foreground-tertiary" href="">
-			<sup>(2)</sup>
-		</a>
-	</p>
-	<div class="spacer-s"></div>
-	{{ numberedLink("projects", "View the projects ↓") }}
+		<div class="separator-m">
+			<p>Occasionally, I also publish other random stuff that I find worth sharing with the world on my blog.</p>
+			<div class="spacer-s"></div>
+			{{ numberedLink("blog", "Visit the blog →") }}
+		</div>
+
+		<div class="separator-m">
+			<p>I’ve always been an avid learner who loves to seek new knowledge through books and podcasts. Over the years, I’ve collected many ‘life lessons’ that I want to bring along with me on this journey we call life. I share them here to hopefully inspire others.</p>
+			<div class="spacer-s"></div>
+			{{ numberedLink("lessons", "Explore the life lessons →") }}
+		</div>
+
+		<div class="separator-m">
+			<p>I like to solve problems by building things, because <em>the best way to complain is to make something.</em>
+				<a class="subhead foreground-tertiary" href="">
+					<sup>(2)</sup>
+				</a>
+			</p>
+			<div class="spacer-s"></div>
+			{{ numberedLink("projects", "View the projects ↓") }}
+		</div>
+	</div>
 </div>
 
 <div class="spacer-xl"></div>
