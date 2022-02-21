@@ -1,8 +1,8 @@
 {
 	"home": {
-		"title": "Alexander Sandberg",
+		"title": "Home",
 		"description": "Home description",
-		"path": "/",
+		"path": "",
 		"number": 0,
 		"back": null
 	},
