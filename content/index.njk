@@ -69,7 +69,13 @@ eleventyComputed:
 <div class="spacer-xl"></div>
 
 {% for project in projects %}
-	<h3 class="title1">{{ project.title }}</h3>
-	<p>{{ project.subtitle }}</p>
-	<a href="{{ project.link }}">{{ project.link }} →</a>
+	<article class="separator-xl">
+		<h3 class="title1">{{ project.title }}</h3>
+		<span class="subhead foreground-tertiary">{{ project.subtitle }}</span>
+		<div class="spacer-m"></div>
+		<p>{{ project.description }}</p>
+		<div class="spacer-m"></div>
+		<a href="{{ project.link }}">{{ project.link }} →</a>
+		{# TODO: Make project link look prettier #}
+	</article>
 {% endfor %}
