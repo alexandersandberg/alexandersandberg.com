@@ -5,6 +5,8 @@ eleventyComputed:
   title: "{{ metadata.title }}"
 ---
 
+{% from 'components/numbered-link.njk' import numberedLink with context %}
+
 {% set pageNumber = pages.home.number %}
 {% if pageNumber | isNumber %}
 	<p class="large-body mono background-secondary">Nº {{ pageNumber | pad(2) }}</p>
@@ -18,12 +20,7 @@ eleventyComputed:
 	<p>I’m a self-taught, product-minded  iOS/macOS Developer with a background in web development and product design.</p>
 	<p>When asked to describe myself with one word, I often reply with <em>curious</em>.</p>
 	<div class="spacer-s"></div>
-	<div class="link-with-detail">
-		<span class="detail mono background-secondary">Nº {{ pages.about.number | pad(2) }}</span>
-		<a href="/{{ pages.about.path }}">
-			Learn more about me →
-		</a>
-	</div>
+	{{ numberedLink("about", "Learn more about me") }}
 </div>
 
 <div class="separator-m">
@@ -33,34 +30,20 @@ eleventyComputed:
 		</a>
 	</p>
 	<div class="spacer-s"></div>
-	<div class="link-with-detail">
-		<span class="detail mono background-secondary">Nº {{ pages.articles.number | pad(2) }}</span>
-		<a href="/{{ pages.articles.path }}">
-			Read the articles →
-		</a>
-	</div>
+	{{ numberedLink("articles", "Read the articles") }}
+
 </div>
 
 <div class="separator-m">
 	<p>Occasionally, I also publish other random stuff that I find worth sharing with the world on my blog.</p>
 	<div class="spacer-s"></div>
-	<div class="link-with-detail">
-		<span class="detail mono background-secondary">Nº {{ pages.blog.number | pad(2) }}</span>
-		<a href="/{{ pages.blog.path }}">
-			Visit the blog →
-		</a>
-	</div>
+	{{ numberedLink("blog", "Visit the blog") }}
 </div>
 
 <div class="separator-m">
 	<p>I’ve always been an avid learner who loves to seek new knowledge through books and podcasts. Over the years, I’ve collected many ‘life lessons’ that I want to bring along with me on this journey we call life. I share them here to hopefully inspire others.</p>
 	<div class="spacer-s"></div>
-	<div class="link-with-detail">
-		<span class="detail mono background-secondary">Nº {{ pages.lessons.number | pad(2) }}</span>
-		<a href="/{{ pages.lessons.path }}">
-			Explore the life lessons →
-		</a>
-	</div>
+	{{ numberedLink("lessons", "Explore the life lessons") }}
 </div>
 
 <div class="separator-m">
@@ -70,18 +53,23 @@ eleventyComputed:
 		</a>
 	</p>
 	<div class="spacer-s"></div>
-	<div class="link-with-detail">
-		<span class="detail mono background-secondary">Nº {{ pages.projects.number | pad(2) }}</span>
-		<a href="/{{ pages.projects.path }}">
-			View the projects ↓
-		</a>
-	</div>
+	{{ numberedLink("projects", "View the projects") }}
 </div>
+
+<div class="spacer-xl"></div>
 
 {% include "partials/social-links.njk" %}
 
+<div class="spacer-xl"></div>
+
+<p class="large-body mono background-secondary">Nº {{ pages.projects.number | pad(2) }}</p>
+<div class="spacer-xs"></div>
+<h2 id="projects" class="large-title">Projects</h2>
+
+<div class="spacer-xl"></div>
+
 {% for project in projects %}
-	<h2>{{ project.title }}</h2>
+	<h3 class="title1">{{ project.title }}</h3>
 	<p>{{ project.subtitle }}</p>
 	<a href="{{ project.link }}">{{ project.link }} →</a>
 {% endfor %}

@@ -1,7 +1,7 @@
-.link-with-detail {
+.numbered-link {
 	position: relative;
 }
-.link-with-detail .detail {
+.numbered-link .number {
 	position: absolute;
 	right: 0;
 }
@@ -26,7 +26,7 @@
 }
 
 @media screen and (min-width: 600px) {
-	.link-with-detail .detail {
+	.numbered-link .number {
 		transform: translateX(-100%);
 		left: calc(var(--space-sides) * -1);
 		right: auto;
