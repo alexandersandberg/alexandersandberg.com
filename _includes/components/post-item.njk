@@ -2,7 +2,9 @@
 	<article class="separator-xl">
 		<a href="/{{ pages[type].path }}{{ item.slug }}/">
 			<h2>{{ item.title }}</h2>
-			<p>{{ item.excerpt }}</p>
+			{% if item.excerpt %}
+				<p>{{ item.excerpt }}</p>
+			{% endif %}
 		</a>
 	</article>
 {% endmacro %}
