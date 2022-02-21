@@ -57,11 +57,11 @@
 }
 
 .separator-xs + .separator-xs {
-	margin-top: var(--space-xl);
+	margin-top: var(--space-xs);
 }
 
 .separator-s + .separator-s {
-	margin-top: var(--space-xl);
+	margin-top: var(--space-s);
 }
 
 .separator-m + .separator-m {
@@ -69,7 +69,7 @@
 }
 
 .separator-l + .separator-l {
-	margin-top: var(--space-m);
+	margin-top: var(--space-l);
 }
 
 .separator-xl + .separator-xl {
