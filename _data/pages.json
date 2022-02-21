@@ -1,60 +1,70 @@
 {
 	"home": {
 		"title": "Home",
+		"description": "Home description",
 		"path": "",
 		"number": 0,
 		"back": null
 	},
 	"about": {
 		"title": "About me",
+		"description": "About me description",
 		"path": "about/",
 		"number": 1,
 		"back": "home"
 	},
 	"articles": {
 		"title": "Articles",
+		"description": "Articles description",
 		"path": "articles/",
 		"number": 2,
 		"back": "home"
 	},
 	"blog": {
 		"title": "Blog",
+		"description": "Blog description",
 		"path": "blog/",
 		"number": 3,
 		"back": "home"
 	},
 	"lessons": {
 		"title": "Life lessons",
+		"description": "Notes that I’ve gathered over the years from books, podcasts, movies, etc. that I want to bring along with me on this journey that we call ‘life’.",
 		"path": "life-lessons/",
 		"number": 4,
 		"back": "home"
 	},
 	"projects": {
 		"title": "Projects",
+		"description": "Projects description",
 		"path": "#projects",
 		"number": 5,
 		"back": "home"
 	},
 	"article": {
 		"title": "Article",
+		"description": null,
 		"path": null,
 		"number": 2,
 		"back": "articles"
 	},
 	"post": {
 		"title": "Blog post",
+		"description": null,
 		"path": null,
 		"number": 3,
 		"back": "blog"
 	},
 	"category": {
 		"title": "Life lesson category",
+		"description": null,
 		"path": null,
 		"number": 4,
 		"back": "lessons"
 	},
 	"lesson": {
 		"title": "Life lesson",
+		"description": null,
 		"path": null,
 		"number": 4,
 		"back": null
