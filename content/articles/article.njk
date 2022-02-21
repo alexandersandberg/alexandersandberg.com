@@ -12,4 +12,4 @@ eleventyComputed:
   description: "{{ post.excerpt }}"
 ---
 
-<p>{{ article.body }}</p>
+{% markdownToHtmlString article.body %}

@@ -1,6 +1,8 @@
 require('dotenv').config();
 
 const fs = require("fs");
+const { richTextFromMarkdown } = require('@contentful/rich-text-from-markdown');
+const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy("assets");
@@ -23,6 +25,50 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter("isNumber", (value) => typeof value == 'number');
 
 	eleventyConfig.addFilter("pad", (value, n) => value.toString().padStart(n, "0"));
+
+	eleventyConfig.addAsyncShortcode(
+		'markdownToHtmlString',
+		async (text) => {
+			const richText = await richTextFromMarkdown(text, node => {
+				// TODO: All assets are of node.type "image"; identify the type some
+				// other way if we want to properly render non-image assets.
+
+				if (node.type === "image") {
+					return {
+						nodeType: "embedded-entry-block",
+						content: [],
+						data: {
+							target: {
+								fields: {
+									url: node.url,
+									alt: node.alt,
+								},
+								sys: {
+									type: "image"
+								}
+							}
+						}
+					}
+				}
+
+				return node;
+			})
+
+			const options = {
+				renderNode: {
+					"embedded-entry-block": ({ data: { target: { fields, sys } } }) => {
+						if (sys.type === "image") {
+							return `<img src="${fields.url}" alt="${fields.alt}"/>`
+						}
+
+						return null;
+					}
+				},
+			};
+
+			return documentToHtmlString(richText, options)
+		}
+	);
 
 	eleventyConfig.setBrowserSyncConfig({
 		callbacks: {
