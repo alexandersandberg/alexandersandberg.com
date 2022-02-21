@@ -1,6 +1,8 @@
 ---
 layout: layouts/home.njk
-permalink: "{{ pages.home.path }}"
+permalink: "/"
+eleventyComputed:
+  title: "{{ metadata.title }}"
 ---
 
 {% set pageNumber = pages.home.number %}
