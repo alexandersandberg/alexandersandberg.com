@@ -1,3 +1,20 @@
+#intro {
+	display: flex;
+	flex-direction: column;
+}
+
+#intro-aside {
+	align-self: flex-end;
+	max-width: 200px;
+	max-height: 100px;
+	z-index: -1;
+}
+
+#intro-main {
+	flex-basis: 600px;
+	max-width: 600px;
+}
+
 .numbered-link {
 	position: relative;
 }
@@ -26,10 +43,13 @@
 }
 
 @media screen and (min-width: 600px) {
-	.numbered-link .number {
-		transform: translateX(-100%);
-		left: calc(var(--space-sides) * -1);
-		right: auto;
+	#intro-aside {
+		align-self: flex-end;
+		flex-basis: 280px;
+		flex-shrink: 0;
+		max-width: 280px;
+		max-height: 200px;
+		z-index: -1;
 	}
 
 	.lessons-grid {
@@ -37,5 +57,23 @@
 		grid-template-rows: minmax(0, 1fr);
 		gap: 0 var(--space-xl);
 		grid-auto-flow: row;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	#intro {
+		flex-direction: row;
+	}
+
+	#intro-aside {
+		align-self: flex-start;
+		margin-right: var(--space-l);
+		max-height: auto;
+	}
+
+	.numbered-link .number {
+		transform: translateX(-100%);
+		left: calc(var(--space-sides) * -1);
+		right: auto;
 	}
 }
