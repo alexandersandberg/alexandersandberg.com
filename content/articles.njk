@@ -6,11 +6,8 @@ eleventyComputed:
   title: "{{ pages.articles.title }}"
 ---
 
+{% from 'components/post-item.njk' import postItem with context %}
+
 {% for article in articles %}
-	<article class="separator-xl">
-		<a href="/{{ pages.articles.path }}{{ article.slug }}/">
-			<h2>{{ article.title }}</h2>
-			<p>{{ article.excerpt }}</p>
-		</a>
-	</article>
+	{{ postItem("articles", article) }}
 {% endfor %}
