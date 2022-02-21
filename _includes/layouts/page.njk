@@ -1,5 +1,8 @@
 ---
 layout: layouts/base.njk
+eleventyComputed:
+  title: "{{ title or pages[page.fileSlug].title }}"
+  description: "{{ description or pages[page.fileSlug].description }}"
 ---
 
 <header>

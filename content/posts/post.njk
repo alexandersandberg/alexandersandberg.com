@@ -9,6 +9,7 @@ permalink: "{{ pages.blog.path }}/{{ post.slug }}/"
 eleventyComputed:
   itemNumber: "{{ post.id }}"
   title: "{{ post.title }}"
+  description: "{{ post.excerpt }}"
 ---
 
 <p>{{ post.body }}</p>
