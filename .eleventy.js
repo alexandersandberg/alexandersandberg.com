@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+const metadata = require("./_data/metadata.json");
 const fs = require("fs");
 const { richTextFromMarkdown } = require("@contentful/rich-text-from-markdown");
 const { documentToHtmlString } = require("@contentful/rich-text-html-renderer");
@@ -25,6 +26,18 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter("isNumber", (value) => typeof value == "number");
 
 	eleventyConfig.addFilter("pad", (value, n) => value.toString().padStart(n, "0"));
+
+	eleventyConfig.addShortcode("arrowForLink", (link) => {
+		if (link.startsWith("http") && !link.includes(metadata.url)) {
+			return "↗";
+		}
+
+		if (link.startsWith("mailto:") || link.startsWith("tel:")) {
+			return "↗";
+		}
+
+		return "→";
+	})
 
 	eleventyConfig.addAsyncShortcode(
 		"markdownToHtmlString",

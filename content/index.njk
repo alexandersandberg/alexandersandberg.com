@@ -85,7 +85,10 @@ eleventyComputed:
 		<div class="spacer-m"></div>
 		<p>{{ project.description }}</p>
 		<div class="spacer-m"></div>
-		<a href="{{ project.link }}">{{ project.link }} →</a>
+		<a href="{{ project.link }}">
+			{{ project.link }}
+			{% arrowForLink project.link %}
+		</a>
 		{# TODO: Make project link look prettier #}
 	</article>
 {% endfor %}
