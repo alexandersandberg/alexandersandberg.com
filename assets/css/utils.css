@@ -50,6 +50,12 @@
 	flex-shrink: 0;
 }
 
+.spacer-xxl-desktop {
+	height: var(--space-xl);
+	width: var(--space-xl);
+	flex-shrink: 0;
+}
+
 .spacer-xxl {
 	height: var(--space-xxl);
 	width: var(--space-xxl);
@@ -73,6 +79,10 @@
 }
 
 .separator-xl + .separator-xl {
+	margin-top: var(--space-xl);
+}
+
+.separator-xxl-desktop + .separator-xxl-desktop {
 	margin-top: var(--space-xl);
 }
 
@@ -109,5 +119,17 @@
 	}
 	.flex > *:not(:last-child) {
 		margin: 0 var(--space-l) 0 0;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.spacer-xxl-desktop {
+		height: var(--space-xxl);
+		width: var(--space-xxl);
+		flex-shrink: 0;
+	}
+
+	.separator-xxl-desktop + .separator-xxl-desktop {
+		margin-top: var(--space-xxl);
 	}
 }

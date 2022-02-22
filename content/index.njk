@@ -75,20 +75,32 @@ eleventyComputed:
 <p class="large-body mono background-secondary">Nº {{ pages.projects.number | pad(2) }}</p>
 <div class="spacer-xs"></div>
 <h2 id="projects" class="large-title">Projects</h2>
+{% if pages.projects.description %}
+	<div class="spacer-l"></div>
+	<p>{{ pages.projects.description }}</p>
+{% endif %}
 
-<div class="spacer-xl"></div>
+<div class="spacer-xxl-desktop"></div>
 
 {% for project in projects %}
-	<article class="separator-xl">
-		<h3 class="title1">{{ project.title }}</h3>
-		<span class="subhead foreground-tertiary">{{ project.subtitle }}</span>
-		<div class="spacer-m"></div>
-		<p>{{ project.description }}</p>
-		<div class="spacer-m"></div>
-		<a href="{{ project.link }}">
-			{{ project.link }}
-			{% arrowForLink project.link %}
-		</a>
-		{# TODO: Make project link look prettier #}
+	<article class="project separator-xxl-desktop flex">
+		<div class="project-main">
+			<h3 class="title1">{{ project.title }}</h3>
+			<span class="subhead foreground-tertiary">{{ project.subtitle }}</span>
+			<div class="spacer-m"></div>
+			<p>{{ project.description }}</p>
+			<div class="spacer-m"></div>
+			<a href="{{ project.link }}">
+				{{ project.link }}
+				{% arrowForLink project.link %}
+			</a>
+			{# TODO: Make project link look prettier #}
+		</div>
+		{% set image = project.image.fields %}
+		{% if image %}
+			<div class="project-aside">
+				<img src="{{ image.file.url }}" alt="{{ image.title or 'Preview of ' + project.title + ' project' }}"/>
+			</div>
+		{% endif %}
 	</article>
 {% endfor %}

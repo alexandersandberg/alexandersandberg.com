@@ -41,6 +41,11 @@
 	margin-right: var(--space-s);
 }
 
+.project-aside img {
+	background: var(--background-secondary);
+	padding: var(--space-m) 0 0 var(--space-m);
+}
+
 @media screen and (min-width: 600px) {
 	#intro-aside {
 		align-self: flex-end;
@@ -56,6 +61,26 @@
 		grid-template-rows: minmax(0, 1fr);
 		gap: 0 var(--space-xl);
 		grid-auto-flow: row;
+	}
+
+	.project {
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.project-main {
+		max-width: 500px;
+	}
+
+	.project-aside {
+		min-width: 200px;
+	}
+
+	.project-aside img {
+		height: calc(400px + var(--space-m));
+		width: calc(500px + var(--space-m));
+		object-fit: cover;
+		object-position: top left;
 	}
 }
 
