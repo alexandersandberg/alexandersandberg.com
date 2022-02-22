@@ -1,8 +1,8 @@
-require('dotenv').config();
+require("dotenv").config();
 
 const fs = require("fs");
-const { richTextFromMarkdown } = require('@contentful/rich-text-from-markdown');
-const { documentToHtmlString } = require('@contentful/rich-text-html-renderer');
+const { richTextFromMarkdown } = require("@contentful/rich-text-from-markdown");
+const { documentToHtmlString } = require("@contentful/rich-text-html-renderer");
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy("assets");
@@ -22,12 +22,12 @@ module.exports = (eleventyConfig) => {
 		return array.slice(0, n);
 	});
 
-	eleventyConfig.addFilter("isNumber", (value) => typeof value == 'number');
+	eleventyConfig.addFilter("isNumber", (value) => typeof value == "number");
 
 	eleventyConfig.addFilter("pad", (value, n) => value.toString().padStart(n, "0"));
 
 	eleventyConfig.addAsyncShortcode(
-		'markdownToHtmlString',
+		"markdownToHtmlString",
 		async (text) => {
 			const richText = await richTextFromMarkdown(text, node => {
 				// TODO: All assets are of node.type "image"; identify the type some
@@ -73,7 +73,7 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.setBrowserSyncConfig({
 		callbacks: {
 			ready: function (err, browserSync) {
-				const content_404 = fs.readFileSync('_site/404.html');
+				const content_404 = fs.readFileSync("_site/404.html");
 
 				browserSync.addMiddleware("*", (req, res) => {
 					// Provides the 404 content without redirect.
