@@ -34,6 +34,16 @@
 	);
 }
 
+@media (prefers-color-scheme: light) {
+	:root {
+		--foreground: #000000;
+		--foreground-secondary: #222222;
+		--foreground-tertiary: #666666;
+		--background: #ffffff;
+		--background-secondary: #dddddd;
+	}
+}
+
 html,
 body,
 p,
