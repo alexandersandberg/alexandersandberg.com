@@ -11,7 +11,7 @@ module.exports = async () => {
 				...post.fields,
 				id: index + 1,
 				createdAt: postDateFromString(post.sys.createdAt),
-				updatedAt: postDateFromString(post.sys.updatedAt)
+				...(post.sys.updatedAt != post.sys.createdAt ? { updatedAt: postDateFromString(post.sys.updatedAt) } : {})
 			}));
 		return posts;
 	})
