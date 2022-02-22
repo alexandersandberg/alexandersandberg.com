@@ -32,13 +32,13 @@
 	grid-template-areas: ". .";
 }
 
-.lesson-details {
+.flexed-details {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
 
-.lesson-details > span:not(:last-child) {
+.flexed-details > span:not(:last-child) {
 	margin-right: var(--space-s);
 }
 
