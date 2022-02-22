@@ -7,9 +7,11 @@ pagination:
   addAllPagesToCollections: true
 permalink: "{{ pages.blog.path }}/{{ post.slug }}/"
 eleventyComputed:
-  itemNumber: "{{ post.id }}"
+  itemNumber: "{{ post.id | pad(3) }}"
   title: "{{ post.title }}"
   description: "{{ post.excerpt }}"
+  publishedDate: "{{ post.createdAt }}"
+  updatedDate: "{{ post.updatedAt }}"
 ---
 
 {% markdownToHtmlString post.body %}

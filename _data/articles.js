@@ -1,4 +1,5 @@
 const client = require('../_11ty/utils.js').contentfulClient;
+const postDateFromString = require('../_11ty/utils.js').postDateFromString;
 
 module.exports = async () => {
 	return client.getEntries({
@@ -9,6 +10,8 @@ module.exports = async () => {
 			.map((article, index) => ({
 				...article.fields,
 				id: index + 1,
+				createdAt: postDateFromString(article.sys.createdAt),
+				updatedAt: postDateFromString(article.sys.updatedAt)
 			}));
 		return articles;
 	})

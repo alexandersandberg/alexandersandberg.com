@@ -4,7 +4,7 @@
 			<a href="/{{ pages.lessons.path }}{{ lesson.id }}/">
 				<p>{{ lesson.body }}</p>
 				{# TODO: Truncate body to 4(?) lines if possible #}
-				<p class="lesson-details">
+				<p class="flexed-details">
 					<span class="foreground-tertiary dont-break-words truncate">— {{ lesson.source }}</span>
 					<span class="mono background-secondary dont-break-words">#{{ lesson.id | pad(3) }}</span>
 				</p>

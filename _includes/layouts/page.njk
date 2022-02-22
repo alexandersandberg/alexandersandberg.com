@@ -34,6 +34,12 @@ eleventyComputed:
 		<div class="spacer-l"></div>
 		<p>{{ description }}</p>
 	{% endif %}
+
+	{% set date = updatedDate or publishedDate %}
+	{% if date %}
+		<div class="spacer-l"></div>
+		<p class="subhead foreground-tertiary">{{ "Updated" if updatedDate else "Published" }} in {{ date }}</p>
+	{% endif %}
 </header>
 
 <div class="spacer-xl"></div>

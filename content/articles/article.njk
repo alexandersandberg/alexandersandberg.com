@@ -7,9 +7,11 @@ pagination:
   addAllPagesToCollections: true
 permalink: "{{ pages.articles.path }}/{{ article.slug }}/"
 eleventyComputed:
-  itemNumber: "{{ article.id }}"
+  itemNumber: "{{ article.id | pad(3) }}"
   title: "{{ article.title }}"
   description: "{{ article.excerpt }}"
+  publishedDate: "{{ article.createdAt }}"
+  updatedDate: "{{ article.updatedAt }}"
 ---
 
 {% markdownToHtmlString article.body %}
