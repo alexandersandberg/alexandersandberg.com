@@ -15,10 +15,10 @@
 	max-width: 645px;
 }
 
-.numbered-link {
+.intro-link {
 	position: relative;
 }
-.numbered-link .number {
+.intro-link .number {
 	position: absolute;
 	right: 0;
 }
@@ -96,7 +96,7 @@
 		max-height: auto;
 	}
 
-	.numbered-link .number {
+	.intro-link .number {
 		transform: translateX(-100%);
 		left: calc(var(--space-sides) * -1);
 		right: auto;

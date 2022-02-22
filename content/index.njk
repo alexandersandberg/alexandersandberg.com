@@ -5,7 +5,7 @@ eleventyComputed:
   title: "{{ metadata.title }}"
 ---
 
-{% from 'components/numbered-link.njk' import numberedLink with context %}
+{% from 'components/intro-link.njk' import introLink with context %}
 
 <div id="intro">
 	<div id="intro-aside">
@@ -28,7 +28,7 @@ eleventyComputed:
 			<p>I’m a self-taught, product-minded  iOS/macOS Developer with a background in web development and product design.</p>
 			<p>When asked to describe myself with one word, I often reply with <em>curious</em>.</p>
 			<div class="spacer-s"></div>
-			{{ numberedLink("about", "Learn more about me →") }}
+			{{ introLink("about", "Learn more about me →") }}
 		</div>
 
 		<div class="separator-l">
@@ -38,20 +38,20 @@ eleventyComputed:
 				</a>
 			</p>
 			<div class="spacer-s"></div>
-			{{ numberedLink("articles", "Read the articles →") }}
+			{{ introLink("articles", "Read the articles →") }}
 
 		</div>
 
 		<div class="separator-l">
 			<p>Occasionally, I also publish other random stuff that I find worth sharing with the world on my blog.</p>
 			<div class="spacer-s"></div>
-			{{ numberedLink("blog", "Visit the blog →") }}
+			{{ introLink("blog", "Visit the blog →") }}
 		</div>
 
 		<div class="separator-l">
 			<p>I’ve always been an avid learner who loves to seek new knowledge through books and podcasts. Over the years, I’ve collected many ‘life lessons’ that I want to bring along with me on this journey we call life. I share them here to hopefully inspire others.</p>
 			<div class="spacer-s"></div>
-			{{ numberedLink("lessons", "Explore the life lessons →") }}
+			{{ introLink("lessons", "Explore the life lessons →") }}
 		</div>
 
 		<div class="separator-l">
@@ -61,7 +61,7 @@ eleventyComputed:
 				</a>
 			</p>
 			<div class="spacer-s"></div>
-			{{ numberedLink("projects", "View the projects ↓") }}
+			{{ introLink("projects", "View the projects ↓") }}
 		</div>
 	</div>
 </div>
