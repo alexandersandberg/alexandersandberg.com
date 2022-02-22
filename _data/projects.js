@@ -6,8 +6,8 @@ module.exports = async () => {
 		order: 'fields.number'
 	}).then((response) => {
 		const projects = response.items
-			.map((lesson) => ({
-				...lesson.fields,
+			.map((project) => ({
+				...project.fields,
 			}));
 		return projects;
 	})
