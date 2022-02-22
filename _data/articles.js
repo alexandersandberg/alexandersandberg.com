@@ -6,8 +6,8 @@ module.exports = async () => {
 		order: 'sys.createdAt'
 	}).then((response) => {
 		const articles = response.items
-			.map((lesson, index) => ({
-				...lesson.fields,
+			.map((article, index) => ({
+				...article.fields,
 				id: index + 1,
 			}));
 		return articles;
