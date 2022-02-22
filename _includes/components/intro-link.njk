@@ -1,5 +1,5 @@
-{% macro numberedLink(type, label) %}
-	<div class="numbered-link">
+{% macro introLink(type, label) %}
+	<div class="intro-link">
 		<span class="number mono background-secondary">Nº {{ pages[type].number | pad(2) }}</span>
 		<a href="/{{ pages[type].path }}">
 			{{ label }}
