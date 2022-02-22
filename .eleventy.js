@@ -76,6 +76,41 @@ module.exports = (eleventyConfig) => {
 					}
 				}
 
+				if (node.type === "code") {
+					return {
+						nodeType: "code",
+						content: [],
+						data: {
+							target: {
+								fields: {
+									value: node.value,
+								},
+								sys: {
+									type: "code",
+									lang: node.lang
+								}
+							}
+						}
+					}
+				}
+
+				if (node.type === "html") {
+					return {
+						nodeType: "html",
+						content: [],
+						data: {
+							target: {
+								fields: {
+									html: node.value,
+								},
+								sys: {
+									type: "html",
+								}
+							}
+						}
+					}
+				}
+
 				return node;
 			})
 
@@ -87,6 +122,16 @@ module.exports = (eleventyConfig) => {
 						}
 
 						return null;
+					},
+					"code": ({ data: { target: { fields, sys } } }) => {
+						if (sys.type === "code") {
+							return `<code><pre>${fields.value}</pre></code>`
+						}
+
+						return null;
+					},
+					"html": ({ data: { target: { fields } } }) => {
+						return fields.html
 					}
 				},
 			};

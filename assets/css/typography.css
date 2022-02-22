@@ -33,6 +33,7 @@ p a {
 }
 
 h1,
+.huge-title,
 .large-title {
 	font-size: 48px;
 	font-weight: 800;
@@ -87,11 +88,17 @@ p,
 		line-height: 1.4;
 	}
 
-	h1,
-	.large-title {
+	.huge-title {
 		font-size: 96px;
 		font-weight: 800;
 		line-height: 1;
+	}
+
+	h1,
+	.large-title {
+		font-size: 64px;
+		font-weight: 800;
+		line-height: 1.1;
 	}
 
 	h2,
