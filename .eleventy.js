@@ -27,6 +27,18 @@ module.exports = (eleventyConfig) => {
 
 	eleventyConfig.addFilter("pad", (value, n) => value.toString().padStart(n, "0"));
 
+	eleventyConfig.addFilter("prettyLink", (link) => {
+		if (link.startsWith(metadata.url)) {
+			return link.replace(metadata.url, "/");
+		}
+
+		if (link.startsWith("http")) {
+			return link.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "");
+		}
+
+		return link
+	});
+
 	eleventyConfig.addShortcode("arrowForLink", (link) => {
 		if (link.startsWith("http") && !link.includes(metadata.url)) {
 			return "↗";
