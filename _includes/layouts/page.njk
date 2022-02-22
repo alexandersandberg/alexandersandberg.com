@@ -1,9 +1,12 @@
 ---
 layout: layouts/base.njk
+bodyClass: page
 eleventyComputed:
   title: "{{ title or pages[page.fileSlug].title }}"
   description: "{{ description or pages[page.fileSlug].description }}"
 ---
+
+{% set isItem = itemNumber %}
 
 <header>
 	{% set backPage = pages[pages[page.fileSlug].back] %}
@@ -24,7 +27,7 @@ eleventyComputed:
 	{% endif %}
 
 	{% if title %}
-		<h1>{{ title }}</h1>
+		<h1 class="{% if isItem %}large-title{% else %}huge-title{% endif %}">{{ title }}</h1>
 	{% endif %}
 
 	{% if description %}
@@ -35,6 +38,6 @@ eleventyComputed:
 
 <div class="spacer-xl"></div>
 
-<main>
+<main{% if isItem %} class="post"{% endif %}>
 	{{ content | safe }}
 </main>
