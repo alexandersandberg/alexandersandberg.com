@@ -47,6 +47,15 @@
 	padding: var(--space-m) 0 0 var(--space-m);
 }
 
+.number-badge {
+	display: block;
+	min-width: 42px;
+	text-align: center;
+	background: var(--background-secondary);
+	padding: 6px 12px;
+	border-radius: 16px;
+}
+
 @media screen and (min-width: 600px) {
 	#intro-aside {
 		align-self: flex-end;

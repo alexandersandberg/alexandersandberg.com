@@ -10,11 +10,15 @@ permalink: "{{ pages.lessons.path }}"
 
 	{% if categoryLessons.length > 0 %}
 		<article class="separator-xl">
-			<h2>
-				<a href="/{{ pages.lessons.path }}{{ category.slug }}">
-					{{ category.title }} ({{ categoryLessons.length }})
-				</a>
-			</h2>
+			<div class="centered-row">
+				<h2>
+					<a href="/{{ pages.lessons.path }}{{ category.slug }}">
+						{{ category.title }}
+					</a>
+				</h2>
+				<div class="spacer-s"></div>
+				<span class="subhead number-badge">{{ categoryLessons.length }}</span>
+			</div>
 
 			<div class="spacer-m"></div>
 
