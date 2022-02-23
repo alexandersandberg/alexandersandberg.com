@@ -32,9 +32,12 @@
 	grid-template-areas: ". .";
 }
 
-.project-aside img {
-	background: var(--background-secondary);
-	padding: var(--space-m) 0 0 var(--space-m);
+.project {
+	align-items: center;
+}
+
+.project-aside {
+	max-width: 250px;
 }
 
 .number-badge {
@@ -64,7 +67,6 @@
 	}
 
 	.project {
-		align-items: center;
 		justify-content: space-between;
 	}
 
@@ -74,13 +76,7 @@
 
 	.project-aside {
 		min-width: 200px;
-	}
-
-	.project-aside img {
-		height: calc(400px + var(--space-m));
-		width: calc(500px + var(--space-m));
-		object-fit: cover;
-		object-position: top left;
+		max-width: 300px;
 	}
 }
 
