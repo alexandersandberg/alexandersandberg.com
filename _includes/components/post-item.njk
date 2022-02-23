@@ -10,8 +10,9 @@
 			<p>{{ item.excerpt }}</p>
 		{% endif %}
 		<div class="spacer-l"></div>
-		<div class="flexed-details">
+		<div class="row-centered">
 			<a class="dont-break-words truncate" href="{{ link }}">Read {{ "article" if type == "articles" else "post"}} →</a>
+			<div class="spacer-s"></div>
 			<span class="mono background-secondary dont-break-words">#{{ item.id | pad(3) }}</span>
 		</div>
 	</article>

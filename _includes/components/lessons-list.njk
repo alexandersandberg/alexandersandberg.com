@@ -7,8 +7,9 @@
 				{# TODO: Truncate body to 4(?) lines if possible #}
 			</a>
 			<div class="spacer-s"></div>
-			<div class="flexed-details">
+			<div class="row-centered">
 				<span class="foreground-tertiary dont-break-words truncate">— {{ lesson.source }}</span>
+				<div class="spacer-s"></div>
 				<a href="{{ link }}">
 					<span class="body mono background-secondary dont-break-words">#{{ lesson.id | pad(3) }}</span>
 				</a>
