@@ -1,7 +1,7 @@
 {
 	"home": {
 		"title": "Home",
-		"description": "Home description",
+		"description": null,
 		"path": "",
 		"number": 0,
 		"back": null
