@@ -99,6 +99,12 @@ img {
 	vertical-align: bottom; /* Remove white-space below images */
 }
 
+::marker,
+small,
+p code {
+	color: var(--foreground-tertiary);
+}
+
 .page {
 	max-width: var(--page-max-width);
 }
@@ -130,11 +136,6 @@ p + p,
 .post blockquote {
 	/* TODO: Improve */
 	font-style: italic;
-}
-
-.post small,
-.post p code {
-	color: var(--foreground-tertiary);
 }
 
 .post pre {
