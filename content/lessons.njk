@@ -6,7 +6,7 @@ permalink: "{{ pages.lessons.path }}"
 {% from 'components/lessons-list.njk' import lessonsList with context %}
 
 {% for category in lessonCategories %}
-	{% set categoryLessons = lessons | withCategorySlug(category.slug) %}
+	{% set categoryLessons = lessons | withCategorySlug(category.slug) | reverse %}
 
 	{% if categoryLessons.length > 0 %}
 		<article class="separator-xl">

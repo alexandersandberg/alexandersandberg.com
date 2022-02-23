@@ -5,6 +5,6 @@ permalink: "{{ pages.blog.path }}"
 
 {% from 'components/post-item.njk' import postItem with context %}
 
-{% for post in posts %}
+{% for post in posts | reverse %}
 	{{ postItem("blog", post) }}
 {% endfor %}
