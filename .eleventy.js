@@ -2,8 +2,10 @@ require("dotenv").config();
 
 const metadata = require("./_data/metadata.json");
 const fs = require("fs");
-const { richTextFromMarkdown } = require("@contentful/rich-text-from-markdown");
-const { documentToHtmlString } = require("@contentful/rich-text-html-renderer");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
+const implicitFigures = require('markdown-it-implicit-figures');
+const hljs = require('highlight.js');
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy("assets");
@@ -51,92 +53,39 @@ module.exports = (eleventyConfig) => {
 		return "→";
 	})
 
+	const md = markdownIt({
+		html: true,
+		breaks: true,
+		linkify: true,
+		typographer: false,
+		highlight: (str, lang) => {
+			if (lang && hljs.getLanguage(lang)) {
+				try {
+					return '<pre class="hljs subhead mono"><code>' +
+						hljs.highlight(str, { language: lang, ignoreIllegals: false }).value +
+						'</code></pre>';
+				} catch (__) { }
+			}
+
+			return '<pre class="hljs subhead mono"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+		}
+	}).use(markdownItAnchor, {
+		permalink: markdownItAnchor.permalink.headerLink({ safariReaderFix: true }),
+		slugify: eleventyConfig.getFilter("slug")
+	}).use(implicitFigures, {
+		dataType: false,
+		figcaption: false,
+		tabindex: false,
+		link: false,
+	});
+
 	eleventyConfig.addAsyncShortcode(
 		"markdownToHtmlString",
 		async (text) => {
-			const richText = await richTextFromMarkdown(text, node => {
-				// TODO: All assets are of node.type "image"; identify the type some
-				// other way if we want to properly render non-image assets.
+			const parsedMarkdown = md.render(text);
 
-				if (node.type === "image") {
-					return {
-						nodeType: "embedded-entry-block",
-						content: [],
-						data: {
-							target: {
-								fields: {
-									url: node.url,
-									alt: node.alt,
-								},
-								sys: {
-									type: "image"
-								}
-							}
-						}
-					}
-				}
+			return parsedMarkdown
 
-				if (node.type === "code") {
-					return {
-						nodeType: "code",
-						content: [],
-						data: {
-							target: {
-								fields: {
-									value: node.value,
-								},
-								sys: {
-									type: "code",
-									lang: node.lang
-								}
-							}
-						}
-					}
-				}
-
-				if (node.type === "html") {
-					return {
-						nodeType: "html",
-						content: [],
-						data: {
-							target: {
-								fields: {
-									html: node.value,
-								},
-								sys: {
-									type: "html",
-								}
-							}
-						}
-					}
-				}
-
-				return node;
-			})
-
-			const options = {
-				renderNode: {
-					"embedded-entry-block": ({ data: { target: { fields, sys } } }) => {
-						if (sys.type === "image") {
-							return `<img src="${fields.url}" alt="${fields.alt}"/>`
-						}
-
-						return null;
-					},
-					"code": ({ data: { target: { fields, sys } } }) => {
-						if (sys.type === "code") {
-							return `<code><pre>${fields.value}</pre></code>`
-						}
-
-						return null;
-					},
-					"html": ({ data: { target: { fields } } }) => {
-						return fields.html
-					}
-				},
-			};
-
-			return documentToHtmlString(richText, options)
 		}
 	);
 
