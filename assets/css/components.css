@@ -32,16 +32,6 @@
 	grid-template-areas: ". .";
 }
 
-.flexed-details {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.flexed-details > span:not(:last-child) {
-	margin-right: var(--space-s);
-}
-
 .project-aside img {
 	background: var(--background-secondary);
 	padding: var(--space-m) 0 0 var(--space-m);

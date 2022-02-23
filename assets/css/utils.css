@@ -99,10 +99,15 @@
 	margin: 0 0 var(--space-l) 0;
 }
 
-.centered-row {
+.row-centered {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: space-between;
+}
+
+.hug-contents {
+	justify-content: flex-start;
 }
 
 .dont-break-words {
