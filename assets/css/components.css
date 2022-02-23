@@ -49,6 +49,18 @@
 	border-radius: 16px;
 }
 
+.header-anchor {
+	position: relative;
+}
+
+.header-anchor:hover::before {
+	content: "#";
+	position: absolute;
+	transform: translateX(-100%);
+	left: calc(var(--space-xs) * -1);
+	color: var(--background-secondary);
+}
+
 @media screen and (min-width: 600px) {
 	#intro-aside {
 		align-self: flex-end;

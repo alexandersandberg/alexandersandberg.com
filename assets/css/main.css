@@ -46,13 +46,14 @@
 
 html,
 body,
-p,
-blockquote,
-cite,
 h1,
 h2,
 h3,
-h4 {
+h4,
+p,
+blockquote,
+figure,
+cite {
 	margin: 0;
 	padding: 0;
 }
@@ -106,8 +107,8 @@ img {
 	margin-top: var(--space-m);
 }
 
-.post * + img,
-.post img + * {
+.post * + figure,
+.post figure + * {
 	margin-top: var(--space-l);
 }
 
@@ -131,12 +132,15 @@ p + p,
 	font-style: italic;
 }
 
-.post code {
-	/* TODO: Improve + syntax highlighting */
+.post small,
+.post p code {
+	color: var(--foreground-tertiary);
 }
 
-.post small {
-	color: var(--foreground-tertiary);
+.post pre {
+	padding: var(--space-s);
+	border-radius: var(--border-radius);
+	overflow-x: auto;
 }
 
 .post hr {
