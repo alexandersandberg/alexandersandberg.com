@@ -13,6 +13,8 @@
 		{# TODO: Feeds #}
 		{# <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}"> #}
+
+		<script defer data-domain="alexandersandberg.com" src="https://plausible.io/js/plausible.js"></script>
 	</head>
 	<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
 		{{ content | safe }}
