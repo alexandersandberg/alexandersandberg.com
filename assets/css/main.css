@@ -133,6 +133,14 @@ p + p,
 	margin-top: var(--space-xs);
 }
 
+.post p a,
+.post ol a,
+.post ul a {
+	color: inherit;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
 .post blockquote {
 	/* TODO: Improve */
 	font-style: italic;
