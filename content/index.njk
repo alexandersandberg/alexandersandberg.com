@@ -72,7 +72,7 @@ eleventyComputed:
 
 <div class="spacer-xl"></div>
 
-<p class="large-body mono background-secondary">Nº {{ pages.projects.number | pad(2) }}</p>
+<p class="large-body mono background-secondary" aria-hidden="true">Nº {{ pages.projects.number | pad(2) }}</p>
 <div class="spacer-xs"></div>
 <h2 id="projects" class="huge-title">Projects</h2>
 {% if pages.projects.description %}
