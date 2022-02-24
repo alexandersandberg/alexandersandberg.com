@@ -63,11 +63,10 @@
 
 @media (prefers-color-scheme: light) {
 	#intro h1 {
-		filter: drop-shadow(30px 10px 50px var(--background));
+		filter: drop-shadow(20px 0px 50px var(--background));
 	}
 
 	.project-aside {
-		max-width: 250px;
 		filter: drop-shadow(0px 20px 50px var(--background-secondary));
 	}
 }
