@@ -1,6 +1,6 @@
 body {
 	font-family: var(--font-main);
-	font-size: 19px;
+	font-size: 20px;
 	font-weight: normal;
 	line-height: 1.5;
 }
@@ -50,7 +50,7 @@ h3,
 
 h4,
 .title3 {
-	font-size: 19px;
+	font-size: 20px;
 	font-weight: bold;
 	line-height: 1.5;
 }
@@ -63,7 +63,7 @@ h4,
 
 p,
 .body {
-	font-size: 19px;
+	font-size: 20px;
 	font-weight: normal;
 	line-height: 1.5;
 }
