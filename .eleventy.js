@@ -9,6 +9,7 @@ const hljs = require('highlight.js');
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy("assets");
+	eleventyConfig.addPassthroughCopy("_redirects");
 
 	eleventyConfig.addFilter("withCategorySlug", (lessons, categorySlug) => {
 		return lessons.filter(lesson => lesson.category.slug === categorySlug);
