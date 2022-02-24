@@ -22,12 +22,6 @@ a {
 	font-weight: 700;
 }
 
-p a {
-	color: inherit;
-	text-decoration: underline;
-	font-weight: normal;
-}
-
 .mono {
 	font-family: var(--font-mono);
 }
