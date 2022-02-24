@@ -17,7 +17,7 @@ eleventyComputed:
 
 		{% set pageNumber = pages.home.number %}
 		{% if pageNumber | isNumber %}
-			<p class="large-body mono background-secondary">Nº {{ pageNumber | pad(2) }}</p>
+			<p class="large-body mono background-secondary" aria-hidden="true">Nº {{ pageNumber | pad(2) }}</p>
 			<div class="spacer-xs"></div>
 		{% endif %}
 
