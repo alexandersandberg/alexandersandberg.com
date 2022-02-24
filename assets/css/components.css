@@ -61,6 +61,17 @@
 	color: var(--background-secondary);
 }
 
+@media (prefers-color-scheme: light) {
+	#intro h1 {
+		filter: drop-shadow(30px 10px 50px var(--background));
+	}
+
+	.project-aside {
+		max-width: 250px;
+		filter: drop-shadow(0px 20px 50px var(--background-secondary));
+	}
+}
+
 @media screen and (min-width: 600px) {
 	#intro-aside {
 		align-self: flex-end;
