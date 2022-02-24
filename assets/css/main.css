@@ -99,6 +99,10 @@ img {
 	vertical-align: bottom; /* Remove white-space below images */
 }
 
+[id] {
+	scroll-margin-top: var(--space-xl);
+}
+
 ::marker,
 small,
 p code {
