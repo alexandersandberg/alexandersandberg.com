@@ -19,11 +19,11 @@
   "homepage": "https://github.com/alexandersandberg/alexandersandberg.com#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-img": "^1.1.0",
     "contentful": "^9.1.10",
     "dotenv": "^16.0.0",
     "highlight.js": "^11.4.0",
     "markdown-it": "^12.3.2",
-    "markdown-it-anchor": "^8.4.1",
-    "markdown-it-implicit-figures": "^0.10.0"
+    "markdown-it-anchor": "^8.4.1"
   }
 }

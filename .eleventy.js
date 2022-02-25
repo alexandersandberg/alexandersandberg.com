@@ -1,14 +1,15 @@
 require("dotenv").config();
 
-const metadata = require("./_data/metadata.json");
 const fs = require("fs");
+const hljs = require("highlight.js");
+const imageShortcode = require('./_11ty/utils.js').imageShortcode;
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const implicitFigures = require('markdown-it-implicit-figures');
-const hljs = require('highlight.js');
+const metadata = require("./_data/metadata.json");
 
 module.exports = (eleventyConfig) => {
-	eleventyConfig.addPassthroughCopy("assets");
+	eleventyConfig.addPassthroughCopy("css");
+	eleventyConfig.addPassthroughCopy("img");
 	eleventyConfig.addPassthroughCopy("_redirects");
 
 	eleventyConfig.addFilter("withCategorySlug", (lessons, categorySlug) => {
@@ -54,6 +55,8 @@ module.exports = (eleventyConfig) => {
 		return "→";
 	})
 
+	eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+
 	const md = markdownIt({
 		html: true,
 		breaks: true,
@@ -73,20 +76,25 @@ module.exports = (eleventyConfig) => {
 	}).use(markdownItAnchor, {
 		permalink: markdownItAnchor.permalink.headerLink({ safariReaderFix: true }),
 		slugify: eleventyConfig.getFilter("slug")
-	}).use(implicitFigures, {
-		dataType: false,
-		figcaption: false,
-		tabindex: false,
-		link: false,
 	});
 
 	eleventyConfig.addAsyncShortcode(
 		"markdownToHtmlString",
 		async (text) => {
-			const parsedMarkdown = md.render(text);
+			const imageRegex = /!\[(.*?)\]\((.*?)\)/g;
+			const imageMatches = text.match(imageRegex);
 
-			return parsedMarkdown
+			if (imageMatches) {
+				for (const imageMatch of imageMatches) {
 
+					const [, alt, src] = imageMatch.match(/!\[(.*?)\]\((.*?)\)/);
+					const imageHtml = await imageShortcode(src, alt);
+
+					text = text.replace(imageMatch, imageHtml);
+				}
+			}
+
+			return md.render(text);
 		}
 	);
 
