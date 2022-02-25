@@ -9,7 +9,7 @@ eleventyComputed:
 
 <div id="intro">
 	<div id="intro-aside">
-		<img src="{{ '/assets/img/intro.jpg' | url }}" alt="Photo of Alexander Sandberg"/>
+		<img src="{{ '/assets/img/intro.jpg' | url }}" width="280" height="374" alt="Photo of Alexander Sandberg"/>
 	</div>
 
 	<div id="intro-main">
@@ -98,7 +98,7 @@ eleventyComputed:
 		{% set image = project.image.fields %}
 		{% if image %}
 			<div class="project-aside">
-				<img src="{{ image.file.url }}" alt="{{ image.title or 'Preview of ' + project.title + ' project' }}"/>
+				<img src="{{ image.file.url }}" width="300" height="606" alt="{{ image.title or 'Preview of ' + project.title + ' project' }}"/>
 			</div>
 		{% endif %}
 	</article>
