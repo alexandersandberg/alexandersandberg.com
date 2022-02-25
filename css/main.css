@@ -52,6 +52,7 @@ h3,
 h4,
 p,
 blockquote,
+picture,
 figure,
 cite {
 	margin: 0;
@@ -117,9 +118,13 @@ p code {
 	margin-top: var(--space-m);
 }
 
-.post * + figure,
-.post figure + * {
-	margin-top: var(--space-l);
+.post picture {
+	display: inline-block;
+	margin: var(--space-l) 0;
+}
+
+.post picture img {
+	margin: 0;
 }
 
 .post * + h2,
