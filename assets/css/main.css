@@ -6,7 +6,7 @@
 	--foreground-secondary: #dddddd;
 	--foreground-tertiary: #999999;
 	--background: #000000;
-	--background-secondary: #5e5e5e;
+	--background-secondary: #757575;
 
 	--site-max-width: 1200px;
 	--page-max-width: 900px;
@@ -40,7 +40,7 @@
 		--foreground-secondary: #222222;
 		--foreground-tertiary: #666666;
 		--background: #ffffff;
-		--background-secondary: #8f8f8f;
+		--background-secondary: #757575;
 	}
 }
 
