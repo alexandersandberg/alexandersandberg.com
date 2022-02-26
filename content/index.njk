@@ -6,6 +6,7 @@ eleventyComputed:
 ---
 
 {% from 'components/intro-link.njk' import introLink with context %}
+{% from 'components/icon.njk' import icon %}
 
 <div id="intro">
 	<div id="intro-aside">
@@ -28,7 +29,8 @@ eleventyComputed:
 		<div class="spacer-l"></div>
 
 		<div class="separator-l">
-			<p>I’m a self-taught, product-minded  iOS/macOS Developer with a background in web development and product design.</p>
+			<p>I’m a self-taught, product-minded {{ icon("apple") }}
+				<b>iOS/macOS Developer</b> with a background in web development and product design.</p>
 			<p>When asked to describe myself with one word, I often reply with <em>curious</em>.</p>
 			<div class="spacer-s"></div>
 			{{ introLink("about", "Learn more about me →") }}
