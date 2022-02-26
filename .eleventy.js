@@ -10,6 +10,7 @@ const metadata = require("./_data/metadata.json");
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy("css");
 	eleventyConfig.addPassthroughCopy("img");
+	eleventyConfig.addPassthroughCopy("robots.txt");
 	eleventyConfig.addPassthroughCopy("_redirects");
 
 	eleventyConfig.addFilter("withCategorySlug", (lessons, categorySlug) => {
