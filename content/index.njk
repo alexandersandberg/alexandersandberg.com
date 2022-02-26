@@ -9,7 +9,10 @@ eleventyComputed:
 
 <div id="intro">
 	<div id="intro-aside">
-		<img src="{{ '/img/intro.jpg' | url }}" width="280" height="374" alt="Photo of Alexander Sandberg"/>
+		{% image "./img/intro.jpg",
+		"Photo of Alexander Sandberg",
+		[null],
+		null %}
 	</div>
 
 	<div id="intro-main">
@@ -100,7 +103,8 @@ eleventyComputed:
 			<div class="project-aside">
 				{% image image.file.url,
 				image.title or "Preview of " + project.title + " project",
-				[null, 300] %}
+				[null],
+				null %}
 			</div>
 		{% endif %}
 	</article>
