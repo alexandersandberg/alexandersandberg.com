@@ -24,6 +24,7 @@
     "dotenv": "^16.0.0",
     "highlight.js": "^11.4.0",
     "markdown-it": "^12.3.2",
-    "markdown-it-anchor": "^8.4.1"
+    "markdown-it-anchor": "^8.4.1",
+    "netlify-plugin-cache": "^1.0.3"
   }
 }
