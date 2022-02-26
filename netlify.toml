@@ -14,3 +14,9 @@
   pretty_urls = true
 [build.processing.images]
   compress = true
+
+[[plugins]]
+package = "netlify-plugin-cache"
+
+  [plugins.inputs]
+  paths = [".cache"]
