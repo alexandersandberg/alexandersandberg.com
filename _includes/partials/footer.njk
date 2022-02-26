@@ -1,10 +1,13 @@
 {% set isHome = page.url === "/" %}
 
-<footer>
+<footer id="footer">
 	<div class="flex">
 		<div>
 			<a href="/">
-				<img class="round" src="{{ '/img/footer.jpg' | url }}" width="48" height="48" alt="Photo of Alexander Sandberg"/>
+				{% image "./img/footer.jpg",
+				"Photo of Alexander Sandberg",
+				[null],
+				null %}
 			</a>
 		</div>
 

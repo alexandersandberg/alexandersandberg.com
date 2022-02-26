@@ -120,10 +120,6 @@
 	white-space: nowrap;
 }
 
-.round {
-	border-radius: 100%;
-}
-
 @media screen and (min-width: 600px) {
 	.flex {
 		flex-direction: row;

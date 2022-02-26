@@ -13,12 +13,14 @@ const postDateFromString = (string) => new Date(string).toLocaleDateString('en-U
 	year: 'numeric'
 })
 
+const pageMaxWidth = 900; // Should be same as --page-max-width in main.css
+
 const imageShortcode = async (
 	src,
 	alt,
-	widths = [null, 400],
+	widths = [pageMaxWidth, pageMaxWidth * 2, pageMaxWidth * 3, null], // 1x, 2x, 3x, rest
+	sizes = `${pageMaxWidth}px`,
 	formats = ["webp", "jpeg"],
-	sizes = "100vw"
 ) => {
 	const parsedSrc = src.startsWith("//") ? `https:${src}` : src;
 	const metadata = await Image(parsedSrc, {
