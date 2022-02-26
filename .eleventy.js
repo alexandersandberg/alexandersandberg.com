@@ -6,8 +6,11 @@ const imageShortcode = require('./_11ty/utils.js').imageShortcode;
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const metadata = require("./_data/metadata.json");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = (eleventyConfig) => {
+	eleventyConfig.addPlugin(pluginRss);
+
 	eleventyConfig.addPassthroughCopy("css");
 	eleventyConfig.addPassthroughCopy("img");
 	eleventyConfig.addPassthroughCopy("robots.txt");

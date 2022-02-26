@@ -1,18 +1,12 @@
 {
 	"title": "Alexander Sandberg",
-	"url": "https://alexandersandberg.com",
+	"url": "https://alexandersandberg.com/",
 	"description": "Meta description",
 	"language": "en",
 	"source": "https://github.com/alexandersandberg/alexandersandberg.com",
 	"feed": {
-		"subtitle": "iOS/macOS Developer",
-		"filename": "feed.xml",
-		"path": "/feed/feed.xml",
+		"path": "/feed.xml",
 		"id": "https://alexandersandberg.com/"
-	},
-	"jsonfeed": {
-		"path": "/feed/feed.json",
-		"url": "https://alexandersandberg.com/feed/feed.json"
 	},
 	"author": {
 		"name": "Alexander Sandberg",
