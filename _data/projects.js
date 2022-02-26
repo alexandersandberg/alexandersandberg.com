@@ -9,7 +9,7 @@ module.exports = async () => {
 			.map((project) => ({
 				...project.fields,
 			}));
-		return projects;
+		return projects.reverse();
 	})
 		.catch(console.error);
 };
