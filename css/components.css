@@ -67,6 +67,16 @@
 	height: 48px;
 }
 
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	font-size: inherit;
+	color: inherit;
+	fill: currentColor;
+	vertical-align: -0.125em;
+}
+
 @media (prefers-color-scheme: light) {
 	#intro h1 {
 		filter: drop-shadow(20px 0px 50px var(--background));
