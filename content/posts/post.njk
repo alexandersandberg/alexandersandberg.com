@@ -6,6 +6,7 @@ pagination:
   alias: post
   addAllPagesToCollections: true
 permalink: "{{ pages.blog.path }}/{{ post.slug }}/"
+isPost: true
 eleventyComputed:
   itemNumber: "{{ post.id | pad(3) }}"
   title: "{{ post.title }}"
