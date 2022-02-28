@@ -6,7 +6,8 @@
 	--foreground-secondary: #dddddd;
 	--foreground-tertiary: #999999;
 	--background: #000000;
-	--background-secondary: #757575;
+	--background-secondary: #222222;
+	--background-tertiary: #757575;
 
 	--site-max-width: 1200px;
 	--page-max-width: 900px;
@@ -40,7 +41,8 @@
 		--foreground-secondary: #222222;
 		--foreground-tertiary: #666666;
 		--background: #ffffff;
-		--background-secondary: #757575;
+		--background-secondary: #dddddd;
+		--background-tertiary: #757575;
 	}
 }
 
@@ -100,6 +102,12 @@ img {
 	vertical-align: bottom; /* Remove white-space below images */
 }
 
+hr {
+	border: 0;
+	height: 1px;
+	background: var(--background-secondary);
+}
+
 [id] {
 	scroll-margin-top: var(--space-xl);
 }
@@ -114,7 +122,7 @@ p code {
 	max-width: var(--page-max-width);
 }
 
-.post * + * {
+.post *:not([id*="aside"]) + * {
 	margin-top: var(--space-m);
 }
 
@@ -124,7 +132,7 @@ p code {
 }
 
 .post picture img {
-	margin: 0;
+	margin: 0 !important;
 }
 
 .post * + h2,
@@ -159,12 +167,6 @@ p + p,
 	padding: var(--space-s);
 	border-radius: var(--border-radius);
 	overflow-x: auto;
-}
-
-.post hr {
-	border: 0;
-	height: 1px;
-	background: var(--background-secondary);
 }
 
 @media screen and (min-width: 600px) {

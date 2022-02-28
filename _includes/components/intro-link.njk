@@ -1,8 +1,0 @@
-{% macro introLink(type, label) %}
-	<div class="intro-link">
-		<span class="number mono background-secondary" aria-hidden="true">Nº {{ pages[type].number | pad(2) }}</span>
-		<a href="/{{ pages[type].path }}">
-			{{ label }}
-		</a>
-	</div>
-{% endmacro %}
