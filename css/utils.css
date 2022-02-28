@@ -19,6 +19,10 @@
 	color: var(--background-secondary);
 }
 
+.background-tertiary {
+	color: var(--background-tertiary);
+}
+
 /* Spacers */
 .spacer-xs {
 	height: var(--space-xs);

@@ -5,7 +5,7 @@ eleventyComputed:
   title: "{{ metadata.title }}"
 ---
 
-{% from 'components/intro-link.njk' import introLink with context %}
+{% from 'components/labeled-link.njk' import labeledLink with context %}
 {% from 'components/icon.njk' import icon %}
 
 <div id="intro">
@@ -21,7 +21,7 @@ eleventyComputed:
 
 		{% set pageNumber = pages.home.number %}
 		{% if pageNumber | isNumber %}
-			<p class="large-body mono background-secondary" aria-hidden="true">Nº {{ pageNumber | pad(2) }}</p>
+			<p class="large-body mono background-tertiary" aria-hidden="true">Nº {{ pageNumber | pad(2) }}</p>
 			<div class="spacer-xs"></div>
 		{% endif %}
 
@@ -33,7 +33,7 @@ eleventyComputed:
 				<b>iOS/macOS Developer</b> with a background in web development and product design.</p>
 			<p>When asked to describe myself with one word, I often reply with <em>curious</em>.</p>
 			<div class="spacer-s"></div>
-			{{ introLink("about", "Learn more about me →") }}
+			{{ labeledLink("about", "Learn more about me →") }}
 		</div>
 
 		<div class="separator-l">
@@ -44,20 +44,20 @@ eleventyComputed:
 				</a>
 			</p>
 			<div class="spacer-s"></div>
-			{{ introLink("articles", "Read the articles →") }}
+			{{ labeledLink("articles", "Read the articles →") }}
 
 		</div>
 
 		<div class="separator-l">
 			<p>Occasionally, I also publish other random stuff that I find worth sharing with the world on my blog.</p>
 			<div class="spacer-s"></div>
-			{{ introLink("blog", "Visit the blog →") }}
+			{{ labeledLink("blog", "Visit the blog →") }}
 		</div>
 
 		<div class="separator-l">
 			<p>I’ve always been an avid learner who loves to seek new knowledge through books and podcasts. Over the years, I’ve collected many ‘life lessons’ that I want to bring along with me on this journey we call life. I share them here to hopefully inspire others.</p>
 			<div class="spacer-s"></div>
-			{{ introLink("lessons", "Explore the life lessons →") }}
+			{{ labeledLink("lessons", "Explore the life lessons →") }}
 		</div>
 
 		<div class="separator-l">
@@ -68,7 +68,7 @@ eleventyComputed:
 				</a>
 			</p>
 			<div class="spacer-s"></div>
-			{{ introLink("projects", "View the projects ↓") }}
+			{{ labeledLink("projects", "View the projects ↓") }}
 		</div>
 	</div>
 </div>
@@ -79,7 +79,7 @@ eleventyComputed:
 
 <div class="spacer-xl"></div>
 
-<p class="large-body mono background-secondary" aria-hidden="true">Nº {{ pages.projects.number | pad(2) }}</p>
+<p class="large-body mono background-tertiary" aria-hidden="true">Nº {{ pages.projects.number | pad(2) }}</p>
 <div class="spacer-xs"></div>
 <h2 id="projects" class="huge-title">Projects</h2>
 {% if pages.projects.description %}
@@ -104,7 +104,7 @@ eleventyComputed:
 				</a>
 				<div class="spacer-s"></div>
 				<a href="{{ project.link }}" aria-hidden="true" tabindex="-1">
-					<span class="body mono background-secondary dont-break-words">#{{ project.number | pad(3) }}</span>
+					<span class="body mono background-tertiary dont-break-words">#{{ project.number | pad(3) }}</span>
 				</a>
 			</div>
 		</div>

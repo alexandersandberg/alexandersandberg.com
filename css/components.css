@@ -15,12 +15,20 @@
 	max-width: 645px;
 }
 
-.intro-link {
+#about-aside {
+	max-width: 200px;
+	margin: 0 auto;
+}
+#about-aside picture {
+	margin-top: 0;
+}
+
+.labeled-link {
 	position: relative;
 }
-.intro-link .number {
-	position: absolute;
-	right: 0;
+.labeled-link .number {
+	margin-left: var(--space-s);
+	float: right;
 }
 
 .lessons-grid {
@@ -58,7 +66,7 @@
 	position: absolute;
 	transform: translateX(-100%);
 	left: calc(var(--space-xs) * -1);
-	color: var(--background-secondary);
+	color: var(--background-tertiary);
 }
 
 #footer img {
@@ -83,7 +91,7 @@
 	}
 
 	.project-aside {
-		filter: drop-shadow(0px 20px 50px var(--background-secondary));
+		filter: drop-shadow(0px 20px 50px var(--background-tertiary));
 	}
 }
 
@@ -95,6 +103,10 @@
 		max-width: 280px;
 		max-height: 200px;
 		z-index: -1;
+	}
+
+	#about-aside {
+		max-width: 280px;
 	}
 
 	.lessons-grid {
@@ -129,9 +141,18 @@
 		max-height: auto;
 	}
 
-	.intro-link .number {
+	#about-aside {
+		float: right;
+		margin: 0 0 var(--space-m) var(--space-m);
+	}
+	#about-aside picture {
+		margin: 0;
+	}
+
+	.labeled-link .number {
+		position: absolute;
 		transform: translateX(-100%);
 		left: calc(var(--space-sides) * -1);
-		right: auto;
+		margin-left: 0;
 	}
 }

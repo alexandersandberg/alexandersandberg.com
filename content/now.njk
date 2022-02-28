@@ -1,0 +1,17 @@
+---
+layout: layouts/page.njk
+permalink: "{{ pages.now.path }}"
+isPost: true
+hideDescription: true
+eleventyComputed:
+  itemNumber: "{{ 1 | pad(3) }}"
+  updatedDate: "{{ page.date | postDateFromString }}"
+---
+
+<p>This is the now page</p>
+
+<hr>
+
+<p>
+	<small>This post is part of the <a href="https://nownownow.com">now page</a> movement by Derek Sivers.</small>
+</p>

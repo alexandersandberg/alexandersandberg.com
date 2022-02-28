@@ -20,7 +20,7 @@ eleventyComputed:
 
 	{% set pageNumber = pages[page.fileSlug].number %}
 	{% if pageNumber | isNumber %}
-		<p class="large-body mono background-secondary" aria-hidden="true">Nº {{ pageNumber | pad(2) }}{{ "." + itemNumber if itemNumber else "" }}</p>
+		<p class="large-body mono background-tertiary" aria-hidden="true">Nº {{ pageNumber | pad(2) }}{{ "." + itemNumber if itemNumber else "" }}</p>
 		<div class="spacer-xs"></div>
 	{% endif %}
 
@@ -29,7 +29,7 @@ eleventyComputed:
 		<h1 class="{% if isItem %}large-title{% else %}huge-title{% endif %}">{{ title }}</h1>
 	{% endif %}
 
-	{% if description %}
+	{% if description and not hideDescription %}
 		<div class="spacer-l"></div>
 		<p>{{ description }}</p>
 	{% endif %}

@@ -3,6 +3,7 @@ require("dotenv").config();
 const fs = require("fs");
 const hljs = require("highlight.js");
 const imageShortcode = require('./_11ty/utils.js').imageShortcode;
+const postDateFromString = require('./_11ty/utils.js').postDateFromString;
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const metadata = require("./_data/metadata.json");
@@ -33,6 +34,8 @@ module.exports = (eleventyConfig) => {
 
 		return array.slice(0, n);
 	});
+
+	eleventyConfig.addFilter("postDateFromString", (value) => postDateFromString(value));
 
 	eleventyConfig.addFilter("isNumber", (value) => typeof value == "number");
 

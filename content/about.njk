@@ -2,7 +2,21 @@
 layout: layouts/page.njk
 permalink: "{{ pages.about.path }}"
 isPost: true
+hideDescription: true
 ---
+
+{% from 'components/labeled-link.njk' import labeledLink with context %}
+
+<div id="about-aside">
+	{% image "./img/about.jpg",
+	"Photo of Alexander Sandberg",
+	[null],
+	"100vw" %}
+</div>
+
+{{ labeledLink("now", "What I'm doing now →", "TL;DR") }}
+
+<hr>
 
 <p>I’m always looking for the simplest possible solution to problems and to life in general. Reducing complexity often has the highest return on investment. Some call me a ’minimalist’, but I don’t like labels.</p>
 <p>I’m open-minded. I despise prejudices against people. I find opposing views to my own fascinating, not threatening.</p>
