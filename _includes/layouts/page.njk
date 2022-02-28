@@ -6,8 +6,6 @@ eleventyComputed:
   description: "{{ description or pages[page.fileSlug].description }}"
 ---
 
-{% set isItem = itemNumber %}
-
 <header>
 	{% set backPage = pages[pages[page.fileSlug].back] %}
 	{% if backPage %}
@@ -27,6 +25,7 @@ eleventyComputed:
 	{% endif %}
 
 	{% if title %}
+		{% set isItem = itemNumber %}
 		<h1 class="{% if isItem %}large-title{% else %}huge-title{% endif %}">{{ title }}</h1>
 	{% endif %}
 
@@ -44,6 +43,6 @@ eleventyComputed:
 
 <div class="spacer-xl"></div>
 
-<main{% if isItem %} class="post"{% endif %}>
+<main{% if isPost %} class="post"{% endif %}>
 	{{ content | safe }}
 </main>
