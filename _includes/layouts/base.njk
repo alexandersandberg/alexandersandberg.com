@@ -2,8 +2,10 @@
 <html lang="en">
 	<head>
 		{# TODO: img + img_alt #}
+		{% set title = title + " · " + metadata.title if title else 
+			metadata.title %}
 		{% metagen
-		title = title or metadata.title,
+		title = title,
 		desc = description or metadata.description,
 		url = page.url | url | absoluteUrl(metadata.url),
 		img = "",
