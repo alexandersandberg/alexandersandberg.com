@@ -1,0 +1,46 @@
+.post * + * {
+	margin-top: var(--space-m);
+}
+
+.post picture {
+	display: inline-block;
+	margin: var(--space-l) 0;
+}
+
+.post picture img {
+	margin: 0;
+}
+
+.post [id*="aside"] + * {
+	margin-top: 0;
+}
+
+.post * + h2,
+.post * + h3,
+.post * + h4 {
+	margin-top: var(--space-xl);
+}
+
+.post p + p {
+	margin-top: var(--space-s);
+}
+
+.post li + li {
+	margin-top: var(--space-xs);
+}
+
+.post p a {
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+.post blockquote {
+	/* TODO: Improve */
+	font-style: italic;
+}
+
+.post pre {
+	padding: var(--space-s);
+	border-radius: var(--border-radius);
+	overflow-x: auto;
+}
