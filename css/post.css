@@ -35,7 +35,8 @@
 }
 
 .post blockquote {
-	/* TODO: Improve */
+	padding: var(--space-xs) 0 var(--space-xs) var(--space-s);
+	border-left: 4px solid var(--foreground);
 	font-style: italic;
 }
 
