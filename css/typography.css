@@ -22,6 +22,12 @@ a {
 	font-weight: 700;
 }
 
+::marker,
+small,
+p code {
+	color: var(--foreground);
+}
+
 .mono {
 	font-family: var(--font-mono);
 }

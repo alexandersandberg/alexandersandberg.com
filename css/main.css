@@ -105,9 +105,14 @@ img {
 	vertical-align: bottom; /* Remove white-space below images */
 }
 
+p + p {
+	margin-top: var(--space-s);
+}
+
 hr {
-	border: 0;
 	height: 1px;
+	margin: var(--space-m) 0;
+	border: 0;
 	background: var(--background-secondary);
 }
 
@@ -115,56 +120,8 @@ hr {
 	scroll-margin-top: var(--space-xl);
 }
 
-::marker,
-small,
-p code {
-	color: var(--foreground-tertiary);
-}
-
 .page {
 	max-width: var(--page-max-width);
-}
-
-.post * + * {
-	margin-top: var(--space-m);
-}
-.post picture {
-	display: inline-block;
-	margin: var(--space-l) 0;
-}
-.post picture img {
-	margin: 0;
-}
-.post [id*="aside"] + * {
-	margin-top: 0;
-}
-.post * + h2,
-.post * + h3,
-.post * + h4 {
-	margin-top: var(--space-xl);
-}
-p + p,
-.post p + p {
-	margin-top: var(--space-s);
-}
-.post li + li {
-	margin-top: var(--space-xs);
-}
-.post p a,
-.post ol a,
-.post ul a {
-	color: inherit;
-	text-decoration: underline;
-	font-weight: normal;
-}
-.post blockquote {
-	/* TODO: Improve */
-	font-style: italic;
-}
-.post pre {
-	padding: var(--space-s);
-	border-radius: var(--border-radius);
-	overflow-x: auto;
 }
 
 @media screen and (min-width: 600px) {
