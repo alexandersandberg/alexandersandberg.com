@@ -3,8 +3,7 @@
 		<article {% if articleClass %}class="{{ articleClass }}"{% endif %}>
 			{% set link = "/" + pages.lessons.path + lesson.id + "/" %}
 			<a href="{{ link }}">
-				<p>{{ lesson.body }}</p>
-				{# TODO: Truncate body to 4(?) lines if possible #}
+				<p class="truncate-to-4-lines">{{ lesson.body }}</p>
 			</a>
 			<div class="spacer-s"></div>
 			<div class="row-centered">
