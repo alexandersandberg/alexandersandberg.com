@@ -91,8 +91,11 @@ nav ul {
 	margin: 0;
 	padding: 0;
 }
-nav ul li:not(:last-child) {
+nav ul:not(.row-centered) li:not(:last-child) {
 	margin-bottom: var(--space-xs);
+}
+nav ul.row-centered li:not(:last-child) {
+	margin-right: var(--space-s);
 }
 
 img {
