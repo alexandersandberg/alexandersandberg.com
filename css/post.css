@@ -29,11 +29,6 @@
 	margin-top: var(--space-xs);
 }
 
-.post p a {
-	text-decoration: underline;
-	font-weight: 500;
-}
-
 .post blockquote {
 	padding: var(--space-xs) 0 var(--space-xs) var(--space-s);
 	border-left: 4px solid var(--foreground);

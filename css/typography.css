@@ -22,6 +22,18 @@ a {
 	font-weight: 700;
 }
 
+p a {
+	font-weight: 500;
+	text-decoration: underline;
+	text-decoration-color: var(--background-tertiary);
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1px;
+	transition: text-decoration-color 0.1s ease;
+}
+p a:hover {
+	text-decoration-color: var(--foreground);
+}
+
 ::marker,
 small,
 p code {
