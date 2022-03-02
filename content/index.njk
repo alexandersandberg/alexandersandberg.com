@@ -5,6 +5,7 @@ permalink: "/"
 
 {% from 'components/labeled-link.njk' import labeledLink with context %}
 {% from 'components/icon.njk' import icon %}
+{% from 'components/decorative-link.njk' import decorativeLink %}
 
 <div id="intro">
 	<div id="intro-aside">
@@ -101,9 +102,7 @@ permalink: "/"
 					{% arrowForLink project.link %}
 				</a>
 				<div class="spacer-s"></div>
-				<a href="{{ project.link }}" aria-hidden="true" tabindex="-1">
-					<span class="body mono background-tertiary dont-break-words">#{{ project.number | pad(3) }}</span>
-				</a>
+				{{ decorativeLink(project.link, "#" + project.number | pad(3)) }}
 			</div>
 		</div>
 		{% set image = project.image.fields %}
