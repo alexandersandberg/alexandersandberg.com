@@ -17,25 +17,32 @@ p {
 }
 
 a {
-	color: var(--foreground);
-	text-decoration: none;
+	color: inherit;
 	font-weight: 700;
+	text-decoration: none;
+}
+
+*:not(h1, h2, h3, h4) > a:not(.plain) {
+	text-decoration: underline;
+	text-decoration-color: var(--background-secondary);
+	text-underline-offset: 3px;
+	text-decoration-thickness: 1px;
+	transition: color 0.1s ease, text-decoration-color 0.1s ease;
+}
+*:not(h1, h2, h3, h4) > a:not(.plain):hover {
+	color: var(--foreground);
+	text-decoration-color: var(--foreground);
 }
 
 p a {
 	font-weight: 500;
-	text-decoration: underline;
-	text-decoration-color: var(--background-tertiary);
-	text-underline-offset: 3px;
-	text-decoration-thickness: 1px;
-	transition: text-decoration-color 0.1s ease;
-}
-p a:hover {
-	text-decoration-color: var(--foreground);
 }
 
 ::marker,
-small,
+small {
+	color: var(--foreground-tertiary);
+}
+
 p code {
 	color: var(--foreground);
 }

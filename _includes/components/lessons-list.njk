@@ -2,7 +2,7 @@
 	{% for lesson in lessons %}
 		<article {% if articleClass %}class="{{ articleClass }}"{% endif %}>
 			{% set link = "/" + pages.lessons.path + lesson.id + "/" %}
-			<a href="{{ link }}">
+			<a class="plain" href="{{ link }}">
 				<p class="truncate-to-4-lines">{{ lesson.body }}</p>
 			</a>
 			<div class="spacer-s"></div>
