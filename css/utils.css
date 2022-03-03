@@ -141,6 +141,10 @@
 	white-space: nowrap;
 }
 
+.hidden {
+	display: none;
+}
+
 @media screen and (min-width: 600px) {
 	.flex {
 		flex-direction: row;

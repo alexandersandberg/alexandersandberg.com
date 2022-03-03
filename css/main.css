@@ -122,6 +122,31 @@ hr {
 	max-width: var(--page-max-width);
 }
 
+button {
+	/* Reset */
+	color: inherit;
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	text-transform: none;
+	padding: 6px 12px;
+	margin: 0;
+	-webkit-appearance: button;
+	/* Styles */
+	border: none;
+	border-radius: var(--border-radius);
+	background-color: transparent;
+	cursor: pointer;
+	border: 1px solid var(--background-secondary);
+	transition: border-color 0.1s ease, background-color 0.1s ease;
+}
+button:hover:not(:active) {
+	border-color: var(--background-tertiary);
+}
+button:active {
+	background-color: var(--background-secondary);
+}
+
 @media screen and (min-width: 600px) {
 	:root {
 		--space-multiplier: 1.5;
