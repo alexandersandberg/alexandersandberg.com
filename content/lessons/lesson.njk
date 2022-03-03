@@ -12,5 +12,72 @@ eleventyComputed:
   description: "{{ lesson.body }}"
 ---
 
+{% from 'components/icon.njk' import icon %}
+
 <p class="large-body">{{ lesson.body }}</p>
 <p class="foreground-tertiary">— {{ lesson.source }}</p>
+
+<div class="spacer-l"></div>
+
+<div class="row-centered hug-contents">
+	<button class="hidden" id="share">{{ icon("share") }} Share</button>
+	<div class="spacer-m"></div>
+	<button class="hidden" id="copy">
+		<span id="copy-text">{{ icon("copy") }} Copy</span>
+		<span id="copied-text" class="hidden">{{ icon("copied") }} Copied</span>
+	</button>
+</div>
+
+<script defer>
+	const shareButton = document.getElementById("share");
+
+	if (navigator.share) {
+		shareButton
+			.classList
+			.remove("hidden");
+	}
+
+	shareButton.addEventListener("click", () => {
+		const url = document.querySelector('link[rel=canonical]')
+			? document
+				.querySelector('link[rel=canonical]')
+				.href
+			: document
+			.location
+			.href
+			navigator
+			.share({title: document.title, text: "{{ lesson.body }}", url: url})
+	});
+
+	const copyButton = document.getElementById("copy");
+	const copyText = document.getElementById("copy-text");
+	const copiedText = document.getElementById("copied-text");
+
+	if (navigator.clipboard) {
+		copyButton
+			.classList
+			.remove("hidden");
+	}
+
+	copyButton.addEventListener("click", () => {
+		navigator
+			.clipboard
+			.writeText("{{ lesson.body }} \n— {{ lesson.source }}")
+			.then(() => {
+				copyText
+					.classList
+					.add("hidden");
+				copiedText
+					.classList
+					.remove("hidden");
+				setTimeout(() => {
+					copyText
+						.classList
+						.remove("hidden");
+					copiedText
+						.classList
+						.add("hidden");
+				}, 900);
+			});
+	});
+</script>
