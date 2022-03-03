@@ -61,14 +61,6 @@
 	position: relative;
 }
 
-.header-anchor:hover::before {
-	content: "#";
-	position: absolute;
-	transform: translateX(-100%);
-	left: calc(var(--space-xs) * -1);
-	color: var(--background-tertiary);
-}
-
 #footer img {
 	border-radius: 50%;
 	width: 48px;
@@ -83,6 +75,16 @@
 	color: inherit;
 	fill: currentColor;
 	vertical-align: -0.125em;
+}
+
+@media (hover: hover) {
+	.header-anchor:hover::before {
+		content: "#";
+		position: absolute;
+		transform: translateX(-100%);
+		left: calc(var(--space-xs) * -1);
+		color: var(--background-tertiary);
+	}
 }
 
 @media (prefers-color-scheme: light) {

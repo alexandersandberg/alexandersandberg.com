@@ -17,22 +17,28 @@ eleventyComputed:
 <p class="large-body">{{ lesson.body }}</p>
 <p class="foreground-tertiary">— {{ lesson.source }}</p>
 
-<div class="spacer-l"></div>
-
-<div class="row-centered hug-contents">
-	<button class="hidden" id="share">{{ icon("share") }} Share</button>
-	<div class="spacer-m"></div>
-	<button class="hidden" id="copy">
-		<span id="copy-text">{{ icon("copy") }} Copy</span>
-		<span id="copied-text" class="hidden">{{ icon("copied") }} Copied</span>
-	</button>
+<div id="sharing-buttons" class="hidden">
+	<div class="spacer-xl"></div>
+	<div class="row-centered hug-contents">
+		<button class="hidden" id="share">{{ icon("share") }} Share</button>
+		<div class="spacer-m"></div>
+		<button class="hidden" id="copy">
+			<span id="copy-text">{{ icon("copy") }} Copy</span>
+			<span id="copied-text" class="hidden">{{ icon("copied") }} Copied</span>
+		</button>
+	</div>
 </div>
 
 <script defer>
+	const sharingButtons = document.getElementById("sharing-buttons");
+
 	const shareButton = document.getElementById("share");
 
 	if (navigator.share) {
 		shareButton
+			.classList
+			.remove("hidden");
+		sharingButtons
 			.classList
 			.remove("hidden");
 	}
@@ -55,6 +61,9 @@ eleventyComputed:
 
 	if (navigator.clipboard) {
 		copyButton
+			.classList
+			.remove("hidden");
+		sharingButtons
 			.classList
 			.remove("hidden");
 	}

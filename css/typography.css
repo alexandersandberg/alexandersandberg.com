@@ -29,10 +29,6 @@ a {
 	text-decoration-thickness: 1px;
 	transition: color 0.1s ease, text-decoration-color 0.1s ease;
 }
-*:not(h1, h2, h3, h4) > a:not(.plain):hover {
-	color: var(--foreground);
-	text-decoration-color: var(--foreground);
-}
 
 p a {
 	font-weight: 500;
@@ -97,6 +93,13 @@ p,
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 1.5;
+}
+
+@media (hover: hover) {
+	*:not(h1, h2, h3, h4) > a:not(.plain):hover {
+		color: var(--foreground);
+		text-decoration-color: var(--foreground);
+	}
 }
 
 @media screen and (min-width: 600px) {

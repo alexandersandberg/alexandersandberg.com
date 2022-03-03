@@ -140,11 +140,14 @@ button {
 	border: 1px solid var(--background-secondary);
 	transition: border-color 0.1s ease, background-color 0.1s ease;
 }
-button:hover:not(:active) {
-	border-color: var(--background-tertiary);
-}
 button:active {
 	background-color: var(--background-secondary);
+}
+
+@media (hover: hover) {
+	button:hover:not(:active) {
+		border-color: var(--background-tertiary);
+	}
 }
 
 @media screen and (min-width: 600px) {
