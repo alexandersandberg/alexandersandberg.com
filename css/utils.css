@@ -109,6 +109,9 @@
 	align-items: center;
 	justify-content: space-between;
 }
+.row-centered > *:not(:last-child) {
+	margin-right: var(--space-s);
+}
 
 .column-centered {
 	display: flex;
