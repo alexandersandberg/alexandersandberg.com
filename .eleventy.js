@@ -6,6 +6,7 @@ const imageShortcode = require('./_11ty/utils.js').imageShortcode;
 const postDateFromString = require('./_11ty/utils.js').postDateFromString;
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItTableOfContents = require("markdown-it-table-of-contents");
 const metadata = require("./_data/metadata.json");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginMetagen = require('eleventy-plugin-metagen');
@@ -86,6 +87,9 @@ module.exports = (eleventyConfig) => {
 	}).use(markdownItAnchor, {
 		permalink: markdownItAnchor.permalink.headerLink({ safariReaderFix: true }),
 		slugify: eleventyConfig.getFilter("slug")
+	}).use(markdownItTableOfContents, {
+		includeLevel: [2, 3],
+		listType: "ol",
 	});
 
 	eleventyConfig.addAsyncShortcode(
