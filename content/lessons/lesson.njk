@@ -8,7 +8,7 @@ pagination:
 permalink: "{{ pages.lessons.path }}/{{ lesson.id }}/"
 ogTemplate: lesson
 eleventyComputed:
-  itemNumber: "{{ lesson.id | pad(3) }}"
+  itemNumber: " - Life lesson #{{ lesson.id | pad(3) }}"
   title: "{{ pages.lesson.title }} #{{ lesson.id | pad(3) }} from {{ lesson.source }}"
   description: "{{ lesson.body }}"
 ---

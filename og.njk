@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
 	{
 		"url": "{{ page.url | slugify or "home" }}",
 		"ogTemplate": "{{ page.data.ogTemplate }}",
-		"suptitle": "Nº {{ (pages[page.fileSlug].number or "0") | pad(2) }}{{ "." + itemNumber if itemNumber else "" }}",
+		"suptitle": "Nº {{ (pages[page.fileSlug].number or "0") | pad(2) }}{{ page.data.itemNumber }}",
 		"title": "{{ page.data.title or metadata.title }}",
 		"description": "{{ page.data.description or metadata.description }}"
 	}{%- if loop.last == false %},{% endif -%}
