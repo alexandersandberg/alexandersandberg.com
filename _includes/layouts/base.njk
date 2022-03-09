@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		{# TODO: img + img_alt #}
-		{% set title = title + " · " + metadata.title if title else 
-			metadata.title %}
+		{% set title %}
+		{% if title %}{{ title }} · {% endif %}{{ metadata.title }}
+		{% endset %}
+		{%- set img %}{{ meta.url }}/og/{{ page.url | slugify or "home" }}.jpeg{% endset -%}
+
 		{% metagen
 		title = title,
 		desc = description or metadata.description,
-		url = page.url | url | absoluteUrl(metadata.url),
-		img = "",
-		img_alt = "",
+		url = page.url | absoluteUrl(meta.url),
+		img = img | absoluteUrl(meta.url),
 		twitter_card_type = "summary_large_image",
 		twitter_handle = metadata.author.twitter,
 		name = metadata.author.name,

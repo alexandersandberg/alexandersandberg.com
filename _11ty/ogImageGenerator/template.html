@@ -1,0 +1,113 @@
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8"/>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+			*,
+			*:after,
+			*:before {
+				margin: 0;
+				padding: 0;
+				box-sizing: inherit;
+				word-break: inherit;
+				text-rendering: optimizeLegibility;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			body {
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				width: 1200px;
+				height: 630px;
+				padding: 72px;
+				margin: 0;
+				background: #000000;
+				color: #ffffff;
+				font-family: -apple-system, BlinkMacSystemFont, Inter, system-ui, sans-serif;
+				hyphens: auto;
+				-moz-hyphens: auto;
+				-webkit-hyphens: auto;
+			}
+
+			#suptitle {
+				color: #757575;
+				font-family: Menlo, monospace;
+				font-size: 36px;
+				margin-bottom: 16px;
+				line-height: 1;
+			}
+
+			#title {
+				font-size: 90px;
+				font-weight: 800;
+				line-height: 1.2;
+			}
+
+			#title-long {
+				font-size: 80px;
+				font-weight: 800;
+				line-height: 1.2;
+			}
+
+			#lesson {
+				font-size: 70px;
+				line-height: 1.3;
+			}
+
+			#description {
+				color: #cccccc;
+				font-size: 36px;
+				margin-top: 32px;
+				line-height: 1.4;
+			}
+
+			#bottom {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin-top: auto;
+			}
+
+			.truncate-to {
+				display: -webkit-box;
+				white-space: normal;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				-moz-box-orient: vertical;
+				-webkit-box-orient: vertical;
+			}
+			.one {
+				-webkit-line-clamp: 1;
+			}
+			.two {
+				-webkit-line-clamp: 2;
+			}
+			.three {
+				-webkit-line-clamp: 3;
+			}
+		</style>
+	</head>
+
+	<body>
+		<p id="suptitle" class="truncate-to one"></p>
+		<p id="title" class="truncate-to one"></p>
+		<p id="title-long" class="truncate-to three"></p>
+		<p id="lesson" class="truncate-to three"></p>
+		<p id="description" class="truncate-to two"></p>
+		<div id="bottom">
+			<img
+				src="./photo.jpg"
+				width="96"
+				height="96"
+				style="margin-right: 32px; border-radius: 48px"
+			/>
+			<p style="font-size: 48px" class="truncate-to one">
+				<b>alexandersandberg.com →</b>
+			</p>
+		</div>
+	</body>
+</html>

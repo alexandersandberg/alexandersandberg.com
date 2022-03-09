@@ -6,4 +6,5 @@ node_modules/
 .env
 
 _site/
+_temp/
 .cache

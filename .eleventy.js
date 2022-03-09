@@ -4,6 +4,7 @@ const fs = require("fs");
 const hljs = require("highlight.js");
 const imageShortcode = require('./_11ty/utils.js').imageShortcode;
 const postDateFromString = require('./_11ty/utils.js').postDateFromString;
+const ogImageGenerator = require('./_11ty/ogImageGenerator/index.js');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItTableOfContents = require("markdown-it-table-of-contents");
@@ -112,6 +113,16 @@ module.exports = (eleventyConfig) => {
 		}
 	);
 
+	eleventyConfig.on('eleventy.before', async () => {
+		clearTemp()
+	});
+
+	eleventyConfig.on('eleventy.after', async () => {
+		await ogImageGenerator(require("./_temp/og.json"));
+
+		clearTemp()
+	});
+
 	eleventyConfig.setBrowserSyncConfig({
 		callbacks: {
 			ready: function (err, browserSync) {
@@ -146,3 +157,9 @@ module.exports = (eleventyConfig) => {
 		}
 	};
 };
+
+function clearTemp() {
+	if (fs.existsSync("./_temp")) {
+		fs.rmSync("./_temp", { recursive: true });
+	}
+}
