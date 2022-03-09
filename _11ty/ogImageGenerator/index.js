@@ -11,6 +11,8 @@ const config = {
 }
 
 module.exports = async (pages) => {
+	console.log("[OG] Hello, let's generate some OG images!");
+
 	const dir = path.resolve(__dirname, "../../_site/og");
 	var pagesToGenerateImagesFor = [];
 
@@ -28,6 +30,15 @@ module.exports = async (pages) => {
 
 		pagesToGenerateImagesFor.push(item);
 	}
+
+	// if (fs.existsSync(dir)) {
+	// 	pagesToGenerateImagesFor = pagesToGenerateImagesFor.filter(({ url }) => {
+	// 		const imageName = `${url}.${config.type}`;
+	// 		return !fs.existsSync(path.resolve(dir, imageName));
+	// 	});
+	// } else {
+	// 	fs.mkdirSync(dir);
+	// }
 
 	if (pagesToGenerateImagesFor.length == 0) {
 		console.log("[OG] All images already in cache — Bye!");
@@ -108,7 +119,7 @@ module.exports = async (pages) => {
 		imageCount++;
 	}
 
-	console.log(`[OG] Finished generating ${imageCount} images.`);
+	console.log(`[OG] Finished generating ${imageCount} images — See you next time!`);
 
 	await browser.close();
 };
