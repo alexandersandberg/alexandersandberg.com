@@ -4,13 +4,13 @@
 		{% set title %}
 		{% if title %}{{ title }} · {% endif %}{{ metadata.title }}
 		{% endset %}
-		{%- set img %}{{ meta.url }}/og/{{ page.url | slugify or "home" }}.jpeg{% endset -%}
+		{%- set img %}/og/{{ page.url | slugify or "home" }}.jpeg{% endset -%}
 
 		{% metagen
 		title = title,
 		desc = description or metadata.description,
-		url = page.url | absoluteUrl(meta.url),
-		img = img | absoluteUrl(meta.url),
+		url = page.url | absoluteUrl(site.url),
+		img = img | absoluteUrl(site.url),
 		twitter_card_type = "summary_large_image",
 		twitter_handle = metadata.author.twitter,
 		name = metadata.author.name,
