@@ -7,6 +7,7 @@ pagination:
   addAllPagesToCollections: true
 permalink: "{{ pages.blog.path }}/{{ post.slug }}/"
 isPost: true
+ogTemplate: post
 eleventyComputed:
   itemNumber: "{{ post.id | pad(3) }}"
   title: "{{ post.title }}"

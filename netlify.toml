@@ -1,6 +1,6 @@
 [build]
   publish = "_site"
-  command = "eleventy"
+  command = "AWS_LAMBDA_FUNCTION_NAME=trickpuppeteer npm run build"
 
 [build.processing]
   skip_processing = false

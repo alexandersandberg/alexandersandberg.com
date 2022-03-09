@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,11 @@
     "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-table-of-contents": "^0.6.0",
-    "netlify-plugin-cache": "^1.0.3"
+    "netlify-plugin-cache": "^1.0.3",
+    "puppeteer": "^13.4.1"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "^10.1.0",
+    "puppeteer-core": "^10.4.0"
   }
 }
