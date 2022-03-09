@@ -33,6 +33,7 @@
     "puppeteer": "^13.4.1"
   },
   "dependencies": {
+    "@11ty/eleventy-fetch": "^3.0.0",
     "chrome-aws-lambda": "^10.1.0",
     "puppeteer-core": "^10.4.0"
   }
