@@ -9,8 +9,8 @@
 		{% metagen
 		title = title,
 		desc = description or metadata.description,
-		url = page.url | absoluteUrl(site.url),
-		img = img | absoluteUrl(site.url),
+		url = page.url | absoluteUrl(metadata.url),
+		img = img | absoluteUrl(metadata.url),
 		twitter_card_type = "summary_large_image",
 		twitter_handle = metadata.author.twitter,
 		name = metadata.author.name,

@@ -8,7 +8,7 @@ const ogImageGenerator = require('./_11ty/ogImageGenerator/index.js');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItTableOfContents = require("markdown-it-table-of-contents");
-const metadata = require("./_data/metadata.json");
+const metadata = require("./_data/metadata.js");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginMetagen = require('eleventy-plugin-metagen');
 
