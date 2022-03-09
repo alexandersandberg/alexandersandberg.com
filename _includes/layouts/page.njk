@@ -37,7 +37,7 @@ eleventyComputed:
 	{% set date = updatedDate or publishedDate %}
 	{% if date %}
 		<div class="spacer-l"></div>
-		<p class="subhead foreground-tertiary">{{ "Updated" if updatedDate else "Published" }} in {{ date }}</p>
+		<time class="subhead foreground-tertiary">{{ "Updated" if updatedDate else "Published" }} in {{ date }}</time>
 	{% endif %}
 </header>
 
