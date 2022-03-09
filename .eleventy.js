@@ -48,6 +48,10 @@ module.exports = (eleventyConfig) => {
 			return link.replace(metadata.url, "/");
 		}
 
+		if (link.startsWith(metadata.url_live)) {
+			return link.replace(metadata.url_live, "/");
+		}
+
 		if (link.startsWith("http")) {
 			return link.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "");
 		}
@@ -56,7 +60,7 @@ module.exports = (eleventyConfig) => {
 	});
 
 	eleventyConfig.addShortcode("arrowForLink", (link) => {
-		if (link.startsWith("http") && !link.includes(metadata.url)) {
+		if (link.startsWith("http") && !link.includes(metadata.url) && !link.includes(metadata.url_live)) {
 			return "↗";
 		}
 

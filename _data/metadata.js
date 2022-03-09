@@ -1,5 +1,6 @@
 module.exports = {
 	url: process.env.URL || "http://localhost:8080",
+	url_live: "https://alexandersandberg.com/",
 	title: "Alexander Sandberg",
 	description: "Meta description",
 	language: "en",
