@@ -24,7 +24,10 @@ module.exports = async (pages) => {
 		if (asset.isCacheValid("1d")) {
 			console.log(`[OG] Image already exists in cache for "${item.title}"`);
 			const cachedImage = await asset.getCachedValue();
-			fs.writeFileSync(path.join(dir, imageName), cachedImage);
+			if (!fs.existsSync(path.resolve(dir, imageName))) {
+				console.log('[OG] Writing image from cache to site directory...');
+				fs.writeFileSync(path.resolve(dir, imageName), cachedImage);
+			}
 			continue;
 		}
 
