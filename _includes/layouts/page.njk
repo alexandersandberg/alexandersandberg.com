@@ -27,8 +27,9 @@ eleventyComputed:
 	{% endif %}
 
 	{% if title %}
-		{% set isItem = itemNumber %}
-		<h1 class="{% if isItem %}large-title{% else %}huge-title{% endif %}">{{ title }}</h1>
+		<h1 class="{% if itemNumber %}large-title{% else %}huge-title{% endif %}">
+			{{ title }}
+		</h1>
 	{% endif %}
 
 	{% if description and not hideDescription %}
@@ -39,7 +40,9 @@ eleventyComputed:
 	{% set date = updatedDate or publishedDate %}
 	{% if date %}
 		<div class="spacer-l"></div>
-		<time class="subhead foreground-tertiary">{{ "Updated" if updatedDate else "Published" }} in {{ date }}</time>
+		<time class="subhead foreground-tertiary">
+			{{ "Updated" if updatedDate else "Published" }} in {{ date }}
+		</time>
 	{% endif %}
 </header>
 
