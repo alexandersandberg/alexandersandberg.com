@@ -106,14 +106,19 @@ module.exports = async (pages) => {
 				break;
 		}
 
+		const tempDir = path.resolve(__dirname, "../../_temp");
+		const imagePath = `${tempDir}/${imageName}`
+
 		await page.screenshot({
-			path: `${dir}/${imageName}`,
+			path: imagePath,
 			type: config.type,
 			quality: config.quality,
 			clip: { x: 0, y: 0, width: config.width, height: config.height },
 		});
 
-		const asset = new AssetCache(getCacheIdentifier(imageName));
+		const image = fs.readFileSync(imagePath);
+
+		const asset = new AssetCache(image);
 		await asset.save(getCacheIdentifier(imageName), "buffer");
 
 		imageCount++;
