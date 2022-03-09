@@ -31,15 +31,6 @@ module.exports = async (pages) => {
 		pagesToGenerateImagesFor.push(item);
 	}
 
-	// if (fs.existsSync(dir)) {
-	// 	pagesToGenerateImagesFor = pagesToGenerateImagesFor.filter(({ url }) => {
-	// 		const imageName = `${url}.${config.type}`;
-	// 		return !fs.existsSync(path.resolve(dir, imageName));
-	// 	});
-	// } else {
-	// 	fs.mkdirSync(dir);
-	// }
-
 	if (pagesToGenerateImagesFor.length == 0) {
 		console.log("[OG] All images already in cache — Bye!");
 		return;
@@ -117,9 +108,10 @@ module.exports = async (pages) => {
 		});
 
 		const image = fs.readFileSync(imagePath);
+		fs.writeFileSync(path.join(dir, imageName), image);
 
-		const asset = new AssetCache(image);
-		await asset.save(getCacheIdentifier(imageName), "buffer");
+		const asset = new AssetCache(getCacheIdentifier(imageName));
+		await asset.save(image, "buffer");
 
 		imageCount++;
 	}
