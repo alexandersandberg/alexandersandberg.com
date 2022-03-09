@@ -1,6 +1,7 @@
 const chromium = require("chrome-aws-lambda");
 const fs = require("fs");
 const path = require("path");
+const { AssetCache } = require("@11ty/eleventy-fetch");
 
 const config = {
 	width: 1200,
@@ -10,6 +11,29 @@ const config = {
 }
 
 module.exports = async (pages) => {
+	const dir = path.resolve(__dirname, "../../_site/og");
+	var pagesToGenerateImagesFor = [];
+
+	if (!fs.existsSync(dir)) fs.mkdirSync(dir);
+
+	for (const item of pages) {
+		const imageName = getImageName(item.url)
+		const asset = new AssetCache(getCacheIdentifier(imageName));
+		if (asset.isCacheValid("1d")) {
+			console.log(`[OG] Image already exists in cache for "${item.title}"`);
+			const cachedImage = await asset.getCachedValue();
+			fs.writeFileSync(path.join(dir, imageName), cachedImage);
+			continue;
+		}
+
+		pagesToGenerateImagesFor.push(item);
+	}
+
+	if (pagesToGenerateImagesFor.length == 0) {
+		console.log("[OG] All images already in cache — Bye!");
+		return;
+	}
+
 	console.log("[OG] Generating images...");
 
 	const browser = await chromium.puppeteer.launch({
@@ -45,13 +69,11 @@ module.exports = async (pages) => {
 		deviceScaleFactor: 1,
 	});
 
-	const dir = path.resolve(__dirname, "../../_site/og");
-	if (!fs.existsSync(dir)) fs.mkdirSync(dir);
-
 	var imageCount = 0;
 
-	for (const item of pages) {
+	for (const item of pagesToGenerateImagesFor) {
 		const { description, ogTemplate, suptitle, title, url } = item;
+		const imageName = getImageName(url)
 
 		console.log(`[OG] Generating image for "${item.title}"`);
 
@@ -74,11 +96,14 @@ module.exports = async (pages) => {
 		}
 
 		await page.screenshot({
-			path: `${dir}/${url}.${config.type}`,
+			path: `${dir}/${imageName}`,
 			type: config.type,
 			quality: config.quality,
 			clip: { x: 0, y: 0, width: config.width, height: config.height },
 		});
+
+		const asset = new AssetCache(getCacheIdentifier(imageName));
+		await asset.save(getCacheIdentifier(imageName), "buffer");
 
 		imageCount++;
 	}
@@ -88,6 +113,8 @@ module.exports = async (pages) => {
 	await browser.close();
 };
 
+const getImageName = (url) => `${url}.${config.type}`;
+const getCacheIdentifier = (imageName) => `og_${imageName}`;
 const setHTML = (e, value) => e.innerHTML = value
 
 async function reset(page) {
