@@ -1,0 +1,34 @@
+{% from 'components/icon.njk' import icon %}
+
+<div class="spacer-l"></div>
+
+<hr>
+
+<div class="row-centered">
+	<p class="large foreground-tertiary">
+		<i>— Alex</i>
+	</p>
+	<button class="hug-above hidden" id="share">{{ icon("share") }} Share</button>
+</div>
+
+<script defer>
+	const shareButton = document.getElementById("share");
+
+	if (navigator.share) {
+		shareButton
+			.classList
+			.remove("hidden");
+	}
+
+	shareButton.addEventListener("click", () => {
+		const url = document.querySelector('link[rel=canonical]')
+			? document
+				.querySelector('link[rel=canonical]')
+				.href
+			: document
+			.location
+			.href
+			navigator
+			.share({title: document.title, url: url})
+	});
+</script>
