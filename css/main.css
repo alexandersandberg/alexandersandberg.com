@@ -130,11 +130,11 @@ button {
 	margin: 0;
 	-webkit-appearance: button;
 	/* Styles */
-	border: none;
-	border-radius: var(--border-radius);
 	background-color: transparent;
 	cursor: pointer;
 	border: 1px solid var(--background-secondary);
+	border-radius: var(--border-radius);
+	font-size: 20px;
 	transition: border-color 0.1s ease, background-color 0.1s ease;
 }
 button:active {
