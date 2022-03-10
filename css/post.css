@@ -11,7 +11,8 @@
 	margin: 0;
 }
 
-.post [id*="aside"] + * {
+.post .hug-below + *,
+.post * + .hug-above {
 	margin-top: 0;
 }
 
