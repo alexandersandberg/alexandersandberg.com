@@ -6,7 +6,9 @@
 		<h2>
 			<a href="{{ link }}">{{ item.title }}</a>
 		</h2>
-		<time class="subhead foreground-tertiary">{{ item.createdAt }}</time>
+		<p class="subhead foreground-tertiary">
+			<time>{{ item.createdAt | postDateFromString }}</time>
+		</p>
 		{% if item.excerpt %}
 			<div class="spacer-m"></div>
 			<p>{{ item.excerpt }}</p>
