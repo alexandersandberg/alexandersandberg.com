@@ -5,7 +5,7 @@ eleventyComputed:
     title: "{{ (title + ' · ' if title else '') + metadata.title }}"
     description: "{{ description or metadata.description }}"
     url: "{{ page.url | absoluteUrl(metadata.url) }}"
-    image: "{{ ('/og/' + (page.url | slugify or 'home') + '.jpeg') | absoluteUrl(metadata.url) }}"
+    image: "{{ ('/og/' + (page.url | slugify or 'default') + '.jpeg') | absoluteUrl(metadata.url) }}"
     type: "{{ 'article' if isPost else 'website' }}"
 ---
 <!doctype html>
