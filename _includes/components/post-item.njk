@@ -8,7 +8,7 @@
 		</h2>
 		<div class="spacer-xs"></div>
 		<p class="subhead foreground-tertiary">
-			<time>{{ item.createdAt | postDateFromString }}</time>
+			<time title="{{ item.createdAt }}">{{ item.createdAt | postDateFromString }}</time>
 		</p>
 		{% if item.excerpt %}
 			<div class="spacer-m"></div>

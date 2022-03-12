@@ -9,7 +9,7 @@ module.exports = async () => {
 			.map((article, index) => ({
 				...article.fields,
 				id: index + 1,
-				createdAt: article.fields.createdAt || article.sys.createdAt,
+				createdAt: new Date(article.fields.createdAt || article.sys.createdAt).toISOString(),
 				...(article.sys.updatedAt != article.sys.createdAt ? { updatedAt: article.sys.updatedAt } : {})
 			}));
 		return articles;

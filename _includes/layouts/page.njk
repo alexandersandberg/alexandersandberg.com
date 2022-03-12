@@ -42,7 +42,7 @@ eleventyComputed:
 		<div class="spacer-m"></div>
 		<p class="subhead foreground-tertiary">
 			{{ "Updated" if updatedDate else "Published" }} in
-			<time>{{ date | postDateFromString }}</time>
+			<time title="{{ date }}">{{ date | postDateFromString }}</time>
 		</p>
 	{% endif %}
 </header>
