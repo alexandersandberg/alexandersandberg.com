@@ -1,9 +1,9 @@
-const client = require('../_11ty/utils.js').contentfulClient;
+const client = require("../_11ty/utils.js").contentfulClient;
 
 module.exports = async () => {
 	return client.getEntries({
-		content_type: 'article',
-		order: 'fields.createdAt'
+		content_type: "article",
+		order: "fields.createdAt"
 	}).then((response) => {
 		const articles = response.items
 			.map((article, index) => ({
