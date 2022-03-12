@@ -8,8 +8,8 @@ pagination:
 permalink: "{{ pages.lessons.path }}{{ category.slug }}/"
 eleventyComputed:
   itemNumber: " - Life lessons"
-  title: "{{ category.title }}"
-  description: "{{ category.description }}"
+  title: "{{ category.title | safe }}"
+  description: "{{ category.description | safe }}"
 ---
 
 {% from 'components/lessons-list.njk' import lessonsList with context %}

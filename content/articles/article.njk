@@ -10,8 +10,8 @@ isPost: true
 ogTemplate: post
 eleventyComputed:
   itemNumber: " - Article #{{ article.id | pad(3) }}"
-  title: "{{ article.title }}"
-  description: "{{ article.excerpt }}"
+  title: "{{ article.title | safe }}"
+  description: "{{ article.excerpt | safe }}"
   publishedDate: "{{ article.createdAt }}"
   updatedDate: "{{ article.updatedAt }}"
 ---
