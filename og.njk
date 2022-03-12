@@ -5,7 +5,7 @@ eleventyExcludeFromCollections: true
 ---
 [{% for page in collections.all %}
 	{
-		"url": "{{ page.url | slugify or "home" }}",
+		"url": "{{ page.url | slugify or "default" }}",
 		"ogTemplate": "{{ page.data.ogTemplate }}",
 		"suptitle": "Nº {{ (pages[page.fileSlug].number or "0") | pad(2) }}{{ page.data.itemNumber }}",
 		"title": "{{ page.data.title or metadata.title }}",
