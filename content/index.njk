@@ -20,7 +20,7 @@ permalink: "/"
 
 		{% set pageNumber = pages.home.number %}
 		{% if pageNumber | isNumber %}
-			<p class="large-body mono background-tertiary" aria-hidden="true">Nº {{ pageNumber | pad(2) }}</p>
+			<p class="suphead mono background-tertiary" aria-hidden="true">Nº {{ pageNumber | pad(2) }}</p>
 			<div class="spacer-xs"></div>
 		{% endif %}
 
@@ -80,7 +80,7 @@ permalink: "/"
 
 <div class="spacer-xxl-desktop"></div>
 
-<p class="large-body mono background-tertiary" aria-hidden="true">Nº {{ pages.projects.number | pad(2) }}</p>
+<p class="suphead mono background-tertiary" aria-hidden="true">Nº {{ pages.projects.number | pad(2) }}</p>
 <div class="spacer-xs"></div>
 <h2 id="projects" class="huge-title">Projects</h2>
 {% if pages.projects.description %}
