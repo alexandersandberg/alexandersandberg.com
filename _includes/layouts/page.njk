@@ -28,13 +28,13 @@ eleventyComputed:
 
 	{% if title %}
 		<h1 class="{% if itemNumber %}large-title{% else %}huge-title{% endif %}">
-			{{ title }}
+			{{ title | safe }}
 		</h1>
 	{% endif %}
 
 	{% if description and not hideDescription %}
 		<div class="spacer-l"></div>
-		<p>{{ description }}</p>
+		<p>{{ description | safe }}</p>
 	{% endif %}
 
 	{% set date = updatedDate or publishedDate %}
