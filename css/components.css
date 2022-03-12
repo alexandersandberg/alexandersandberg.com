@@ -77,6 +77,10 @@
 	vertical-align: -0.125em;
 }
 
+.social-link {
+	font-size: 32px;
+}
+
 @media (hover: hover) {
 	.header-anchor:hover::before {
 		content: "#";
@@ -129,6 +133,10 @@
 	.project-aside {
 		min-width: 200px;
 		max-width: 300px;
+	}
+
+	.social-link {
+		font-size: 40px;
 	}
 }
 

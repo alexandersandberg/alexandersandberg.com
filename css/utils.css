@@ -113,6 +113,10 @@
 	margin-right: var(--space-s);
 }
 
+.social-links.row-centered > *:not(:last-child) {
+	margin-right: var(--space-m);
+}
+
 .column-centered {
 	display: flex;
 	flex-direction: column;
