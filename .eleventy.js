@@ -10,11 +10,9 @@ const markdownItAnchor = require("markdown-it-anchor");
 const markdownItTableOfContents = require("markdown-it-table-of-contents");
 const metadata = require("./_data/metadata.js");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginMetagen = require('eleventy-plugin-metagen');
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addPlugin(pluginRss);
-	eleventyConfig.addPlugin(pluginMetagen);
 
 	eleventyConfig.addPassthroughCopy("css");
 	eleventyConfig.addPassthroughCopy("img");
