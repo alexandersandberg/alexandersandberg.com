@@ -2,13 +2,13 @@
 <html lang="en">
 	<head>
 		{% set title %}
-		{% if title %}{{ title }} · {% endif %}{{ metadata.title }}
+		{% if title %}{{ title | safe }} · {% endif %}{{ metadata.title }}
 		{% endset %}
 		{%- set img %}/og/{{ page.url | slugify or "home" }}.jpeg{% endset -%}
 
 		{% metagen
-		title = title,
-		desc = description or metadata.description,
+		title = title | safe,
+		desc = description | safe or metadata.description,
 		url = page.url | absoluteUrl(metadata.url),
 		img = img | absoluteUrl(metadata.url),
 		twitter_card_type = "summary_large_image",
