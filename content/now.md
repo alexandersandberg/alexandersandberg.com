@@ -16,4 +16,4 @@ I started working on _another iOS/macOS app_ that was missing from my life. Noth
 
 I integrated reading into my daily morning routine and now _read a lot more than usual_. I love it. You can see what I'm reading on [Literal](https://literal.club/alex).
 
-It's getting warmer outside and I'm planning to _grow something_ on our balcony this year. I'm very excited.
+It's getting warmer outside and I'm planning to _grow something_ on our balcony this year. I'm very excited. 🌱
