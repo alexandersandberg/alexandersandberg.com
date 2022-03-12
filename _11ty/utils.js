@@ -8,10 +8,14 @@ const contentfulClient = contentful.createClient({
 	accessToken: process.env.CTFL_ACCESSTOKEN
 });
 
-const postDateFromString = (string) => new Date(string).toLocaleDateString('en-US', {
-	month: 'long',
-	year: 'numeric'
-})
+const postDateFromString = (string) => {
+	if (!string) return "";
+
+	return new Date(string).toLocaleDateString('en-US', {
+		month: 'long',
+		year: 'numeric'
+	});
+}
 
 const pageMaxWidth = 900; // Should be same as --page-max-width in main.css
 

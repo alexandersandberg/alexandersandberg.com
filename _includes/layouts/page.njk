@@ -40,9 +40,10 @@ eleventyComputed:
 	{% set date = updatedDate or publishedDate %}
 	{% if date %}
 		<div class="spacer-m"></div>
-		<time class="subhead foreground-tertiary">
-			{{ "Updated" if updatedDate else "Published" }} in {{ date }}
-		</time>
+		<p class="subhead foreground-tertiary">
+			{{ "Updated" if updatedDate else "Published" }} in
+			<time>{{ date | postDateFromString }}</time>
+		</p>
 	{% endif %}
 </header>
 
