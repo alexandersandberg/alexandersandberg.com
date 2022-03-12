@@ -108,7 +108,7 @@ p,
 		font-family: var(--font-main);
 		font-size: 24px;
 		font-weight: normal;
-		line-height: 1.4;
+		line-height: 1.5;
 	}
 
 	.huge-title {
@@ -142,7 +142,7 @@ p,
 	.title3 {
 		font-size: 24px;
 		font-weight: bold;
-		line-height: 1.4;
+		line-height: 1.5;
 	}
 
 	.large-body {
@@ -155,18 +155,18 @@ p,
 	.body {
 		font-size: 24px;
 		font-weight: normal;
-		line-height: 1.4;
+		line-height: 1.5;
 	}
 
 	.suphead {
 		font-size: 30px;
 		font-weight: normal;
-		line-height: 1.3;
+		line-height: 1.4;
 	}
 
 	.subhead {
 		font-size: 20px;
 		font-weight: normal;
-		line-height: 1.4;
+		line-height: 1.5;
 	}
 }
