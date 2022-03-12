@@ -11,13 +11,13 @@ isPost: true
 eleventyComputed:
   itemNumber: " - Life lesson #{{ lesson.id | pad(3) }}"
   title: "{{ pages.lesson.title }} #{{ lesson.id | pad(3) }} from {{ lesson.source }}"
-  description: "{{ lesson.body }}"
+  description: "{{ lesson.body | safe }}"
 ---
 
 {% from 'components/icon.njk' import icon %}
 
-<p class="large-body">{{ lesson.body }}</p>
-<p class="foreground-tertiary">— {{ lesson.source }}</p>
+<p class="large-body">{{ lesson.body | safe }}</p>
+<p class="foreground-tertiary">— {{ lesson.source | safe }}</p>
 
 <div id="sharing-buttons" class="hidden">
 	<div class="spacer-xl"></div>

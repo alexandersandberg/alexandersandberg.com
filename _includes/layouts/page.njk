@@ -28,7 +28,7 @@ eleventyComputed:
 
 	{% if title %}
 		<h1 class="{% if itemNumber %}large-title{% else %}huge-title{% endif %}">
-			{{ title | safe }}
+			{{- title | safe -}}
 		</h1>
 	{% endif %}
 
