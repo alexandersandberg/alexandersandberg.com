@@ -41,6 +41,13 @@
 		"number": 5,
 		"back": "home"
 	},
+	"404": {
+		"title": "Home",
+		"description": null,
+		"path": "",
+		"number": 0,
+		"back": "home"
+	},
 	"now": {
 		"title": "Now",
 		"description": "Now description",
