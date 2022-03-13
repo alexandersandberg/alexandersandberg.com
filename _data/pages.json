@@ -42,9 +42,9 @@
 		"back": "home"
 	},
 	"404": {
-		"title": "Home",
-		"description": null,
-		"path": "",
+		"title": "Oh no, this page doesn't exist",
+		"description": "404 description.",
+		"path": null,
 		"number": 0,
 		"back": "home"
 	},
