@@ -4,6 +4,7 @@ const fs = require("fs");
 const hljs = require("highlight.js");
 const imageShortcode = require('./_11ty/utils.js').imageShortcode;
 const postDateFromString = require('./_11ty/utils.js').postDateFromString;
+const fullDateFromString = require('./_11ty/utils.js').fullDateFromString;
 const ogImageGenerator = require('./_11ty/ogImageGenerator/index.js');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
@@ -36,6 +37,8 @@ module.exports = (eleventyConfig) => {
 	});
 
 	eleventyConfig.addFilter("postDateFromString", (value) => postDateFromString(value));
+
+	eleventyConfig.addFilter("fullDateFromString", (value) => fullDateFromString(value));
 
 	eleventyConfig.addFilter("isNumber", (value) => typeof value == "number");
 
