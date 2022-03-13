@@ -21,6 +21,10 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPassthroughCopy("robots.txt");
 	eleventyConfig.addPassthroughCopy("_redirects");
 
+	eleventyConfig.addFilter("whereType", (projects, type) => {
+		return projects.filter(project => project.type === type);
+	});
+
 	eleventyConfig.addFilter("withCategorySlug", (lessons, categorySlug) => {
 		return lessons.filter(lesson => lesson.category.slug === categorySlug);
 	});

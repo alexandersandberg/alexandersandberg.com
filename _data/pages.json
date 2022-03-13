@@ -82,5 +82,12 @@
 		"path": null,
 		"number": 4,
 		"back": null
+	},
+	"apps": {
+		"title": "Apps",
+		"description": "Apps description",
+		"path": "apps/",
+		"number": 5,
+		"back": "projects"
 	}
 }

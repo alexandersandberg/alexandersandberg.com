@@ -1,0 +1,36 @@
+---
+layout: layouts/page.njk
+permalink: "{{ pages.apps.path }}"
+eleventyComputed:
+  itemNumber: " - Projects"
+---
+
+{% from 'components/decorative-link.njk' import decorativeLink %}
+
+{% for project in projects | whereType("app") %}
+	<article class="project separator-xxl-desktop flex">
+		<div class="project-main">
+			<h3 class="title1">{{ project.title }}</h3>
+			<span class="subhead foreground-tertiary">{{ project.subtitle }}</span>
+			<div class="spacer-m"></div>
+			<p>{{ project.description }}</p>
+			<div class="spacer-m"></div>
+			<div class="row-centered">
+				<a href="{{ project.link }}">
+					{{ project.link | prettyLink }}
+					{% arrowForLink project.link %}
+				</a>
+				{{ decorativeLink(project.link, "#" + project.number | pad(3)) }}
+			</div>
+		</div>
+		{% set image = project.image.fields %}
+		{% if image %}
+			<div class="project-aside">
+				{% image image.file.url,
+				image.title or "Preview of " + project.title + " project",
+				[null],
+				"100vw" %}
+			</div>
+		{% endif %}
+	</article>
+{% endfor %}
