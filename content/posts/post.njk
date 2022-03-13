@@ -9,7 +9,7 @@ permalink: "{{ pages.blog.path }}/{{ post.slug }}/"
 isPost: true
 ogTemplate: post
 eleventyComputed:
-  itemNumber: " - Post #{{ post.id | pad(3) }}"
+  itemNumber: " - Blog post #{{ post.id | pad(3) }}"
   title: "{{ post.title | safe }}"
   description: "{{ post.excerpt | safe }}"
   publishedDate: "{{ post.createdAt }}"
