@@ -2,8 +2,8 @@
 layout: layouts/base.njk
 bodyClass: page
 eleventyComputed:
-  title: "{{ title or pages[page.fileSlug].title }}"
-  description: "{{ description or pages[page.fileSlug].description }}"
+  title: "{{ (title or pages[page.fileSlug].title) | safe }}"
+  description: "{{ (description or pages[page.fileSlug].description) | safe }}"
 ---
 
 <header>
