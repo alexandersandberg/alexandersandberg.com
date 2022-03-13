@@ -48,7 +48,7 @@ eleventyComputed:
 			{% endif %}
 			<p class="subhead foreground-tertiary">
 				{{ "Updated" if updatedDate else "Published" }} in
-			<time title="{{ date }}">{{ date | postDateFromString }}</time>
+			<time title="{{ date | fullDateFromString }}">{{ date | postDateFromString }}</time>
 			</p>
 		{% endif %}
 	{% endif %}

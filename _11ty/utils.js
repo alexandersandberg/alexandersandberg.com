@@ -17,6 +17,16 @@ const postDateFromString = (string) => {
 	});
 }
 
+const fullDateFromString = (string) => {
+	if (!string) return "";
+
+	return new Date(string).toLocaleDateString('en-US', {
+		day: 'numeric',
+		month: 'long',
+		year: 'numeric'
+	});
+}
+
 const pageMaxWidth = 900; // Should be same as --page-max-width in main.css
 
 const imageShortcode = async (
@@ -45,4 +55,5 @@ const imageShortcode = async (
 
 exports.contentfulClient = contentfulClient;
 exports.postDateFromString = postDateFromString
+exports.fullDateFromString = fullDateFromString
 exports.imageShortcode = imageShortcode
