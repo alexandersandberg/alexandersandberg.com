@@ -32,18 +32,25 @@ eleventyComputed:
 		</h1>
 	{% endif %}
 
-	{% if description and not hideDescription %}
-		<div class="spacer-l"></div>
-		<p>{{ description | safe }}</p>
-	{% endif %}
-
+	{% set showDescription = true if description and not isPost else 
+		false %}
 	{% set date = updatedDate or publishedDate %}
-	{% if date %}
-		<div class="spacer-m"></div>
-		<p class="subhead foreground-tertiary">
-			{{ "Updated" if updatedDate else "Published" }} in
+	{% if showDescription or date %}
+		<div class="spacer-l"></div>
+
+		{% if showDescription %}
+			<p>{{ description | safe }}</p>
+		{% endif %}
+
+		{% if date %}
+			{% if showDescription %}
+				<div class="spacer-xs"></div>
+			{% endif %}
+			<p class="subhead foreground-tertiary">
+				{{ "Updated" if updatedDate else "Published" }} in
 			<time title="{{ date }}">{{ date | postDateFromString }}</time>
-		</p>
+			</p>
+		{% endif %}
 	{% endif %}
 </header>
 

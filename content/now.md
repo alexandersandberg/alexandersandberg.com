@@ -2,7 +2,6 @@
 layout: layouts/now.njk
 permalink: "{{ pages.now.path }}"
 isPost: true
-hideDescription: true
 eleventyComputed:
   itemNumber: " - TL;DR"
   updatedDate: "{{ page.date | postDateFromString }}"
