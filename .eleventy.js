@@ -17,6 +17,7 @@ module.exports = (eleventyConfig) => {
 
 	eleventyConfig.addPassthroughCopy("css");
 	eleventyConfig.addPassthroughCopy("img");
+	eleventyConfig.addPassthroughCopy({ "img/og/*": "/og" });
 	eleventyConfig.addPassthroughCopy({ "favicon/*": "/" });
 	eleventyConfig.addPassthroughCopy("robots.txt");
 	eleventyConfig.addPassthroughCopy("_redirects");
@@ -49,12 +50,8 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addFilter("pad", (value, n) => value.toString().padStart(n, "0"));
 
 	eleventyConfig.addFilter("prettyLink", (link) => {
-		if (link.startsWith(metadata.url)) {
-			return link.replace(metadata.url, "/");
-		}
-
-		if (link.startsWith(metadata.url_live)) {
-			return link.replace(metadata.url_live, "/");
+		if (link.startsWith("/apps/")) {
+			return "Learn more and download";
 		}
 
 		if (link.startsWith("http")) {

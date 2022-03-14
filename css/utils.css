@@ -102,6 +102,9 @@
 .flex > *:not(:last-child) {
 	margin: 0 0 var(--space-l) 0;
 }
+.flex.wide > *:not(:last-child) {
+	margin: 0 0 var(--space-xl) 0;
+}
 
 .row-centered {
 	display: flex;
@@ -152,12 +155,23 @@
 	display: none;
 }
 
+.arrowed li {
+	list-style-type: "→  ";
+}
+
+.arrowed li::marker {
+	content: "→  ";
+}
+
 @media screen and (min-width: 600px) {
 	.flex {
 		flex-direction: row;
 	}
 	.flex > *:not(:last-child) {
 		margin: 0 var(--space-l) 0 0;
+	}
+	.flex.wide > *:not(:last-child) {
+		margin: 0 var(--space-xl) 0 0;
 	}
 }
 

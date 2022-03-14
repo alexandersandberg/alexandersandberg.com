@@ -89,5 +89,12 @@
 		"path": "apps/",
 		"number": 5,
 		"back": "projects"
+	},
+	"privacy-and-support": {
+		"title": "Privacy and support",
+		"description": "Description",
+		"path": "apps/privacy-and-support/",
+		"number": 5,
+		"back": "apps"
 	}
 }
