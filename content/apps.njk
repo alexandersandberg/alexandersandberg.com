@@ -15,13 +15,7 @@ eleventyComputed:
 			<div class="spacer-m"></div>
 			<p>{{ project.description }}</p>
 			<div class="spacer-m"></div>
-			<div class="row-centered">
-				<a href="{{ project.link }}">
-					{{ project.link | prettyLink }}
-					{% arrowForLink project.link %}
-				</a>
-				{{ decorativeLink(project.link, "#" + project.number | pad(3)) }}
-			</div>
+			<a href="{{ project.link }}">{{ project.link | prettyLink }} →</a>
 		</div>
 		{% set image = project.image.fields %}
 		{% if image %}

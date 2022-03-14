@@ -40,11 +40,18 @@
 	grid-template-areas: ". .";
 }
 
-.project {
+.project,
+.app-intro {
 	align-items: center;
 }
 
-.project-aside {
+.app-intro-main img {
+	width: 128px;
+	height: 128px;
+}
+
+.project-aside,
+.app-intro-aside {
 	max-width: 250px;
 }
 
@@ -61,10 +68,19 @@
 	position: relative;
 }
 
-#footer img {
-	border-radius: 50%;
+.footer-image {
+	flex-shrink: 0;
+}
+
+.footer-image img {
 	width: 48px;
 	height: 48px;
+	border-radius: 50%;
+}
+
+.app .footer-image img {
+	width: 36px;
+	height: 36px;
 }
 
 .icon {
@@ -79,6 +95,46 @@
 
 .social-link {
 	font-size: 32px;
+}
+
+.app {
+	--border-radius: 16px;
+}
+
+.app-store-link {
+	display: inline-block;
+	background-color: var(--foreground);
+	color: var(--background);
+	padding: 12px 16px;
+	border-radius: var(--border-radius);
+}
+
+.app footer > div:first-child {
+	margin-right: auto;
+}
+
+.screenshot-grid {
+	--grid-spacing: var(--space-s);
+
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	grid-template-rows: auto auto;
+	gap: var(--grid-spacing) 0;
+	grid-auto-flow: column;
+	grid-template-areas: ". .";
+}
+
+.screenshot-grid > div > *:not(:last-child) {
+	display: block;
+	margin-bottom: var(--grid-spacing);
+}
+.screenshot-grid .row-centered > *:not(:last-child) {
+	margin-right: var(--grid-spacing);
+}
+
+.screenshot-grid img {
+	border: 3px solid var(--background-secondary);
+	border-radius: var(--border-radius);
 }
 
 @media (hover: hover) {
@@ -96,7 +152,8 @@
 		filter: drop-shadow(20px 0px 50px var(--background));
 	}
 
-	.project-aside {
+	.project-aside,
+	.app-intro-aside {
 		filter: drop-shadow(0px 20px 50px var(--background-secondary));
 	}
 }
@@ -122,21 +179,31 @@
 		grid-auto-flow: row;
 	}
 
-	.project {
+	.project,
+	.app-intro {
 		justify-content: space-between;
 	}
 
-	.project-main {
+	.project-main,
+	.app-intro-main {
 		max-width: 500px;
 	}
 
-	.project-aside {
+	.project-aside,
+	.app-intro-aside {
 		min-width: 200px;
 		max-width: 300px;
 	}
 
 	.social-link {
 		font-size: 40px;
+	}
+
+	.screenshot-grid {
+		grid-template-columns: minmax(0, 1fr) 300px;
+		grid-template-rows: minmax(0, 1fr);
+		gap: 0 var(--grid-spacing);
+		grid-auto-flow: row;
 	}
 }
 
@@ -164,5 +231,9 @@
 		transform: translateX(-100%);
 		left: calc(var(--space-sides) * -1);
 		margin-left: 0;
+	}
+
+	.screenshot-grid {
+		grid-template-columns: minmax(0, 1fr) 488px;
 	}
 }

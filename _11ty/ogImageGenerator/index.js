@@ -19,6 +19,10 @@ module.exports = async (pages) => {
 	if (!fs.existsSync(dir)) fs.mkdirSync(dir);
 
 	for (const item of pages) {
+		if (item.ogImage) {
+			continue;
+		}
+
 		const imageName = getImageName(item.url)
 		const asset = new AssetCache(getCacheIdentifier(imageName));
 		if (asset.isCacheValid("1d")) {
