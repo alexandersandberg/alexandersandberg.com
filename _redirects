@@ -1,45 +1,51 @@
-/theme-switcher/
-/tiny-softbox/
-/tabs-for-accessibility/
-# /about/
-/sunsetting-tempo/
-# /now/
-/motivation/
+# Old website redirects
+
+## Blog
+/thoughts/														/blog/
+/life/																/blog/
+/posts/																/blog/
+/tiny-weather-announcement/						/blog/tiny-weather-announcement/
+/tiny-softbox-announcement/						/blog/tiny-softbox-announcement/
+/tiny-weather/												/blog/tiny-weather-is-now-available-for-download/
+/joining-practice/										/blog/joining-practice/
+/joining-tempo/												/blog/joining-tempo/
+/sunsetting-tempo/										/blog/sunsetting-tempo/
+/motivation/													/blog/motivation-comes-from-taking-action/
+/daydreaming/													/blog/the-unexpected-power-of-daydreaming/
+/comparison/													/blog/comparison-kills-creativity/
+/successful-product/									/blog/the-simple-steps-behind-a-successful-product/
+/my-tv/																/blog/i-dont-miss-my-tv/
+/forgetting/													/blog/learning-and-forgetting/
+
+## Articles
+/dev/																	/articles/
+/tabs-for-accessibility/							/articles/default-to-tabs-instead-of-spaces-for-an-accessible-first-environment/
+/managing-package-dependencies-with-swift-package-manager-in-xcode/		/articles/managing-package-dependencies-with-swift-package-manager-in-xcode/
+/theme-switcher/											/articles/creating-a-website-theme-switcher-with-css-only/
+
+## Projects
+/tiny-softbox/												/apps/tiny-softbox/
 /softbox/
-/tiny-weather/
-/joining-practice/
-/joining-tempo/
+
+## Books
+/books/
+/remote/
+/the-power-of-now/
+/how-to-fail-at-almost-everything-and-still-win-big/
+/paradox-of-choice/
 /goodbye-things/
 /a-guide-to-the-good-life/
-/tiny-softbox-announcement/
 /killing-commendatore/
-/books/
-/minimalism-and-anti-consumerism/
-/managing-package-dependencies-with-swift-package-manager-in-xcode/		/articles/managing-package-dependencies-with-swift-package-manager-in-xcode/
-/dev/																	/articles/
-/the-power-of-now/
-/my-tv/
-/forgetting/
-/how-to-fail-at-almost-everything-and-still-win-big/
-/life/																/blog/
-/paradox-of-choice/
-/tiny-weather-announcement/
-/thoughts/														/blog/
-/remote/
+
+## Life lessons
+/life-lessons/
+/curiosity-and-learning/
+/motivation-and-productivity/
+/creativity-and-creation/
+/home-and-living/
+/career-and-purpose/
+/business-and-marketing/
 /wealth-and-money/
 /appearance-and-desires/
 /mentality-and-mindset/
-/comparison/
-/curiosity-and-learning/
-/motivation-and-productivity/
-/successful-product/
-/life-lessons/
-/home-and-living/
-/career-and-purpose/
-/posts/																/blog/
-/creativity-and-creation/
-/business-and-marketing/
-/tiny-softbox
-/daydreaming/
-# /articles/
-/softbox
+/minimalism-and-anti-consumerism/
