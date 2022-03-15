@@ -76,8 +76,8 @@ eleventyComputed:
 					<div class="spacer-m"></div>
 					<p>{{ intro }}</p>
 					<div class="spacer-m"></div>
-					{% if appStoreLink %}
-						<a class="app-store-link plain" href="{{ appStoreLink }}">{{ icon("apple") }} Download on the App Store</a>
+					{% if appId %}
+						<a class="app-store-link plain" href="https://apps.apple.com/app/id{{ appId }}">{{ icon("apple") }} Download on the App Store</a>
 					{% endif %}
 					{% if playStoreLink %}
 						<div class="spacer-s"></div>
@@ -129,8 +129,8 @@ eleventyComputed:
 					</nav>
 				</div>
 				<div>
-					{% if appStoreLink %}
-						<a class="app-store-link plain" href="{{ appStoreLink }}">{{ icon("apple") }} Download on the App Store</a>
+					{% if appId %}
+						<a class="app-store-link plain" href="https://apps.apple.com/app/id{{ appId }}">{{ icon("apple") }} Download on the App Store</a>
 					{% endif %}
 					{% if playStoreLink %}
 						<div class="spacer-s"></div>
