@@ -48,6 +48,13 @@
 		"number": 0,
 		"back": "home"
 	},
+	"books": {
+		"title": "Books",
+		"description": "Books description.",
+		"path": "books/",
+		"number": 0,
+		"back": "home"
+	},
 	"now": {
 		"title": "Now",
 		"description": "Now description",
