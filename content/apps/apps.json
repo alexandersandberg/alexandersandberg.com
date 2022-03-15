@@ -1,5 +1,7 @@
 {
 	"layout": "layouts/app.njk",
 	"permalink": "{{ pages.apps.path }}{{ page.fileSlug }}/",
-	"ogImage": "./og/apps-{{ page.fileSlug }}.jpg"
+	"eleventyComputed": {
+		"ogImage": "./og/apps-{{ page.fileSlug }}.jpg"
+	}
 }
