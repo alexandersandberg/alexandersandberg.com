@@ -16,7 +16,6 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPlugin(pluginRss);
 
 	eleventyConfig.addPassthroughCopy("css");
-	eleventyConfig.addPassthroughCopy("img");
 	eleventyConfig.addPassthroughCopy({ "img/og/*": "/og" });
 	eleventyConfig.addPassthroughCopy({ "favicon/*": "/" });
 	eleventyConfig.addPassthroughCopy("robots.txt");
