@@ -10,14 +10,21 @@ ogTemplate: lesson
 isPost: true
 eleventyComputed:
   itemNumber: " - Life lesson #{{ lesson.id | pad(3) }}"
-  title: "{{ pages.lesson.title }} #{{ lesson.id | pad(3) }} from {{ lesson.source }}"
-  description: "{{ lesson.body | safe }}"
+  title: "{{ pages.lesson.title }} #{{ lesson.id | pad(3) }}{{ ' by ' + (lesson.source | safe) if lesson.source else '' }}"
+  description: "{{ lesson.body | removeMd }}"
 ---
 
 {% from 'components/icon.njk' import icon %}
 
-<p class="large-body">{{ lesson.body | safe }}</p>
-<p class="foreground-tertiary">— {{ lesson.source | safe }}</p>
+<div class="lesson">
+	{% markdownToHtmlString lesson.body %}
+</div>
+
+<div class="spacer-m"></div>
+
+{% if lesson.source %}
+	<p class="foreground-tertiary">— {{ lesson.source | safe }}</p>
+{% endif %}
 
 <div id="sharing-buttons" class="hidden">
 	<div class="spacer-xl"></div>
@@ -53,7 +60,7 @@ eleventyComputed:
 			.location
 			.href
 			navigator
-			.share({title: document.title, text: "{{ lesson.body }}", url: url})
+			.share({title: document.title, text: "{{ lesson.body | newlineAsSpace }}", url: url})
 	});
 
 	const copyButton = document.getElementById("copy");
@@ -72,7 +79,7 @@ eleventyComputed:
 	copyButton.addEventListener("click", () => {
 		navigator
 			.clipboard
-			.writeText("{{ lesson.body }} \n— {{ lesson.source }}")
+			.writeText("{{ lesson.body | newlineAsSpace }}{{ ' \\n— ' + (lesson.source | safe) if lesson.source else '' }}")
 			.then(() => {
 				copyText
 					.classList
