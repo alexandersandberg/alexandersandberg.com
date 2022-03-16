@@ -60,6 +60,10 @@ module.exports = (eleventyConfig) => {
 		return link
 	});
 
+	eleventyConfig.addFilter("newlineAsSpace", (text) => {
+		return text.replaceAll("\n", " ");
+	});
+
 	eleventyConfig.addShortcode("arrowForLink", (link) => {
 		if (link.startsWith("http") && !link.includes(metadata.url) && !link.includes(metadata.url_live)) {
 			return "↗";
