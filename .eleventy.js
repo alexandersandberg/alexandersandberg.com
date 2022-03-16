@@ -12,6 +12,7 @@ const markdownItToC = require("markdown-it-toc-done-right");
 const metadata = require("./_data/metadata.js");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const removeMd = require('remove-markdown');
+const markdownItIB = require("markdown-it-ib");
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addPlugin(pluginRss);
@@ -102,7 +103,7 @@ module.exports = (eleventyConfig) => {
 		slugify: eleventyConfig.getFilter("slug")
 	}).use(markdownItToC, {
 		level: [2, 3],
-	});
+	}).use(markdownItIB);
 
 	eleventyConfig.addAsyncShortcode(
 		"markdownToHtmlString",
