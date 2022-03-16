@@ -39,6 +39,10 @@ small {
 	color: var(--foreground-tertiary);
 }
 
+p i em {
+	font-weight: bolder;
+}
+
 p code {
 	color: var(--foreground);
 }
