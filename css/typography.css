@@ -76,7 +76,7 @@ h4,
 	line-height: 1.5;
 }
 
-.lesson *,
+.lesson > p,
 .suphead {
 	font-size: 24px;
 	font-weight: normal;
@@ -152,7 +152,7 @@ p,
 		line-height: 1.5;
 	}
 
-	.lesson *,
+	.lesson > p,
 	.suphead {
 		font-size: 30px;
 		font-weight: normal;
