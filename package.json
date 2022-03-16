@@ -29,7 +29,8 @@
     "markdown-it-anchor": "^8.4.1",
     "markdown-it-toc-done-right": "^4.2.0",
     "netlify-plugin-cache": "^1.0.3",
-    "puppeteer": "^13.4.1"
+    "puppeteer": "^13.4.1",
+    "remove-markdown": "^0.3.0"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^3.0.0",

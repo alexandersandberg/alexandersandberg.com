@@ -11,6 +11,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const markdownItToC = require("markdown-it-toc-done-right");
 const metadata = require("./_data/metadata.js");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const removeMd = require('remove-markdown');
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addPlugin(pluginRss);
@@ -59,6 +60,8 @@ module.exports = (eleventyConfig) => {
 
 		return link
 	});
+
+	eleventyConfig.addFilter("removeMd", (value) => removeMd(value, { stripListLeaders: false, }));
 
 	eleventyConfig.addFilter("newlineAsSpace", (text) => {
 		return text.replaceAll("\n", " ");

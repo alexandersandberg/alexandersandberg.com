@@ -2,14 +2,14 @@
 
 {% macro lessonsList(lessons, articleClass = "") %}
 	{% for lesson in lessons %}
-		<article {% if articleClass %}class="{{ articleClass }}"{% endif %}>
+		<article class="lesson-item {{ articleClass }}">
 			{% set link = "/" + pages.lessons.path + lesson.id + "/" %}
 			<a class="plain" href="{{ link }}">
-				<p class="truncate-to-4-lines">{{ lesson.body }}</p>
+				<p class="truncate-to-4-lines">{{ lesson.body | removeMd }}</p>
 			</a>
 			<div class="spacer-s"></div>
 			<div class="row-centered">
-				<span class="foreground-tertiary dont-break-words truncate">— {{ lesson.source }}</span>
+				<span class="foreground-tertiary dont-break-words truncate">{{ '— ' + lesson.source if lesson.source else '' }}</span>
 				{{ decorativeLink(link, "#" + lesson.id | pad(3)) }}
 			</div>
 		</article>

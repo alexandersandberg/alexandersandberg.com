@@ -9,7 +9,7 @@ permalink: "{{ pages.lessons.path }}"
 	{% set categoryLessons = lessons | withCategorySlug(category.slug) | reverse %}
 
 	{% if categoryLessons.length > 0 %}
-		<article class="separator-xl">
+		<section class="separator-xl">
 			<div class="row-centered hug-contents">
 				<h2>
 					<a href="/{{ pages.lessons.path }}{{ category.slug }}">
@@ -32,6 +32,6 @@ permalink: "{{ pages.lessons.path }}"
 					See all lessons →
 				</a>
 			</div>
-		</article>
+		</section>
 	{% endif %}
 {% endfor %}

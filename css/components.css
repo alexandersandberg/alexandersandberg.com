@@ -137,6 +137,10 @@
 	border-radius: var(--border-radius);
 }
 
+.lesson-item {
+	max-width: 600px;
+}
+
 @media (hover: hover) {
 	.header-anchor:hover::before {
 		content: "#";
@@ -175,7 +179,7 @@
 	.lessons-grid {
 		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 		grid-template-rows: minmax(0, 1fr);
-		gap: 0 var(--space-xl);
+		gap: 0 var(--space-l);
 		grid-auto-flow: row;
 	}
 
@@ -224,6 +228,10 @@
 	}
 	#about-aside picture {
 		margin: 0;
+	}
+
+	.lessons-grid {
+		gap: 0 var(--space-xl);
 	}
 
 	.labeled-link .number {
