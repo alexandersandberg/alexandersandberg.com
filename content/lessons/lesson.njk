@@ -10,7 +10,7 @@ ogTemplate: lesson
 isPost: true
 eleventyComputed:
   itemNumber: " - Life lesson #{{ lesson.id | pad(3) }}"
-  title: "{{ pages.lesson.title }} #{{ lesson.id | pad(3) }}{{ ' by ' + (lesson.source | safe) if lesson.source else '' }}"
+  title: "{{ pages.lesson.title }} #{{ lesson.id | pad(3) }}{{ ' from ' + (lesson.source | safe) if lesson.source else '' }}"
   description: "{{ lesson.body | removeMd }}"
 ---
 
