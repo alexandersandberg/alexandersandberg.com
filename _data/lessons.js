@@ -3,7 +3,8 @@ const client = require('../_11ty/utils.js').contentfulClient;
 module.exports = async () => {
 	return client.getEntries({
 		content_type: 'lesson',
-		order: 'sys.createdAt'
+		order: 'sys.createdAt',
+		limit: 1000,
 	}).then((response) => {
 		const lessons = response.items
 			.map((lesson, index) => ({
