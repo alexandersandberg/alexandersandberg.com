@@ -37,14 +37,13 @@
 /killing-commendatore/								/books/
 
 ## Life lessons
-/life-lessons/
-/curiosity-and-learning/
-/motivation-and-productivity/
-/creativity-and-creation/
-/home-and-living/
-/career-and-purpose/
-/business-and-marketing/
-/wealth-and-money/
-/appearance-and-desires/
-/mentality-and-mindset/
-/minimalism-and-anti-consumerism/
+/curiosity-and-learning/							/life-lessons/curiosity-and-learning/
+/motivation-and-productivity/					/life-lessons/motivation-and-discipline/
+/creativity-and-creation/							/life-lessons/creativity-and-creation/
+/home-and-living/											/life-lessons/experiences-and-possessions/
+/career-and-purpose/									/life-lessons/purpose-and-meaning
+/business-and-marketing/							/life-lessons/business-and-marketing/
+/wealth-and-money/										/life-lessons/wealth-and-money/
+/appearance-and-desires/							/life-lessons/appearance-and-desires/
+/mentality-and-mindset/								/life-lessons/integrity-and-mentality/
+/minimalism-and-anti-consumerism/			/life-lessons/experiences-and-possessions/
