@@ -3,14 +3,14 @@
 {% macro lessonsList(lessons, articleClass = "") %}
 	{% for lesson in lessons %}
 		<article class="lesson-item {{ articleClass }}">
-			{% set link = "/" + pages.lessons.path + lesson.id + "/" %}
+			{% set link = "/" + pages.lessons.path + lesson.number + "/" %}
 			<a class="plain" href="{{ link }}">
 				<p class="truncate-to-4-lines">{{ lesson.body | removeMd }}</p>
 			</a>
 			<div class="spacer-s"></div>
 			<div class="row-centered">
 				<span class="foreground-tertiary dont-break-words truncate">{{ '— ' + lesson.source if lesson.source else '' }}</span>
-				{{ decorativeLink(link, "#" + lesson.id | pad(3)) }}
+				{{ decorativeLink(link, "#" + lesson.number | pad(3)) }}
 			</div>
 		</article>
 	{% endfor %}
