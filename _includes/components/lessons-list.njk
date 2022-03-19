@@ -5,7 +5,7 @@
 		<article class="lesson-item {{ articleClass }}">
 			{% set link = "/" + pages.lessons.path + lesson.number + "/" %}
 			<a class="plain" href="{{ link }}">
-				<p class="truncate-to-4-lines">{{ lesson.body | removeMd }}</p>
+				<p class="truncate-to-4-lines">{{ lesson.body | removeMd | safe }}</p>
 			</a>
 			<div class="spacer-s"></div>
 			<div class="row-centered">

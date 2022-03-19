@@ -11,7 +11,7 @@ isPost: true
 eleventyComputed:
   itemNumber: " - Life lesson #{{ lesson.number | pad(3) }}"
   title: "{{ pages.lesson.title }} #{{ lesson.number | pad(3) }}{{ ' from ' + (lesson.source | safe) if lesson.source else '' }}"
-  description: "{{ lesson.body | removeMd }}"
+  description: "{{ lesson.body | removeMd | safe }}"
 ---
 
 {% from 'components/icon.njk' import icon %}
@@ -60,7 +60,7 @@ eleventyComputed:
 			.location
 			.href
 			navigator
-			.share({title: document.title, text: "{{ lesson.body | newlineAsSpace }}", url: url})
+			.share({title: document.title, text: "{{ lesson.body | newlineAsSpace | safe }}", url: url})
 	});
 
 	const copyButton = document.getElementById("copy");
@@ -79,7 +79,7 @@ eleventyComputed:
 	copyButton.addEventListener("click", () => {
 		navigator
 			.clipboard
-			.writeText("{{ lesson.body | newlineAsSpace }}{{ ' \\n— ' + (lesson.source | safe) if lesson.source else '' }}")
+			.writeText("{{ lesson.body | newlineAsSpace | safe }}{{ ' \\n— ' + (lesson.source | safe) if lesson.source else '' }}")
 			.then(() => {
 				copyText
 					.classList
