@@ -6,10 +6,12 @@ pagination:
   alias: category
   addAllPagesToCollections: true
 permalink: "{{ pages.lessons.path }}{{ category.slug }}/"
+isPost: kinda
 eleventyComputed:
   itemNumber: " - Life lessons"
   title: "{{ category.title | safe }}"
   description: "{{ category.description | safe }}"
+  updatedDate: "{{ (lessons | withCategorySlug(category.slug)) | latestUpdatedAt }}"
 ---
 
 {% from 'components/lessons-list.njk' import lessonsList with context %}

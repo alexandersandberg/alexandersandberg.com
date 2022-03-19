@@ -68,6 +68,16 @@ module.exports = (eleventyConfig) => {
 		return text.replaceAll("\n", " ");
 	});
 
+	eleventyConfig.addFilter("latestUpdatedAt", (items) => {
+		return items.reduce((latest, item) => {
+			if (item.updatedAt > latest) {
+				return item.updatedAt;
+			}
+
+			return latest;
+		}, new Date(0));
+	});
+
 	eleventyConfig.addShortcode("arrowForLink", (link) => {
 		if (link.startsWith("http") && !link.includes(metadata.url) && !link.includes(metadata.url_live)) {
 			return "↗";
