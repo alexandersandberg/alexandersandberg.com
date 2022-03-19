@@ -32,7 +32,7 @@ eleventyComputed:
 		</h1>
 	{% endif %}
 
-	{% set showDescription = true if description and not isPost else 
+	{% set showDescription = true if description and isPost != true else 
 		false %}
 	{% set date = updatedDate or publishedDate %}
 	{% if showDescription or date %}
@@ -44,7 +44,7 @@ eleventyComputed:
 
 		{% if date %}
 			{% if showDescription %}
-				<div class="spacer-xs"></div>
+				<div class="spacer-s"></div>
 			{% endif %}
 			<p class="subhead foreground-tertiary">
 				{{ "Updated" if updatedDate else "Published" }} in
@@ -56,6 +56,6 @@ eleventyComputed:
 
 <div class="spacer-xl"></div>
 
-<main{% if isPost %} class="post"{% endif %}>
+<main{% if isPost == true %} class="post"{% endif %}>
 	{{ content | safe }}
 </main>
