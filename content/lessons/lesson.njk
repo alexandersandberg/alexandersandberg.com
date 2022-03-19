@@ -20,9 +20,8 @@ eleventyComputed:
 	{% markdownToHtmlString lesson.body %}
 </div>
 
-<div class="spacer-m"></div>
-
 {% if lesson.source %}
+	<div class="spacer-m"></div>
 	<p class="foreground-tertiary">— {{ lesson.source | safe }}</p>
 {% endif %}
 
