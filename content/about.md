@@ -10,7 +10,7 @@ I’m **curious**. If I’m not improving my skills or knowledge of the world on
 
 I'm **open-minded**. I embrace my mistakes and learn from them. I avoid prejudices and find opposing views to my own fascinating, not threatening.
 
-I'm **simple**. I often opt for the simplest possible path or solution. Some call me a "minimalist", but I try to avoid labels. We are _the average of the five labels we assign ourselves_, <a class="subhead foreground-tertiary" href="/{{ pages.lessons.path }}239"><sup>(1)</sup></a> and I like being free.
+I'm **simple**. I often opt for the simplest possible path or solution. Some call me a "minimalist", but I try to avoid labels. We are _the average of the five labels we assign ourselves_, <a class="subhead foreground-tertiary" href="/{{ pages.lessons.path }}239" aria-label="Go to reference"><sup>(1)</sup></a> and I like being free.
 
 I’m an **extroverted introvert**. While I love meeting new people and exploring new places, I recharge my energy at home.
 

@@ -4,7 +4,7 @@
 	{% for lesson in lessons %}
 		<article class="lesson-item {{ articleClass }}">
 			{% set link = "/" + pages.lessons.path + lesson.number + "/" %}
-			<a class="plain" href="{{ link }}">
+			<a class="plain" href="{{ link }}" aria-label="Go to life lesson">
 				<p class="truncate-to-4-lines">{{ lesson.body | removeMd | safe }}</p>
 			</a>
 			<div class="spacer-s"></div>
