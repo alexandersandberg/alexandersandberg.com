@@ -11,7 +11,7 @@ eleventyComputed:
   itemNumber: " - Life lessons"
   title: "{{ category.title | safe }}"
   description: "{{ category.description | safe }}"
-  updatedDate: "{{ (lessons | withCategorySlug(category.slug)) | latestUpdatedAt }}"
+  updatedDate: "{{ (lessons | withCategorySlug(category.slug)) | latestUpdatedAt | dateToRfc3339 }}"
 ---
 
 {% from 'components/lessons-list.njk' import lessonsList with context %}
