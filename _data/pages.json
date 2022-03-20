@@ -8,56 +8,56 @@
 	},
 	"about": {
 		"title": "About me",
-		"description": "About me description",
+		"description": "Who I am, what I'm doing, and why I'm doing it.",
 		"path": "about/",
 		"number": 1,
 		"back": "home"
 	},
 	"articles": {
 		"title": "Articles",
-		"description": "Articles description",
+		"description": "Articles I write to help me understand things better and to share knowledge with others.",
 		"path": "articles/",
 		"number": 2,
 		"back": "home"
 	},
 	"blog": {
 		"title": "Blog",
-		"description": "Blog description",
+		"description": "Random stuff that I find worth sharing with the world.",
 		"path": "blog/",
 		"number": 3,
 		"back": "home"
 	},
 	"lessons": {
 		"title": "Life lessons",
-		"description": "Notes that I’ve gathered over the years from books, podcasts, movies, etc. that I want to bring along with me on this journey that we call ‘life’.",
+		"description": "Inspiration and knowledge that I’ve gathered over the years from books, podcasts, movies, and people that I want to bring along with me on this journey we call life. I share them here to hopefully inspire others.",
 		"path": "life-lessons/",
 		"number": 4,
 		"back": "home"
 	},
 	"projects": {
 		"title": "Projects",
-		"description": "Projects description",
+		"description": "Some of the apps and projects I've worked on.",
 		"path": "#projects",
 		"number": 5,
 		"back": "home"
 	},
 	"404": {
 		"title": "Oh no, this page doesn't exist",
-		"description": "404 description.",
+		"description": "404 error.",
 		"path": null,
 		"number": 0,
 		"back": "home"
 	},
 	"books": {
 		"title": "Books",
-		"description": "Books description.",
+		"description": "I used to keep a collection of notes from some of the books I read here. These notes are now shared as life lessons.",
 		"path": "books/",
 		"number": 0,
 		"back": "home"
 	},
 	"now": {
 		"title": "Now",
-		"description": "Now description",
+		"description": "This is my /now page, inspired by Derek Sivers, where I share what I'm doing right now.",
 		"path": "now/",
 		"number": 1,
 		"back": "about"
@@ -92,14 +92,14 @@
 	},
 	"apps": {
 		"title": "Apps",
-		"description": "Apps description",
+		"description": "My indie apps that I work on during my free time.",
 		"path": "apps/",
 		"number": 5,
 		"back": "projects"
 	},
 	"privacy-and-support": {
 		"title": "Privacy and support",
-		"description": "Description",
+		"description": "Privacy policy and support information for my apps.",
 		"path": "apps/privacy-and-support/",
 		"number": 5,
 		"back": "apps"
