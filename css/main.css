@@ -124,6 +124,19 @@ hr {
 	max-width: var(--page-max-width);
 }
 
+#timeline {
+	padding: 0;
+	border-spacing: var(--space-xs) var(--space-m);
+	border: none;
+	text-align: left;
+}
+
+#timeline th {
+	min-width: var(--space-xl);
+	font-weight: 700;
+	vertical-align: top;
+}
+
 button {
 	/* Reset */
 	color: inherit;
