@@ -93,6 +93,11 @@ nav ul:not(.row-centered) li:not(:last-child) {
 	margin-bottom: var(--space-xs);
 }
 
+ul li + li,
+ol li + li {
+	margin-top: 0.25em;
+}
+
 img {
 	height: auto;
 	max-width: 100%;
