@@ -210,6 +210,12 @@
 		gap: 0 var(--grid-spacing);
 		grid-auto-flow: row;
 	}
+
+	.two-columns {
+		-webkit-column-count: 2;
+		column-count: 2;
+		column-gap: var(--space-m);
+	}
 }
 
 @media screen and (min-width: 1000px) {
