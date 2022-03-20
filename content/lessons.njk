@@ -1,9 +1,26 @@
 ---
 layout: layouts/page.njk
 permalink: "{{ pages.lessons.path }}"
+noHeaderContentSpacer: true
 ---
 
 {% from 'components/lessons-list.njk' import lessonsList with context %}
+
+<div class="spacer-m"></div>
+
+<ol class="two-columns">
+	{% for category in lessonCategories %}
+		<li>
+			<a href="/{{ pages.lessons.path }}{{ category.slug }}">{{ category.title }}</a>
+		</li>
+	{% endfor %}
+</ol>
+
+<div class="spacer-xs"></div>
+
+<hr/>
+
+<div class="spacer-xl"></div>
 
 {% for category in lessonCategories %}
 	{% set categoryLessons = lessons | withCategorySlug(category.slug) | reverse %}

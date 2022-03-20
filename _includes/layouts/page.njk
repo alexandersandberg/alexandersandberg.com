@@ -54,7 +54,9 @@ eleventyComputed:
 	{% endif %}
 </header>
 
-<div class="spacer-xl"></div>
+{% if not noHeaderContentSpacer %}
+	<div class="spacer-xl"></div>
+{% endif %}
 
 <main{% if isPost == true %} class="post"{% endif %}>
 	{{ content | safe }}
