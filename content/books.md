@@ -8,4 +8,4 @@ I used to keep a collection of notes from some of the books I read here. Nowaday
 
 If you're curious about what I'm reading currently, you can check out [my Literal profile](https://literal.club/alex).
 
-If you miss the old book notes, [let me know](mailto:{{ metadata.author.email}}).
+If you miss the old book notes, [let me know](mailto:{{ metadata.author.email }}).
