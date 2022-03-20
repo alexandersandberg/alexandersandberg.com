@@ -2,7 +2,7 @@
 date: Last Modified
 eleventyComputed:
   meta:
-    title: "{{ (title + ' · ' if title else '') + metadata.title }}"
+    title: "{{ metadata.title if page.url === '/' else ((title + ' · ' if title else '') + metadata.author.name) }}"
     description: "{{ description or metadata.description }}"
     url: "{{ page.url | absoluteUrl(metadata.url) }}"
     image: "{{ ('/og/' + (page.url | slugify or 'default') + '.jpeg') | absoluteUrl(metadata.url) }}"
