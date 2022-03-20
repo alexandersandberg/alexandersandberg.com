@@ -4,7 +4,7 @@ permalink: "{{ pages.now.path }}"
 isPost: true
 eleventyComputed:
   itemNumber: " - TL;DR"
-  updatedDate: "{{ page.date | postDateFromString }}"
+  updatedDate: "{{ page.date | dateToRfc3339 }}"
 ---
 
 I just finished a _complete re-design and re-write of this website_ ([let me know](mailto:{{ metadata.author.email }}) what you think). I went with [Eleventy](https://www.11ty.dev) this time—it's amazing! As always, you can find the source code [on GitHub]({{ metadata.source }}).
