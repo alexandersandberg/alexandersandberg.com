@@ -92,7 +92,7 @@
 	},
 	"apps": {
 		"title": "Apps",
-		"description": "My indie apps that I work on during my free time.",
+		"description": "Apps I've built to solve problems or satisfy needs that other apps haven't yet.",
 		"path": "apps/",
 		"number": 5,
 		"back": "projects"
