@@ -16,6 +16,8 @@ eleventyComputed:
 
 {% from 'components/icon.njk' import icon %}
 
+<h1 class="hidden" aria-hidden="true">{{ title }}</h1>
+
 <div class="lesson">
 	{% markdownToHtmlString lesson.body %}
 </div>
