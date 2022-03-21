@@ -1,0 +1,63 @@
+---
+layout: layouts/base.njk
+bodyClass: page
+eleventyComputed:
+  title: "{{ (title or pages[page.fileSlug].title) | safe }}"
+  description: "{{ (description or pages[page.fileSlug].description) | safe }}"
+---
+
+<header>
+	{% set backPage = pages[pages[page.fileSlug].back] %}
+	{% if backPage %}
+		<div>
+			<a href="/{{ backPage.path }}">
+				← {{ backPage.title }}
+			</a>
+		</div>
+	{% endif %}
+
+	<div class="spacer-l"></div>
+
+	{% set pageNumber = pages[page.fileSlug].number %}
+	{% if pageNumber | isNumber %}
+		<p class="suphead mono background-tertiary" aria-hidden="true">
+			Nº {{ pageNumber | pad(2) }}{{ itemNumber }}
+		</p>
+		<div class="spacer-xs"></div>
+	{% endif %}
+
+	{% if title %}
+		<h1 class="{% if itemNumber %}large-title{% else %}huge-title{% endif %}">
+			{{- title | safe -}}
+		</h1>
+	{% endif %}
+
+	{% set showDescription = true if description and isPost != true else 
+		false %}
+	{% set date = updatedDate or publishedDate %}
+	{% if showDescription or date %}
+		<div class="spacer-l"></div>
+
+		{% if showDescription %}
+			<p>{{ description | safe }}</p>
+		{% endif %}
+
+		{% if date %}
+			{% if showDescription %}
+				<div class="spacer-s"></div>
+			{% endif %}
+			<p class="subhead foreground-tertiary">
+				{{ "Updated" if updatedDate else "Published" }} in
+			<time datetime="{{ date }}" title="{{ date | fullDateFromString }}">{{ date | postDateFromString }}</time>
+			</p>
+		{% endif %}
+	{% endif %}
+</header>
+
+{% if not noHeaderContentSpacer %}
+	<div class="spacer-xl"></div>
+{% endif %}
+
+<main{% if isPost == true %} class="post"{% endif %}>
+	{{ content | safe }}
+</main>

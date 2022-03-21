@@ -1,0 +1,99 @@
+---
+layout: layouts/lesson.njk
+pagination:
+  data: lessons
+  size: 1
+  alias: lesson
+  addAllPagesToCollections: true
+permalink: "{{ pages.lessons.path }}/{{ lesson.number }}/"
+ogTemplate: lesson
+isPost: true
+eleventyComputed:
+  itemNumber: " - Life lesson #{{ lesson.number | pad(3) }}"
+  title: "{{ pages.lesson.title }} #{{ lesson.number | pad(3) }}{{ ' from ' + (lesson.source | safe) if lesson.source else '' }}"
+  description: "{{ lesson.body | removeMd | safe }}"
+---
+
+{% from 'components/icon.njk' import icon %}
+
+<div class="lesson">
+	{% markdownToHtmlString lesson.body %}
+</div>
+
+{% if lesson.source %}
+	<div class="spacer-m"></div>
+	<p class="foreground-tertiary">— {{ lesson.source | safe }}</p>
+{% endif %}
+
+<div id="sharing-buttons" class="hidden">
+	<div class="spacer-xl"></div>
+	<div class="row-centered hug-contents">
+		<button class="hidden" id="share">{{ icon("share") }} Share</button>
+		<button class="hidden" id="copy">
+			<span id="copy-text">{{ icon("copy") }} Copy</span>
+			<span id="copied-text" class="hidden">{{ icon("copied") }} Copied</span>
+		</button>
+	</div>
+</div>
+
+<script>
+	const sharingButtons = document.getElementById("sharing-buttons");
+
+	const shareButton = document.getElementById("share");
+
+	if (navigator.share) {
+		shareButton
+			.classList
+			.remove("hidden");
+		sharingButtons
+			.classList
+			.remove("hidden");
+	}
+
+	shareButton.addEventListener("click", () => {
+		const url = document.querySelector('link[rel=canonical]')
+			? document
+				.querySelector('link[rel=canonical]')
+				.href
+			: document
+			.location
+			.href
+			navigator
+			.share({title: document.title, text: "{{ lesson.body | newlineAsSpace | safe }}", url: url})
+	});
+
+	const copyButton = document.getElementById("copy");
+	const copyText = document.getElementById("copy-text");
+	const copiedText = document.getElementById("copied-text");
+
+	if (navigator.clipboard) {
+		copyButton
+			.classList
+			.remove("hidden");
+		sharingButtons
+			.classList
+			.remove("hidden");
+	}
+
+	copyButton.addEventListener("click", () => {
+		navigator
+			.clipboard
+			.writeText("{{ lesson.body | newlineAsSpace | safe }}{{ ' \\n— ' + (lesson.source | safe) if lesson.source else '' }}")
+			.then(() => {
+				copyText
+					.classList
+					.add("hidden");
+				copiedText
+					.classList
+					.remove("hidden");
+				setTimeout(() => {
+					copyText
+						.classList
+						.remove("hidden");
+					copiedText
+						.classList
+						.add("hidden");
+				}, 900);
+			});
+	});
+</script>

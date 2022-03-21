@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+bodyClass: page
+---
+
+<header>
+	<div>
+		<a href="/{{ pages.lessons.path }}{{ lesson.category.slug }}">
+			← {{ lesson.category.title }}
+		</a>
+	</div>
+
+	<div class="spacer-l"></div>
+
+	{% set pageNumber = pages[page.fileSlug].number %}
+	{% if pageNumber | isNumber %}
+		<p class="body mono background-tertiary" aria-hidden="true">
+			Nº {{ pageNumber | pad(2) }}{{ itemNumber }}
+		</p>
+		<div class="spacer-xs"></div>
+	{% endif %}
+</header>
+
+<main>
+	{{ content | safe }}
+</main>

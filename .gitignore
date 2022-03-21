@@ -1,9 +1,10 @@
-*/.DS_Store
 .DS_Store
-.DS_Store?
-
-public/
-
 .vscode
 
-.netlify
+node_modules/
+
+.env
+
+_site/
+_temp/
+.cache

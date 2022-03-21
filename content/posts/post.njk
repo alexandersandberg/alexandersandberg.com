@@ -1,0 +1,22 @@
+---
+layout: layouts/page.njk
+pagination:
+  data: posts
+  size: 1
+  alias: post
+  addAllPagesToCollections: true
+permalink: "{{ pages.blog.path }}/{{ post.slug }}/"
+tags: feed
+isPost: true
+ogTemplate: post
+eleventyComputed:
+  itemNumber: " - Blog post #{{ post.id | pad(3) }}"
+  title: "{{ post.title | safe }}"
+  description: "{{ post.excerpt | safe }}"
+  publishedDate: "{{ post.createdAt }}"
+  updatedDate: "{{ post.updatedAt }}"
+---
+
+{% markdownToHtmlString post.body %}
+
+{% include "partials/post-footer.njk" %}

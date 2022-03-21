@@ -1,0 +1,49 @@
+# Old website redirects
+
+## Blog
+/thoughts/														/blog/
+/life/																/blog/
+/posts/																/blog/
+/tiny-weather-announcement/						/blog/tiny-weather-announcement/
+/tiny-softbox-announcement/						/blog/tiny-softbox-announcement/
+/tiny-weather/												/blog/tiny-weather-is-now-available-for-download/
+/joining-practice/										/blog/joining-practice/
+/joining-tempo/												/blog/joining-tempo/
+/sunsetting-tempo/										/blog/sunsetting-tempo/
+/motivation/													/blog/motivation-comes-from-taking-action/
+/daydreaming/													/blog/the-unexpected-power-of-daydreaming/
+/comparison/													/blog/comparison-kills-creativity/
+/successful-product/									/blog/the-simple-steps-behind-a-successful-product/
+/my-tv/																/blog/i-dont-miss-my-tv/
+/forgetting/													/blog/learning-and-forgetting/
+
+## Articles
+/dev/																	/articles/
+/tabs-for-accessibility/							/articles/default-to-tabs-instead-of-spaces-for-an-accessible-first-environment/
+/managing-package-dependencies-with-swift-package-manager-in-xcode/		/articles/managing-package-dependencies-with-swift-package-manager-in-xcode/
+/theme-switcher/											/articles/creating-a-website-theme-switcher-with-css-only/
+
+## Projects
+/tiny-softbox/												/apps/tiny-softbox/
+/softbox/															/apps/tiny-softbox/
+
+## Books
+/remote/															/books/
+/the-power-of-now/										/books/
+/how-to-fail-at-almost-everything-and-still-win-big/		/books/
+/paradox-of-choice/										/books/
+/goodbye-things/											/books/
+/a-guide-to-the-good-life/						/books/
+/killing-commendatore/								/books/
+
+## Life lessons
+/curiosity-and-learning/							/life-lessons/curiosity-and-learning/
+/motivation-and-productivity/					/life-lessons/motivation-and-discipline/
+/creativity-and-creation/							/life-lessons/creativity-and-creation/
+/home-and-living/											/life-lessons/experiences-and-possessions/
+/career-and-purpose/									/life-lessons/purpose-and-meaning
+/business-and-marketing/							/life-lessons/business-and-marketing/
+/wealth-and-money/										/life-lessons/wealth-and-money/
+/appearance-and-desires/							/life-lessons/status-and-desire/
+/mentality-and-mindset/								/life-lessons/integrity-and-mentality/
+/minimalism-and-anti-consumerism/			/life-lessons/experiences-and-possessions/

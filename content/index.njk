@@ -1,0 +1,115 @@
+---
+layout: layouts/home.njk
+permalink: "/"
+---
+
+{% from 'components/labeled-link.njk' import labeledLink with context %}
+{% from 'components/icon.njk' import icon %}
+{% from 'components/decorative-link.njk' import decorativeLink %}
+
+<div id="intro">
+	<div id="intro-aside">
+		{% image "./img/intro.jpg",
+		"Photo of Alexander Sandberg",
+		[null],
+		"100vw" %}
+	</div>
+
+	<div id="intro-main">
+		<div class="spacer-m"></div>
+
+		{% set pageNumber = pages.home.number %}
+		{% if pageNumber | isNumber %}
+			<p class="suphead mono background-tertiary" aria-hidden="true">Nº {{ pageNumber | pad(2) }}</p>
+			<div class="spacer-xs"></div>
+		{% endif %}
+
+		<h1 class="huge-title">Alexander Sandberg</h1>
+		<div class="spacer-l"></div>
+
+		<div class="separator-l">
+			<p>I’m a self-taught, product-minded {{ icon("apple") }}
+				<b>iOS/macOS Developer</b> with a background in web development and product design.</p>
+			<p>When asked to describe myself with one word, I often reply with <em>curious</em>.</p>
+			<div class="spacer-s"></div>
+			{{ labeledLink("about", "Learn more about me →") }}
+		</div>
+
+		<div class="separator-l">
+			<p>I sometimes write articles as a way to understand things better, because <em>the person who says he knows what he thinks but cannot express it usually does not know what he thinks.</em>
+				<a class="subhead foreground-tertiary" href="/{{ pages.lessons.path }}228" aria-label="Go to reference">
+					<sup>(1)</sup>
+				</a>
+			</p>
+			<div class="spacer-s"></div>
+			{{ labeledLink("articles", "Read the articles →") }}
+
+		</div>
+
+		<div class="separator-l">
+			<p>Occasionally, I also publish other random stuff that I find worth sharing with the world on my blog.</p>
+			<div class="spacer-s"></div>
+			{{ labeledLink("blog", "Visit the blog →") }}
+		</div>
+
+		<div class="separator-l">
+			<p>I’ve always been an avid learner who loves to seek new knowledge. Over the years, I’ve collected many ”life lessons” that I want to bring along with me on this journey we call life.</p>
+			<div class="spacer-s"></div>
+			{{ labeledLink("lessons", "Explore the life lessons →") }}
+		</div>
+
+		<div class="separator-l">
+			<p>I like to solve problems by building solutions because <em>the best way to complain is to make things.</em>
+				<a class="subhead foreground-tertiary" href="/{{ pages.lessons.path }}21" aria-label="Go to reference">
+					<sup>(2)</sup>
+				</a>
+			</p>
+			<div class="spacer-s"></div>
+			{{ labeledLink("projects", "View the projects ↓") }}
+		</div>
+	</div>
+</div>
+
+<div class="spacer-xxl-desktop"></div>
+
+{% include "partials/social-links.njk" %}
+
+<div class="spacer-xxl-desktop"></div>
+
+<p class="suphead mono background-tertiary" aria-hidden="true">Nº {{ pages.projects.number | pad(2) }}</p>
+<div class="spacer-xs"></div>
+<h2 id="projects" class="huge-title">Projects</h2>
+{% if pages.projects.description %}
+	<div class="spacer-l"></div>
+	<p>{{ pages.projects.description }}</p>
+{% endif %}
+
+<div class="spacer-xxl-desktop"></div>
+
+{% for project in projects %}
+	<article class="project separator-xxl-desktop flex">
+		<div class="project-main">
+			<h3 class="title1">{{ project.title }}</h3>
+			<span class="subhead foreground-tertiary">{{ project.subtitle }}</span>
+			<div class="spacer-m"></div>
+			<p>{{ project.description }}</p>
+			<div class="spacer-m"></div>
+			<div class="row-centered">
+				<a href="{{ project.link }}">
+					{{ project.link | prettyLink }}
+					{% arrowForLink project.link %}
+				</a>
+				{{ decorativeLink(project.link, "#" + project.number | pad(3)) }}
+			</div>
+		</div>
+		{% set image = project.image.fields %}
+		{% if image %}
+			<div class="project-aside">
+				{% image image.file.url,
+				image.title or "Preview of " + project.title + " project",
+				[null],
+				"100vw" %}
+			</div>
+		{% endif %}
+	</article>
+{% endfor %}
