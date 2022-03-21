@@ -13,9 +13,14 @@ const metadata = require("./_data/metadata.js");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const removeMd = require('remove-markdown');
 const markdownItIB = require("markdown-it-ib");
+const criticalCss = require("eleventy-critical-css");
 
 module.exports = (eleventyConfig) => {
 	eleventyConfig.addPlugin(pluginRss);
+	eleventyConfig.addPlugin(criticalCss, {
+		height: 1080,
+		width: 1920,
+	});
 
 	eleventyConfig.addPassthroughCopy("css");
 	eleventyConfig.addPassthroughCopy({ "img/og/*": "/og" });
