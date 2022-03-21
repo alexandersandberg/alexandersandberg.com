@@ -20,6 +20,9 @@ module.exports = (eleventyConfig) => {
 	eleventyConfig.addPlugin(criticalCss, {
 		height: 1080,
 		width: 1920,
+		penthouse: {
+			timeout: 60000
+		}
 	});
 
 	eleventyConfig.addPassthroughCopy("css");
