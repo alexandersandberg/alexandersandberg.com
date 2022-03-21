@@ -4,39 +4,10 @@
 
 This is the source code for my personal website, where I occasionally share some interesting stuff with the world.
 
-The website is built with [Hugo](http://gohugo.io) and hosted using [Netlify](https://www.netlify.com/).
+The website is built with [11ty](http://11ty.dev) and [Contentful](https://contentful.com), and is hosted on [Netlify](https://www.netlify.com/).
 
-## Install hugo
-```
-brew install hugo
-```
+---
 
-## Run website locally
-```
-hugo server
-```
-
-## Create a new post
-```
-hugo new [-k <archetype>] <path>
-```
-
-examples:
-```
-# books post:
-hugo new -k books posts/book-title.md
-
-# other post:
-hugo new posts/post-name.md
-
-# page:
-hugo new pages/page-title.md
-```
-
-## Publish site
-Personally, I've connected the project's repo to Netlify and simply push to the repo to publish new updates.
-
-If you want to deploy the site yourself you can use the button below.
-
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/alexandersandberg/alexandersandberg.com)
+<small>
+	This website was previously built with <a href="https://gohugo.io">Hugo</a>. You can find the source code <a href="https://github.com/alexandersandberg/alexandersandberg.com/tree/7d829fab12a3907ee88989aca41202e71d578d8a">here</a>.
+</small>

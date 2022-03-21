@@ -1,0 +1,17 @@
+{% from 'components/decorative-link.njk' import decorativeLink %}
+
+{% macro lessonsList(lessons, articleClass = "") %}
+	{% for lesson in lessons %}
+		<article class="lesson-item {{ articleClass }}">
+			{% set link = "/" + pages.lessons.path + lesson.number + "/" %}
+			<a class="plain" href="{{ link }}" aria-label="Go to life lesson">
+				<p class="truncate-to-4-lines">{{ lesson.body | removeMd | safe }}</p>
+			</a>
+			<div class="spacer-s"></div>
+			<div class="row-centered">
+				<span class="foreground-tertiary dont-break-words truncate">{{ '— ' + lesson.source if lesson.source else '' }}</span>
+				{{ decorativeLink(link, "#" + lesson.number | pad(3)) }}
+			</div>
+		</article>
+	{% endfor %}
+{% endmacro %}

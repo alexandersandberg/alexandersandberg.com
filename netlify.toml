@@ -1,23 +1,22 @@
 [build]
-  publish = "public"
-  command = "hugo --gc"
+  publish = "_site"
+  command = "AWS_LAMBDA_FUNCTION_NAME=trickpuppeteer npm run build"
 
 [build.processing]
   skip_processing = false
 [build.processing.css]
   bundle = true
-  minify = true
+  minify = false
 [build.processing.js]
   bundle = true
-  minify = true
+  minify = false
 [build.processing.html]
   pretty_urls = true
 [build.processing.images]
   compress = true
 
-[context.production.environment]
-  HUGO_VERSION = "0.69.0"
-[context.deploy-preview.environment]
-  HUGO_VERSION = "0.69.0"
-[context.branch-deploy.environment]
-  HUGO_VERSION = "0.69.0"
+[[plugins]]
+package = "netlify-plugin-cache"
+
+  [plugins.inputs]
+  paths = [".cache"]

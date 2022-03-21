@@ -1,9 +1,0 @@
-{{ define "main" }}
-
-{{ partial "article.html" (dict "context" . "isHome" false) }}
-
-{{ range first 1 (.GetTerms "categories") }}
-  {{ partial "prev-post.html" (dict "context" $.Page "category" .LinkTitle) }}
-{{ end }}
-
-{{ end }}
