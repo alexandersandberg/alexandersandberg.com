@@ -93,8 +93,8 @@ nav ul:not(.row-centered) li:not(:last-child) {
 	margin-bottom: var(--space-xs);
 }
 
-ul li + li,
-ol li + li {
+ul:not(.row-centered) li + li,
+ol:not(.row-centered) li + li {
 	margin-top: 0.25em;
 }
 
