@@ -9,7 +9,9 @@ eleventyComputed:
 
 I just finished a _complete re-design and re-write of this website_ ([let me know](mailto:{{ metadata.author.email }}) what you think). I went with [Eleventy](https://www.11ty.dev) this time—it's amazing! As always, you can find the source code [on GitHub]({{ metadata.source }}).
 
-I'm spending as much time as I can _learning more about SwiftUI_. Our [Practice iOS app](https://practice.do/ios) is still mainly written in UIKit, but that might change soon!
+I'm spending as much time as I can _learning more about SwiftUI_. We are using more and more SwiftUI in the [Practice iOS app](https://practice.do/ios) as well which is super fun!
+
+I recently [announced](/blog/announcing-the-swift-website-workgroup/) my _membership of the Swift Website Workgroup_—something I'm very excited about!
 
 I started working on _another iOS/macOS app_ that was missing from my life. Nothing to announce yet though, but [stay tuned](https://twitter.com/{{ metadata.author.twitter }}).
 
