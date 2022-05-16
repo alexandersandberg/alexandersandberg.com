@@ -24,7 +24,9 @@ Due to my curiosity for both design and development, I love working on meaningfu
 
 By day I work as an iOS Developer at [Practice](https://practice.do) where I, together with an amazing team, build a tool that helps individuals run their entire practices and coaching businesses from one place.
 
-By night I like to build [apps](/apps/) that solve problems or satisfy needs that other apps haven't yet. I built [Tiny Weather](/apps/tiny-weather/) because I couldn't find a beautiful, simple, privacy-minded weather app. I built [Tiny Softbox](/apps/tiny-softbox/) to fix my bad office lighting.
+By night I like to build [apps](/apps/) that solve problems or satisfy needs that other apps haven't yet. I built [Tiny Weather](/apps/tiny-weather/) because I couldn't find a beautiful, simple, privacy-minded weather app. I built [Tiny Softbox](/apps/tiny-softbox/) to fix my bad office lighting. I'm working on something new as well—stay tuned!
+
+I'm a member of the [Swift Website Workgroup](https://www.swift.org/website-workgroup/) (SWWG)—a steering team that helps guide the evolution of the [Swift.org](https://www.swift.org) website.
 
 Other than that, I like taking each day as it comes.
 
