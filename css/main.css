@@ -6,6 +6,7 @@
 	--foreground-secondary: #dddddd;
 	--foreground-tertiary: #999999;
 	--background: #000000;
+	--background-highlighted: #222222;
 	--background-secondary: #333333;
 	--background-tertiary: #757575;
 
@@ -39,6 +40,7 @@
 		--foreground-secondary: #222222;
 		--foreground-tertiary: #666666;
 		--background: #ffffff;
+		--background-highlighted: #eeeeee;
 		--background-secondary: #dddddd;
 		--background-tertiary: #757575;
 	}
