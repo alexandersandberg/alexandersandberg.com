@@ -42,7 +42,7 @@
 	overflow-x: auto;
 }
 
-.post code {
+.post :not(pre) code {
 	color: var(--foreground);
 	background: var(--background-highlighted);
 	padding: 3px 6px;
