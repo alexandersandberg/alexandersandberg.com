@@ -24,7 +24,7 @@ a {
 
 *:not(h1, h2, h3, h4) > a:not(.plain) {
 	text-decoration: underline;
-	text-decoration-color: var(--background-secondary);
+	text-decoration-color: var(--foreground-tertiary);
 	text-underline-offset: 3px;
 	text-decoration-thickness: 1px;
 	transition: color 0.1s ease, text-decoration-color 0.1s ease;
