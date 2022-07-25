@@ -1,0 +1,37 @@
+---
+layout: layouts/page.njk
+permalink: "forms/app-tester-signup/"
+eleventyComputed:
+  title: "App tester sign-up form"
+  description: "Sign up to be notified when there's an early app version ready for testing."
+---
+
+<form name="contact" action="/forms/success" method="POST" netlify>
+	<div>
+		<label for="contact" class="title1">How can I reach you when the app is ready for testing?*</label>
+		<div class="spacer-m"></div>
+		<input id="contact" type="text" name="contact" required/>
+		<div class="spacer-xs"></div>
+		<p>
+			<small>
+				<i>Email, Twitter handle, other...</i>
+			</small>
+		</p>
+	</div>
+	<div class="spacer-l"></div>
+	<div>
+		<label class="title1">What would you like this app to help you with?</label>
+		<div class="spacer-m"></div>
+		<textarea name="message" rows="4"></textarea>
+		<div class="spacer-xs"></div>
+		<p>
+			<small>
+				<i>This is optional, but I would love to hear how this app can be useful to you—if there are any problems that it might be able to help you solve.</i>
+			</small>
+		</p>
+	</div>
+	<div class="spacer-l"></div>
+	<div>
+		<button type="submit">Submit</button>
+	</div>
+</form>

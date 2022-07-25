@@ -1,0 +1,18 @@
+form label {
+	display: block;
+}
+
+form input,
+form textarea {
+	font-size: inherit;
+	font-family: inherit;
+	padding: var(--space-xs) var(--space-xs);
+	background-color: #fff;
+	border: 1px solid var(--background-secondary);
+	border-radius: var(--border-radius);
+	width: 100%;
+}
+
+form input:not(textarea) {
+	line-height: 1;
+}
