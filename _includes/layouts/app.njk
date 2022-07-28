@@ -56,6 +56,7 @@ eleventyComputed:
 		<link rel="stylesheet" href="{{ '/css/forms.css' }}">
 		<link rel="stylesheet" href="{{ '/css/utils.css' }}">
 		<link rel="stylesheet" href="{{ '/css/components.css' }}">
+		<link rel="stylesheet" href="{{ '/css/banner.css' }}">
 		<link rel="stylesheet" href="{{ '/css/dracula.css' }}">
 
 		<meta name="apple-itunes-app" content="app-id={{ appId }}">
@@ -64,6 +65,8 @@ eleventyComputed:
 		<script async defer data-domain="alexandersandberg.com" src="https://plausible.io/js/plausible.outbound-links.js"></script>
 	</head>
 	<body class="app">
+		{% include "partials/banner.njk" %}
+
 		<main>
 			{% from 'components/icon.njk' import icon %}
 

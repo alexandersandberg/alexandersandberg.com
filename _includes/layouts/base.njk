@@ -76,12 +76,15 @@ eleventyComputed:
 		<link rel="stylesheet" href="{{ '/css/forms.css' }}">
 		<link rel="stylesheet" href="{{ '/css/utils.css' }}">
 		<link rel="stylesheet" href="{{ '/css/components.css' }}">
+		<link rel="stylesheet" href="{{ '/css/banner.css' }}">
 		<link rel="stylesheet" href="{{ '/css/dracula.css' }}">
 
 		<script defer data-domain="alexandersandberg.com" src="https://plausible.io/js/plausible.js"></script>
 		<script async defer data-domain="alexandersandberg.com" src="https://plausible.io/js/plausible.outbound-links.js"></script>
 	</head>
 	<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
+		{% include "partials/banner.njk" %}
+
 		{{ content | safe }}
 
 		<div class="spacer-xxl"></div>
