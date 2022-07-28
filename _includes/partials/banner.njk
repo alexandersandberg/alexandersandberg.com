@@ -1,0 +1,26 @@
+<div id="banner" class="hidden">
+	<p class="subhead">
+		Hey! 👋 I'm building my next app in public <a href="https://twitter.com/alexandberg/status/1551249389577859072">over on Twitter</a>.
+	</p>
+	<button id="dismiss-banner" class="dismiss">Dismiss</button>
+</div>
+
+<script>
+	const banner = document.getElementById("banner");
+	const closeBannerButton = document.getElementById("dismiss-banner");
+
+	const isBannerDismissed = localStorage.getItem("banner-28.07.22") === "true";
+
+	if (!isBannerDismissed) {
+		banner
+			.classList
+			.remove("hidden");
+	}
+
+	closeBannerButton.addEventListener("click", () => {
+		banner
+			.parentNode
+			.removeChild(banner)
+		localStorage.setItem("banner-28.07.22", "true");
+	})
+</script>

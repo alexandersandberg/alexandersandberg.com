@@ -1,0 +1,35 @@
+#banner {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--background-secondary);
+	padding: var(--space-xs) var(--space-xs);
+	text-align: left;
+}
+
+button.dismiss {
+	flex-shrink: 0;
+	background-color: transparent;
+	cursor: pointer;
+	border: 1px solid var(--background-tertiary);
+	border-radius: 8px;
+	font-size: 12px;
+	transition: border-color 0.1s ease, background-color 0.1s ease;
+}
+
+#dismiss-banner {
+	margin-left: 10px;
+}
+
+@media screen and (min-width: 600px) {
+	#banner {
+		justify-content: center;
+	}
+
+	button.dismiss {
+		font-size: 16px;
+	}
+}
