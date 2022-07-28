@@ -6,10 +6,11 @@
 </div>
 
 <script>
+	const bannerKey = "banner-28.07.22"
 	const banner = document.getElementById("banner");
 	const closeBannerButton = document.getElementById("dismiss-banner");
 
-	const isBannerDismissed = localStorage.getItem("banner-28.07.22") === "true";
+	const isBannerDismissed = localStorage.getItem(bannerKey) == "dismissed";
 
 	if (!isBannerDismissed) {
 		banner
@@ -21,6 +22,6 @@
 		banner
 			.parentNode
 			.removeChild(banner)
-		localStorage.setItem("banner-28.07.22", "true");
+		localStorage.setItem(bannerKey, "dismissed");
 	})
 </script>
