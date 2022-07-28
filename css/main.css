@@ -154,7 +154,7 @@ button {
 	cursor: pointer;
 	border: 1px solid var(--background-secondary);
 	border-radius: var(--border-radius);
-	font-size: 20px;
+	font-size: 16px;
 	transition: border-color 0.1s ease, background-color 0.1s ease;
 }
 button:active {
@@ -170,5 +170,9 @@ button:active {
 @media screen and (min-width: 600px) {
 	:root {
 		--space-multiplier: 1.5;
+	}
+
+	button {
+		font-size: 20px;
 	}
 }
