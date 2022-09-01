@@ -92,6 +92,9 @@ eleventyComputed:
 						<div class="spacer-s"></div>
 						<a class="app-store-link plain" href="{{ playStoreLink }}">{{ icon("play-store") }} Download on the Play Store</a>
 					{% endif %}
+					{% if testFlightLink %}
+						<a class="app-store-link plain" href="{{ testFlightLink }}">{{ icon("apple") }} Join the Beta on TestFlight</a>
+					{% endif %}
 				</div>
 				<div class="app-intro-aside">
 					{% image "./img/apps/" + page.fileSlug + "/preview.png",
@@ -144,6 +147,9 @@ eleventyComputed:
 					{% if playStoreLink %}
 						<div class="spacer-s"></div>
 						<a class="app-store-link plain" href="{{ playStoreLink }}">{{ icon("play-store") }} Download on the Play Store</a>
+					{% endif %}
+					{% if testFlightLink %}
+						<a class="app-store-link plain" href="{{ testFlightLink }}">{{ icon("apple") }} Join the Beta on TestFlight</a>
 					{% endif %}
 				</div>
 			</footer>
