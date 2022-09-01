@@ -59,7 +59,9 @@ eleventyComputed:
 		<link rel="stylesheet" href="{{ '/css/banner.css' }}">
 		<link rel="stylesheet" href="{{ '/css/dracula.css' }}">
 
-		<meta name="apple-itunes-app" content="app-id={{ appId }}">
+		{% if appId %}
+			<meta name="apple-itunes-app" content="app-id={{ appId }}">
+		{% endif %}
 
 		<script defer data-domain="alexandersandberg.com" src="https://plausible.io/js/plausible.js"></script>
 		<script async defer data-domain="alexandersandberg.com" src="https://plausible.io/js/plausible.outbound-links.js"></script>
