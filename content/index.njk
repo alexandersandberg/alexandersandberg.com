@@ -104,7 +104,7 @@ permalink: "/"
 		</div>
 		{% set image = project.image.fields %}
 		{% if image %}
-			<div class="project-aside">
+			<div class="project-aside{% if project.wideImage %} wide{% endif %}">
 				{% image image.file.url,
 				image.title or "Preview of " + project.title + " project",
 				[null],

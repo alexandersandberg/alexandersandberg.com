@@ -96,7 +96,7 @@ eleventyComputed:
 						<a class="app-store-link plain" href="{{ testFlightLink }}">{{ icon("apple") }} Join the Beta on TestFlight</a>
 					{% endif %}
 				</div>
-				<div class="app-intro-aside">
+				<div class="app-intro-aside{% if wideImage %} wide{% endif %}">
 					{% image "./img/apps/" + page.fileSlug + "/preview.png",
 					"Preview of " + appName,
 					[null],

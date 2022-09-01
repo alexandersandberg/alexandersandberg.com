@@ -200,6 +200,11 @@
 		max-width: 300px;
 	}
 
+	.project-aside.wide,
+	.app-intro-aside.wide {
+		max-width: 500px;
+	}
+
 	.social-link {
 		font-size: 40px;
 	}
