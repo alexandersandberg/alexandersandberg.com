@@ -5,7 +5,8 @@ const Image = require("@11ty/eleventy-img");
 
 const contentfulClient = contentful.createClient({
 	space: process.env.CTFL_SPACE,
-	accessToken: process.env.CTFL_ACCESSTOKEN
+	accessToken: process.env.CTFL_ACCESSTOKEN,
+	environment: process.env.CTFL_ENVIRONMENT
 });
 
 const postDateFromString = (string) => {
