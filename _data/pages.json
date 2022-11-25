@@ -97,10 +97,10 @@
 		"number": 5,
 		"back": "projects"
 	},
-	"privacy-and-support": {
-		"title": "Privacy and support",
-		"description": "Privacy policy and support information for my apps.",
-		"path": "apps/privacy-and-support/",
+	"privacy-and-terms": {
+		"title": "Privacy and terms",
+		"description": "Privacy and terms for my apps.",
+		"path": "apps/privacy-and-terms/",
 		"number": 5,
 		"back": "apps"
 	}
