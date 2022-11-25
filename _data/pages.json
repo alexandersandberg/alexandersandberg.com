@@ -103,5 +103,12 @@
 		"path": "apps/privacy-and-terms/",
 		"number": 5,
 		"back": "apps"
+	},
+	"support": {
+		"title": "Support",
+		"description": "Support for my apps.",
+		"path": "apps/support/",
+		"number": 5,
+		"back": "apps"
 	}
 }
