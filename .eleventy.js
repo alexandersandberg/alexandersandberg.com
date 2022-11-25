@@ -26,6 +26,7 @@ module.exports = (eleventyConfig) => {
 	});
 
 	eleventyConfig.addPassthroughCopy("css");
+	eleventyConfig.addPassthroughCopy("img/apps/*");
 	eleventyConfig.addPassthroughCopy({ "img/og/*": "/og" });
 	eleventyConfig.addPassthroughCopy({ "favicon/*": "/" });
 	eleventyConfig.addPassthroughCopy("robots.txt");
