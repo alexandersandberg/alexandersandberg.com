@@ -21,9 +21,11 @@ To help me manage Pro subscriptions, I use RevenueCat. This is also processed an
 
 ### Terms
 
-Balance is a "freemium" which means it's completely free to install and use, but gives you the option to subscribe to a Pro version to unlock more features.
+Balance is a "freemium" app which means it's completely free to install and use, but gives you the option to subscribe to a Pro version to unlock more features.
 
 These subscriptions are processed and managed by Apple, and you can read more about that in [Apple's support article](https://support.apple.com/en-us/HT202023).
+
+[Apple's Terms of Use (EULA)](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) applies.
 
 <div class="spacer-xl"></div>
 
@@ -43,6 +45,8 @@ I do not collect or store any of your data. That's it!
 Tiny Softbox is a paid app. After paying a one-time fee on the App Store, you will have lifetime access to the app on all your devices.
 
 Tiny Weather is a free app. You can install and use the app and all of its features completely for free. If you would like to support the development of the app, there's an option to donate from within the app.
+
+[Apple's Terms of Use (EULA)](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) applies.
 
 ## Questions?
 
