@@ -86,7 +86,9 @@ eleventyComputed:
 					<p>{{ intro }}</p>
 					<div class="spacer-m"></div>
 					{% if appId %}
-						<a class="app-store-link plain" href="https://apps.apple.com/app/id{{ appId }}">{{ icon("apple") }} Download on the App Store</a>
+						<a class="app-store-link plain" href="https://apps.apple.com/app/id{{ appId }}">
+							{{ icon("apple") }} {% if isPreOrder %}Pre-order{% else %}Download{% endif %} on the App Store
+						</a>
 					{% endif %}
 					{% if playStoreLink %}
 						<div class="spacer-s"></div>
@@ -147,7 +149,9 @@ eleventyComputed:
 				</div>
 				<div>
 					{% if appId %}
-						<a class="app-store-link plain" href="https://apps.apple.com/app/id{{ appId }}">{{ icon("apple") }} Download on the App Store</a>
+						<a class="app-store-link plain" href="https://apps.apple.com/app/id{{ appId }}">
+							{{ icon("apple") }} {% if isPreOrder %}Pre-order{% else %}Download{% endif %} on the App Store
+						</a>
 					{% endif %}
 					{% if playStoreLink %}
 						<div class="spacer-s"></div>
