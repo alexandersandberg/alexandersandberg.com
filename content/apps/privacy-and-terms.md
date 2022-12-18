@@ -50,4 +50,4 @@ Tiny Weather is a free app. You can install and use the app and all of its featu
 
 ## Questions?
 
-Please reach out if you have any questions, feedback, or if you just want to say hi! You can reach me at [{{ metadata.author.email }}](mailto:{{ metadata.author.email }}) or on Twitter at [@alexandberg](https://twitter.com/{{ metadata.author.twitter }}).
+Please reach out if you have any questions, feedback, or if you just want to say hi! You can reach me at [{{ metadata.author.email }}](mailto:{{ metadata.author.email }}), on Twitter at [@{{ metadata.author.twitter }}](https://twitter.com/{{ metadata.author.twitter }}), or on Mastodon at [{{ metadata.author.mastodonHandle }}]({{ metadata.author.mastodonUrl }}).
