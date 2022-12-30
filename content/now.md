@@ -4,17 +4,7 @@ permalink: "{{ pages.now.path }}"
 isPost: true
 eleventyComputed:
   itemNumber: " - TL;DR"
-  updatedDate: "{{ page.date | dateToRfc3339 }}"
+  updatedDate: "2022-12-30T00:00:00.000Z"
 ---
 
-I just finished a _complete re-design and re-write of this website_ ([let me know](mailto:{{ metadata.author.email }}) what you think). I went with [Eleventy](https://www.11ty.dev) this time—it's amazing! As always, you can find the source code [on GitHub]({{ metadata.source }}).
-
-I'm spending as much time as I can _learning more about SwiftUI_. We are using more and more SwiftUI in the [Practice iOS app](https://practice.do/ios) as well which is super fun!
-
-I recently [announced](/blog/announcing-the-swift-website-workgroup/) my _membership of the Swift Website Workgroup_—something I'm very excited about!
-
-I started working on _another iOS/macOS app_ that was missing from my life. Nothing to announce yet though, but [stay tuned](https://twitter.com/{{ metadata.author.twitter }}).
-
-I integrated reading into my daily morning routine and now _read a lot more than usual_. I love it. You can see what I'm reading on [Literal](https://literal.club/alex).
-
-It's getting warmer outside and I'm planning to _grow something_ on our balcony this year. I'm very excited. 🌱
+I just launched [my latest app Balance](/apps/balance), and it was voted as [#1 Product of the Day on Product Hunt](https://www.producthunt.com/products/balance-9)!
