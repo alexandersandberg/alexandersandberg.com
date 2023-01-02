@@ -7,6 +7,8 @@ appId: 1637311725
 wideImage: true
 ---
 
+{% from 'components/recognitionHeader.njk' import recognitionHeader with context %}
+
 <div class="flex wide">
 	<div>
 		<h2>App features</h2>
@@ -81,51 +83,118 @@ wideImage: true
 
 <div class="spacer-xxl-desktop"></div>
 
-<h2>What people are saying</h2>
+<h2>Recognition</h2>
 
 <div class="spacer-l"></div>
 
-<div class="flex">
-	<blockquote>“Been testing this app for weeks now, amazing tool, especially in home office, reminding about taking short breaks and staying focused” — <source>
-			<a href="https://twitter.com/cmb_93/status/1599724134992384003">Clemens</a>
-		</source>
-	</blockquote>
+<div class="two-columns large-gap">
+	<div>
+		<article class="separator-l">
+			{{ recognitionHeader("#1 Product of the Day", "Product Hunt · December 27, 2022", "https://www.producthunt.com/posts/balance-855f20db-49ff-48ee-8096-6d33de52b71a") }}
+			<div class="spacer-s"></div>
+			<p class="subhead foreground-secondary">
+				Also #3 Product of the Week. Thank you to everyone who voted! ❤️
+			</p>
+			<p>
+				<a href="https://www.producthunt.com/posts/balance-855f20db-49ff-48ee-8096-6d33de52b71a">
+					{% image "./img/apps/balance/potd.jpg",
+					"Balance as the #1 Product of the Day",
+					[
+						640, 1280
+					],
+					"100vw" %}
+				</a>
+			</p>
+		</article>
 
-	<blockquote>“It was amazing seeing this app come to fruition from a tiny idea into a fully beautifully built and polished app.” — <source>
-			<a href="https://twitter.com/DonniHonig/status/1599751223296393216">Donni Honig</a>
-		</source>
-	</blockquote>
-</div>
+		<article class="separator-l">
+			{{ recognitionHeader("Balance is a Mac timekeeper app that requires you to manually clock in your hours", "Tech Crunch · December 27, 2022", "https://techcrunch.com/2022/12/27/balance-is-a-mac-timekeeper-app-that-requires-you-to-manually-clock-in-your-hours/") }}
+			<div class="spacer-s"></div>
+			<p class="subhead foreground-secondary">
+				“There are plenty of time-tracking apps for Mac that automatically log the hours you’ve spent signed in. Some even offer granular data, telling you how much time you spent on a particular app.
+			</p>
+			<p class="subhead foreground-secondary">
+				A new app called Balance is taking a slightly different approach to timekeeping, allowing users to manually punch in and punch out the time they are spending in front of a screen.”
+			</p>
+		</article>
 
-<div class="spacer-l"></div>
+		<article class="separator-l">
+			<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">
+				<p lang="en" dir="ltr">Check out the launch of one of the most beautiful mac apps, made by <a href="https://twitter.com/alexandberg?ref_src=twsrc%5Etfw">@alexandberg</a>
+					<a href="https://t.co/K2gAkeHMiW">https://t.co/K2gAkeHMiW</a>
+				</p>&mdash; Henri Bredt (@henricreates) <a href="https://twitter.com/henricreates/status/1607751054451707907?ref_src=twsrc%5Etfw">December 27, 2022</a>
+			</blockquote>
+		</article>
 
-<div class="flex">
-	<blockquote>“Preordered! I’ve already been in the TestFlight and really liked the app, good job. And beautifully designed 🙌” — <source>
-			<a href="https://twitter.com/henricreates/status/1599755235970252800">Henri Bredt</a>
-		</source>
-	</blockquote>
+		<article class="separator-l">
+			{{ recognitionHeader("Practice Weekly Newsletter", "December 28, 2022", "https://practice.do/") }}
+		</article>
 
-	<blockquote>“Using it for a few days now. It’s a good app and every developer should have it.” — <source>
-			<a href="https://twitter.com/MarsTech_inc/status/1599801235447480321">Mars Technology</a>
-		</source>
-	</blockquote>
-</div>
+		<article class="separator-l">
+			{{ recognitionHeader("Start 2023 with Balance, a macOS app that wants to improve your work-life equilibrium", "BGR · December 27, 2022", "https://bgr.com/tech/start-2023-with-balance-a-macos-app-that-wants-to-improve-your-work-life-equilibrium/") }}
+			<div class="spacer-s"></div>
+			<p class="subhead foreground-secondary">
+				“With a work-life balance at its core, the app has a system that lets you clock in when you start working, close the app to take a break, and let you know when you should stop working.
+			</p>
+			<p class="subhead foreground-secondary">
+				A mindful time tracking feature shows your active session on the top of your Mac’s display with an easy-to-use menu bar.”
+			</p>
+		</article>
 
-<div class="spacer-xl"></div>
+		<article class="separator-l">
+			<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">
+				<p lang="en" dir="ltr">Thinking about the serotonin hit from clicking &quot;Clock Out&quot; <a href="https://t.co/XW5GfIJVKC">pic.twitter.com/XW5GfIJVKC</a>
+				</p>&mdash; Product Hunt 😸 (@ProductHunt) <a href="https://twitter.com/ProductHunt/status/1607760740290826241?ref_src=twsrc%5Etfw">December 27, 2022</a>
+			</blockquote>
+		</article>
+	</div>
 
-<p>Balance was voted <b>#1 Product of the Day</b> on Product Hunt!</p>
+	<div>
+		<article class="separator-l">
+			{{ recognitionHeader("The Manual #31 by Oliur", "December 31, 2022", "https://oliur.substack.com/p/the-manual-31-end-of-year-learnings") }}
+		</article>
 
-<p>Feel free to <a href="https://www.producthunt.com/posts/balance-855f20db-49ff-48ee-8096-6d33de52b71a">leave an upvote or a comment</a> in case you want to help me get to #1 Product of the Week as well (Balance is currently #2). ❤️</p>
+		<article class="separator-l">
+			{{ recognitionHeader("Creativerly 201 by Philipp Temmel", "January 1, 2023", "https://creativerly.com/bust-writers-block/") }}
+			<div class="spacer-s"></div>
+			<p class="subhead foreground-secondary">
+				“In the past, I have used, tested, and played around with quite a lot of different time-tracking tools, but there is no doubt that Balance is the most beautiful piece of software within that category.
+			</p>
+			<p class="subhead foreground-secondary">
+				There is always something special about opening up a new app you want to try out, and you immediately see all the craft and love for detail that went into designing its interface of it. Balance sets an incredibly high standard for beautifully designed software in general.”
+			</p>
+		</article>
 
-<div class="spacer-m"></div>
+		<article class="separator-l">
+			<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">
+				<p lang="en" dir="ltr">My good friend <a href="https://twitter.com/alexandberg?ref_src=twsrc%5Etfw">@alexandberg</a> is launching his new app today!<br><br>It’s a delightful app to manage your work-life balance. He put so much attention and care into it that I&#39;m a little jealous. 🥹❤️<br><br>Check it out <a href="https://t.co/HBfwq4w8MK">https://t.co/HBfwq4w8MK</a><br><br>Upvote it on Product Hunt <a href="https://t.co/PblX1XBXd4">https://t.co/PblX1XBXd4</a>
+				</p>&mdash; Nicolas Bichon (@nicol3a) <a href="https://twitter.com/nicol3a/status/1607750804722667522?ref_src=twsrc%5Etfw">December 27, 2022</a>
+			</blockquote>
+		</article>
 
-<div class="flex">
-	<a href="https://www.producthunt.com/posts/balance-855f20db-49ff-48ee-8096-6d33de52b71a">{% image "./img/apps/balance/potd.jpg",
-		"Balance as the #1 Product of the Day",
-		[
-			1280, 2560
-		],
-		"100vw" %}</a>
+		<article class="separator-l">
+			{{ recognitionHeader("Curations (curations.tech) — Productivity Mac Apps", "Since November 2022", "https://curations.tech/") }}
+		</article>
+
+		<article class="separator-l">
+			{{ recognitionHeader("Designer Daily Report — Products", "Since December 28, 2022", "https://designerdailyreport.com") }}
+		</article>
+
+		<article class="separator-l">
+			<blockquote class="twitter-tweet" data-lang="en" data-dnt="true" data-theme="dark">
+				<p lang="en" dir="ltr">Check out <a href="https://twitter.com/alexandberg?ref_src=twsrc%5Etfw">@alexandberg</a> new MacOS app. It’s a very delightful product to manage your wellbeing while working remotely. ✨ <a href="https://t.co/ImUtXkFwkG">https://t.co/ImUtXkFwkG</a>
+				</p>&mdash; Jake (@itsjakefie) <a href="https://twitter.com/itsjakefie/status/1608080526564261888?ref_src=twsrc%5Etfw">December 28, 2022</a>
+			</blockquote>
+		</article>
+
+		<article class="separator-l">
+			{{ recognitionHeader("Melhore seus hábitos de trabalho no Mac com o app Balance", "MacMagazine · December 27, 2022", "https://macmagazine.com.br/post/2022/12/27/melhore-seus-habitos-de-trabalho-no-mac-com-o-app-balance/") }}
+		</article>
+
+		<article class="separator-l">
+			{{ recognitionHeader("Owwly — Featured Products", "Since December 29, 2022", "https://owwly.com/products/all") }}
+		</article>
+	</div>
 </div>
 
 <div class="spacer-xxl-desktop"></div>
