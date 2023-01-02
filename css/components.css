@@ -221,6 +221,15 @@
 		column-count: 2;
 		column-gap: var(--space-m);
 	}
+
+	.two-columns.large-gap {
+		column-gap: var(--space-l);
+		row-gap: unset;
+	}
+
+	.two-columns > * {
+		break-inside: avoid-column;
+	}
 }
 
 @media screen and (min-width: 1000px) {
