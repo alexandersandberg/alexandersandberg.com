@@ -36,7 +36,7 @@ This website is my home on the internet, but you can also find me elsewhere.
 
 I use **Twitter** to share random things and thoughts and to connect with like-minded people. You can follow me [@{{ metadata.author.twitter }}](https://twitter.com/{{ metadata.author.twitter }}).
 
-As I'm a supported of free speech, I'm also on **Mastodon**. You can follow me there at [{{ metadata.author.mastodonHandle }}]({{ metadata.author.mastodonUrl }}).
+As I'm a supporter of free speech, I'm also on **Mastodon**. You can follow me there at [{{ metadata.author.mastodonHandle }}]({{ metadata.author.mastodonUrl }}).
 
 On **GitHub**, you can find some of my open-source projects. You can find me at [@{{ metadata.author.github }}](https://github.com/{{ metadata.author.github }}).
 
