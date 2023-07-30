@@ -94,10 +94,6 @@
 	vertical-align: -0.125em;
 }
 
-.social-link {
-	font-size: 32px;
-}
-
 .app {
 	--border-radius: 16px;
 }
@@ -203,10 +199,6 @@
 	.project-aside.wide,
 	.app-intro-aside.wide {
 		max-width: 500px;
-	}
-
-	.social-link {
-		font-size: 40px;
 	}
 
 	.screenshot-grid {

@@ -32,7 +32,7 @@ Other than that, I like taking each day as it comes.
 
 ## Where you can find me
 
-This website is my home on the internet, but you can also find me elsewhere.
+This website is my home on the internet, but you can also find me elsewhere (for now—more on that later).
 
 I use **Twitter** to share random things and thoughts and to connect with like-minded people. You can follow me [@{{ metadata.author.twitter }}](https://twitter.com/{{ metadata.author.twitter }}).
 
