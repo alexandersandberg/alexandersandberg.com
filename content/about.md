@@ -100,7 +100,7 @@ If you're interested, here is a timeline summarizing the path I've taken and the
 		</tr>
 		<tr>
 			<th>2020</th>
-			<td>Graduated with an MSc in Product Design one semester ahead of schedule after completing my master’s thesis on the side of my full-time work. Got promoted to Head of App Development at my company and changed focus to work on mobile apps instead. Started building <a href="/apps/tiny-weather/">Tiny Weather</a> in my free time to learn more about mobile app development.</td>
+			<td>Graduated with an MSc in Product Design one semester ahead of schedule after completing my master’s thesis on the side of my full-time work. Got promoted to Head of App Development at my company and changed focus to work on mobile apps instead. Built <a href="/apps/tiny-weather/">Tiny Weather</a> in my free time to learn more about mobile app development.</td>
 		</tr>
 		<tr>
 			<th>2021</th>
