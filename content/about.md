@@ -108,6 +108,10 @@ If you're interested, here is a timeline summarizing the path I've taken and the
 		</tr>
 		<tr>
 			<th>2022</th>
+			<td>Built and launched <a href="/apps/balance/">Balance</a>, which was awarded with #1 Product of the Day on Product Hunt and <a href="/apps/balance/#recognition">featured in a bunch of places</a>, including TechCrunch and Dense Discovery.</td>
+		</tr>
+		<tr>
+			<th>2023</th>
 			<td>See my <a href="/now">/now</a> page.</td>
 		</tr>
 	</tbody>
