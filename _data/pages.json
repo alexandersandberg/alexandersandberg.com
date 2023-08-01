@@ -13,6 +13,13 @@
 		"number": 1,
 		"back": "home"
 	},
+	"bio": {
+		"title": "Bio",
+		"description": "A quick introduction.",
+		"path": "bio/",
+		"number": 1,
+		"back": "home"
+	},
 	"articles": {
 		"title": "Articles",
 		"description": "Articles I write to help me understand things better and to share knowledge with others.",
