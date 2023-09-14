@@ -2,19 +2,6 @@
   publish = "_site"
   command = "AWS_LAMBDA_FUNCTION_NAME=trickpuppeteer npm run build"
 
-[build.processing]
-  skip_processing = false
-[build.processing.css]
-  bundle = false
-  minify = false
-[build.processing.js]
-  bundle = true
-  minify = false
-[build.processing.html]
-  pretty_urls = true
-[build.processing.images]
-  compress = true
-
 [[plugins]]
 package = "netlify-plugin-cache"
 
