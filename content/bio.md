@@ -10,7 +10,7 @@ I’m a self-taught, **product-minded iOS/macOS Developer** with a background in
 
 Due to my curiosity for both design and development, I love working on meaningful products in close collaboration with designers and product people, and being part of the "why".
 
-By day I work as an iOS Developer at [Practice](https://practice.do) where I, together with an amazing team, build a tool that helps individuals run their entire practices and coaching businesses from one place.
+By day I work as an iOS Engineer at [Composer](https://composer.trade)—an all-in-one platform for building, backtesting, and executing trading algorithms with the help of AI.
 
 By night I like to build apps that I wish existed. I built [Tiny Weather](/apps/tiny-weather) because I couldn't find a beautiful, simple, privacy-minded weather app. I built [Tiny Softbox](/apps/tiny-softbox) to fix my bad office lighting. I built [Balance](/apps/balance) to help myself and others find work-life balance.
 
