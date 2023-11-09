@@ -6,7 +6,7 @@ isPost: true
 
 **Hi, I'm Alex.**
 
-I’m a self-taught, **product-minded iOS/macOS Developer** with a background in web development and product design.
+I’m a self-taught, **product-minded iOS/macOS Engineer** with a background in web development and product design.
 
 Due to my curiosity for both design and development, I love working on meaningful products in close collaboration with designers and product people, and being part of the "why".
 

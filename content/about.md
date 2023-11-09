@@ -18,7 +18,7 @@ I'm **Swedish**, but I live in Austria since 2019.
 
 ## What I do
 
-I’m a self-taught, **product-minded iOS/macOS Developer** with a background in web development and product design.
+I’m a self-taught, **product-minded iOS/macOS Engineer** with a background in web development and product design.
 
 Due to my curiosity for both design and development, I love working on meaningful products in close collaboration with designers and product people, and being part of the "why".
 
@@ -104,7 +104,7 @@ If you're interested, here is a timeline summarizing the path I've taken and the
 		</tr>
 		<tr>
 			<th>2021</th>
-			<td>Set a goal to transition to working full-time on a product that I love at a company with values similar to my own. <a href="/blog/joining-tempo/">Joined Tempo</a> a few months later. Started learning native iOS development. <a href="/blog/sunsetting-tempo/">Sunset Tempo</a> after 7 really great months. <a href="/blog/joining-practice/">Joined Practice</a> as an iOS Developer. Built <a href="/apps/tiny-softbox/">Tiny Softbox</a> to learn more about SwiftUI.</td>
+			<td>Set a goal to transition to working full-time on a product that I love at a company with values similar to my own. <a href="/blog/joining-tempo/">Joined Tempo</a> a few months later. Started learning native iOS development. <a href="/blog/sunsetting-tempo/">Sunset Tempo</a> after 7 really great months. <a href="/blog/joining-practice/">Joined Practice</a> as an iOS Engineer. Built <a href="/apps/tiny-softbox/">Tiny Softbox</a> to learn more about SwiftUI.</td>
 		</tr>
 		<tr>
 			<th>2022</th>
