@@ -4,7 +4,9 @@ permalink: "{{ pages.now.path }}"
 isPost: true
 eleventyComputed:
   itemNumber: " - TL;DR"
-  updatedDate: "2022-12-30T00:00:00.000Z"
+  updatedDate: "2023-11-09T00:00:00.000Z"
 ---
 
-I just launched [my latest app Balance](/apps/balance), and it was voted as [#1 Product of the Day on Product Hunt](https://www.producthunt.com/products/balance-9)!
+This week I [joined Composer](/blog/joining-composer/) as their first iOS Engineer to bring their AI-powered trading platform to iOS.
+
+Whenever I find the time, I'm also working on adding more features and improvements to [Balance](/apps/balance).
