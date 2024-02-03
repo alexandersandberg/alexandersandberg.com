@@ -46,6 +46,8 @@ eleventyComputed:
 		{% endif %}
 		<meta name="twitter:image" content="{{ meta.image }}">
 
+		<link rel="me" href="{{ metadata.author.mastodonUrl }}">
+
 		{% if meta.type == "article" %}
 			{% set hasCustomDates = publishedDate %}
 			{% if hasCustomDates %}
