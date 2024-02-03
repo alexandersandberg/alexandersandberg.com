@@ -14,8 +14,8 @@ module.exports = {
 		email: "hi@alexandersandberg.com",
 		url: "https://alexandersandberg.com/",
 		twitter: "alexandberg",
-		mastodonHandle: "@alexandersandberg@iosdev.space",
-		mastodonUrl: "https://iosdev.space/@alexandersandberg",
+		mastodonHandle: "@alexandersandberg@mastodon.social",
+		mastodonUrl: "https://mastodon.social/@alexandersandberg",
 		github: "alexandersandberg",
 		linkedin: "alexandberg"
 	}
