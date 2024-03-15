@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-	name: "Website",
+	name: "alexandersandberg.com",
 	platforms: [
 		.macOS(.v14)
 	],
@@ -13,7 +13,7 @@ let package = Package(
 	],
 	targets: [
 		.executableTarget(
-			name: "Website",
+			name: "alexandersandberg.com",
 			dependencies: [
 				.product(name: "SwiftHtml", package: "swift-html"),
 				.product(name: "Ink", package: "ink")
