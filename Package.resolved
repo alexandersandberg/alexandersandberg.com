@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swift-html",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/binarybirds/swift-html",
+      "state" : {
+        "revision" : "f4fa5bc83fbee8dbd301c6fbb3969437415adad0",
+        "version" : "1.7.0"
+      }
+    }
+  ],
+  "version" : 2
+}
