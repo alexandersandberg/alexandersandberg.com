@@ -1,7 +1,5 @@
 .DS_Store
-.vscode
-
-_Output/
-
 .swiftpm/
 .build/
+
+.output/
