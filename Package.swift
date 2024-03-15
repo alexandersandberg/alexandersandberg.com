@@ -5,13 +5,15 @@ import PackageDescription
 let package = Package(
 	name: "Website",
 	dependencies: [
-		.package(url: "https://github.com/binarybirds/swift-html", from: "1.7.0")
+		.package(url: "https://github.com/binarybirds/swift-html", from: "1.7.0"),
+		.package(url: "https://github.com/johnsundell/ink", from: "0.6.0")
 	],
 	targets: [
 		.executableTarget(
 			name: "Website",
 			dependencies: [
-				.product(name: "SwiftHtml", package: "swift-html")
+				.product(name: "SwiftHtml", package: "swift-html"),
+				.product(name: "Ink", package: "ink")
 			]
 		),
 	]
