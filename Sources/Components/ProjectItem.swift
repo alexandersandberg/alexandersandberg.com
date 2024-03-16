@@ -17,12 +17,21 @@ struct Project {
 struct ProjectItem: TagRepresentable {
 	var project: Project
 
+	var isExternal: Bool {
+		project.href.starts(with: "https://")
+	}
+
 	func build() -> Tag {
 		Article {
 			H3 {
 				A(project.title)
 					.href(project.href)
-					.target(.blank, project.href.starts(with: "https://"))
+					.target(.blank, isExternal)
+
+				if isExternal {
+					Span("↗")
+						.class("external-icon", "tertiary")
+				}
 			}
 			.class("headline")
 
