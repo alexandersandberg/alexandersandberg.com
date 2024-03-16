@@ -107,7 +107,14 @@ a:not(.plain) {
 	text-underline-offset: 2.5px;
 }
 
-a:hover {
+a + .external-icon {
+	margin-left: 0.25rem;
+	font-weight: 300;
+	transition: color var(--transition), text-decoration-color var(--transition);
+}
+
+a:hover,
+a:hover + .external-icon {
 	color: var(--primary);
 	-webkit-text-decoration-color: var(--secondary);
 	text-decoration-color: var(--secondary);
