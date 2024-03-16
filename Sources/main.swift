@@ -17,6 +17,16 @@ let pages = [
 	Page(
 		path: "",
 		htmlContentString: documentRenderer.render(homeDocument)
+	),
+	Page(
+		path: "about",
+		layout: .page(title: "About me"),
+		htmlContentString: documentRenderer.render(aboutDocument)
+	),
+	Page(
+		path: "articles",
+		layout: .page(title: "Articles"),
+		htmlContentString: documentRenderer.render(articlesDocument)
 	)
 ]
 var contentPages: [ContentPage] = []
