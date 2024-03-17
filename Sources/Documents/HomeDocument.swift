@@ -16,10 +16,7 @@ let homeDocument = Document(.html) {
 
 			SwiftHtml.Main {
 				Section(title: "Bio", hiddenTitle: true) {
-					Div {
-						P("<em>Software tinkerer</em>. Creating, experimenting, learning. Believer in simplicity. <span class='nowrap'>Building carefully</span> crafted Swift and SwiftUI apps.")
-					}
-					.class("prose")
+					P("<em>Software tinkerer</em>. Creating, experimenting, learning. Believer in simplicity. <span class='nowrap'>Building carefully</span> crafted Swift and SwiftUI apps.")
 
 					Div {
 						Div {
