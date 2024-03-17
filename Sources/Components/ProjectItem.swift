@@ -30,7 +30,7 @@ struct ProjectItem: TagRepresentable {
 
 				if isExternal {
 					Span("↗")
-						.class("external-icon", "tertiary")
+						.class("external-icon", "tertiary", "footnote")
 				}
 			}
 			.class("headline")
