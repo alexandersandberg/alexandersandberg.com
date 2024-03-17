@@ -17,9 +17,7 @@ let homeDocument = Document(.html) {
 			SwiftHtml.Main {
 				Section(title: "Bio", hiddenTitle: true) {
 					Div {
-						P("I’m a self-taught, product-minded iOS/macOS Engineer with a background in web development and product design.")
-
-						P("When asked to describe myself with one word, I often reply with <em>curious</em>.")
+						P("<em>Software tinkerer</em>. Creating, experimenting, learning. Believer in simplicity. <span class='nowrap'>Building carefully</span> crafted Swift and SwiftUI apps.")
 					}
 					.class("prose")
 
