@@ -67,12 +67,12 @@ let homeDocument = Document(.html) {
 						Project(
 							title: "Tiny Softbox",
 							href: "/tiny-softbox",
-							description: "Virtual softbox to help you improve your lighting."
+							description: "Simple softbox for video calls, photography, reading, etc."
 						),
 						Project(
 							title: "Tiny Weather",
 							href: "/tiny-weather",
-							description: "Simple, privacy-minded weather app."
+							description: "Minimal weather app that respects your privacy."
 						),
 					]
 					for project in projects {
@@ -87,12 +87,12 @@ let homeDocument = Document(.html) {
 						Project(
 							title: "Composer",
 							href: "https://composer.trade",
-							description: "Where I work currently on bringing Composer‘s AI-trading app to iOS."
+							description: "Platform to build, backtest, and execute trading algorithms using AI."
 						),
 						Project(
 							title: "Swift Website Workgroup",
 							href: "https://www.swift.org/website-workgroup",
-							description: "Guiding the evolution of Swift.org as a workgroup member."
+							description: "Steering team guiding the evolution of the <a href='https://swift.org' target='_blank'>Swift.org</a> website."
 						),
 						Project(
 							title: "Tempo",
@@ -102,12 +102,12 @@ let homeDocument = Document(.html) {
 						Project(
 							title: "someday.page",
 							href: "https://someday.page",
-							description: "My someday.page movement, inspired by Derek Sivers‘ now-pages."
+							description: "Movement inspiring people to share their long-term goals."
 						),
 						Project(
 							title: "Life lessons",
 							href: "/life-lessons",
-							description: "Lessons and other knowledge I‘ve gathered over the years."
+							description: "Categorized collection of knowledge I‘ve gathered over the years."
 						)
 					]
 					for project in projects {
