@@ -204,6 +204,10 @@ p {
 	text-transform: uppercase;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
 .primary {
 	color: var(--primary);
 }
