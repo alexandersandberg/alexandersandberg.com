@@ -109,13 +109,14 @@ a:not(.plain) {
 }
 
 a + .external-icon {
-	margin-left: 0.25rem;
+	position: relative;
+	top: -0.2rem;
+	left: 0.3rem;
 	font-weight: 300;
 	transition: color var(--transition), text-decoration-color var(--transition);
 }
 
-a:hover,
-a:hover + .external-icon {
+a:hover {
 	color: var(--primary);
 	-webkit-text-decoration-color: var(--secondary);
 	text-decoration-color: var(--secondary);
