@@ -69,6 +69,13 @@
 		"number": 1,
 		"back": "about"
 	},
+	"someday": {
+		"title": "Someday",
+		"description": "This is my \"someday page\", where I share things I would like to do or achieve someday.",
+		"path": "someday/",
+		"number": 1,
+		"back": "about"
+	},
 	"article": {
 		"title": "Article",
 		"description": null,
