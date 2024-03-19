@@ -37,14 +37,6 @@ extension ContentPage {
 			throw "\(url.withoutRootPath) has invalid slug: \(slug)"
 		}
 
-		guard let layoutString = metadata["layout"] else {
-			throw "\(url.withoutRootPath) missing layout metadata"
-		}
-
-		guard let layout = Layout(name: layoutString, title: title) else {
-			throw "\(url.withoutRootPath) uses unsupported layout: \(layoutString)"
-		}
-
 		let dateFormat = "yyyy-MM-dd"
 		let dateFormatter = DateFormatter()
 		dateFormatter.dateFormat = dateFormat
@@ -65,6 +57,14 @@ extension ContentPage {
 			} else {
 				throw "\(url.withoutRootPath) updatedAt \(updatedAtString) not in required format \(dateFormat)"
 			}
+		}
+
+		guard let layoutString = metadata["layout"] else {
+			throw "\(url.withoutRootPath) missing layout metadata"
+		}
+
+		guard let layout = Layout(name: layoutString, title: title, publishedAt: publishedAt, updatedAt: updatedAt) else {
+			throw "\(url.withoutRootPath) uses unsupported layout: \(layoutString)"
 		}
 
 		let path = url.deletingPathExtension().path.replacingOccurrences(of: contentDirectory.path + "/", with: "")
