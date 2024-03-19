@@ -88,6 +88,12 @@ pre {
 	overflow-x: auto;
 }
 
+blockquote {
+	background: var(--quinary);
+	padding: 0.01rem 1.25rem;
+	border-radius: 0.25rem;
+}
+
 hr {
 	width: 100%;
 	border: none;
@@ -128,7 +134,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+blockquote {
 	font-size: 1rem;
 	margin: 0;
 	overflow-wrap: break-word;
@@ -187,7 +194,8 @@ p {
 	margin-block-end: var(--space-s);
 }
 
-.prose p {
+.prose p,
+.prose blockquote {
 	margin-block-start: var(--space-s);
 	margin-block-end: var(--space-s);
 }
