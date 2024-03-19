@@ -113,7 +113,7 @@ let homeDocument = Document(.html) {
 				Hr()
 
 				Section(title: "Articles", contentClass: "v-gap-m") {
-					for articlePage in contentPages.articles {
+					for articlePage in contentPages.articles.sorted(by: >) {
 						ArticleItem(page: articlePage)
 					}
 				}
