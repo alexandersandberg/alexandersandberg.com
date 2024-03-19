@@ -29,7 +29,7 @@ let pages = [
 	),
 	Page(
 		path: "articles",
-		layout: .page(title: "Articles"),
+		layout: .list(title: "Articles"),
 		htmlContentString: documentRenderer.render(articlesDocument)
 	)
 ]
