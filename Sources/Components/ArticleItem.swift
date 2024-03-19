@@ -14,7 +14,7 @@ struct ArticleItem: TagRepresentable {
 		Article {
 			H3 {
 				A(page.title)
-					.href(page.path)
+					.href(page.relativePath)
 			}
 			.class("headline")
 
