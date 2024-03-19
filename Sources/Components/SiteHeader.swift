@@ -31,11 +31,10 @@ struct SiteHeader: TagRepresentable {
 		Header {
 			Span(supertitle ?? "&nbsp;")
 				.class("title2", "tertiary")
-				.style("line-height: 1; \(supertitle == nil ? "visibility: hidden" : "")")
+				.style("position: relative; top: 0.25rem; \(supertitle == nil ? "visibility: hidden" : "")")
 
 			H1(title)
 				.class("title2")
-				.style("line-height: 1")
 
 			if let date, let datetimeString {
 				P {
