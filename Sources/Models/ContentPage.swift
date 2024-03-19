@@ -73,7 +73,7 @@ extension ContentPage {
 		self.layout = layout
 		self.publishedAt = publishedAt
 		self.updatedAt = updatedAt
-		self.contentHtmlString = markdown.html
+		self.contentHtmlString = "<div class=\"prose\">\(markdown.html)</div>"
 	}
 }
 
