@@ -9,7 +9,7 @@ import SwiftHtml
 
 let articlesDocument = Document(.html) {
 	Div {
-		for articlePage in contentPages.articles {
+		for articlePage in contentPages.articles.sorted(by: >) {
 			ArticleItem(page: articlePage)
 		}
 	}

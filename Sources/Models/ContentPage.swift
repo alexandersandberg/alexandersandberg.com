@@ -102,3 +102,13 @@ extension Array where Element == ContentPage {
 		}
 	}
 }
+
+extension ContentPage: Comparable {
+	static func < (lhs: ContentPage, rhs: ContentPage) -> Bool {
+		lhs.publishedAt ?? lhs.updatedAt ?? .distantPast < rhs.publishedAt ?? rhs.updatedAt ?? .distantPast
+	}
+
+	static func == (lhs: ContentPage, rhs: ContentPage) -> Bool {
+		lhs.path == rhs.path
+	}
+}
