@@ -22,4 +22,8 @@ struct Page {
 			htmlContentString
 		}
 	}
+
+	var relativePath: String {
+		"/" + path
+	}
 }

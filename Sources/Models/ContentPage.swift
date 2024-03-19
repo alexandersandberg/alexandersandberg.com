@@ -21,6 +21,10 @@ struct ContentPage {
 	var htmlString: String {
 		layout.htmlString.replacing("<\(Content().name)>", with: contentHtmlString)
 	}
+
+	var relativePath: String {
+		"/" + path
+	}
 }
 
 extension ContentPage {
