@@ -27,6 +27,12 @@ struct SiteHeader: TagRepresentable {
 		return formatter.string(from: date)
 	}
 
+	private var timeTitle: String? {
+		guard let publishedAt, let updatedAt else { return nil }
+
+		return "First published \(publishedAt.formatted(date: .abbreviated, time: .omitted))"
+	}
+
 	func build() -> Tag {
 		Header {
 			Span(supertitle ?? "&nbsp;")
@@ -41,6 +47,7 @@ struct SiteHeader: TagRepresentable {
 					Span(updatedAt != nil ? "Updated " : "Published ")
 					Time(date.formatted(date: .abbreviated, time: .omitted))
 						.datetime(datetimeString)
+						.title(timeTitle ?? "")
 				}
 				.class("secondary", "footnote")
 				.style("margin-top: 0.25rem;")
