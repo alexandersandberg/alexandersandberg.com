@@ -28,3 +28,9 @@ extension TagBuilder {
 		expression.build()
 	}
 }
+
+extension Meta {
+	func property(_ value: String) -> Self {
+		attribute("property", value)
+	}
+}

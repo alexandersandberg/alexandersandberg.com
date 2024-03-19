@@ -10,12 +10,13 @@ import SwiftHtml
 
 public struct PageLayout: TagRepresentable {
 	var title: String
+	var description: String?
 	var publishedAt: Date?
 	var updatedAt: Date?
 
 	func build() -> Tag {
 		Html {
-			SiteHead(title: "\(title) · Alexander Sandberg")
+			SiteHead(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
 
 			Body {
 				SiteHeader(title: title, publishedAt: publishedAt, updatedAt: updatedAt)

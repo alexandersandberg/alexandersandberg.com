@@ -19,6 +19,10 @@ extension String: LocalizedError {
 		}
 	}
 
+	var strippedOfHtmlTags: String {
+		replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
+	}
+
 	func writeToOutputDirectory(path: String) throws {
 		let url = outputDirectory.appending(path: path)
 
