@@ -220,9 +220,11 @@ a:hover {
 }
 
 .prose > ol:first-child {
+	list-style-type: none;
 	padding-left: 0;
 	margin-block-end: var(--space-l);
 	color: var(--secondary);
+	font-size: 0.875rem;
 }
 
 .prose > ol:first-child li::marker {
