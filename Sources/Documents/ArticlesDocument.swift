@@ -8,9 +8,10 @@
 import SwiftHtml
 
 let articlesDocument = Document(.html) {
-	Section(title: "Articles", contentClass: "v-gap-m") {
+	Div {
 		for articlePage in contentPages.articles {
 			ArticleItem(page: articlePage)
 		}
 	}
+	.class("v-gap-m")
 }
