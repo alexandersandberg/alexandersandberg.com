@@ -90,8 +90,9 @@ pre {
 
 blockquote {
 	background: var(--quinary);
-	padding: 0.01rem 1.25rem;
+	padding: 0.01rem 1rem;
 	border-radius: 0.25rem;
+	text-align: center;
 }
 
 hr {
