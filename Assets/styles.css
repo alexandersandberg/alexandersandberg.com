@@ -26,8 +26,8 @@
 	--space-l: 3rem;
 	--space-xl: 6rem;
 
-	--title1: 600 2rem/1.15 var(--sans-serif);
-	--title2: 600 1.5rem/1.25 var(--sans-serif);
+	--title1: 600 1.5rem/1.25 var(--sans-serif);
+	--title2: 600 1.25rem/1.35 var(--sans-serif);
 	--title3: 600 1.125rem/1.4 var(--sans-serif);
 	--headline: 600 1rem/1.5 var(--sans-serif);
 	--body: 400 1rem/1.6 var(--sans-serif);
@@ -67,6 +67,24 @@ body {
 	background: rgb(var(--background));
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+	font-size: 1rem;
+	margin: 0;
+	overflow-wrap: break-word;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 0.25rem;
+}
+
 em {
 	font-family: var(--serif);
 }
@@ -77,23 +95,33 @@ b {
 }
 
 code {
+	padding: 0.15rem 0.25rem;
+	background: var(--quinary);
+	border-radius: 0.25rem;
 	font-family: var(--monospace);
+	font-size: 0.875rem;
 	font-weight: 300;
 }
 
-pre {
-	background: var(--quinary);
-	padding: 0.5rem 0.75rem;
-	border-radius: 0.25rem;
+pre code {
+	display: block;
+	padding: 0.75rem 1rem;
 	overflow-x: auto;
-	font-size: 0.875rem;
 }
 
-blockquote {
-	background: var(--quinary);
-	padding: 0.01rem 1rem;
-	border-radius: 0.25rem;
-	text-align: center;
+blockquote p {
+	color: var(--secondary);
+	font-style: italic;
+}
+
+blockquote p:before {
+	content: "“ ";
+	position: absolute;
+	margin-top: -0.5rem;
+	margin-left: -1.25rem;
+	font-family: var(--serif);
+	font-size: 1.5rem;
+	color: var(--quaternary);
 }
 
 hr {
@@ -128,19 +156,6 @@ a:hover {
 	color: var(--primary);
 	-webkit-text-decoration-color: var(--secondary);
 	text-decoration-color: var(--secondary);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote {
-	font-size: 1rem;
-	margin: 0;
-	overflow-wrap: break-word;
 }
 
 .title1,
@@ -186,6 +201,11 @@ blockquote {
 	font: var(--caption2);
 }
 
+.prose > *:not(img) {
+	margin-block-start: var(--space-m);
+	margin-block-end: var(--space-m);
+}
+
 .prose h1,
 .prose h2,
 .prose h3,
@@ -193,13 +213,24 @@ blockquote {
 .prose h5,
 .prose h6 {
 	margin-block-start: var(--space-l);
-	margin-block-end: var(--space-s);
 }
 
-.prose p,
-.prose blockquote {
-	margin-block-start: var(--space-s);
-	margin-block-end: var(--space-s);
+.prose *[id] {
+	scroll-margin-top: 2rem;
+}
+
+.prose > ol:first-child {
+	padding-left: 0;
+	margin-block-end: var(--space-l);
+	color: var(--secondary);
+}
+
+.prose > ol:first-child li::marker {
+	color: var(--quaternary);
+}
+
+.prose > ol:first-child li a {
+	text-decoration: none;
 }
 
 .monospace {
