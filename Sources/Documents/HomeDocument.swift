@@ -9,14 +9,14 @@ import SwiftHtml
 
 let homeDocument = Document(.html) {
 	Html {
-		SiteHead(title: "Alexander Sandberg")
+		SiteHead(description: Site.bio.strippedOfHtmlTags)
 
 		Body {
 			SiteHeader(supertitle: "Carl William", title: "Alexander Sandberg")
 
 			SwiftHtml.Main {
 				Section(title: "Bio", hiddenTitle: true) {
-					P("<em>Software tinkerer</em>. Creating, experimenting, learning. Believer in simplicity. <span class='nowrap'>Building carefully</span> crafted Swift and SwiftUI apps.")
+					P(Site.bio)
 
 					Div {
 						Div {

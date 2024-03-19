@@ -32,6 +32,8 @@ extension ContentPage {
 			throw "\(url.withoutRootPath) missing title metadata"
 		}
 
+		let description = metadata["description"]
+
 		let slug = url.deletingPathExtension().lastPathComponent
 		guard slug.isValidSlug else {
 			throw "\(url.withoutRootPath) has invalid slug: \(slug)"
@@ -63,7 +65,15 @@ extension ContentPage {
 			throw "\(url.withoutRootPath) missing layout metadata"
 		}
 
-		guard let layout = Layout(name: layoutString, title: title, publishedAt: publishedAt, updatedAt: updatedAt) else {
+		let layout = Layout(
+			name: layoutString,
+			title: title,
+			description: description,
+			publishedAt: publishedAt,
+			updatedAt: updatedAt
+		)
+
+		guard let layout else {
 			throw "\(url.withoutRootPath) uses unsupported layout: \(layoutString)"
 		}
 

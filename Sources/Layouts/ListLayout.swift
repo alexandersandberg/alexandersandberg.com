@@ -9,10 +9,11 @@ import SwiftHtml
 
 public struct ListLayout: TagRepresentable {
 	var title: String
+	var description: String?
 
 	func build() -> Tag {
 		Html {
-			SiteHead(title: "\(title) · Alexander Sandberg")
+			SiteHead(title: title, description: description)
 
 			Body {
 				SiteHeader(title: title)

@@ -53,7 +53,7 @@ struct SiteFooter: TagRepresentable {
 					A("Leave a comment")
 						.style("margin-left: auto;")
 						.class("plain wide-only")
-						.href("mailto:\(email)?subject=Comment: \(commentSubject)")
+						.href("mailto:\(Site.email)?subject=Comment: \(commentSubject)")
 				}
 			}
 		}
