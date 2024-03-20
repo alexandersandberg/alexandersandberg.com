@@ -6,20 +6,20 @@ publishedAt: 2019-07-11
 updatedAt: 2022-03-20
 ---
 
-I'm sure you've come across the age-old, opinion-based debate of 'Tabs vs. Spaces' for _indentation_ before. It has been going since forever, and there seem to be valid reasons for both sides:
+I‘m sure you‘ve come across the age-old, opinion-based debate of 'Tabs vs. Spaces' for _indentation_ before. It has been going since forever, and there seem to be valid reasons for both sides:
 
 **Tabs...**
 
-- smaller files because it's just 1 character
-- that's what they're used for
+- smaller files because it‘s just 1 character
+- that‘s what they‘re used for
 - you can customize your own indentation width (👈 keep this one in mind)
 
 **Spaces...**
 
 - to avoid problems in whitespace-sensitive environments
-- because you know what you'll get, and consistency is key
+- because you know what you‘ll get, and consistency is key
 
-But, there's more to this than just personal preferences. [u/ChaseMoskal](https://www.reddit.com/user/ChaseMoskal) recently posted a very insightful and eye-opening post on Reddit with the title ["Nobody talks about the real reason to use Tabs over Spaces"](https://www.reddit.com/r/javascript/comments/c8drjo/nobody_talks_about_the_real_reason_to_use_tabs/).
+But, there‘s more to this than just personal preferences. [u/ChaseMoskal](https://www.reddit.com/user/ChaseMoskal) recently posted a very insightful and eye-opening post on Reddit with the title ["Nobody talks about the real reason to use Tabs over Spaces"](https://www.reddit.com/r/javascript/comments/c8drjo/nobody_talks_about_the_real_reason_to_use_tabs/).
 
 ## The one real reason to use tabs over spaces
 
@@ -35,13 +35,13 @@ By using tabs in our projects, we allow these kinds of customizations that are _
 
 ## Accessible first
 
-We simply can't "convert" everyone to one side or the other, there's no question about it. Everyone has their own preferences, and we should celebrate that freedom—that we have the ability to make our own choices.
+We simply can‘t "convert" everyone to one side or the other, there‘s no question about it. Everyone has their own preferences, and we should celebrate that freedom—that we have the ability to make our own choices.
 
 But with that said, we should also make sure to include _everyone_, and that means respecting and using accessible tools like the Tab-character.
 
-Much like designing for 'mobile first'—making sure everyone, no matter what device, has a great experience with your product—we should create an '**accessible first**' environment, by making sure that everyone has the same ability to work, whether it's at the workplace or on an open-source project.
+Much like designing for 'mobile first'—making sure everyone, no matter what device, has a great experience with your product—we should create an '**accessible first**' environment, by making sure that everyone has the same ability to work, whether it‘s at the workplace or on an open-source project.
 
-I thought Chase put it perfectly when he said in his post that _"...there's just no counter-argument that even comes close to outweighing the accessibility needs of valued coworkers"_.
+I thought Chase put it perfectly when he said in his post that _"...there‘s just no counter-argument that even comes close to outweighing the accessibility needs of valued coworkers"_.
 
 ## Conclusion — Accessible first, personal preference second
 
