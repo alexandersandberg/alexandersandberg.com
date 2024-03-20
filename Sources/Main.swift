@@ -15,6 +15,7 @@ struct Site {
 	static let author = "Alexander Sandberg"
 	static let bio = "<em>Software tinkerer</em>. Creating, experimenting, learning. Believer in simplicity. <span class='nowrap'>Building carefully</span> crafted Swift and SwiftUI apps."
 	static let email = "hi@alexandersandberg.com"
+	static let cdn = "https://cdn.alexandersandberg.com/"
 }
 
 let pages = [
