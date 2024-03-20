@@ -14,7 +14,7 @@ struct SiteHead: TagRepresentable {
 	var publishedAt: Date? = nil
 	var updatedAt: Date? = nil
 
-	private let ogImagePath = "" // TODO: og image
+	private let ogImagePath = Site.cdn + "og.png"
 
 	func build() -> Tag {
 		Head {
