@@ -28,7 +28,7 @@ struct SiteHeader: TagRepresentable {
 	}
 
 	private var timeTitle: String? {
-		guard let publishedAt, let updatedAt else { return nil }
+		guard let publishedAt, updatedAt != nil else { return nil }
 
 		return "First published \(publishedAt.formatted(date: .abbreviated, time: .omitted))"
 	}
