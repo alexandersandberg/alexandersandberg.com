@@ -21,6 +21,7 @@ let homeDocument = Document(.html) {
 					Div {
 						Div {
 							A("About")
+								.class("bold")
 								.href("/about")
 
 							P("Who, What, and Why")
@@ -30,6 +31,7 @@ let homeDocument = Document(.html) {
 
 						Div {
 							A("Now")
+								.class("bold")
 								.href("/now")
 
 							P("Short-term focus")
@@ -39,6 +41,7 @@ let homeDocument = Document(.html) {
 
 						Div {
 							A("Someday")
+								.class("bold")
 								.href("/someday")
 
 							P("Long-term goals")

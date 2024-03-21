@@ -33,12 +33,12 @@ struct ProjectItem: TagRepresentable {
 						.class("external-icon", "tertiary", "footnote")
 				}
 			}
-			.class("headline")
+			.class("bold")
 
 			if let highlightedText = project.highlightedText {
 				Span(highlightedText)
 					.style("position: absolute; top: -0.4rem; right: 0;  transform: rotate(4deg);")
-					.class("caption2", "highlighted-text")
+					.class("caption", "highlighted-text")
 			}
 
 			P(project.description)
