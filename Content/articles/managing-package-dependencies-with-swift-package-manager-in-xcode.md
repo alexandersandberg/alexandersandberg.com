@@ -26,7 +26,7 @@ In Xcode, go to **File → Add Package Dependencies...**
 
 In the search field in the upper right, enter your package URL. This is usually a GitHub repository URL, like `https://github.com/apple/swift-markdown`.
 
-![Xcode‘s add package dependency panel after finding your package](https://cdn.alexandersandberg.com/swiftpm-dependencies/add-package.png)
+![Xcode‘s add package dependency panel after finding your package](https://cdn.alexandersandberg.com/articles/swiftpm-add-package.png)
 
 Select your package.
 
@@ -36,7 +36,7 @@ Click **Add Package**.
 
 Under **Add to Target**, select the target you want to add the package to.
 
-![Xcode‘s add package dependency panel at the second step, when selecting a target to add the package to](https://cdn.alexandersandberg.com/swiftpm-dependencies/add-package-target.png)
+![Xcode‘s add package dependency panel at the second step, when selecting a target to add the package to](https://cdn.alexandersandberg.com/articles/swiftpm-add-package-target.png)
 
 Click **Add Package**.
 
@@ -50,11 +50,11 @@ In the **General** tab, scroll down to **Frameworks and Libraries**.
 
 Click the **+ (plus)** below the list.
 
-![Xcode‘s 'General' tab scrolled down to the 'Frameworks and Libraries' section](https://cdn.alexandersandberg.com/swiftpm-dependencies/add-multiple.png)
+![Xcode‘s 'General' tab scrolled down to the 'Frameworks and Libraries' section](https://cdn.alexandersandberg.com/articles/swiftpm-add-multiple.png)
 
 Select your package in the list, and click **Add**.
 
-![Xcode‘s framework and library selection panel when adding a package to a target](https://cdn.alexandersandberg.com/swiftpm-dependencies/add-multiple-selection.png)
+![Xcode‘s framework and library selection panel when adding a package to a target](https://cdn.alexandersandberg.com/articles/swiftpm-add-multiple-selection.png)
 
 ## <span id="update"></span>Update packages
 
@@ -64,7 +64,7 @@ Find your package under **Package Dependencies** in the Project Navigator.
 
 Control-click (right-click) the package and select **Update Package**.
 
-![Xcode‘s context menu options for a package dependency](https://cdn.alexandersandberg.com/swiftpm-dependencies/update-single.png)
+![Xcode‘s context menu options for a package dependency](https://cdn.alexandersandberg.com/articles/swiftpm-update-single.png)
 
 ### Update all packages
 
@@ -72,7 +72,7 @@ Control-click (right-click) **Package Dependencies** in the Project Navigator.
 
 Select **Update to Latest Package Versions**.
 
-![Xcode‘s context menu options for all package dependencies](https://cdn.alexandersandberg.com/swiftpm-dependencies/update-all.png)
+![Xcode‘s context menu options for all package dependencies](https://cdn.alexandersandberg.com/articles/swiftpm-update-all.png)
 
 ## <span id="remove"></span>Remove packages
 
@@ -84,11 +84,11 @@ In the **General** tab, scroll down to **Frameworks and Libraries**.
 
 Click the **− (minus)** below the list.
 
-![Xcode‘s 'General' tab scrolled down to the 'Frameworks and Libraries' section with a package dependency added](https://cdn.alexandersandberg.com/swiftpm-dependencies/remove-single.png)
+![Xcode‘s 'General' tab scrolled down to the 'Frameworks and Libraries' section with a package dependency added](https://cdn.alexandersandberg.com/articles/swiftpm-remove-single.png)
 
 Confirm by clicking **Delete**.
 
-![Xcode‘s alert when removing a package dependency, asking to confirm removal](https://cdn.alexandersandberg.com/swiftpm-dependencies/remove-single-confirm.png)
+![Xcode‘s alert when removing a package dependency, asking to confirm removal](https://cdn.alexandersandberg.com/articles/swiftpm-remove-single-confirm.png)
 
 ### Remove from project (all targets)
 
@@ -98,8 +98,8 @@ In the **Package Dependencies** tab, select the package you want to remove.
 
 Click the **− (minus)** below the list.
 
-![Xcode‘s 'Package Dependencies' tab for a project with a package dependency added](https://cdn.alexandersandberg.com/swiftpm-dependencies/remove-all.png)
+![Xcode‘s 'Package Dependencies' tab for a project with a package dependency added](https://cdn.alexandersandberg.com/articles/swiftpm-remove-all.png)
 
 Confirm by clicking **Remove**.
 
-![Xcode‘s alert when removing a package dependency from the project, asking to confirm removal](https://cdn.alexandersandberg.com/swiftpm-dependencies/remove-all-confirm.png)
+![Xcode‘s alert when removing a package dependency from the project, asking to confirm removal](https://cdn.alexandersandberg.com/articles/swiftpm-remove-all-confirm.png)
