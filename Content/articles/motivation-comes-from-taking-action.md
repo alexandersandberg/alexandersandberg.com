@@ -10,13 +10,13 @@ While reading Mark Manson‘s book _"The Subtle Art of Not Giving a Fuck"_, I ca
 
 He talked about how most people sit around waiting for enough motivation to build up before committing to something. And motivation requires inspiration, sort of like a chain reaction.
 
-![Linear graph from inspiration to action](https://cdn.alexandersandberg.com/motivation/linear.jpg)
+![Linear graph from inspiration to action](https://cdn.alexandersandberg.com/articles/motivation-linear.jpg)
 
 The reality though is that once you get the momentum going, you will only generate further inspiration and motivation, leading to even more progress. Instead of a chain reaction, it‘s more like an endless loop.
 
 Once you realize this, you can take advantage of this and shift the starting point from inspiration to action.
 
-![Endless loop between action, inspiration, and motivation](https://cdn.alexandersandberg.com/motivation/loop.jpg)
+![Endless loop between action, inspiration, and motivation](https://cdn.alexandersandberg.com/articles/motivation-loop.jpg)
 
 When thinking back myself, I notice that I‘ve been using the same principle many times before. It has been applied on everything from studying and work, to workouts and cleaning, with this post being the most recent example.
 
