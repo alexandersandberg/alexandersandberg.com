@@ -26,15 +26,14 @@
 	--space-l: 3rem;
 	--space-xl: 6rem;
 
-	--title1: 600 1.5rem/1.25 var(--sans-serif);
-	--title2: 600 1.25rem/1.35 var(--sans-serif);
-	--title3: 600 1.125rem/1.4 var(--sans-serif);
-	--headline: 600 1rem/1.5 var(--sans-serif);
-	--body: 400 1rem/1.6 var(--sans-serif);
-	--subheadline: 500 0.875rem/1.6 var(--sans-serif);
+	--title1: 400 1.5rem/1.25 var(--sans-serif);
+	--title2: 400 1.25rem/1.35 var(--sans-serif);
+	--body: 400 1rem/1.5 var(--sans-serif);
+	--subheadline: 400 0.875rem/1.5 var(--sans-serif);
 	--footnote: 400 0.875rem/1.6 var(--sans-serif);
-	--caption1: 400 0.75rem/1.7 var(--sans-serif);
-	--caption2: 600 0.75rem/1.7 var(--sans-serif);
+	--caption: 400 0.75rem/1.7 var(--sans-serif);
+
+	--bold-weight: 600;
 
 	color-scheme: light dark;
 	touch-action: manipulation;
@@ -48,6 +47,8 @@
 	:root {
 		--foreground: 255, 255, 255;
 		--background: 27, 27, 27;
+
+		--bold-weight: 500;
 	}
 }
 
@@ -92,7 +93,7 @@ em {
 
 strong,
 b {
-	font-weight: 600;
+	font-weight: var(--bold-weight);
 }
 
 code {
@@ -159,6 +160,11 @@ a:hover {
 	text-decoration-color: var(--secondary);
 }
 
+.prose > * {
+	margin-block-start: var(--space-m);
+	margin-block-end: var(--space-m);
+}
+
 .title1,
 .prose h1 {
 	font: var(--title1);
@@ -169,42 +175,24 @@ a:hover {
 	font: var(--title2);
 }
 
-.title3,
+.body
 .prose h3 {
-	font: var(--title3);
-}
-
-.headline,
-.prose h4 {
-	font: var(--headline);
-}
-
-.body,
-.prose h4 {
 	font: var(--body);
 }
 
 .subheadline,
-.prose h5 {
+.prose h4 {
 	font: var(--subheadline);
 }
 
-.footnote {
+.footnote,
+.prose h5 {
 	font: var(--footnote);
 }
 
-.caption1 {
-	font: var(--caption1);
-}
-
-.caption2,
+.caption,
 .prose h6 {
-	font: var(--caption2);
-}
-
-.prose > * {
-	margin-block-start: var(--space-m);
-	margin-block-end: var(--space-m);
+	font: var(--caption);
 }
 
 .prose h1,
@@ -214,6 +202,21 @@ a:hover {
 .prose h5,
 .prose h6 {
 	margin-block-start: var(--space-l);
+	font-family: var(--serif);
+	font-weight: calc(var(--bold-weight) - 100);
+}
+
+.prose h1,
+.prose h2 {
+	margin-block-start: var(--space-xl);
+}
+
+.prose h1 + h2,
+.prose h2 + h3,
+.prose h3 + h4,
+.prose h4 + h5,
+.prose h5 + h6 {
+	margin-block-start: var(--space-m);
 }
 
 .prose *[id] {
@@ -247,6 +250,10 @@ a:hover {
 
 .uppercase {
 	text-transform: uppercase;
+}
+
+.bold {
+	font-weight: var(--bold-weight);
 }
 
 .nowrap {
@@ -358,6 +365,7 @@ a:hover {
 .highlighted-text {
 	padding: 0.1rem 0.5rem;
 	font-family: var(--rounded);
+	font-weight: var(--bold-weight);
 	color: color(display-p3 var(--pink-p3));
 	background: color(display-p3 var(--pink-p3) / 0.1);
 	border-radius: 0.5rem;

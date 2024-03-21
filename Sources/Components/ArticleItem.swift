@@ -16,11 +16,11 @@ struct ArticleItem: TagRepresentable {
 				A(page.title)
 					.href(page.relativePath)
 			}
-			.class("headline")
+			.class("bold")
 
 			if let publishedAt = page.publishedAt {
 				P(publishedAt.formatted(date: .abbreviated, time: .omitted))
-					.class("footnote", "tertiary")
+					.class("footnote", "secondary")
 			}
 		}
 		.class("v-gap-xs")
