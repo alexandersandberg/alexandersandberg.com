@@ -13,7 +13,7 @@
 	--pink-p3: 0.955 0.086 0.382;
 
 	--primary: rgba(var(--foreground), 100%);
-	--secondary: rgba(var(--foreground), 75%);
+	--secondary: rgba(var(--foreground), 70%);
 	--tertiary: rgba(var(--foreground), 45%);
 	--quaternary: rgba(var(--foreground), 20%);
 	--quinary: rgba(var(--foreground), 6%);
