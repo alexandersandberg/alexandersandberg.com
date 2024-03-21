@@ -84,7 +84,8 @@ blockquote {
 img {
 	display: block;
 	max-width: 100%;
-	border-radius: 0.25rem;
+	border-radius: 0.5rem;
+	border: 1px solid var(--quinary);
 }
 
 em {
@@ -99,7 +100,8 @@ b {
 code {
 	padding: 0.15rem 0.25rem;
 	background: var(--quinary);
-	border-radius: 0.25rem;
+	border-radius: 0.5rem;
+	border: 1px solid var(--quinary);
 	font-family: var(--monospace);
 	font-size: 0.875rem;
 	font-weight: 300;
