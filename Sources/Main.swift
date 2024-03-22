@@ -32,6 +32,11 @@ let pages = [
 		path: "articles",
 		layout: .list(title: "Articles"),
 		htmlContentString: documentRenderer.render(articlesDocument)
+	),
+	Page(
+		path: "apps",
+		layout: .page(title: "Apps"),
+		htmlContentString: documentRenderer.render(appsDocument)
 	)
 ]
 var contentPages: [ContentPage] = []
