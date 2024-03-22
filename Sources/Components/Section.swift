@@ -39,6 +39,6 @@ struct Section: TagRepresentable {
 			}
 			.class(contentClass)
 		}
-		.class("v-gap-m")
+		.class("v-gap-l")
 	}
 }
