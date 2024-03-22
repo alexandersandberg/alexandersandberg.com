@@ -28,6 +28,7 @@
 
 	--title1: 400 1.5rem/1.25 var(--sans-serif);
 	--title2: 400 1.25rem/1.35 var(--sans-serif);
+	--title3: 400 1.125rem/1.4 var(--sans-serif);
 	--body: 400 1rem/1.5 var(--sans-serif);
 	--subheadline: 400 0.875rem/1.5 var(--sans-serif);
 	--footnote: 400 0.875rem/1.6 var(--sans-serif);
@@ -179,23 +180,27 @@ a:hover {
 	font: var(--title2);
 }
 
-.body
+.title3,
 .prose h3 {
+	font: var(--title3);
+}
+
+.body,
+.prose h4 {
 	font: var(--body);
 }
 
 .subheadline,
-.prose h4 {
+.prose h5 {
 	font: var(--subheadline);
 }
 
 .footnote,
-.prose h5 {
+.prose h6 {
 	font: var(--footnote);
 }
 
-.caption,
-.prose h6 {
+.caption {
 	font: var(--caption);
 }
 
