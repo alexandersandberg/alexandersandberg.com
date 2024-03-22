@@ -35,6 +35,24 @@ let pages = [
 	)
 ]
 var contentPages: [ContentPage] = []
+let indieApps = [
+	Project(
+		title: "Balance",
+		href: "/balance",
+		description: "Time-tracking app with a focus on work-life balance.",
+		highlightedText: "My latest indie app!"
+	),
+	Project(
+		title: "Tiny Softbox",
+		href: "https://apps.apple.com/app/id1599476381",
+		description: "Simple softbox for video calls, photography, reading, etc."
+	),
+	Project(
+		title: "Tiny Weather",
+		href: "https://apps.apple.com/app/id1522059185",
+		description: "Minimal weather app that protects your privacy."
+	),
+]
 
 @main
 struct Main {
