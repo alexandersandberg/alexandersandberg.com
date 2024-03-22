@@ -15,6 +15,7 @@ struct ArticleItem: TagRepresentable {
 			H3 {
 				A(page.title)
 					.href(page.relativePath)
+					.style("display: inline-block;") // Fix gap in clickable link if multiple rows
 			}
 			.class("title3", "serif")
 
