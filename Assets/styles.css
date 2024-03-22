@@ -62,7 +62,7 @@
 
 body {
 	box-sizing: border;
-	max-width: 600px;
+	max-width: 540px;
 	padding: 0 5vw;
 	margin: calc(4vw + 6vh) auto;
 	font: var(--body);
