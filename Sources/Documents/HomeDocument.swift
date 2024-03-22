@@ -87,7 +87,7 @@ let homeDocument = Document(.html) {
 						Project(
 							title: "Life lessons",
 							href: "/life-lessons",
-							description: "Collection of knowledge I‘ve gathered over the years."
+							description: "Collection of knowledge I’ve gathered over the years."
 						)
 					]
 					for project in projects {
