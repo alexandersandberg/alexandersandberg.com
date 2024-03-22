@@ -248,6 +248,11 @@ a:hover {
 	text-decoration: none;
 }
 
+.serif {
+	font-family: var(--serif);
+	font-weight: calc(var(--bold-weight) - 100);
+}
+
 .monospace {
 	font-family: var(--monospace);
 	font-weight: 300;
