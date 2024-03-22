@@ -103,7 +103,6 @@ code {
 	padding: 0.15rem 0.25rem;
 	background: var(--quinary);
 	border-radius: 0.5rem;
-	border: 1px solid var(--quinary);
 	font-family: var(--monospace);
 	font-size: 0.875rem;
 	font-weight: 300;
@@ -112,6 +111,7 @@ code {
 pre code {
 	display: block;
 	padding: 0.75rem 1rem;
+	border: 1px solid var(--quinary);
 	overflow-x: auto;
 }
 
