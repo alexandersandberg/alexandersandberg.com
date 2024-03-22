@@ -10,7 +10,7 @@
 
 	--foreground: 0, 0, 0;
 	--background: 255, 255, 255;
-	--pink-p3: 0.955 0.086 0.382;
+	--accent-p3: 0.254 0.268 0.94;
 
 	--primary: rgba(var(--foreground), 100%);
 	--secondary: rgba(var(--foreground), 60%);
@@ -48,6 +48,7 @@
 	:root {
 		--foreground: 255, 255, 255;
 		--background: 27, 27, 27;
+		--accent-p3: 0.325 0.337 1;
 
 		--secondary: rgba(var(--foreground), 75%);
 		--tertiary: rgba(var(--foreground), 50%);
@@ -397,7 +398,7 @@ a:hover {
 	padding: 0.1rem 0.5rem;
 	font-family: var(--rounded);
 	font-weight: var(--weight-bold);
-	color: color(display-p3 var(--pink-p3));
-	background: color(display-p3 var(--pink-p3) / 0.1);
+	color: color(display-p3 var(--accent-p3));
+	background: color(display-p3 var(--accent-p3) / 0.1);
 	border-radius: 0.5rem;
 }
