@@ -27,7 +27,7 @@ let homeDocument = Document(.html) {
 							P("Who, What, Why")
 								.class("secondary")
 						}
-						.class("v-gap-xs")
+						.class("v-gap-s")
 
 						Div {
 							A("Now")
@@ -37,7 +37,7 @@ let homeDocument = Document(.html) {
 							P("Short-term focus")
 								.class("secondary")
 						}
-						.class("v-gap-xs")
+						.class("v-gap-s")
 
 						Div {
 							A("Someday")
@@ -47,7 +47,7 @@ let homeDocument = Document(.html) {
 							P("Long-term goals")
 								.class("secondary")
 						}
-						.class("v-gap-xs")
+						.class("v-gap-s")
 					}
 					.class("grid-3")
 				}

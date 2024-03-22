@@ -45,6 +45,6 @@ struct ProjectItem: TagRepresentable {
 				.class("secondary")
 		}
 		.style("position: relative;")
-		.class("v-gap-xs")
+		.class("v-gap-s")
 	}
 }
