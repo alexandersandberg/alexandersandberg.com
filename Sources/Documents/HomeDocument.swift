@@ -24,7 +24,7 @@ let homeDocument = Document(.html) {
 								.class("title3", "serif")
 								.href("/about")
 
-							P("Who, What, and Why")
+							P("Who, What, Why")
 								.class("secondary")
 						}
 						.class("v-gap-xs")
@@ -85,7 +85,7 @@ let homeDocument = Document(.html) {
 						Project(
 							title: "Composer",
 							href: "https://composer.trade",
-							description: "Platform to build, backtest, and execute trading algorithms using AI."
+							description: "Platform to build, backtest, and execute trading algorithms."
 						),
 						Project(
 							title: "Swift Website Workgroup",
@@ -105,7 +105,7 @@ let homeDocument = Document(.html) {
 						Project(
 							title: "Life lessons",
 							href: "/life-lessons",
-							description: "Categorized collection of knowledge I‘ve gathered over the years."
+							description: "Collection of knowledge I‘ve gathered over the years."
 						)
 					]
 					for project in projects {
