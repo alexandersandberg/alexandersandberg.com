@@ -103,17 +103,18 @@ b {
 }
 
 code {
-	padding: 0.15rem 0.25rem;
+	padding: 0.15rem 0.35rem;
 	background: var(--quinary);
-	border-radius: 0.5rem;
+	border-radius: 0.25rem;
+	font: var(--footnote);
 	font-family: var(--monospace);
-	font-size: 0.875rem;
 	font-weight: 300;
 }
 
 pre code {
 	display: block;
 	padding: 0.75rem 1rem;
+	border-radius: 0.5rem;
 	border: 1px solid var(--quinary);
 	overflow-x: auto;
 }
@@ -231,11 +232,11 @@ a:hover {
 }
 
 .prose > ol:first-child {
-	list-style-type: none;
+	list-style-type: lower-roman;
 	padding-left: 0;
 	margin-block-end: var(--space-l);
 	color: var(--secondary);
-	font-size: 0.875rem;
+	font: var(--footnote);
 }
 
 .prose > ol:first-child li::marker {
