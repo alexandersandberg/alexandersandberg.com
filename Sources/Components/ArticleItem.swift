@@ -23,6 +23,6 @@ struct ArticleItem: TagRepresentable {
 					.class("footnote", "secondary")
 			}
 		}
-		.class("v-gap-xs")
+		.class("v-gap-s")
 	}
 }

@@ -35,12 +35,14 @@ struct SiteHeader: TagRepresentable {
 
 	func build() -> Tag {
 		Header {
-			Span(supertitle ?? "&nbsp;")
-				.class("title1", "serif", "tertiary")
-				.style("position: relative; top: 0.25rem; \(supertitle == nil ? "visibility: hidden" : "")")
+			Div {
+				Span(supertitle ?? "&nbsp;")
+					.class("title1", "serif", "tertiary")
+					.style("position: relative; top: 0.25rem; \(supertitle == nil ? "visibility: hidden" : "")")
 
-			H1(title)
-				.class("title1", "serif")
+				H1(title)
+					.class("title1", "serif")
+			}
 
 			if let date, let datetimeString {
 				P {
@@ -50,8 +52,8 @@ struct SiteHeader: TagRepresentable {
 						.title(timeTitle ?? "")
 				}
 				.class("secondary", "footnote")
-				.style("margin-top: 0.25rem;")
 			}
 		}
+		.class("v-gap-s")
 	}
 }
