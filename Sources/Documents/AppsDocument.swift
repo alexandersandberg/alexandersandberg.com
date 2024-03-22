@@ -16,7 +16,7 @@ let appsDocument = Document(.html) {
 		}
 		.class("grid-2")
 
-		P("See my <a href='/about'>About page</a> for apps I‘ve worked on together with other people.")
+		P("See my <a href='/about'>about page</a> for apps I‘ve worked on together with other people.")
 			.class("callout")
 	}
 
