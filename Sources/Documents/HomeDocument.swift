@@ -64,12 +64,12 @@ let homeDocument = Document(.html) {
 						),
 						Project(
 							title: "Tiny Softbox",
-							href: "/tiny-softbox",
+							href: "https://apps.apple.com/app/id1599476381",
 							description: "Simple softbox for video calls, photography, reading, etc."
 						),
 						Project(
 							title: "Tiny Weather",
-							href: "/tiny-weather",
+							href: "https://apps.apple.com/app/id1522059185",
 							description: "Minimal weather app that respects your privacy."
 						),
 					]
