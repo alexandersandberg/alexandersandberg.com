@@ -25,6 +25,7 @@ struct Section: TagRepresentable {
 					P {
 						Span("[ ")
 						A(link.label)
+							.class("plain")
 							.href(link.href)
 						Span(" ]")
 					}
