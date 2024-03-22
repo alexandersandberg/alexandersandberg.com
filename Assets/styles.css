@@ -360,7 +360,7 @@ a:hover {
 	width: 1px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 540px) {
 	.wide-only {
 		display: revert;
 	}
