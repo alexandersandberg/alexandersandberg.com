@@ -25,14 +25,16 @@
 	--space-l: 3rem;
 	--space-xl: 6rem;
 
-	--title1: 400 1.5rem/1.25 var(--sans-serif);
-	--title2: 400 1.25rem/1.35 var(--sans-serif);
-	--title3: 400 1.125rem/1.4 var(--sans-serif);
-	--body: 400 1rem/1.5 var(--sans-serif);
-	--footnote: 400 0.875rem/1.6 var(--sans-serif);
-	--caption: 400 0.75rem/1.7 var(--sans-serif);
+	--weight-normal: 400;
+	--weight-medium: 500;
+	--weight-bold: 600;
 
-	--bold-weight: 600;
+	--title1: var(--weight-normal) 1.5rem/1.25 var(--sans-serif);
+	--title2: var(--weight-normal) 1.25rem/1.35 var(--sans-serif);
+	--title3: var(--weight-normal) 1.125rem/1.4 var(--sans-serif);
+	--body: var(--weight-normal) 1rem/1.5 var(--sans-serif);
+	--footnote: var(--weight-normal) 0.875rem/1.6 var(--sans-serif);
+	--caption: var(--weight-normal) 0.75rem/1.7 var(--sans-serif);
 
 	color-scheme: light dark;
 	touch-action: manipulation;
@@ -50,9 +52,11 @@
 		--secondary: rgba(var(--foreground), 75%);
 		--tertiary: rgba(var(--foreground), 50%);
 		--quaternary: rgba(var(--foreground), 15%);
-		--quinary: rgba(var(--foreground), 5%);
+		--quinary: rgba(var(--foreground), 3%);
 
-		--bold-weight: 500;
+		--weight-normal: 300;
+		--weight-medium: 400;
+		--weight-bold: 500;
 	}
 }
 
@@ -63,7 +67,6 @@
 }
 
 body {
-	box-sizing: border;
 	max-width: 540px;
 	padding: 0 5vw;
 	margin: calc(4vw + 6vh) auto;
@@ -98,7 +101,7 @@ em {
 
 strong,
 b {
-	font-weight: var(--bold-weight);
+	font-weight: var(--weight-bold);
 }
 
 code {
@@ -107,7 +110,7 @@ code {
 	border-radius: 0.25rem;
 	font: var(--footnote);
 	font-family: var(--monospace);
-	font-weight: 300;
+	font-weight: var(--weight-normal);
 }
 
 pre code {
@@ -157,7 +160,7 @@ a + .external-icon {
 	position: relative;
 	top: -0.2rem;
 	left: 0.3rem;
-	font-weight: 300;
+	font-weight: var(--weight-normal);
 	transition: color var(--transition), text-decoration-color var(--transition);
 }
 
@@ -211,7 +214,7 @@ a:hover {
 	margin-block-start: var(--space-l);
 	margin-block-end: calc(var(--space-m) - 0.25rem);
 	font-family: var(--serif);
-	font-weight: calc(var(--bold-weight) - 100);
+	font-weight: var(--weight-medium);
 }
 
 .prose h1 + p,
@@ -249,7 +252,7 @@ a:hover {
 }
 
 .prose > ol:first-child li::marker {
-	color: var(--quaternary);
+	color: var(--tertiary);
 }
 
 .prose > ol:first-child li a {
@@ -258,12 +261,12 @@ a:hover {
 
 .serif {
 	font-family: var(--serif);
-	font-weight: calc(var(--bold-weight) - 100);
+	font-weight: var(--weight-medium);
 }
 
 .monospace {
 	font-family: var(--monospace);
-	font-weight: 300;
+	font-weight: var(--weight-normal);
 }
 
 .rounded {
@@ -275,7 +278,7 @@ a:hover {
 }
 
 .bold {
-	font-weight: var(--bold-weight);
+	font-weight: var(--weight-bold);
 }
 
 .nowrap {
@@ -393,7 +396,7 @@ a:hover {
 .highlighted-text {
 	padding: 0.1rem 0.5rem;
 	font-family: var(--rounded);
-	font-weight: var(--bold-weight);
+	font-weight: var(--weight-bold);
 	color: color(display-p3 var(--pink-p3));
 	background: color(display-p3 var(--pink-p3) / 0.1);
 	border-radius: 0.5rem;
