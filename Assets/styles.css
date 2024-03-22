@@ -381,6 +381,14 @@ a:hover {
 	}
 }
 
+.callout {
+	padding: 0.75rem 1rem;
+	background: var(--quinary);
+	font: var(--footnote);
+	border-radius: 0.5rem;
+	border: 1px solid var(--quinary);
+}
+
 .highlighted-text {
 	padding: 0.1rem 0.5rem;
 	font-family: var(--rounded);
