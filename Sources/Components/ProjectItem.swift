@@ -33,7 +33,7 @@ struct ProjectItem: TagRepresentable {
 						.class("external-icon", "tertiary", "footnote")
 				}
 			}
-			.class("bold")
+			.class("title3", "serif")
 
 			if let highlightedText = project.highlightedText {
 				Span(highlightedText)

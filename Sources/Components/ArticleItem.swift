@@ -16,7 +16,7 @@ struct ArticleItem: TagRepresentable {
 				A(page.title)
 					.href(page.relativePath)
 			}
-			.class("bold")
+			.class("title3", "serif")
 
 			if let publishedAt = page.publishedAt {
 				P(publishedAt.formatted(date: .abbreviated, time: .omitted))
