@@ -97,8 +97,8 @@ let homeDocument = Document(.html) {
 
 				Hr()
 
-				Section(title: "Articles", contentClass: "v-gap-m") {
-					for articlePage in contentPages.articles.sorted(by: >) {
+				Section(title: "Articles", link: ("Archive", "/articles"), contentClass: "v-gap-m") {
+					for articlePage in contentPages.articles.sorted(by: >).prefix(5) {
 						ArticleItem(page: articlePage)
 					}
 				}
