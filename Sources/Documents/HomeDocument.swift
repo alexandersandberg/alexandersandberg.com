@@ -70,7 +70,7 @@ let homeDocument = Document(.html) {
 						Project(
 							title: "Tiny Weather",
 							href: "https://apps.apple.com/app/id1522059185",
-							description: "Minimal weather app that respects your privacy."
+							description: "Minimal weather app that protects your privacy."
 						),
 					]
 					for project in projects {
