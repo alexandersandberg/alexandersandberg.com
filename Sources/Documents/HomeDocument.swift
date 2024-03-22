@@ -54,7 +54,7 @@ let homeDocument = Document(.html) {
 
 				Hr()
 
-				Section(title: "Indie apps", contentClass: "grid-2") {
+				Section(title: "Indie apps", link: ("More", "/apps"), contentClass: "grid-2") {
 					for app in indieApps {
 						ProjectItem(project: app)
 					}
