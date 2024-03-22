@@ -8,6 +8,5 @@ updatedAt: 2024-03-19
 
 Now...
 
-<br />
-
-> This page is part of the [now page](https://nownownow.com) movement. You should make one too!
+<br>
+<p class="callout">This page is part of the <a href="https://nownownow.com">now page</a> movement. You should make one too!</p>
