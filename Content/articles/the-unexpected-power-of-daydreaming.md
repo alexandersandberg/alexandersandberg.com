@@ -18,7 +18,7 @@ In his book _How to Fail at Almost Everything and Still Win Big_, Scott Adams ta
 
 Daydreaming sort of works in the same way. By imagining a better future—because that’s often what daydreams consist of—you introduce happy and exciting thoughts into your everyday life. And don’t let the probability of you actually achieving those dreams concern you, because you never know what the future holds.
 
-> “Don’t let reality control your imagination. Let your imagination be the user interface to steer your reality.” — Scott Adams
+> Don’t let reality control your imagination. Let your imagination be the user interface to steer your reality. — Scott Adams
 
 This new level of optimism will in turn boost your energy levels, which I’ve found to be a key factor in staying productive. While it may not be _the one_ method to completely change your life, embracing daydreaming can certainly help you along the way. Watching the occasional motivational video on YouTube can also have the same effect, but like everything else in life, keep it within moderation.
 
