@@ -250,7 +250,8 @@ a:hover {
 .prose hr,
 .prose img,
 .prose blockquote,
-.prose pre {
+.prose pre,
+.prose .callout {
 	margin-block-start: var(--space-m);
 	margin-block-end: var(--space-m);
 }
