@@ -123,6 +123,7 @@ pre code {
 
 blockquote p {
 	color: var(--secondary);
+	font-family: var(--serif);
 	font-style: italic;
 }
 
