@@ -212,7 +212,7 @@ a:hover {
 .prose h4,
 .prose h5,
 .prose h6 {
-	margin-block-start: var(--space-l);
+	margin-block-start: var(--space-xl);
 	margin-block-end: calc(var(--space-s) - 0.25rem);
 	font-family: var(--serif);
 	font-weight: var(--weight-medium);
@@ -227,11 +227,6 @@ a:hover {
 	margin-block-start: calc(var(--space-s) - 0.25rem);
 }
 
-.prose h1,
-.prose h2 {
-	margin-block-start: var(--space-l);
-}
-
 .prose h1 + h2,
 .prose h2 + h3,
 .prose h3 + h4,
@@ -243,7 +238,7 @@ a:hover {
 .prose h4:first-child,
 .prose h5:first-child,
 .prose h6:first-child {
-	margin-block-start: var(--space-s);
+	margin-block-start: var(--space-m);
 }
 
 .prose img {
