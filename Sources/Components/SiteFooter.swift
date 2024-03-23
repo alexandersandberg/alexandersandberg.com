@@ -11,7 +11,6 @@ import SwiftHtml
 struct SiteFooter: TagRepresentable {
 	enum Variant {
 		case home
-		case article
 	}
 
 	var variant: Variant?
@@ -19,44 +18,41 @@ struct SiteFooter: TagRepresentable {
 
 	func build() -> Tag {
 		Footer {
-			if variant == .home {
-				Span("©")
+			Hr()
 
-				A("Colophon")
-					.class("plain")
-					.href("/colophon")
+			Div {
+				if variant == .home {
+					Div {
+						Span("©")
 
-				A("RSS")
-					.class("plain")
-					.href("/rss.xml")
+						A("Colophon")
+							.class("plain")
+							.href("/colophon")
 
-				A("Updated \(Date.now.formatted(date: .abbreviated, time: .omitted))")
-					.style("margin-left: auto;")
-					.class("plain wide-only")
-					.href("https://github.com/alexandersandberg/alexandersandberg.com/commits/main/")
-					.target(.blank)
-			} else {
-				A("Home")
-					.class("plain")
-					.href("/")
+						A("RSS")
+							.class("plain")
+							.href("/rss.xml")
+					}
+					.class("flex", "gap-m")
 
-				if variant == .article {
-					Span("/")
-						.class("quaternary")
-
-					A("Articles")
-						.class("plain")
-						.href("/articles")
-				}
-
-				if let commentSubject {
-					A("Leave a comment")
-						.style("margin-left: auto;")
+					A("Updated \(Date.now.formatted(date: .abbreviated, time: .omitted))")
 						.class("plain wide-only")
-						.href("mailto:\(Site.email)?subject=Comment: \(commentSubject)")
+						.href("https://github.com/alexandersandberg/alexandersandberg.com/commits/main/")
+						.target(.blank)
+				} else {
+					A("↑&ensp;Back to top")
+						.class("plain", "footnote", "tertiary")
+						.href("#top")
+
+					if let commentSubject {
+						A("Leave a comment")
+							.class("plain wide-only")
+							.href("mailto:\(Site.email)?subject=Comment: \(commentSubject)")
+					}
 				}
 			}
+			.class("footnote", "tertiary", "flex", "between")
 		}
-		.class("footnote", "monospace", "tertiary", "flex", variant == .home ? "gap-m" : "gap-s")
+		.class("v-gap-m")
 	}
 }

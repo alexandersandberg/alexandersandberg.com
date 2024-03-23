@@ -16,14 +16,12 @@ public struct ListLayout: TagRepresentable {
 			SiteHead(title: title, description: description)
 
 			Body {
-				SiteHeader(title: title)
+				SiteHeader(title: title, backLink: .home)
 
 				SwiftHtml.Main {
 					Content()
 				}
 				.class("v-gap-xl")
-
-				Hr()
 
 				SiteFooter()
 			}

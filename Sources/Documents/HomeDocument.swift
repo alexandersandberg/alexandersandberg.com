@@ -54,7 +54,7 @@ let homeDocument = Document(.html) {
 
 				Hr()
 
-				Section(title: "Indie apps", link: ("More", "/apps"), contentClass: "grid-2") {
+				Section(title: "Indie apps", moreLink: .apps("More"), contentClass: "grid-2") {
 					for app in indieApps {
 						ProjectItem(project: app)
 					}
@@ -97,15 +97,13 @@ let homeDocument = Document(.html) {
 
 				Hr()
 
-				Section(title: "Articles", link: ("Archive", "/articles"), contentClass: "v-gap-m") {
+				Section(title: "Articles", moreLink: .articles("Archive"), contentClass: "v-gap-m") {
 					for articlePage in contentPages.articles.sorted(by: >).prefix(5) {
 						ArticleItem(page: articlePage)
 					}
 				}
 			}
 			.class("v-gap-xl")
-
-			Hr()
 
 			SiteFooter(variant: .home)
 		}
