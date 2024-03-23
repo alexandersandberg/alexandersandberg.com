@@ -16,13 +16,13 @@ I started looking up websites and blogs that were pumping out daily news article
 
 Well, after finding an interesting website and spending about 30 minutes (that felt like 5) on looking at people’s work, I found myself even _less_ motivated to get started on my own than before. That’s not very productive... What happened?
 
-> “Comparison is the thief of joy” — Theodore Roosevelt
+> Comparison is the thief of joy. — Theodore Roosevelt
 
 Comparing your own situation to someone else’s is almost always a ~~bad~~ horrible idea. Just look at what affect social media has had on society. People are constantly comparing their own seemingly mundane lives to other people’s carefully curated feeds, and end up feeling like shit for no reason.
 
 That’s pretty much how I felt after seeing all the amazing products that people were creating out there, while my own, next to empty portfolio was collecting dust.
 
-> “How much time he gains who does not look to see what his neighbour says or does or thinks, but only at what he does himself...” — Marcus Aurelius
+> How much time he gains who does not look to see what his neighbour says or does or thinks, but only at what he does himself... — Marcus Aurelius
 
 By comparing yourself to others, not only do you lose time that could’ve been invested in your own life, but you also deprive your own thoughts from their originality. If you keep disrupting your own work with the work of others, you’ll never get a chance to express your own ideas.
 
