@@ -30,9 +30,9 @@
 	--weight-medium: 500;
 	--weight-bold: 600;
 
-	--title1: var(--weight-normal) 1.5rem/1.25 var(--sans-serif);
-	--title2: var(--weight-normal) 1.25rem/1.35 var(--sans-serif);
-	--title3: var(--weight-normal) 1.125rem/1.4 var(--sans-serif);
+	--title1: var(--weight-medium) 1.5rem/1.25 var(--sans-serif);
+	--title2: var(--weight-medium) 1.25rem/1.35 var(--sans-serif);
+	--title3: var(--weight-medium) 1.125rem/1.4 var(--sans-serif);
 	--body: var(--weight-normal) 1rem/1.5 var(--sans-serif);
 	--footnote: var(--weight-normal) 0.875rem/1.6 var(--sans-serif);
 	--caption: var(--weight-normal) 0.75rem/1.7 var(--sans-serif);
@@ -281,12 +281,10 @@ a:hover {
 
 .serif {
 	font-family: var(--serif);
-	font-weight: var(--weight-medium);
 }
 
 .monospace {
 	font-family: var(--monospace);
-	font-weight: var(--weight-normal);
 }
 
 .rounded {
