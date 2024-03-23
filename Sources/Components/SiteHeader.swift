@@ -39,7 +39,7 @@ struct SiteHeader: TagRepresentable {
 				if let supertitle {
 					Span(supertitle)
 						.class("title1", "serif", "tertiary")
-						.style("position: relative; top: 0.25rem;")
+						.style("line-height: 1;")
 				}
 
 				H1(title)
