@@ -21,13 +21,13 @@ public struct ListLayout: TagRepresentable {
 				SwiftHtml.Main {
 					Content()
 				}
-				.class("v-gap-l")
+				.class("v-gap-xl")
 
 				Hr()
 
 				SiteFooter()
 			}
-			.class("v-gap-l")
+			.class("v-gap-xl")
 		}
 	}
 }

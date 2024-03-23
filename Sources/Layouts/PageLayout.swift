@@ -24,13 +24,13 @@ public struct PageLayout: TagRepresentable {
 				SwiftHtml.Main {
 					Content()
 				}
-				.class("v-gap-l")
+				.class("v-gap-xl")
 
 				Hr()
 
 				SiteFooter(commentSubject: title)
 			}
-			.class("v-gap-l")
+			.class("v-gap-xl")
 		}
 	}
 }
