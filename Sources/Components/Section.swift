@@ -32,14 +32,13 @@ struct Section: TagRepresentable {
 					.class("footnote", "monospace")
 				}
 			}
-			.class("tertiary", "uppercase")
-			.style("display: flex; justify-content: space-between;")
+			.class("tertiary", "uppercase", "flex", "between")
 
 			Div {
 				content()
 			}
 			.class(contentClass)
 		}
-		.class("v-gap-l")
+		.class("v-gap-m")
 	}
 }

@@ -24,13 +24,13 @@ public struct ArticleLayout: TagRepresentable {
 				SwiftHtml.Main {
 					Content()
 				}
-				.class("v-gap-l")
+				.class("v-gap-xl")
 
 				Hr()
 
 				SiteFooter(variant: .article, commentSubject: title)
 			}
-			.class("v-gap-l")
+			.class("v-gap-xl")
 		}
 	}
 }

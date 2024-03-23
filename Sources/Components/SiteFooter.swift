@@ -57,7 +57,6 @@ struct SiteFooter: TagRepresentable {
 				}
 			}
 		}
-		.style("display: flex; gap: \(variant == .home ? "1.5" : "0.75")rem")
-		.class("footnote", "monospace", "tertiary")
+		.class("footnote", "monospace", "tertiary", "flex", variant == .home ? "gap-m" : "gap-s")
 	}
 }

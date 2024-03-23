@@ -36,9 +36,11 @@ struct SiteHeader: TagRepresentable {
 	func build() -> Tag {
 		Header {
 			Div {
-				Span(supertitle ?? "&nbsp;")
-					.class("title1", "serif", "tertiary")
-					.style("position: relative; top: 0.25rem; \(supertitle == nil ? "visibility: hidden" : "")")
+				if let supertitle {
+					Span(supertitle)
+						.class("title1", "serif", "tertiary")
+						.style("position: relative; top: 0.25rem;")
+				}
 
 				H1(title)
 					.class("title1", "serif")
@@ -54,6 +56,6 @@ struct SiteHeader: TagRepresentable {
 				.class("secondary", "footnote")
 			}
 		}
-		.class("v-gap-s")
+		.class("v-gap-xs")
 	}
 }
