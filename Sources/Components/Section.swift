@@ -24,10 +24,14 @@ struct Section: TagRepresentable {
 				if let link {
 					P {
 						Span("[ ")
+							.class("quaternary")
+
 						A(link.label)
 							.class("plain")
 							.href(link.href)
+
 						Span(" ]")
+							.class("quaternary")
 					}
 					.class("footnote", "monospace")
 				}
