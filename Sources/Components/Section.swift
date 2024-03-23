@@ -9,7 +9,7 @@ import SwiftHtml
 
 struct Section: TagRepresentable {
 	var title: String
-	var link: (label: String, href: String)?
+	var moreLink: Link?
 	var hiddenTitle: Bool = false
 	var contentClass: String = "v-gap-l"
 	@TagBuilder var content: () -> Tag
@@ -21,14 +21,14 @@ struct Section: TagRepresentable {
 					.class("footnote", "monospace")
 					.class("sr-only", hiddenTitle)
 
-				if let link {
+				if let moreLink {
 					P {
 						Span("[ ")
 							.class("quaternary")
 
-						A(link.label)
+						A(moreLink.label)
 							.class("plain")
-							.href(link.href)
+							.href(moreLink.href)
 
 						Span(" ]")
 							.class("quaternary")

@@ -11,6 +11,7 @@ import SwiftHtml
 struct SiteHeader: TagRepresentable {
 	var supertitle: String?
 	var title: String
+	var backLink: Link?
 	var publishedAt: Date? = nil
 	var updatedAt: Date? = nil
 
@@ -35,27 +36,37 @@ struct SiteHeader: TagRepresentable {
 
 	func build() -> Tag {
 		Header {
+			if let backLink {
+				A("↖&ensp;\(backLink.label)")
+					.class("plain", "footnote", "tertiary")
+					.href(backLink.href)
+			}
+
 			Div {
-				if let supertitle {
-					Span(supertitle)
-						.class("title1", "serif", "tertiary")
-						.style("line-height: 1;")
+				Div {
+					if let supertitle {
+						Span(supertitle)
+							.class("title1", "serif", "tertiary")
+							.style("line-height: 1;")
+					}
+
+					H1(title)
+						.class("title1", "serif")
 				}
 
-				H1(title)
-					.class("title1", "serif")
-			}
-
-			if let date, let datetimeString {
-				P {
-					Span(updatedAt != nil ? "Updated " : "Published ")
-					Time(date.formatted(date: .abbreviated, time: .omitted))
-						.datetime(datetimeString)
-						.title(timeTitle ?? "")
+				if let date, let datetimeString {
+					P {
+						Span(updatedAt != nil ? "Updated " : "Published ")
+						Time(date.formatted(date: .abbreviated, time: .omitted))
+							.datetime(datetimeString)
+							.title(timeTitle ?? "")
+					}
+					.class("secondary", "footnote")
 				}
-				.class("secondary", "footnote")
 			}
+			.class("v-gap-xs")
 		}
-		.class("v-gap-xs")
+		.class("v-gap-s")
+		.style("position: relative;")
 	}
 }
