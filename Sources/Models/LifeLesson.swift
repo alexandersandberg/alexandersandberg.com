@@ -76,10 +76,7 @@ struct LifeLesson: Codable, Identifiable {
 		}
 
 		var relativePath: String {
-			let slug = title
-				.replacingOccurrences(of: " ", with: "-")
-				.lowercased()
-			return "/life-lessons/\(slug)"
+			"/life-lessons/\(title.slug)"
 		}
 	}
 

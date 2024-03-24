@@ -11,6 +11,12 @@ import CryptoKit
 extension String: LocalizedError {
 	public var errorDescription: String? { return self }
 
+	var slug: String {
+		self
+			.replacingOccurrences(of: " ", with: "-")
+			.lowercased()
+	}
+
 	var isValidSlug: Bool {
 		do {
 			let regex = try NSRegularExpression(pattern: "^[a-z0-9]+(-[a-z0-9]+)*$")
