@@ -8,7 +8,7 @@
 import SwiftHtml
 
 struct ArticleItem: TagRepresentable {
-	var page: ContentPage
+	var page: Page
 
 	func build() -> Tag {
 		Article {

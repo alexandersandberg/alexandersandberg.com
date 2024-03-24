@@ -18,33 +18,32 @@ struct Site {
 	static let cdn = "https://cdn.alexandersandberg.com/"
 }
 
-let pages = [
+var pages = [
 	Page(
 		path: "",
-		htmlContentString: documentRenderer.render(homeDocument)
+		contentHtmlString: documentRenderer.render(homeDocument)
 	),
 	Page(
 		path: "about",
 		layout: .page(title: "About me"),
-		htmlContentString: documentRenderer.render(aboutDocument)
+		contentHtmlString: documentRenderer.render(aboutDocument)
 	),
 	Page(
 		path: "articles",
 		layout: .list(title: "Articles"),
-		htmlContentString: documentRenderer.render(articleListDocument)
+		contentHtmlString: documentRenderer.render(articleListDocument)
 	),
 	Page(
 		path: "apps",
 		layout: .page(title: "Apps"),
-		htmlContentString: documentRenderer.render(appsDocument)
+		contentHtmlString: documentRenderer.render(appsDocument)
 	),
 	Page(
 		path: "life-lessons",
 		layout: .list(title: "Life lessons"),
-		htmlContentString: documentRenderer.render(lifeLessonListDocument)
+		contentHtmlString: documentRenderer.render(lifeLessonListDocument)
 	)
 ]
-var contentPages: [ContentPage] = []
 let indieApps = [
 	Project(
 		title: "Balance",
@@ -63,6 +62,7 @@ let indieApps = [
 		description: "Minimal weather app that protects your privacy."
 	),
 ]
+var articles: [Page] = []
 let lifeLessons = JSONDecoder().decode([LifeLesson].self, from: "life_lessons.json")
 
 @main
@@ -103,10 +103,14 @@ func buildContent() async {
 				continue
 			}
 
-			let page = try ContentPage(from: contentFile)
+			let page = try Page(from: contentFile)
 			try page.htmlString.writeToOutputDirectory(path: page.path)
 
-			contentPages.append(page)
+			pages.append(page)
+
+			if case .article = page.layout {
+				articles.append(page)
+			}
 		}
 	} catch {
 		fatalError("\(#function): \(error)")
