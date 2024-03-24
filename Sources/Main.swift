@@ -18,6 +18,8 @@ struct Site {
 	static let cdn = "https://cdn.alexandersandberg.com/"
 }
 
+var cssHash: String = ""
+
 let documentPages = [
 	Page(
 		path: "",
@@ -64,7 +66,7 @@ var articles: [Page] = []
 struct Main {
 	static func main() async throws {
 		prepareOutputFolder()
-		copyAssets()
+		prepareAssets()
 		buildLifeLessons()
 		await buildContent()
 		buildPages()
@@ -82,9 +84,13 @@ func prepareOutputFolder() {
 	}
 }
 
-func copyAssets() {
+func prepareAssets() {
 	do {
 		try fileManager.copyItem(at: assetsDirectory, to: outputDirectory.appending(path: assetsDirectory.lastPathComponent.lowercased()))
+
+		let cssURL = assetsDirectory.appending(path: "styles.css")
+		let cssString = try String(contentsOf: cssURL)
+		cssHash = cssString.md5Hash
 	} catch {
 		fatalError("\(#function): \(error)")
 	}
