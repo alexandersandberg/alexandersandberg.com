@@ -37,7 +37,7 @@ struct ProjectItem: TagRepresentable {
 
 			if let highlightedText = project.highlightedText {
 				Span(highlightedText)
-					.style("position: absolute; top: -0.4rem; right: 0;  transform: rotate(4deg);")
+					.style("position: absolute; top: -0.4rem; right: 0; transform: rotate(4deg);")
 					.class("caption", "highlighted-text")
 			}
 
