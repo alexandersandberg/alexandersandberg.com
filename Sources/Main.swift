@@ -18,7 +18,7 @@ struct Site {
 	static let cdn = "https://cdn.alexandersandberg.com/"
 }
 
-var pages = [
+let documentPages = [
 	Page(
 		path: "",
 		contentHtmlString: documentRenderer.render(homeDocument)
@@ -57,6 +57,7 @@ let indieApps = [
 		description: "Minimal weather app that protects your privacy."
 	),
 ]
+var pages: [Page] = []
 var articles: [Page] = []
 
 @main
@@ -149,6 +150,8 @@ func buildContent() async {
 
 func buildPages() {
 	do {
+		pages.append(contentsOf: documentPages)
+
 		for page in pages {
 			try page.htmlString.writeToOutputDirectory(path: page.path)
 		}
