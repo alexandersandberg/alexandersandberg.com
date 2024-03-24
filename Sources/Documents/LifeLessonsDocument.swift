@@ -8,8 +8,6 @@
 import Foundation
 import SwiftHtml
 
-let lifeLessons = JSONDecoder().decode([LifeLesson].self, from: "life_lessons.json")
-
 let lifeLessonsDocument = Document(.html) {
 	Div {
 		for lifeLesson in lifeLessons.sorted(by: >) {
