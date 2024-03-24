@@ -11,9 +11,10 @@ import SwiftHtml
 struct SiteHeader: TagRepresentable {
 	var supertitle: String?
 	var title: String
+	var subtitle: String?
 	var backLink: Link?
-	var publishedAt: Date? = nil
-	var updatedAt: Date? = nil
+	var publishedAt: Date?
+	var updatedAt: Date?
 
 	private var date: Date? {
 		updatedAt ?? publishedAt
@@ -52,6 +53,11 @@ struct SiteHeader: TagRepresentable {
 
 					H1(title)
 						.class("title1", "serif")
+				}
+
+				if let subtitle {
+					P(subtitle)
+						.class("secondary", "footnote")
 				}
 
 				if let date, let datetimeString {

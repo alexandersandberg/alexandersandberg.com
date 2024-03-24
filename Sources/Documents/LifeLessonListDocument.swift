@@ -8,12 +8,13 @@
 import Foundation
 import SwiftHtml
 
-let lifeLessonListDocument = Document(.html) {
-	Div {
-		let categories = lifeLessons.reduce(into: [:]) { $0[$1.category, default: 0] += 1 }
-		for category in categories.sorted(by: { $0.key < $1.key }) {
-			LifeLessonCategoryItem(category: category.key, lessonCount: category.value)
+func lifeLessonListDocument(categories: [LifeLesson.Category : [LifeLesson]]) -> Document {
+	Document(.html) {
+		Div {
+			for category in categories.sorted(by: { $0.key < $1.key }) {
+				LifeLessonCategoryItem(category: category.key, lessonCount: category.value.count)
+			}
 		}
+		.class("v-gap-m")
 	}
-	.class("v-gap-m")
 }
