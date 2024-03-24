@@ -17,6 +17,9 @@ let package = Package(
 			dependencies: [
 				.product(name: "SwiftHtml", package: "swift-html"),
 				.product(name: "Ink", package: "ink")
+			],
+			resources: [
+				.process("Resources")
 			]
 		),
 	]
