@@ -127,7 +127,7 @@ blockquote p {
 	font-style: italic;
 }
 
-blockquote p:before {
+blockquote p::before {
 	content: "“ ";
 	position: absolute;
 	margin-top: -0.5rem;
@@ -260,11 +260,24 @@ a:hover {
 }
 
 .prose > ol:first-child {
-	list-style-type: lower-roman;
+	list-style-type: none;
 	padding-left: 0;
 	margin-block-end: var(--space-l);
 	color: var(--secondary);
 	font: var(--footnote);
+}
+
+.prose > ol:first-child::before {
+	content: "Table of Contents";
+	display: inline-block;
+	margin-bottom: var(--space-xs);
+/*	font: var(--body);*/
+	font: var(--footnote);
+	font-family: var(--serif);
+	font-weight: var(--weight-medium);
+/*	font-family: var(--monospace);*/
+	color: var(--primary);
+/*	color: var(--tertiary);*/
 }
 
 .prose li::marker {
