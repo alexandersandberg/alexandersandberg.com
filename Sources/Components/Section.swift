@@ -44,5 +44,6 @@ struct Section: TagRepresentable {
 			.class(contentClass)
 		}
 		.class("v-gap-m")
+		.id(title.slug)
 	}
 }
