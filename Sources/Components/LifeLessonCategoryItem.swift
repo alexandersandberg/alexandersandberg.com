@@ -18,10 +18,10 @@ struct LifeLessonCategoryItem: TagRepresentable {
 					.href(category.relativePath)
 					.style("display: inline-block;") // Fix gap in clickable link if multiple rows
 			}
-			.class("title3", "serif")
+			.class("title3 serif")
 
 			P("\(lessonCount) \(lessonCount == 1 ? "lesson" : "lessons")")
-				.class("footnote", "secondary")
+				.class("footnote secondary")
 		}
 		.class("v-gap-xs")
 	}

@@ -18,7 +18,7 @@ struct LifeLessonItem: TagRepresentable {
 			Div {
 				Content()
 			}
-			.class("prose", "life-lesson-content")
+			.class("prose life-lesson-content")
 
 			P {
 				A("#\(lesson.id)")
@@ -29,7 +29,7 @@ struct LifeLessonItem: TagRepresentable {
 					Span(" · \(source)")
 				}
 			}
-			.class("footnote", "tertiary")
+			.class("footnote tertiary")
 
 		}
 		.id("\(lesson.id)")

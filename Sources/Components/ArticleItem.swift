@@ -17,11 +17,11 @@ struct ArticleItem: TagRepresentable {
 					.href(page.relativePath)
 					.style("display: inline-block;") // Fix gap in clickable link if multiple rows
 			}
-			.class("title3", "serif")
+			.class("title3 serif")
 
 			if let publishedAt = page.publishedAt {
 				P(publishedAt.formatted(date: .abbreviated, time: .omitted))
-					.class("footnote", "secondary")
+					.class("footnote secondary")
 			}
 		}
 		.class("v-gap-xs")

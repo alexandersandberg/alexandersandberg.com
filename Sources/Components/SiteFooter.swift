@@ -33,7 +33,7 @@ struct SiteFooter: TagRepresentable {
 							.class("plain")
 							.href("/rss.xml")
 					}
-					.class("flex", "gap-m")
+					.class("flex gap-m")
 
 					A("Updated \(Date.now.formatted(date: .abbreviated, time: .omitted))")
 						.class("plain wide-only")
@@ -41,7 +41,7 @@ struct SiteFooter: TagRepresentable {
 						.target(.blank)
 				} else {
 					A("↑&ensp;Back to top")
-						.class("plain", "footnote", "tertiary")
+						.class("plain footnote tertiary")
 						.href("#top")
 
 					if let commentSubject {
@@ -51,7 +51,7 @@ struct SiteFooter: TagRepresentable {
 					}
 				}
 			}
-			.class("footnote", "tertiary", "flex", "between")
+			.class("footnote tertiary flex between")
 		}
 		.class("v-gap-m")
 	}
