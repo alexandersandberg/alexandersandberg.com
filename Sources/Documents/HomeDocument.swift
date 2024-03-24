@@ -98,7 +98,7 @@ let homeDocument = Document(.html) {
 				Hr()
 
 				Section(title: "Articles", moreLink: .articles("Archive"), contentClass: "v-gap-m") {
-					for articlePage in contentPages.articles.sorted(by: >).prefix(5) {
+					for articlePage in articles.sorted(by: >).prefix(5) {
 						ArticleItem(page: articlePage)
 					}
 				}
