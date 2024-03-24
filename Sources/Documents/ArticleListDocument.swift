@@ -7,7 +7,7 @@
 
 import SwiftHtml
 
-let articlesDocument = Document(.html) {
+let articleListDocument = Document(.html) {
 	Div {
 		for articlePage in contentPages.articles.sorted(by: >) {
 			ArticleItem(page: articlePage)
