@@ -110,7 +110,7 @@ func buildLifeLessons() {
 
 		for (category, lessons) in categories {
 			let contentHtmlString = lessons.map { lesson in
-				let lessonDocument = Document(.custom("")) {
+				let lessonDocument = Document(.html) {
 					LifeLessonItem(lesson: lesson)
 				}
 				let html = documentRenderer.render(lessonDocument)
