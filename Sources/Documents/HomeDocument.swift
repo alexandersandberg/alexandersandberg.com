@@ -21,7 +21,7 @@ let homeDocument = Document(.html) {
 					Div {
 						Div {
 							A("About")
-								.class("title3", "serif")
+								.class("title3 serif")
 								.href("/about")
 
 							P("Who, What, Why")
@@ -31,7 +31,7 @@ let homeDocument = Document(.html) {
 
 						Div {
 							A("Now")
-								.class("title3", "serif")
+								.class("title3 serif")
 								.href("/now")
 
 							P("Short-term focus")
@@ -41,7 +41,7 @@ let homeDocument = Document(.html) {
 
 						Div {
 							A("Someday")
-								.class("title3", "serif")
+								.class("title3 serif")
 								.href("/someday")
 
 							P("Long-term goals")

@@ -39,7 +39,7 @@ struct SiteHeader: TagRepresentable {
 		Header {
 			if let backLink {
 				A("↖&ensp;\(backLink.label)")
-					.class("plain", "footnote", "tertiary")
+					.class("plain footnote tertiary")
 					.href(backLink.href)
 			}
 
@@ -47,17 +47,17 @@ struct SiteHeader: TagRepresentable {
 				Div {
 					if let supertitle {
 						Span(supertitle)
-							.class("title1", "serif", "tertiary")
+							.class("title1 serif tertiary")
 							.style("line-height: 1;")
 					}
 
 					H1(title)
-						.class("title1", "serif")
+						.class("title1 serif")
 				}
 
 				if let subtitle {
 					P(subtitle)
-						.class("secondary", "footnote")
+						.class("secondary footnote")
 				}
 
 				if let date, let datetimeString {
@@ -67,7 +67,7 @@ struct SiteHeader: TagRepresentable {
 							.datetime(datetimeString)
 							.title(timeTitle ?? "")
 					}
-					.class("secondary", "footnote")
+					.class("secondary footnote")
 				}
 			}
 			.class("v-gap-xs")

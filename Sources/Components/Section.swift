@@ -18,7 +18,7 @@ struct Section: TagRepresentable {
 		SwiftHtml.Section {
 			Div {
 				H2(title)
-					.class("footnote", "monospace")
+					.class("footnote monospace")
 					.class("sr-only", hiddenTitle)
 
 				if let moreLink {
@@ -33,10 +33,10 @@ struct Section: TagRepresentable {
 						Span(" ]")
 							.class("quaternary")
 					}
-					.class("footnote", "monospace")
+					.class("footnote monospace")
 				}
 			}
-			.class("tertiary", "uppercase", "flex", "between")
+			.class("tertiary uppercase flex between")
 
 			Div {
 				content()
