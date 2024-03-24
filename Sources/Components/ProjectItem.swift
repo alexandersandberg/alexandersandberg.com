@@ -9,8 +9,9 @@ import SwiftHtml
 
 struct ProjectItem: TagRepresentable {
 	var project: Project
+	var horizontal: Bool = false
 
-	var isExternal: Bool {
+	private var isExternal: Bool {
 		project.href.starts(with: "https://")
 	}
 
@@ -28,16 +29,16 @@ struct ProjectItem: TagRepresentable {
 			}
 			.class("title3 serif")
 
-			if let highlightedText = project.highlightedText {
+			if let highlightedText = project.highlightedText, !horizontal {
 				Span(highlightedText)
 					.style("position: absolute; top: -0.4rem; right: 0; transform: rotate(4deg);")
 					.class("caption highlighted-text")
 			}
 
 			P(project.description)
-				.class("secondary")
+				.class(horizontal ? "footnote tertiary" : "secondary")
 		}
 		.style("position: relative;")
-		.class("v-gap-xs")
+		.class(horizontal ? "flex between gap-s" : "v-gap-xs")
 	}
 }
