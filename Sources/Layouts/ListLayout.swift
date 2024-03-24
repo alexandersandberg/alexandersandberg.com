@@ -27,5 +27,6 @@ public struct ListLayout: TagRepresentable {
 			}
 			.class("v-gap-xl")
 		}
+		.lang("en")
 	}
 }
