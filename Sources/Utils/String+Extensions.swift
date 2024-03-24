@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CryptoKit
 
 extension String: LocalizedError {
 	public var errorDescription: String? { return self }
@@ -21,6 +22,10 @@ extension String: LocalizedError {
 
 	var strippedOfHtmlTags: String {
 		replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression, range: nil)
+	}
+
+	var md5Hash: String {
+		Insecure.MD5.hash(data: self.data(using: .utf8)!).map { String(format: "%02hhx", $0) }.joined()
 	}
 
 	func writeToOutputDirectory(path: String) throws {

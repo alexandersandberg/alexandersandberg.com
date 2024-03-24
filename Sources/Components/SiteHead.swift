@@ -50,7 +50,7 @@ struct SiteHead: TagRepresentable {
 				}
 			}
 
-			SwiftHtml.Link(rel: .stylesheet).href("/assets/styles.css")
+			SwiftHtml.Link(rel: .stylesheet).href("/assets/styles.css?v=\(cssHash)")
 			// TODO: rss feed link
 
 			Script()
