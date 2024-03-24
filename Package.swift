@@ -16,6 +16,7 @@ let package = Package(
 			name: "alexandersandberg.com",
 			dependencies: [
 				.product(name: "SwiftHtml", package: "swift-html"),
+				.product(name: "SwiftRss", package: "swift-html"),
 				.product(name: "Ink", package: "ink")
 			],
 			resources: [

@@ -50,8 +50,13 @@ struct SiteHead: TagRepresentable {
 				}
 			}
 
-			SwiftHtml.Link(rel: .stylesheet).href("/assets/styles.css?v=\(cssHash)")
-			// TODO: rss feed link
+			SwiftHtml.Link(rel: .stylesheet)
+				.href("/assets/styles.css?v=\(cssHash)")
+
+			SwiftHtml.Link(rel: .alternate)
+				.type("application/rss+xml")
+				.title(Site.author)
+				.href("/feed.rss")
 
 			Script()
 				.defer()

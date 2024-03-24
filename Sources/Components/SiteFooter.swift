@@ -31,7 +31,7 @@ struct SiteFooter: TagRepresentable {
 
 						A("RSS")
 							.class("plain")
-							.href("/rss.xml")
+							.href("/feed.rss")
 					}
 					.class("flex gap-m")
 

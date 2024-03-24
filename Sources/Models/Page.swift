@@ -19,6 +19,10 @@ struct Page {
 		layout?.title ?? Site.author
 	}
 
+	var description: String? {
+		layout?.description
+	}
+
 	var htmlString: String {
 		if let layout {
 			layout.htmlString.replacing("<\(Content().name)>", with: contentHtmlString)
