@@ -271,13 +271,10 @@ a:hover {
 	content: "Table of Contents";
 	display: inline-block;
 	margin-bottom: var(--space-xs);
-/*	font: var(--body);*/
 	font: var(--footnote);
 	font-family: var(--serif);
 	font-weight: var(--weight-medium);
-/*	font-family: var(--monospace);*/
 	color: var(--primary);
-/*	color: var(--tertiary);*/
 }
 
 .prose li::marker {
