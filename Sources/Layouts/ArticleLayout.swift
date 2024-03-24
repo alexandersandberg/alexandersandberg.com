@@ -30,5 +30,6 @@ public struct ArticleLayout: TagRepresentable {
 			}
 			.class("v-gap-xl")
 		}
+		.lang("en")
 	}
 }

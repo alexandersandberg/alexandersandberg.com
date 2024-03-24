@@ -28,5 +28,6 @@ public struct LifeLessonCategoryLayout: TagRepresentable {
 			}
 			.class("v-gap-xl")
 		}
+		.lang("en")
 	}
 }

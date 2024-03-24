@@ -109,4 +109,5 @@ let homeDocument = Document(.html) {
 		}
 		.class("v-gap-xl")
 	}
+	.lang("en")
 }
