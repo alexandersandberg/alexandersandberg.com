@@ -74,11 +74,18 @@ struct LifeLesson: Codable, Identifiable {
 				"Hope and Wonder"
 			}
 		}
+
+		var relativePath: String {
+			let slug = title
+				.replacingOccurrences(of: " ", with: "-")
+				.lowercased()
+			return "/life-lessons/\(slug)"
+		}
 	}
 
 	var id: Int
 	var category: Category
-	var text: String
+	var markdown: String
 	var source: String?
 }
 

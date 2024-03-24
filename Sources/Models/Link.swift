@@ -11,6 +11,7 @@ enum Link {
 	case home
 	case apps(String)
 	case articles(String)
+	case lifeLessons(String)
 
 	var label: String {
 		switch self {
@@ -19,6 +20,8 @@ enum Link {
 		case .apps(let label):
 			label
 		case .articles(let label):
+			label
+		case .lifeLessons(let label):
 			label
 		}
 	}
@@ -31,6 +34,8 @@ enum Link {
 			"/apps"
 		case .articles:
 			"/articles"
+		case .lifeLessons:
+			"/life-lessons"
 		}
 	}
 }

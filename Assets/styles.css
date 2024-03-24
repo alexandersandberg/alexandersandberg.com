@@ -171,6 +171,10 @@ a:hover {
 	text-decoration-color: var(--secondary);
 }
 
+[id] {
+	scroll-margin-top: 2rem;
+}
+
 .title1,
 .prose h1 {
 	font: var(--title1);
@@ -255,10 +259,6 @@ a:hover {
 	margin-block-end: var(--space-m);
 }
 
-.prose *[id] {
-	scroll-margin-top: 2rem;
-}
-
 .prose > ol:first-child {
 	list-style-type: lower-roman;
 	padding-left: 0;
@@ -267,7 +267,7 @@ a:hover {
 	font: var(--footnote);
 }
 
-.prose > ol:first-child li::marker {
+.prose li::marker {
 	color: var(--tertiary);
 }
 
@@ -450,4 +450,8 @@ a:hover {
 	color: color(display-p3 var(--accent-p3));
 	background: color(display-p3 var(--accent-p3) / 0.1);
 	border-radius: 0.5rem;
+}
+
+.life-lesson-content > *:last-child {
+	margin-block-end: calc(var(--space-s) - 0.25rem);
 }

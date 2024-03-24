@@ -12,25 +12,14 @@ enum Layout {
 	case list(title: String, description: String? = nil)
 	case page(title: String, description: String? = nil, publishedAt: Date? = nil, updatedAt: Date? = nil)
 	case article(title: String, description: String? = nil, publishedAt: Date? = nil, updatedAt: Date? = nil)
-
-	init?(name string: String, title: String, description: String?, publishedAt: Date?, updatedAt: Date?) {
-		switch string {
-		case "list":
-			self = .list(title: title, description: description)
-		case "page":
-			self = .page(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
-		case "article":
-			self = .article(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
-		default:
-			return nil
-		}
-	}
+	case lifeLessonCategory(title: String, lessonCount: Int)
 
 	var title: String {
 		switch self {
-		case .list(let title, _): title
-		case .page(let title, _, _, _): title
-		case .article(let title, _, _, _): title
+		case let .list(title, _): title
+		case let .page(title, _, _, _): title
+		case let .article(title, _, _, _): title
+		case let .lifeLessonCategory(title, _): title
 		}
 	}
 
@@ -43,9 +32,26 @@ enum Layout {
 				PageLayout(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
 			case let .article(title, description, publishedAt, updatedAt):
 				ArticleLayout(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
+			case let .lifeLessonCategory(title, lessonCount):
+				LifeLessonCategoryLayout(title: title, lessonCount: lessonCount)
 			}
 		}
 
 		return documentRenderer.render(layout)
+	}
+}
+
+extension Layout {
+	init?(name string: String, title: String, description: String?, publishedAt: Date?, updatedAt: Date?) {
+		switch string {
+		case "list":
+			self = .list(title: title, description: description)
+		case "page":
+			self = .page(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
+		case "article":
+			self = .article(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
+		default:
+			return nil
+		}
 	}
 }

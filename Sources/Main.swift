@@ -37,11 +37,6 @@ var pages = [
 		path: "apps",
 		layout: .page(title: "Apps"),
 		contentHtmlString: documentRenderer.render(appsDocument)
-	),
-	Page(
-		path: "life-lessons",
-		layout: .list(title: "Life lessons"),
-		contentHtmlString: documentRenderer.render(lifeLessonListDocument)
 	)
 ]
 let indieApps = [
@@ -63,13 +58,13 @@ let indieApps = [
 	),
 ]
 var articles: [Page] = []
-let lifeLessons = JSONDecoder().decode([LifeLesson].self, from: "life_lessons.json")
 
 @main
 struct Main {
 	static func main() async throws {
 		prepareOutputFolder()
 		copyAssets()
+		buildLifeLessons()
 		await buildContent()
 		buildPages()
 	}
@@ -89,6 +84,41 @@ func prepareOutputFolder() {
 func copyAssets() {
 	do {
 		try fileManager.copyItem(at: assetsDirectory, to: outputDirectory.appending(path: assetsDirectory.lastPathComponent.lowercased()))
+	} catch {
+		fatalError("\(#function): \(error)")
+	}
+}
+
+func buildLifeLessons() {
+	do {
+		let lessons = JSONDecoder().decode([LifeLesson].self, from: "life_lessons.json")
+		let categories = lessons.reduce(into: [:]) { $0[$1.category, default: []].append($1) }
+
+		let lifeLessonListPage = Page(
+			path: "life-lessons",
+			layout: .list(title: "Life lessons"),
+			contentHtmlString: documentRenderer.render(lifeLessonListDocument(categories: categories))
+		)
+		pages.append(lifeLessonListPage)
+
+		for (category, lessons) in categories {
+			let contentHtmlString = lessons.map { lesson in
+				let lessonDocument = Document(.custom("")) {
+					LifeLessonItem(lesson: lesson)
+				}
+				let html = documentRenderer.render(lessonDocument)
+				let markdown = markdownParser.parse(lesson.markdown)
+				return html.replacing("<\(Content().name)>", with: markdown.html)
+			}.joined()
+			let page = Page(
+				path: category.relativePath,
+				layout: .lifeLessonCategory(title: category.title, lessonCount: lessons.count),
+				contentHtmlString: contentHtmlString
+			)
+			try page.htmlString.writeToOutputDirectory(path: page.path)
+
+			pages.append(page)
+		}
 	} catch {
 		fatalError("\(#function): \(error)")
 	}
