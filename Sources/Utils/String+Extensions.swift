@@ -34,14 +34,15 @@ extension String: LocalizedError {
 		Insecure.MD5.hash(data: self.data(using: .utf8)!).map { String(format: "%02hhx", $0) }.joined()
 	}
 
-	func writeToOutputDirectory(path: String) throws {
+	func writeToOutputDirectory(path: String, prettyURL: Bool = true) throws {
 		let url = outputDirectory.appending(path: path)
 
-		if !fileManager.fileExists(atPath: url.path) {
-			try fileManager.createDirectory(at: url, withIntermediateDirectories: true)
+		let directory = prettyURL ? url : url.deletingLastPathComponent()
+		if !fileManager.fileExists(atPath: directory.path) {
+			try fileManager.createDirectory(at: directory, withIntermediateDirectories: true)
 		}
 
-		let file = url.appending(path: "index.html")
+		let file = prettyURL ? url.appending(path: "index.html"): url
 		try self.write(to: file, atomically: true, encoding: .utf8)
 	}
 }

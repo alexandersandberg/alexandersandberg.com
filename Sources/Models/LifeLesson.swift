@@ -75,8 +75,12 @@ struct LifeLesson: Codable, Identifiable {
 			}
 		}
 
+		var path: String {
+			"life-lessons/\(title.slug)"
+		}
+
 		var relativePath: String {
-			"/life-lessons/\(title.slug)"
+			"/" + path
 		}
 	}
 

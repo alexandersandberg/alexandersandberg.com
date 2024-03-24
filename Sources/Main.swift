@@ -12,6 +12,7 @@ let contentDirectory = URL(fileURLWithPath: "\(rootPath)/Content", isDirectory: 
 let outputDirectory = URL(fileURLWithPath: "\(rootPath)/.output", isDirectory: true)
 
 enum Site {
+	static let url = "https://alexandersandberg.com/"
 	static let author = "Alexander Sandberg"
 	static let bio = "<em>Software tinkerer</em>. Creating, experimenting, learning. Keeping it simple. <span class='nowrap'>Building carefully</span> crafted Swift and SwiftUI apps."
 	static let email = "hi@alexandersandberg.com"
@@ -70,6 +71,7 @@ struct Main {
 		buildLifeLessons()
 		await buildContent()
 		buildPages()
+		buildFeed()
 	}
 }
 
@@ -118,7 +120,7 @@ func buildLifeLessons() {
 				return html.replacing("<\(Content().name)>", with: markdown.html)
 			}.joined()
 			let page = Page(
-				path: category.relativePath,
+				path: category.path,
 				layout: .lifeLessonCategory(title: category.title, lessonCount: lessons.count),
 				contentHtmlString: contentHtmlString
 			)
@@ -161,6 +163,15 @@ func buildPages() {
 		for page in pages {
 			try page.htmlString.writeToOutputDirectory(path: page.path)
 		}
+	} catch {
+		fatalError("\(#function): \(error)")
+	}
+}
+
+func buildFeed() {
+	do {
+		let rssString = documentRenderer.render(rssDocument)
+		try rssString.writeToOutputDirectory(path: "feed.rss", prettyURL: false)
 	} catch {
 		fatalError("\(#function): \(error)")
 	}

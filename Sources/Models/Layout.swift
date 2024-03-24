@@ -23,6 +23,15 @@ enum Layout {
 		}
 	}
 
+	var description: String? {
+		switch self {
+		case let .list(_, description): description
+		case let .page(_, description, _, _): description
+		case let .article(_, description, _, _): description
+		default: nil
+		}
+	}
+
 	var htmlString: String {
 		let layout =  Document(.html) {
 			switch self {
