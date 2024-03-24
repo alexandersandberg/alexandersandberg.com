@@ -63,6 +63,7 @@ let indieApps = [
 		description: "Minimal weather app that protects your privacy."
 	),
 ]
+let lifeLessons = JSONDecoder().decode([LifeLesson].self, from: "life_lessons.json")
 
 @main
 struct Main {
