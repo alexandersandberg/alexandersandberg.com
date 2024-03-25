@@ -19,6 +19,7 @@ struct Page {
 	var publishedAt: Date?
 	var updatedAt: Date?
 	var contentHtmlString: String
+	var prettyURL: Bool = true
 	var feedSettings: FeedSettings = .init()
 
 	var title: String {
@@ -103,6 +104,7 @@ extension Page {
 		self.publishedAt = publishedAt
 		self.updatedAt = updatedAt
 		self.contentHtmlString = "<div class=\"prose\">\(markdown.html)</div>"
+		self.prettyURL = metadata["prettyURL"] != "false"
 
 		if case .article = layout {
 			self.feedSettings.treatUpdatedAsNew = false
