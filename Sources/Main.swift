@@ -124,7 +124,7 @@ func buildLifeLessons() {
 				layout: .lifeLessonCategory(title: category.title, lessonCount: lessons.count),
 				contentHtmlString: contentHtmlString
 			)
-			try page.htmlString.writeToOutputDirectory(path: page.path)
+			try page.htmlString.writeToOutputDirectory(path: page.path, prettyURL: page.prettyURL)
 
 			pages.append(page)
 		}
@@ -143,7 +143,7 @@ func buildContent() async {
 			}
 
 			let page = try Page(from: contentFile)
-			try page.htmlString.writeToOutputDirectory(path: page.path)
+			try page.htmlString.writeToOutputDirectory(path: page.path, prettyURL: page.prettyURL)
 
 			pages.append(page)
 
@@ -161,7 +161,7 @@ func buildPages() {
 		pages.append(contentsOf: documentPages)
 
 		for page in pages {
-			try page.htmlString.writeToOutputDirectory(path: page.path)
+			try page.htmlString.writeToOutputDirectory(path: page.path, prettyURL: page.prettyURL)
 		}
 	} catch {
 		fatalError("\(#function): \(error)")

@@ -34,7 +34,7 @@ extension String: LocalizedError {
 		Insecure.MD5.hash(data: self.data(using: .utf8)!).map { String(format: "%02hhx", $0) }.joined()
 	}
 
-	func writeToOutputDirectory(path: String, prettyURL: Bool = true) throws {
+	func writeToOutputDirectory(path: String, prettyURL: Bool) throws {
 		let url = outputDirectory.appending(path: path)
 
 		let directory = prettyURL ? url : url.deletingLastPathComponent()
@@ -42,7 +42,14 @@ extension String: LocalizedError {
 			try fileManager.createDirectory(at: directory, withIntermediateDirectories: true)
 		}
 
-		let file = prettyURL ? url.appending(path: "index.html"): url
+		let file = if prettyURL {
+			url.appending(path: "index.html")
+		} else if !url.lastPathComponent.contains(".") {
+			url.appendingPathExtension("html")
+		} else {
+			url
+		}
+
 		try self.write(to: file, atomically: true, encoding: .utf8)
 	}
 }

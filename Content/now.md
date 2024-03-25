@@ -8,5 +8,5 @@ updatedAt: 2024-03-25
 
 Now...
 
-<br>
+<br/>
 <p class="callout">This page is part of the <a href="https://nownownow.com">now page</a> movement. You should make one too!</p>

@@ -9,6 +9,7 @@ import Foundation
 import SwiftHtml
 
 enum Layout {
+	case clean(title: String, description: String? = nil)
 	case list(title: String, description: String? = nil)
 	case page(title: String, description: String? = nil, publishedAt: Date? = nil, updatedAt: Date? = nil)
 	case article(title: String, description: String? = nil, publishedAt: Date? = nil, updatedAt: Date? = nil)
@@ -16,6 +17,7 @@ enum Layout {
 
 	var title: String {
 		switch self {
+		case let .clean(title, _): title
 		case let .list(title, _): title
 		case let .page(title, _, _, _): title
 		case let .article(title, _, _, _): title
@@ -25,6 +27,7 @@ enum Layout {
 
 	var description: String? {
 		switch self {
+		case let .clean(_, description): description
 		case let .list(_, description): description
 		case let .page(_, description, _, _): description
 		case let .article(_, description, _, _): description
@@ -35,6 +38,8 @@ enum Layout {
 	var htmlString: String {
 		let layout =  Document(.html) {
 			switch self {
+			case let .clean(title, description):
+				CleanLayout(title: title, description: description)
 			case let .list(title, description):
 				ListLayout(title: title, description: description)
 			case let .page(title, description, publishedAt, updatedAt):
@@ -53,6 +58,8 @@ enum Layout {
 extension Layout {
 	init?(name string: String, title: String, description: String?, publishedAt: Date?, updatedAt: Date?) {
 		switch string {
+		case "clean":
+			self = .clean(title: title, description: description)
 		case "list":
 			self = .list(title: title, description: description)
 		case "page":
