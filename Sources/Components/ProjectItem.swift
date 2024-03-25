@@ -25,6 +25,10 @@ struct ProjectItem: TagRepresentable {
 				if isExternal {
 					Span("↗")
 						.class("external-icon footnote tertiary")
+						.attribute("aria-hidden", "true")
+
+					Span("(opens in new tab)")
+						.class("sr-only")
 				}
 			}
 			.class("title3 serif")

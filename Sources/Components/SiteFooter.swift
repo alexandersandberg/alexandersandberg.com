@@ -35,10 +35,15 @@ struct SiteFooter: TagRepresentable {
 					}
 					.class("flex gap-m")
 
-					A("Updated \(Date.now.formatted(date: .abbreviated, time: .omitted))")
-						.class("plain wide-only")
-						.href("https://github.com/alexandersandberg/alexandersandberg.com/commits/main/")
-						.target(.blank)
+					A {
+						Span("Updated \(Date.now.formatted(date: .abbreviated, time: .omitted))")
+
+						Span("(opens in a new tab)")
+							.class("sr-only")
+					}
+					.class("plain wide-only")
+					.href("https://github.com/alexandersandberg/alexandersandberg.com/commits/main/")
+					.target(.blank)
 				} else {
 					A("↑&ensp;Back to top")
 						.class("plain footnote tertiary")
