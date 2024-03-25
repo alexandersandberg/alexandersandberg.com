@@ -9,11 +9,17 @@ import Foundation
 import SwiftHtml
 
 struct Page {
+	struct FeedSettings {
+		var treatUpdatedAsNew = false
+		var hidden = false
+	}
+
 	var path: String
 	var layout: Layout?
 	var publishedAt: Date?
 	var updatedAt: Date?
 	var contentHtmlString: String
+	var feedSettings: FeedSettings = .init()
 
 	var title: String {
 		layout?.title ?? Site.author
@@ -97,6 +103,7 @@ extension Page {
 		self.publishedAt = publishedAt
 		self.updatedAt = updatedAt
 		self.contentHtmlString = "<div class=\"prose\">\(markdown.html)</div>"
+		self.feedSettings.treatUpdatedAsNew = metadata["treatUpdatedAsNew"] == "true"
 	}
 }
 

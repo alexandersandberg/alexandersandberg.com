@@ -41,17 +41,24 @@ let rssDocument = Document(.xml) {
 				.attribute("type", "application/rss+xml")
 
 			for page in pages {
-				Item {
-					Title(page.title)
-					if let description = page.description {
-						Description(description)
-					}
+				if let pubDate = page.updatedAt ?? page.publishedAt {
+					Item {
+						Title(page.title)
+						if let description = page.description {
+							Description(description)
+						}
 
-					let link = "\(Site.url)\(page.path)"
-					SwiftRss.Link(link)
-					Guid(link)
+						let link = "\(Site.url)\(page.path)"
+						SwiftRss.Link(link)
 
-					if let pubDate = page.updatedAt ?? page.publishedAt {
+						if page.feedSettings.treatUpdatedAsNew {
+							Guid("\(link),\(dateFormatter.string(from: page.updatedAt ?? pubDate))")
+								.isPermalink(false)
+						} else {
+							Guid(link)
+								.isPermalink(true)
+						}
+
 						PubDate(dateFormatter.string(from: pubDate))
 					}
 				}
