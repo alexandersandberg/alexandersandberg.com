@@ -103,7 +103,12 @@ extension Page {
 		self.publishedAt = publishedAt
 		self.updatedAt = updatedAt
 		self.contentHtmlString = "<div class=\"prose\">\(markdown.html)</div>"
-		self.feedSettings.treatUpdatedAsNew = metadata["treatUpdatedAsNew"] == "true"
+
+		if case .article = layout {
+			self.feedSettings.treatUpdatedAsNew = false
+		} else {
+			self.feedSettings.treatUpdatedAsNew = true
+		}
 	}
 }
 
