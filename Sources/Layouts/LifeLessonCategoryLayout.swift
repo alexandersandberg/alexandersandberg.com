@@ -5,7 +5,6 @@
 //  Created by Alexander Sandberg on 15.03.24.
 //
 
-import Foundation
 import SwiftHtml
 
 public struct LifeLessonCategoryLayout: TagRepresentable {
