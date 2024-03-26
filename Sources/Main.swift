@@ -3,8 +3,14 @@ import Ink
 import SwiftHtml
 
 let fileManager = FileManager.default
-let markdownParser = MarkdownParser()
 let documentRenderer = DocumentRenderer(minify: true)
+
+let modifier = Modifier(target: .links) { html, markdown in
+	guard markdown.contains("https://") else { return html }
+
+	return html.replacingOccurrences(of: "<a", with: "<a target='_blank'") + ExternalLinkArrow.htmlString
+}
+let markdownParser = MarkdownParser(modifiers: [modifier])
 
 let rootPath = fileManager.currentDirectoryPath
 let assetsDirectory = URL(fileURLWithPath: "\(rootPath)/Assets", isDirectory: true)
