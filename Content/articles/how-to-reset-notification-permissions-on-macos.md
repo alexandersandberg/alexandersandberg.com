@@ -9,9 +9,9 @@ While working on your app’s notification permission flow it’s helpful to be 
 
 This is how you can reset the permissions back to [`UNAuthorizationStatus.notDetermined`](https://developer.apple.com/documentation/usernotifications/unauthorizationstatus/notdetermined):
 
-1. Stop your app in Xcode if it’s running: `⌘` + `.` or __Product__ > __Stop__
+1. Stop your app in Xcode if it’s running: `⌘` `.` or __Product__ > __Stop__
 2. Remove your app from `DerivedData`: `open ~/Library/Developer/Xcode/DerivedData` and delete your app’s folder(s)
-3. Quit System Preferences if opened: `⌘` + `Q`, `killall System\ Preferences`, or stop the `System Preferences` process in __Activity Monitor__
+3. Quit System Preferences if opened: `⌘` `Q`, `killall System\ Preferences`, or stop the `System Preferences` process in __Activity Monitor__
 4. Restart Notification Center: `killall NotificationCenter` or stop the `Notification Centre` process in __Activity Monitor__
 
 Done! You can now run your app again and test the flow as a new user. No need to restart your computer.
