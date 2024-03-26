@@ -17,9 +17,10 @@ enum Site {
 	static let bio = "<em>Software tinkerer</em>. Creating, experimenting, learning. Keeping it simple. <span class='nowrap'>Building carefully</span> crafted Swift and SwiftUI apps."
 	static let email = "hi@alexandersandberg.com"
 	static let cdn = "https://cdn.alexandersandberg.com/"
+	static let cssFileName = "styles.css"
 }
 
-var cssHash: String = ""
+var assetsHashes: [String : String] = [:]
 
 let documentPages = [
 	Page(
@@ -67,7 +68,7 @@ var articles: [Page] = []
 struct Main {
 	static func main() async throws {
 		prepareOutputFolder()
-		prepareAssets()
+		await prepareAssets()
 		buildLifeLessons()
 		await buildContent()
 		buildPages()
@@ -86,13 +87,17 @@ func prepareOutputFolder() {
 	}
 }
 
-func prepareAssets() {
+func prepareAssets() async {
 	do {
-		try fileManager.copyItem(at: assetsDirectory, to: outputDirectory.appending(path: assetsDirectory.lastPathComponent.lowercased()))
+		let contentFiles = fileManager.walkDirectory(at: assetsDirectory)
+		for await contentFile in contentFiles {
+			try fileManager.copyItem(at: contentFile, to: outputDirectory.appending(path: contentFile.lastPathComponent))
 
-		let cssURL = assetsDirectory.appending(path: "styles.css")
-		let cssString = try String(contentsOf: cssURL)
-		cssHash = cssString.md5Hash
+			if contentFile.pathExtension == "css" {
+				let cssString = try String(contentsOf: contentFile)
+				assetsHashes[contentFile.lastPathComponent] = cssString.md5Hash
+			}
+		}
 	} catch {
 		fatalError("\(#function): \(error)")
 	}
