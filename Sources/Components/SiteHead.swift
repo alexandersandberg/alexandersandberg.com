@@ -50,6 +50,12 @@ struct SiteHead: TagRepresentable {
 				}
 			}
 
+			SwiftHtml.Link(rel: .icon)
+				.href("\(Site.cdn)favicon.ico")
+				.sizes("32x32")
+			SwiftHtml.Link(rel: .appleTouchIcon)
+				.href("\(Site.cdn)apple-touch-icon.png")
+
 			SwiftHtml.Link(rel: .stylesheet)
 				.href("/assets/styles.css?v=\(cssHash)")
 
