@@ -12,11 +12,11 @@ let contentDirectory = URL(fileURLWithPath: "\(rootPath)/Content", isDirectory: 
 let outputDirectory = URL(fileURLWithPath: "\(rootPath)/.output", isDirectory: true)
 
 enum Site {
-	static let url = "https://alexandersandberg.com/"
+	static let url = "https://alexandersandberg.com"
 	static let author = "Alexander Sandberg"
 	static let bio = "<em>Software tinkerer</em>. Creating, experimenting, learning. Keeping it simple. <span class='nowrap'>Building carefully</span> crafted Swift and SwiftUI apps."
 	static let email = "hi@alexandersandberg.com"
-	static let cdn = "https://cdn.alexandersandberg.com/"
+	static let cdn = "https://cdn.alexandersandberg.com"
 	static let cssFileName = "styles.css"
 }
 
