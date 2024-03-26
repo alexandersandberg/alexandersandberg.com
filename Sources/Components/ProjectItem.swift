@@ -23,12 +23,7 @@ struct ProjectItem: TagRepresentable {
 					.target(.blank, isExternal)
 
 				if isExternal {
-					Span("↗")
-						.class("external-icon footnote tertiary")
-						.attribute("aria-hidden", "true")
-
-					Span("(opens in new tab)")
-						.class("sr-only")
+					ExternalLinkArrow()
 				}
 			}
 			.class("title3 serif")
