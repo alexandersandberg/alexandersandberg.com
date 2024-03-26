@@ -443,12 +443,6 @@ a:hover {
 		gap: var(--space-l);
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-
-	.prose img {
-		--overflow: 3vw;
-		max-width: calc(100% + calc(var(--overflow) * 2));
-		margin-left: calc(var(--overflow) * -1);
-	}
 }
 
 .callout {
