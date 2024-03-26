@@ -63,6 +63,8 @@ public struct BalanceLayout: TagRepresentable {
 					Content()
 				}
 				.class("v-gap-xl")
+
+				SiteFooter(commentSubject: title)
 			}
 			.class("v-gap-xl")
 		}
