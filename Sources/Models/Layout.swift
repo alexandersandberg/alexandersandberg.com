@@ -14,6 +14,7 @@ enum Layout {
 	case page(title: String, description: String? = nil, publishedAt: Date? = nil, updatedAt: Date? = nil)
 	case article(title: String, description: String? = nil, publishedAt: Date? = nil, updatedAt: Date? = nil)
 	case lifeLessonCategory(title: String, lessonCount: Int)
+	case balance(title: String, description: String? = nil)
 
 	var title: String {
 		switch self {
@@ -22,6 +23,7 @@ enum Layout {
 		case let .page(title, _, _, _): title
 		case let .article(title, _, _, _): title
 		case let .lifeLessonCategory(title, _): title
+		case let .balance(title, _): title
 		}
 	}
 
@@ -31,6 +33,7 @@ enum Layout {
 		case let .list(_, description): description
 		case let .page(_, description, _, _): description
 		case let .article(_, description, _, _): description
+		case let .balance(_, description): description
 		default: nil
 		}
 	}
@@ -48,6 +51,8 @@ enum Layout {
 				ArticleLayout(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
 			case let .lifeLessonCategory(title, lessonCount):
 				LifeLessonCategoryLayout(title: title, lessonCount: lessonCount)
+			case let .balance(title, description):
+				BalanceLayout(title: title, description: description)
 			}
 		}
 
@@ -66,6 +71,8 @@ extension Layout {
 			self = .page(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
 		case "article":
 			self = .article(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
+		case "balance":
+			self = .balance(title: title, description: description)
 		default:
 			return nil
 		}
