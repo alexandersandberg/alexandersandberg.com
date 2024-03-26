@@ -1,7 +1,7 @@
 ---
-title: Balance Owner’s Manual
+title: Owner’s Manual
 description: Balance is a time tracking app with a focus on work-life balance. In this Owner’s Manual, you can learn more about how the app works.
-layout: page
+layout: balance
 ---
 
 1. [Clocking In and Out](#clocking)
@@ -15,8 +15,6 @@ layout: page
 1. [Workspaces and Projects (Pro)](#workspaces-and-projects)
 1. [Getting the most out of Balance](#tips)
 1. [Frequently Asked Questions](#faq)
-
-Balance is a time tracking app with a focus on work-life balance. The app is designed and developed by Alexander Sandberg.
 
 <p class="callout">Would you recommend Balance to others? Please consider <a href="https://apps.apple.com/app/id1637311725">writing a short review</a> in the App Store. It helps me and Balance a lot, and I reply to every review!</p>
 

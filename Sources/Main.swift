@@ -41,6 +41,11 @@ let documentPages = [
 		path: "apps",
 		layout: .page(title: "Apps"),
 		contentHtmlString: documentRenderer.render(appsDocument)
+	),
+	Page(
+		path: "balance",
+		layout: .balance(title: "Balance"),
+		contentHtmlString: documentRenderer.render(balanceDocument)
 	)
 ]
 let indieApps = [
