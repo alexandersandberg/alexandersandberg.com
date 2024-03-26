@@ -14,8 +14,6 @@ struct SiteHead: TagRepresentable {
 	var publishedAt: Date? = nil
 	var updatedAt: Date? = nil
 
-	private let ogImagePath = Site.cdn + "og.png"
-
 	func build() -> Tag {
 		Head {
 			Meta().charset("utf-8")
@@ -36,7 +34,7 @@ struct SiteHead: TagRepresentable {
 
 			Meta().property("og:title").content(title ?? Site.author)
 			Meta().property("og:author").content(Site.author)
-			Meta().property("og:image").content(ogImagePath)
+			Meta().property("og:image").content("\(Site.cdn)/og.png")
 
 			if publishedAt != nil || updatedAt != nil {
 				Meta().property("og:type").content("article")

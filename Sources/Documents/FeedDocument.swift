@@ -36,7 +36,7 @@ let rssDocument = Document(.xml) {
 			LastBuildDate(dateFormatter.string(from: .now))
 
 			AtomLink()
-				.attribute("href", "\(Site.url)feed.rss")
+				.attribute("href", "\(Site.url)/feed.rss")
 				.attribute("rel", "self")
 				.attribute("type", "application/rss+xml")
 
@@ -48,7 +48,7 @@ let rssDocument = Document(.xml) {
 							Description(description)
 						}
 
-						let link = "\(Site.url)\(page.path)"
+						let link = "\(Site.url)\(page.relativePath)"
 						SwiftRss.Link(link)
 
 						if page.feedSettings.treatUpdatedAsNew {
