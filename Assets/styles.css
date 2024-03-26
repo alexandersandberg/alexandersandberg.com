@@ -259,6 +259,10 @@ a:hover {
 	margin-block-end: var(--space-m);
 }
 
+.prose .callout + .callout {
+	margin-top: calc(var(--space-m) * -1 + var(--space-xs))
+}
+
 .prose > ol:first-child {
 	list-style-type: none;
 	padding-left: 0;
