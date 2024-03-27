@@ -25,7 +25,14 @@ let appsDocument = Document(.html) {
 	Section(title: "Support", contentClass: "prose") {
 		P("I’m here to help with any questions or thoughts you might have. I also always love to hear feedback, suggestions, and new ideas for my apps.")
 
-		P(#"You can reach me at <a href="mailto:hi@alexandersandberg.com?subject=App support">hi@alexandersandberg.com</a>."#)
+		P {
+			Span("You can reach me by ")
+
+			A("sending me an email")
+				.href("mailto:\(Site.email)?subject=App support")
+
+			Span(".")
+		}
 
 		P(#"Balance questions? The <a href="/balance/manual/">Owner’s Manual</a> might be able to help."#)
 			.class("callout")
