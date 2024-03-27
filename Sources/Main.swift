@@ -57,7 +57,7 @@ let documentPages = [
 let indieApps = [
 	Project(
 		title: "Balance",
-		href: "/balance",
+		href: "/balance/",
 		description: "Time-tracking app with a focus on work-life balance.",
 		highlightedText: "My latest indie app!"
 	),

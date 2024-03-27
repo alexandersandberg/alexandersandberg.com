@@ -27,7 +27,7 @@ struct SiteFooter: TagRepresentable {
 
 						A("Colophon")
 							.class("plain")
-							.href("/colophon")
+							.href("/colophon/")
 
 						A("RSS")
 							.class("plain")

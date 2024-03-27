@@ -16,7 +16,7 @@ let appsDocument = Document(.html) {
 		}
 		.class("grid-2")
 
-		P("See my <a href='/about'>about page</a> for apps I’ve worked on together with other people.")
+		P("See my <a href='/about/'>about page</a> for apps I’ve worked on together with other people.")
 			.class("callout")
 	}
 
@@ -27,7 +27,7 @@ let appsDocument = Document(.html) {
 
 		P("You can reach me at <a href='mailto:hi@alexandersandberg.com?subject=App support'>hi@alexandersandberg.com</a>.")
 
-		P("Balance questions? The <a href='/balance/manual'>Owner’s Manual</a> might be able to help.")
+		P("Balance questions? The <a href='/balance/manual/'>Owner’s Manual</a> might be able to help.")
 			.class("callout")
 	}
 

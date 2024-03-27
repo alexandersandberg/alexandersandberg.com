@@ -80,7 +80,7 @@ struct LifeLesson: Codable, Identifiable {
 		}
 
 		var relativePath: String {
-			"/" + path
+			"/" + path + "/"
 		}
 	}
 
