@@ -9,16 +9,15 @@ import SwiftHtml
 
 struct LifeLessonItem: TagRepresentable {
 	var lesson: LifeLesson
+	var contentHtmlString: String
 
 	func build() -> Tag {
 		Article {
 			H3("Life lesson #\(lesson.id)")
 				.class("sr-only")
 
-			Div {
-				Content()
-			}
-			.class("prose life-lesson-content")
+			Div(contentHtmlString)
+				.class("prose life-lesson-content")
 
 			P {
 				A("#\(lesson.id)")

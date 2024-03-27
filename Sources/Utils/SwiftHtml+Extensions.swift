@@ -5,7 +5,20 @@
 //  Created by Alexander Sandberg on 15.03.24.
 //
 
+import Foundation
 import SwiftHtml
+
+extension DocumentRenderer {
+	public func render(_ document: Document, convertingExternalLinks: Bool) -> String {
+		let html = render(document)
+
+		return if convertingExternalLinks {
+			html.withConvertedExternalLinks
+		} else {
+			html
+		}
+	}
+}
 
 extension Tag {
 	var name: String {

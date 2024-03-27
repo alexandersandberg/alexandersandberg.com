@@ -39,7 +39,7 @@ enum Layout {
 	}
 
 	var htmlString: String {
-		let layout =  Document(.html) {
+		let layout = Document(.html) {
 			switch self {
 			case let .clean(title, description):
 				CleanLayout(title: title, description: description)
@@ -56,7 +56,7 @@ enum Layout {
 			}
 		}
 
-		return documentRenderer.render(layout)
+		return documentRenderer.render(layout, convertingExternalLinks: true)
 	}
 }
 

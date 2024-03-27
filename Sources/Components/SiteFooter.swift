@@ -39,9 +39,6 @@ struct SiteFooter: TagRepresentable {
 						A("Updated \(Date.now.formatted(date: .abbreviated, time: .omitted))")
 							.class("plain wide-only")
 							.href("https://github.com/alexandersandberg/alexandersandberg.com/commits/main/")
-							.target(.blank)
-
-						ExternalLinkArrow()
 					}
 				} else {
 					A("↑&ensp;Back to top")

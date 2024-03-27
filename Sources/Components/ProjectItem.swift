@@ -11,20 +11,11 @@ struct ProjectItem: TagRepresentable {
 	var project: Project
 	var horizontal: Bool = false
 
-	private var isExternal: Bool {
-		project.href.starts(with: "https://")
-	}
-
 	func build() -> Tag {
 		Article {
 			H3 {
 				A(project.title)
 					.href(project.href)
-					.target(.blank, isExternal)
-
-				if isExternal {
-					ExternalLinkArrow()
-				}
 			}
 			.class("title3 serif")
 
