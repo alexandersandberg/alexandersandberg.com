@@ -72,7 +72,7 @@ let homeDocument = Document(.html) {
 						Project(
 							title: "Swift Website Workgroup",
 							href: "https://www.swift.org/website-workgroup",
-							description: #"Steering team guiding the evolution of the <a href="https://swift.org">Swift.org</a> website."#
+							description: "Steering team guiding the evolution of the Swift.org website."
 						),
 						Project(
 							title: "Tempo",
