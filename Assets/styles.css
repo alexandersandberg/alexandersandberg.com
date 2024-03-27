@@ -157,7 +157,7 @@ a:not(.plain) {
 	text-underline-offset: 2.5px;
 }
 
-a + .external-link-arrow::after {
+a + .link-external-icon::after {
 	content: "↗";
 	position: relative;
 	margin-right: 0.3em;

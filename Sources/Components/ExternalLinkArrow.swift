@@ -14,7 +14,7 @@ struct ExternalLinkArrow: TagRepresentable {
 
 	func build() -> Tag {
 		Span("")
-			.class("external-link-arrow footnote tertiary")
+			.class("link-external-icon footnote tertiary")
 			.attribute("aria-hidden", "true")
 
 		Span(" (opens in new tab)")

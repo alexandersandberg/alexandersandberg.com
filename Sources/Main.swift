@@ -5,12 +5,7 @@ import SwiftHtml
 let fileManager = FileManager.default
 let documentRenderer = DocumentRenderer(minify: true)
 
-let modifier = Modifier(target: .links) { html, markdown in
-	guard markdown.contains("https://") else { return html }
-
-	return html.replacingOccurrences(of: "<a", with: "<a target='_blank'") + ExternalLinkArrow.htmlString
-}
-let markdownParser = MarkdownParser(modifiers: [modifier])
+let markdownParser = MarkdownParser()
 
 let rootPath = fileManager.currentDirectoryPath
 let assetsDirectory = URL(fileURLWithPath: "\(rootPath)/Assets", isDirectory: true)
@@ -31,27 +26,27 @@ var assetsHashes: [String : String] = [:]
 let documentPages = [
 	Page(
 		path: "",
-		contentHtmlString: documentRenderer.render(homeDocument)
+		contentHtmlString: documentRenderer.render(homeDocument, convertingExternalLinks: true)
 	),
 	Page(
 		path: "about",
 		layout: .page(title: "About me"),
-		contentHtmlString: documentRenderer.render(aboutDocument)
+		contentHtmlString: documentRenderer.render(aboutDocument, convertingExternalLinks: true)
 	),
 	Page(
 		path: "articles",
 		layout: .list(title: "Articles"),
-		contentHtmlString: documentRenderer.render(articleListDocument)
+		contentHtmlString: documentRenderer.render(articleListDocument, convertingExternalLinks: true)
 	),
 	Page(
 		path: "apps",
 		layout: .page(title: "Apps"),
-		contentHtmlString: documentRenderer.render(appsDocument)
+		contentHtmlString: documentRenderer.render(appsDocument, convertingExternalLinks: true)
 	),
 	Page(
 		path: "balance",
 		layout: .balance(title: "Balance"),
-		contentHtmlString: documentRenderer.render(balanceDocument)
+		contentHtmlString: documentRenderer.render(balanceDocument, convertingExternalLinks: true)
 	)
 ]
 let indieApps = [
@@ -82,8 +77,8 @@ struct Main {
 		await prepareAssets()
 		buildLifeLessons()
 		await buildContent()
-		buildPages()
-		buildFeed()
+		makePages()
+		makeFeed()
 	}
 }
 
@@ -115,37 +110,31 @@ func prepareAssets() async {
 }
 
 func buildLifeLessons() {
-	do {
-		let lessons = JSONDecoder().decode([LifeLesson].self, from: "life_lessons.json")
-		let categories = lessons.reduce(into: [:]) { $0[$1.category, default: []].append($1) }
+	let lessons = JSONDecoder().decode([LifeLesson].self, from: "life_lessons.json")
+	let categories = lessons.reduce(into: [:]) { $0[$1.category, default: []].append($1) }
 
-		let lifeLessonListPage = Page(
-			path: "life-lessons",
-			layout: .list(title: "Life lessons"),
-			contentHtmlString: documentRenderer.render(lifeLessonListDocument(categories: categories))
+	let lifeLessonListPage = Page(
+		path: "life-lessons",
+		layout: .list(title: "Life lessons"),
+		contentHtmlString: documentRenderer.render(lifeLessonListDocument(categories: categories), convertingExternalLinks: true)
+	)
+	pages.append(lifeLessonListPage)
+
+	for (category, lessons) in categories {
+		let contentHtmlString = lessons.map { lesson in
+			let markdown = markdownParser.parse(lesson.markdown)
+			let lessonDocument = Document(.html) {
+				LifeLessonItem(lesson: lesson, contentHtmlString: markdown.html)
+			}
+			return documentRenderer.render(lessonDocument, convertingExternalLinks: true)
+		}.joined()
+		let page = Page(
+			path: category.path,
+			layout: .lifeLessonCategory(title: category.title, lessonCount: lessons.count),
+			contentHtmlString: contentHtmlString
 		)
-		pages.append(lifeLessonListPage)
 
-		for (category, lessons) in categories {
-			let contentHtmlString = lessons.map { lesson in
-				let lessonDocument = Document(.html) {
-					LifeLessonItem(lesson: lesson)
-				}
-				let html = documentRenderer.render(lessonDocument)
-				let markdown = markdownParser.parse(lesson.markdown)
-				return html.replacing("<\(Content().name)>", with: markdown.html)
-			}.joined()
-			let page = Page(
-				path: category.path,
-				layout: .lifeLessonCategory(title: category.title, lessonCount: lessons.count),
-				contentHtmlString: contentHtmlString
-			)
-			try page.htmlString.writeToOutputDirectory(path: page.path, prettyURL: page.prettyURL)
-
-			pages.append(page)
-		}
-	} catch {
-		fatalError("\(#function): \(error)")
+		pages.append(page)
 	}
 }
 
@@ -159,7 +148,6 @@ func buildContent() async {
 			}
 
 			let page = try Page(from: contentFile)
-			try page.htmlString.writeToOutputDirectory(path: page.path, prettyURL: page.prettyURL)
 
 			pages.append(page)
 
@@ -172,7 +160,7 @@ func buildContent() async {
 	}
 }
 
-func buildPages() {
+func makePages() {
 	do {
 		pages.append(contentsOf: documentPages)
 
@@ -184,7 +172,7 @@ func buildPages() {
 	}
 }
 
-func buildFeed() {
+func makeFeed() {
 	do {
 		let rssString = documentRenderer.render(rssDocument)
 		try rssString.writeToOutputDirectory(path: "feed.rss", prettyURL: false)

@@ -34,6 +34,16 @@ extension String: LocalizedError {
 		Insecure.MD5.hash(data: self.data(using: .utf8)!).map { String(format: "%02hhx", $0) }.joined()
 	}
 
+	var withConvertedExternalLinks: String {
+		let pattern = "<a ([^>]*?href=[\"'](http[^\"']*?)[\"'][^>]*)>([^<]*?)</a>"
+		let template = "<a $1 target=\"_blank\">$3</a>" + ExternalLinkArrow.htmlString
+
+		let regex = try! NSRegularExpression(pattern: pattern, options: [])
+		let range = NSRange(location: 0, length: self.utf16.count)
+
+		return regex.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: template)
+	}
+
 	func writeToOutputDirectory(path: String, prettyURL: Bool) throws {
 		let url = outputDirectory.appending(path: path)
 
