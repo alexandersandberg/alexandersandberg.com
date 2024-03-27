@@ -16,7 +16,7 @@ layout: balance
 1. [Getting the most out of Balance](#tips)
 1. [Frequently Asked Questions](#faq)
 
-<p class="callout">Would you recommend Balance to others? Please consider <a href="https://apps.apple.com/app/id1637311725">writing a short review</a> in the App Store. It helps me and Balance a lot, and I reply to every review!</p>
+<p class="callout">Would you recommend Balance to others? Please consider <a href="https://apps.apple.com/app/id1637311725">writing a short review</a> in the App Store. It helps me and Balance a lot (more than you think!), and I reply myself to every review.</p>
 
 ---
 
