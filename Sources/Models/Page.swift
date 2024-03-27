@@ -39,7 +39,7 @@ struct Page {
 	}
 
 	var relativePath: String {
-		"/" + path
+		"/" + path + "/"
 	}
 }
 

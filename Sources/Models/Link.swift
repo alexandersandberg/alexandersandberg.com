@@ -34,13 +34,13 @@ enum Link {
 		case .home:
 			"/"
 		case .apps:
-			"/apps"
+			"/apps/"
 		case .articles:
-			"/articles"
+			"/articles/"
 		case .lifeLessons:
-			"/life-lessons"
+			"/life-lessons/"
 		case .balance:
-			"/balance"
+			"/balance/"
 		}
 	}
 }

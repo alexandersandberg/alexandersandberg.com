@@ -12,6 +12,6 @@ let balanceDocument = Document(.html) {
 		Span("WIP...")
 
 		A("Owner’s Manual")
-			.href("/balance/manual")
+			.href("/balance/manual/")
 	}
 }

@@ -22,7 +22,7 @@ let homeDocument = Document(.html) {
 						Div {
 							A("About")
 								.class("title3 serif")
-								.href("/about")
+								.href("/about/")
 
 							P("Who, What, Why")
 								.class("secondary")
@@ -32,7 +32,7 @@ let homeDocument = Document(.html) {
 						Div {
 							A("Now")
 								.class("title3 serif")
-								.href("/now")
+								.href("/now/")
 
 							P("Short-term focus")
 								.class("secondary")
@@ -42,7 +42,7 @@ let homeDocument = Document(.html) {
 						Div {
 							A("Someday")
 								.class("title3 serif")
-								.href("/someday")
+								.href("/someday/")
 
 							P("Long-term goals")
 								.class("secondary")
@@ -86,7 +86,7 @@ let homeDocument = Document(.html) {
 						),
 						Project(
 							title: "Life lessons",
-							href: "/life-lessons",
+							href: "/life-lessons/",
 							description: "Collection of knowledge I’ve gathered over the years."
 						)
 					]
