@@ -356,6 +356,10 @@ a.button + .link-external-icon {
 	text-transform: uppercase;
 }
 
+.medium {
+	font-weight: var(--weight-medium);
+}
+
 .bold {
 	font-weight: var(--weight-bold);
 }
