@@ -57,6 +57,60 @@ let balanceDocument = Document(.html) {
 				}
 
 				SwiftHtml.Section {
+					H2("Details")
+						.class("sr-only")
+
+					Div {
+						Div {
+							Div {
+								P("4.8")
+									.class("title2 medium")
+								P("★★★★★")
+									.class("footnote")
+									.style("line-height: 1;")
+							}
+							.style("margin-bottom: -0.5rem;")
+
+							P(#"Balance has received over <span class="nowrap">500 five-star</span> ratings worldwide"#)
+								.class("footnote secondary")
+						}
+						.class("v-gap-s center")
+
+						Div {
+							Img(src: "/hand-palm.svg", alt: "")
+								.class("center")
+								.style("height: 1.75rem; margin-bottom: -0.5rem;")
+
+							P("Balance cares about your privacy and doesn’t require sign-up")
+								.class("footnote secondary")
+						}
+						.class("v-gap-s center")
+
+						Div {
+							Img(src: "/devices.svg", alt: "")
+								.class("center")
+								.style("height: 2rem; margin-bottom: -0.5rem;")
+
+							P("Balance is available for macOS, but coming later to iPhone and iPad")
+								.class("footnote secondary")
+						}
+						.class("v-gap-s center")
+
+						Div {
+							Img(src: "/swift.svg", alt: "")
+								.class("center")
+								.style("height: 1.5rem; margin-bottom: -0.5rem;")
+
+							P("Balance is a fast, native app built with Swift and SwiftUI")
+								.class("footnote secondary")
+						}
+						.class("v-gap-s center")
+					}
+					.class("grid-2 gap-l")
+					.style("align-items: flex-end;")
+				}
+
+				SwiftHtml.Section {
 					Div {
 						H2("Reviews")
 							.class("title1 serif")
