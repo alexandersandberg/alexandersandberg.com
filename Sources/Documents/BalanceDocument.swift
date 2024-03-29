@@ -9,7 +9,7 @@ import SwiftHtml
 
 let balanceDocument = Document(.html) {
 	Html {
-		SiteHead(description: Site.bio.strippedOfHtmlTags)
+		BalanceSiteHead(title: "Balance", isMainPage: true)
 
 		Body {
 			Header {
