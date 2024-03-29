@@ -37,18 +37,22 @@ struct SiteFooter: TagRepresentable {
 
 					Span {
 						A("Updated \(Date.now.formatted(date: .abbreviated, time: .omitted))")
-							.class("plain wide-only")
+							.class("plain")
 							.href("https://github.com/alexandersandberg/alexandersandberg.com/commits/main/")
 					}
+					.class("wide-only")
 				} else {
 					A("↑&ensp;Back to top")
 						.class("plain footnote tertiary")
 						.href("#top")
 
 					if let commentSubject {
-						A("Leave a comment")
-							.class("plain wide-only")
-							.href("mailto:\(Site.email)?subject=Comment: \(commentSubject)")
+						Span {
+							A("Leave a comment")
+								.class("plain")
+								.href("mailto:\(Site.email)?subject=Comment: \(commentSubject)")
+						}
+						.class("wide-only")
 					}
 				}
 			}
