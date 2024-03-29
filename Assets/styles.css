@@ -650,3 +650,23 @@ a.button + .link-external-icon {
 .more-checkbox:checked ~ .more-label {
 	display: none;
 }
+
+.icon {
+	background: var(--primary);
+	-webkit-mask: var(--icon) no-repeat center;
+	mask: var(--icon) no-repeat center;
+	-webkit-mask-size: contain;
+	mask-size: contain;
+}
+
+.icon-privacy {
+	--icon: url("privacy.svg")
+}
+
+.icon-devices {
+	--icon: url("devices.svg")
+}
+
+.icon-swift {
+	--icon: url("swift.svg")
+}

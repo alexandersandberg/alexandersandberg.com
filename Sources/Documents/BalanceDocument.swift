@@ -78,8 +78,8 @@ let balanceDocument = Document(.html) {
 						.class("v-gap-s center")
 
 						Div {
-							Img(src: "/hand-palm.svg", alt: "")
-								.class("center")
+							Div()
+								.class("icon icon-privacy center")
 								.style("height: 1.75rem; margin-bottom: -0.5rem;")
 
 							P("Balance cares about your privacy and doesn’t require sign-up")
@@ -89,8 +89,8 @@ let balanceDocument = Document(.html) {
 						.class("v-gap-s center")
 
 						Div {
-							Img(src: "/devices.svg", alt: "")
-								.class("center")
+							Div()
+								.class("icon icon-devices center")
 								.style("height: 2rem; margin-bottom: -0.5rem;")
 
 							P("Balance is available for macOS, but coming later to iPhone and iPad")
@@ -100,8 +100,8 @@ let balanceDocument = Document(.html) {
 						.class("v-gap-s center")
 
 						Div {
-							Img(src: "/swift.svg", alt: "")
-								.class("center")
+							Div()
+								.class("icon icon-swift center")
 								.style("height: 1.5rem; margin-bottom: -0.5rem;")
 
 							P("Balance is a fast, native app built with Swift and SwiftUI")
