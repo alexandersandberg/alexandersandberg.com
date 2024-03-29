@@ -25,7 +25,7 @@
 	--space-m: 1.75rem;
 	--space-l: 2.5rem;
 	--space-xl: 3.75rem;
-	--space-xxl: 8rem;
+	--space-xxl: 6rem;
 
 	--weight-normal: 400;
 	--weight-medium: 500;
@@ -428,7 +428,7 @@ a.button + .link-external-icon {
 }
 
 .gap-xxl {
-	gap: var(--space-xxl);
+	gap: calc(var(--space-xxl) * 0.75);
 }
 
 .v-gap-xs > *:not(:first-child) {
@@ -472,11 +472,11 @@ a.button + .link-external-icon {
 }
 
 .v-gap-xxl > *:not(:first-child) {
-	margin-block-start: var(--space-xxl);
+	margin-block-start: calc(var(--space-xxl) * 0.75);
 }
 
 .v-gap-xxl > *:not(:last-child) {
-	margin-block-end: var(--space-xxl);
+	margin-block-end: calc(var(--space-xxl) * 0.75);
 }
 
 .grid-2 {
@@ -535,6 +535,18 @@ a.button + .link-external-icon {
 @media screen and (min-width: 540px) {
 	.wide-only {
 		display: revert;
+	}
+
+	.gap-xxl {
+		gap: var(--space-xxl);
+	}
+
+	.v-gap-xxl > *:not(:first-child) {
+		margin-block-start: var(--space-xxl);
+	}
+
+	.v-gap-xxl > *:not(:last-child) {
+		margin-block-end: var(--space-xxl);
 	}
 
 	.grid-2 {
@@ -607,7 +619,7 @@ a.button + .link-external-icon {
 	color: var(--tertiary);
 	cursor: pointer;
 	transition: color var(--transition);
-	margin: var(--space-l) 0;
+	margin-top: var(--space-l);
 }
 
 .more-checkbox {

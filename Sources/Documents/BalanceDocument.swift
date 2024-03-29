@@ -35,7 +35,7 @@ let balanceDocument = Document(.html) {
 
 				CTA()
 			}
-			.class("flex vertical center gap-xl")
+			.class("flex vertical center gap-l")
 
 			SwiftHtml.Main {
 				SwiftHtml.Section {
@@ -73,6 +73,7 @@ let balanceDocument = Document(.html) {
 
 							P(#"Balance has received over <span class="nowrap">500 five-star</span> ratings worldwide"#)
 								.class("footnote secondary")
+								.style("max-width: 15rem;")
 						}
 						.class("v-gap-s center")
 
@@ -83,6 +84,7 @@ let balanceDocument = Document(.html) {
 
 							P("Balance cares about your privacy and doesn’t require sign-up")
 								.class("footnote secondary")
+								.style("max-width: 15rem;")
 						}
 						.class("v-gap-s center")
 
@@ -93,6 +95,7 @@ let balanceDocument = Document(.html) {
 
 							P("Balance is available for macOS, but coming later to iPhone and iPad")
 								.class("footnote secondary")
+								.style("max-width: 15rem;")
 						}
 						.class("v-gap-s center")
 
@@ -103,6 +106,7 @@ let balanceDocument = Document(.html) {
 
 							P("Balance is a fast, native app built with Swift and SwiftUI")
 								.class("footnote secondary")
+								.style("max-width: 15rem;")
 						}
 						.class("v-gap-s center")
 					}
@@ -110,12 +114,14 @@ let balanceDocument = Document(.html) {
 					.style("align-items: flex-end;")
 				}
 
+				Hr()
+
 				SwiftHtml.Section {
 					Div {
 						H2("Reviews")
 							.class("title1 serif")
 
-						P("Some kind words from the Balance community")
+						P("Kind words from the Balance community")
 							.class("tertiary")
 					}
 
@@ -220,6 +226,8 @@ let balanceDocument = Document(.html) {
 				}
 				.class("v-gap-l center")
 
+				Hr()
+
 				SwiftHtml.Section {
 					Div {
 						H2("Recognition")
@@ -310,7 +318,7 @@ let balanceDocument = Document(.html) {
 
 							P(#"Balance is actively designed and developed by <a href="/">Alexander Sandberg</a>."#)
 								.class("secondary")
-								.style("max-width: 20rem;")
+								.style("max-width: 20rem; margin-bottom: 2rem;")
 						}
 						.class("flex vertical center gap-s")
 					}
