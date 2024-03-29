@@ -35,8 +35,8 @@ extension String: LocalizedError {
 	}
 
 	var withConvertedExternalLinks: String {
-		let pattern = "(<a [^>]*?href=[\"'](http[^\"']*?)[\"'][^>]*>)(.*?)(</a>)"
-		let template = "$1$3$4" + ExternalLinkArrow.htmlString
+		let pattern = "(<a [^>]*?href=[\"'](http[^\"']*?)[\"'])([^>]*>)(.*?)(</a>)"
+		let template = "$1 target=\"_blank\"$3$4$5" + ExternalLinkArrow.htmlString
 
 		let regex = try! NSRegularExpression(pattern: pattern, options: [])
 		let range = NSRange(location: 0, length: self.utf16.count)
