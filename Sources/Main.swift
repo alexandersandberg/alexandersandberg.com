@@ -45,7 +45,6 @@ let documentPages = [
 	),
 	Page(
 		path: "balance",
-		layout: .balance(title: "Balance"),
 		contentHtmlString: documentRenderer.render(balanceDocument, convertingExternalLinks: true)
 	)
 ]
