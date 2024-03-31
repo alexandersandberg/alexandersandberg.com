@@ -51,7 +51,7 @@
 	:root {
 		--foreground: 255, 255, 255;
 		--background: 27, 27, 27;
-		--accent-p3: 0.325 0.337 1;
+		--accent-p3: 0.43 0.44 1;
 
 		--secondary: rgba(var(--foreground), 75%);
 		--tertiary: rgba(var(--foreground), 50%);
