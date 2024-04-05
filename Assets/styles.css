@@ -73,7 +73,7 @@
 body {
 	max-width: 540px;
 	padding: 0 5vw;
-	margin: calc(4vw + 6vh) auto;
+	margin: calc(4vw + 6vh) auto calc(4vw + 10vh);
 	font: var(--body);
 	color: var(--primary);
 	background: rgb(var(--background));
