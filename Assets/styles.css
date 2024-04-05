@@ -97,6 +97,11 @@ img {
 	max-width: 100%;
 }
 
+img:not(.plain) {
+	border-radius: 0.5rem;
+	border: 1px solid var(--quinary);
+}
+
 em {
 	font-family: var(--serif);
 }
@@ -294,11 +299,6 @@ a.button + .link-external-icon {
 .prose h5:first-child,
 .prose h6:first-child {
 	margin-block-start: var(--space-m);
-}
-
-.prose img {
-	border-radius: 0.5rem;
-	border: 1px solid var(--quinary);
 }
 
 .prose hr,
