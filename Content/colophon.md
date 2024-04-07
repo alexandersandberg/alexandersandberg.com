@@ -17,13 +17,13 @@ _Why?_ I simply love working with Swift and SwiftUI, and want to immerse myself 
 
 As the website generator is built with Swift, I use [Xcode](https://developer.apple.com/xcode/) to work on the website.
 
-Updates to the website, including new articles and other content, are pushed to the website’s GitHub repository at [github.com/alexandersandberg/alexandersandberg.com](https://github.com/alexandersandberg/alexandersandberg.com).
+Updates to the website, including new articles and other content, are pushed to the website’s public GitHub repository at [github.com/alexandersandberg/alexandersandberg.com](https://github.com/alexandersandberg/alexandersandberg.com).
 
 When new changes land on the remote `main` branch, a GitHub Action is triggered which generates the new website files and uploads them to [Bunny Storage](https://bunny.net/storage/), which I use to host the files.
 
 Website images are also hosted by Bunny, but in a separate storage zone. I upload those images manually using their web interface.
 
-The website files and images are then distributed globally with [Bunny CDN](https://bunny.net/cdn/).
+The website files and images are then distributed globally with [Bunny CDN](https://bunny.net/cdn/) at lightning speed.
 
 I buy all my domain names at [Porkbun](https://porkbun.com). I bought `alexandersandberg.com` in 2014.
 
