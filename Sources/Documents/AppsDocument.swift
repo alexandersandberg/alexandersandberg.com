@@ -10,8 +10,8 @@ import SwiftHtml
 let appsDocument = Document(.html) {
 	Section(title: "Indie apps") {
 		Grid(columns: .c2, spacing: .s32) {
-			for app in indieApps {
-				ProjectItem(project: app)
+			for resource in indieApps {
+				LinkedResourceItem(resource: resource)
 			}
 		}
 

@@ -83,8 +83,8 @@ private struct IndieAppsSection: TagRepresentable {
 	func build() -> Tag {
 		Section(title: "Indie apps", moreLink: .apps("Details")) {
 			Grid(columns: .c2, spacing: .s32) {
-				for app in indieApps {
-					ProjectItem(project: app)
+				for resource in indieApps {
+					LinkedResourceItem(resource: resource)
 				}
 			}
 		}
@@ -95,8 +95,8 @@ private struct OtherProjectsSection: TagRepresentable {
 	func build() -> Tag {
 		Section(title: "Other projects") {
 			Grid(columns: .c2, spacing: .s32) {
-				for project in otherProjects {
-					ProjectItem(project: project)
+				for resource in otherProjects {
+					LinkedResourceItem(resource: resource)
 				}
 			}
 		}
@@ -107,8 +107,8 @@ private struct ArticlesSection: TagRepresentable {
 	func build() -> Tag {
 		Section(title: "Articles", moreLink: .articles("Archive")) {
 			VStack(alignment: .leading, spacing: .s32) {
-				for articlePage in articles.sorted(by: >).prefix(5) {
-					ArticleItem(page: articlePage)
+				for page in articles.sorted(by: >).prefix(5) {
+					ArticleItem(page: page)
 				}
 			}
 		}
@@ -116,27 +116,27 @@ private struct ArticlesSection: TagRepresentable {
 }
 
 let otherProjects = [
-	Project(
+	LinkedResource(
 		title: "Composer",
 		href: "https://composer.trade",
 		description: "Platform to build, backtest, and execute trading algorithms."
 	),
-	Project(
+	LinkedResource(
 		title: "Swift Website Workgroup",
 		href: "https://www.swift.org/website-workgroup",
 		description: "Steering team guiding the evolution of the Swift.org website."
 	),
-	Project(
+	LinkedResource(
 		title: "Tempo",
 		href: "https://yourtempo.co",
 		description: "Minimalistic email client that helps you focus. Sunset in 2021."
 	),
-	Project(
+	LinkedResource(
 		title: "someday.page",
 		href: "https://someday.page",
 		description: "Movement inspiring people to share their long-term goals."
 	),
-	Project(
+	LinkedResource(
 		title: "Life lessons",
 		href: "/life-lessons/",
 		description: "Collection of knowledge I’ve gathered over the years."
