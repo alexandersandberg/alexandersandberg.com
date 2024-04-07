@@ -50,6 +50,6 @@ If you like the design of my website, you can find some more great inspiration a
 
 ## Carbon footprint
 
-Thanks to this website being hosted statically, only `0.0026g` CO² of produced per visit according to [websitecarbon.com](https://www.websitecarbon.com/website/alexandersandberg-com/).
+Thanks to this being a static website, only `0.0026g` CO² is produced per visit, according to [websitecarbon.com](https://www.websitecarbon.com/website/alexandersandberg-com/).
 
-The global average is over 300 times more at around `0.8g` CO² per visit.
+The global average is 300 times more at around `0.8g` CO² per visit.
