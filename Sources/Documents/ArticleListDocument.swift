@@ -9,8 +9,8 @@ import SwiftHtml
 
 let articleListDocument = Document(.html) {
 	VStack(alignment: .stretch, spacing: .s32) {
-		for articlePage in articles.sorted(by: >) {
-			ArticleItem(page: articlePage)
+		for page in articles.sorted(by: >) {
+			ArticleItem(page: page)
 		}
 	}
 }

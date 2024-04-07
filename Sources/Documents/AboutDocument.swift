@@ -31,8 +31,8 @@ let aboutDocument = Document(.html) {
 
 	Section(title: "Work") {
 		VStack(alignment: .stretch, spacing: .s24) {
-			for item in work {
-				ProjectItem(project: item, horizontal: true)
+			for resource in work {
+				LinkedResourceItem(resource: resource, horizontal: true)
 			}
 		}
 
@@ -44,31 +44,31 @@ let aboutDocument = Document(.html) {
 
 	Section(title: "Connect") {
 		VStack(alignment: .stretch, spacing: .s24) {
-			for item in connect {
-				ProjectItem(project: item, horizontal: true)
+			for resource in connect {
+				LinkedResourceItem(resource: resource, horizontal: true)
 			}
 		}
 	}
 }
 
 let work = [
-	Project(
+	LinkedResource(
 		title: "Composer",
 		href: "https://composer.trade",
 		description: "Senior iOS Engineer ⋅ 2023–Now",
 		highlightedText: "hello there somewhere!"
 	),
-	Project(
+	LinkedResource(
 		title: "Swift Website Workgroup",
 		href: "https://www.swift.org/website-workgroup/",
 		description: "Inaugural member ⋅ 2022–Now"
 	),
-	Project(
+	LinkedResource(
 		title: "Practice",
 		href: "https://practice.do",
 		description: "Senior iOS Engineer ⋅ 2021–2023"
 	),
-	Project(
+	LinkedResource(
 		title: "Tempo",
 		href: "https://yourtempo.co",
 		description: "Mobile Developer ⋅ 2021"
@@ -76,17 +76,17 @@ let work = [
 ]
 
 let connect = [
-	Project(
+	LinkedResource(
 		title: "Email",
 		href: "mailto:hi@alexandersandberg.com",
 		description: "hi@alexandersandberg.com"
 	),
-	Project(
+	LinkedResource(
 		title: "GitHub",
 		href: "https://github.com/alexandersandberg",
 		description: "@alexandersandberg"
 	),
-	Project(
+	LinkedResource(
 		title: "Twitter",
 		href: "https://twitter.com/alexandberg",
 		description: "@alexandberg"
