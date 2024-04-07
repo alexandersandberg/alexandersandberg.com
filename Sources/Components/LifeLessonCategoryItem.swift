@@ -13,16 +13,17 @@ struct LifeLessonCategoryItem: TagRepresentable {
 
 	func build() -> Tag {
 		Article {
-			H3 {
-				A(category.title)
-					.href(category.relativePath)
-					.style("display: inline-block;") // Fix gap in clickable link if multiple rows
-			}
-			.class("title3 serif")
+			VStack(alignment: .leading, spacing: .s4) {
+				H3 {
+					A(category.title)
+						.href(category.relativePath)
+						.style("display: inline-block;") // Fix gap in clickable link if multiple rows
+				}
+				.class("title3 serif")
 
-			P("\(lessonCount) \(lessonCount == 1 ? "lesson" : "lessons")")
-				.class("footnote secondary")
+				P("\(lessonCount) \(lessonCount == 1 ? "lesson" : "lessons")")
+					.class("footnote secondary")
+			}
 		}
-		.class("v-gap-xs")
 	}
 }

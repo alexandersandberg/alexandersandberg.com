@@ -8,10 +8,9 @@
 import SwiftHtml
 
 let articleListDocument = Document(.html) {
-	Div {
+	VStack(alignment: .stretch, spacing: .s32) {
 		for articlePage in articles.sorted(by: >) {
 			ArticleItem(page: articlePage)
 		}
 	}
-	.class("v-gap-m")
 }

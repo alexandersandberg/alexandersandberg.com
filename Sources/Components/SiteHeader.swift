@@ -37,42 +37,41 @@ struct SiteHeader: TagRepresentable {
 
 	func build() -> Tag {
 		Header {
-			if let backLink {
-				A("↖&ensp;\(backLink.label)")
-					.class("plain footnote tertiary")
-					.href(backLink.href)
-			}
-
-			Div {
-				Div {
-					if let supertitle {
-						Span(supertitle)
-							.class("title1 serif tertiary")
-							.style("line-height: 1;")
-					}
-
-					H1(title)
-						.class("title1 serif")
+			VStack(alignment: .leading, spacing: .s16) {
+				if let backLink {
+					A("↖&ensp;\(backLink.label)")
+						.class("plain footnote tertiary")
+						.href(backLink.href)
 				}
 
-				if let subtitle {
-					P(subtitle)
+				VStack(alignment: .leading, spacing: .s8) {
+					VStack(alignment: .leading) {
+						if let supertitle {
+							P(supertitle)
+								.class("title1 serif tertiary")
+						}
+
+						H1(title)
+							.class("title1 serif")
+					}
+
+					if let subtitle {
+						P(subtitle)
+							.class("secondary footnote")
+					}
+
+					if let date, let datetimeString {
+						P {
+							Span(updatedAt != nil ? "Updated " : "Published ")
+							Time(date.formatted(date: .abbreviated, time: .omitted))
+								.datetime(datetimeString)
+								.title(timeTitle ?? "")
+						}
 						.class("secondary footnote")
-				}
-
-				if let date, let datetimeString {
-					P {
-						Span(updatedAt != nil ? "Updated " : "Published ")
-						Time(date.formatted(date: .abbreviated, time: .omitted))
-							.datetime(datetimeString)
-							.title(timeTitle ?? "")
 					}
-					.class("secondary footnote")
 				}
 			}
-			.class("v-gap-xs")
 		}
-		.class("v-gap-s")
 		.style("position: relative;")
 	}
 }

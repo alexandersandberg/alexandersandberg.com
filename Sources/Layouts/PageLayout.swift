@@ -19,16 +19,18 @@ public struct PageLayout: TagRepresentable {
 			SiteHead(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
 
 			Body {
-				SiteHeader(title: title, backLink: .home, publishedAt: publishedAt, updatedAt: updatedAt)
+				VStack(alignment: .stretch, spacing: .s48) {
+					SiteHeader(title: title, backLink: .home, publishedAt: publishedAt, updatedAt: updatedAt)
 
-				SwiftHtml.Main {
-					Content()
+					SwiftHtml.Main {
+						VStack(alignment: .stretch, spacing: .s48) {
+							Content()
+						}
+					}
+
+					SiteFooter(commentSubject: title)
 				}
-				.class("v-gap-xl")
-
-				SiteFooter(commentSubject: title)
 			}
-			.class("v-gap-xl")
 		}
 		.lang("en")
 	}
