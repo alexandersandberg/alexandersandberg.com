@@ -11,39 +11,35 @@ struct Section: TagRepresentable {
 	var title: String
 	var moreLink: Link?
 	var hiddenTitle: Bool = false
-	var contentClass: String = "v-gap-l"
 	@TagBuilder var content: () -> Tag
 
 	func build() -> Tag {
 		SwiftHtml.Section {
-			Div {
-				H2(title)
-					.class("footnote monospace")
-					.class("sr-only", hiddenTitle)
+			VStack(alignment: .stretch, spacing: .s32) {
+				HStack(spacing: .s8) {
+					H2(title)
+						.class("footnote monospace tertiary uppercase")
 
-				if let moreLink {
-					P {
-						Span("[ ")
-							.class("quaternary")
+					if let moreLink {
+						P {
+							Span("[ ")
+								.class("quaternary")
 
-						A(moreLink.label)
-							.class("plain")
-							.href(moreLink.href)
+							A(moreLink.label)
+								.class("plain")
+								.href(moreLink.href)
 
-						Span(" ]")
-							.class("quaternary")
+							Span(" ]")
+								.class("quaternary")
+						}
+						.class("footnote monospace tertiary uppercase")
 					}
-					.class("footnote monospace")
 				}
-			}
-			.class("tertiary uppercase flex between")
+				.class("sr-only", hiddenTitle)
 
-			Div {
 				content()
 			}
-			.class(contentClass)
 		}
-		.class("v-gap-m")
 		.id(title.slug)
 	}
 }

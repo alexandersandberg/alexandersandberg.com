@@ -7,46 +7,44 @@
 
 import SwiftHtml
 
-struct RecognitionCard: TagRepresentable {
+struct Recognition {
 	var title: String
 	var subtitle: String
 	var href: String?
-	@TagBuilder var content: () -> Tag
+	var paragraphs: [String] = []
+}
+
+struct RecognitionCard: TagRepresentable {
+	var recognition: Recognition
 
 	func build() -> Tag {
 		Article {
-			Div {
-				H3 {
-					if let href {
-						A(title)
-							.href(href)
-					} else {
-						Span(title)
+			VStack(alignment: .leading, spacing: .s8) {
+				VStack(alignment: .leading) {
+					H3 {
+						if let href = recognition.href {
+							A(recognition.title)
+								.href(href)
+						} else {
+							Span(recognition.title)
+						}
+					}
+					.class("footnote bold")
+
+					P(recognition.subtitle)
+						.class("caption tertiary")
+				}
+
+				if !recognition.paragraphs.isEmpty {
+					VStack(alignment: .leading, spacing: .s8) {
+						for paragraph in recognition.paragraphs {
+							P(paragraph)
+								.class("footnote secondary")
+						}
 					}
 				}
-				.class("footnote bold")
-
-				P(subtitle)
-					.class("caption tertiary")
-			}
-
-			if content().name != EmptyTag().name {
-				Div {
-					content()
-				}
-				.class("recognition-card-content")
 			}
 		}
-		.class("callout v-gap-xs")
-		.style("text-align: left;")
-	}
-}
-
-extension RecognitionCard {
-	init(title: String, subtitle: String, href: String? = nil) {
-		self.title = title
-		self.subtitle = subtitle
-		self.href = href
-		self.content = { EmptyTag() }
+		.class("callout")
 	}
 }

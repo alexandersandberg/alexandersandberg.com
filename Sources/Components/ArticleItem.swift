@@ -12,18 +12,19 @@ struct ArticleItem: TagRepresentable {
 
 	func build() -> Tag {
 		Article {
-			H3 {
-				A(page.title)
-					.href(page.relativePath)
-					.style("display: inline-block;") // Fix gap in clickable link if multiple rows
-			}
-			.class("title3 serif")
+			VStack(alignment: .leading, spacing: .s4) {
+				H3 {
+					A(page.title)
+						.href(page.relativePath)
+						.style("display: inline-block;") // Fix gap in clickable link if multiple rows
+				}
+				.class("title3 serif")
 
-			if let publishedAt = page.publishedAt {
-				P(publishedAt.formatted(date: .abbreviated, time: .omitted))
-					.class("footnote secondary")
+				if let publishedAt = page.publishedAt {
+					P(publishedAt.formatted(date: .abbreviated, time: .omitted))
+						.class("footnote secondary")
+				}
 			}
 		}
-		.class("v-gap-xs")
 	}
 }

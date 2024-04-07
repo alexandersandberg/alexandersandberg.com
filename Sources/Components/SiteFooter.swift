@@ -18,11 +18,11 @@ struct SiteFooter: TagRepresentable {
 
 	func build() -> Tag {
 		Footer {
-			Hr()
+			VStack(alignment: .stretch, spacing: .s32) {
+				Hr()
 
-			Div {
-				if variant == .home {
-					Div {
+				HStack(spacing: .s24) {
+					if variant == .home {
 						Span("©")
 
 						A("Colophon")
@@ -32,32 +32,32 @@ struct SiteFooter: TagRepresentable {
 						A("RSS")
 							.class("plain")
 							.href("/feed.rss")
-					}
-					.class("flex gap-m")
 
-					Span {
-						A("Updated \(Date.now.formatted(date: .abbreviated, time: .omitted))")
-							.class("plain")
-							.href("https://github.com/alexandersandberg/alexandersandberg.com/commits/main/")
-					}
-					.class("wide-only")
-				} else {
-					A("↑&ensp;Back to top")
-						.class("plain footnote tertiary")
-						.href("#top")
+						Spacer()
 
-					if let commentSubject {
 						Span {
-							A("Leave a comment")
+							A("Updated \(Date.now.formatted(date: .abbreviated, time: .omitted))")
 								.class("plain")
-								.href("mailto:\(Site.email)?subject=Comment: \(commentSubject)")
+								.href("https://github.com/alexandersandberg/alexandersandberg.com/commits/main/")
 						}
-						.class("wide-only")
+						.class("@sm")
+					} else {
+						A("↑&ensp;Back to top")
+							.class("plain")
+							.href("#top")
+
+						if let commentSubject {
+							Span {
+								A("Leave a comment")
+									.class("plain")
+									.href("mailto:\(Site.email)?subject=Comment: \(commentSubject)")
+							}
+							.class("@sm")
+						}
 					}
 				}
 			}
-			.class("footnote tertiary flex between")
 		}
-		.class("v-gap-m")
+		.class("footnote tertiary")
 	}
 }

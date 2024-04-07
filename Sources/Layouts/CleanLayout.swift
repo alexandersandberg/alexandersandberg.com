@@ -16,14 +16,16 @@ public struct CleanLayout: TagRepresentable {
 			SiteHead(title: title, description: description)
 
 			Body {
-				SiteHeader(title: title, backLink: .home)
+				VStack(alignment: .stretch, spacing: .s48) {
+					SiteHeader(title: title, backLink: .home)
 
-				SwiftHtml.Main {
-					Content()
+					SwiftHtml.Main {
+						VStack(alignment: .stretch, spacing: .s48) {
+							Content()
+						}
+					}
 				}
-				.class("v-gap-xl")
 			}
-			.class("v-gap-xl")
 		}
 		.lang("en")
 	}

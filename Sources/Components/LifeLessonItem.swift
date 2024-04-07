@@ -13,25 +13,25 @@ struct LifeLessonItem: TagRepresentable {
 
 	func build() -> Tag {
 		Article {
-			H3("Life lesson #\(lesson.id)")
-				.class("sr-only")
+			VStack(alignment: .leading, spacing: .s16) {
+				H3("Life lesson #\(lesson.id)")
+					.class("sr-only")
 
-			Div(contentHtmlString)
-				.class("prose life-lesson-content")
+				Div(contentHtmlString)
+					.class("prose life-lesson-content")
 
-			P {
-				A("#\(lesson.id)")
-					.class("plain")
-					.href("#\(lesson.id)")
+				P {
+					A("#\(lesson.id)")
+						.class("plain")
+						.href("#\(lesson.id)")
 
-				if let source = lesson.source {
-					Span(" · \(source)")
+					if let source = lesson.source {
+						Span(" · \(source)")
+					}
 				}
+				.class("footnote tertiary")
 			}
-			.class("footnote tertiary")
-
 		}
 		.id("\(lesson.id)")
-		.class("v-gap-xs")
 	}
 }

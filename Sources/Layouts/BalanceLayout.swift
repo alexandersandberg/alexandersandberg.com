@@ -16,16 +16,18 @@ public struct BalanceLayout: TagRepresentable {
 			BalanceSiteHead(title: title, description: description, isMainPage: false)
 
 			Body {
-				SiteHeader(title: title, backLink: .balance("Balance"))
+				VStack(alignment: .stretch, spacing: .s48) {
+					SiteHeader(title: title, backLink: .balance("Balance"))
 
-				SwiftHtml.Main {
-					Content()
+					SwiftHtml.Main {
+						VStack(alignment: .stretch, spacing: .s48) {
+							Content()
+						}
+					}
+
+					SiteFooter(commentSubject: title)
 				}
-				.class("v-gap-xl")
-
-				SiteFooter(commentSubject: title)
 			}
-			.class("v-gap-xl")
 		}
 		.lang("en")
 	}

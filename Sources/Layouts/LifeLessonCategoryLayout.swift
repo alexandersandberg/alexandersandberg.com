@@ -16,16 +16,18 @@ public struct LifeLessonCategoryLayout: TagRepresentable {
 			SiteHead(title: title)
 
 			Body {
-				SiteHeader(title: title, subtitle: "\(lessonCount) \(lessonCount == 1 ? "lesson" : "lessons")", backLink: .lifeLessons("Life lessons"))
+				VStack(alignment: .stretch, spacing: .s64) {
+					SiteHeader(title: title, subtitle: "\(lessonCount) \(lessonCount == 1 ? "lesson" : "lessons")", backLink: .lifeLessons("Life lessons"))
 
-				SwiftHtml.Main {
-					Content()
+					SwiftHtml.Main {
+						VStack(alignment: .stretch, spacing: .s64) {
+							Content()
+						}
+					}
+
+					SiteFooter(commentSubject: title)
 				}
-				.class("v-gap-xl")
-
-				SiteFooter(commentSubject: title)
 			}
-			.class("v-gap-xl")
 		}
 		.lang("en")
 	}
