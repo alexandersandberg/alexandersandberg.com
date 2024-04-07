@@ -1,6 +1,6 @@
 ---
 title: Someday
-description: Things I would like to accomplish someday
+description: Things I would like to accomplish someday.
 layout: page
 publishedAt: 2024-03-18
 updatedAt: 2024-04-07
