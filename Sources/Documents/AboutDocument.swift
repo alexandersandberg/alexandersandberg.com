@@ -72,6 +72,11 @@ let work = [
 		title: "Tempo",
 		href: "https://yourtempo.co",
 		description: "Mobile Developer ⋅ 2021"
+	),
+	LinkedResource(
+		title: "Newsadoo",
+		href: "https://newsadoo.com",
+		description: "Mobile Developer ⋅ 2019–2021"
 	)
 ]
 
