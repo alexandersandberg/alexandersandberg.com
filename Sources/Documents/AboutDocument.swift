@@ -31,8 +31,8 @@ let aboutDocument = Document(.html) {
 
 	Section(title: "Work") {
 		VStack(alignment: .stretch, spacing: .s24) {
-			for project in work {
-				ProjectItem(project: project, horizontal: true)
+			for item in work {
+				ProjectItem(project: item, horizontal: true)
 			}
 		}
 
@@ -41,6 +41,14 @@ let aboutDocument = Document(.html) {
 	}
 
 	Img(src: "https://cdn.alexandersandberg.com/desk.png", alt: "Photo of my desk where I work from home")
+
+	Section(title: "Connect") {
+		VStack(alignment: .stretch, spacing: .s24) {
+			for item in connect {
+				ProjectItem(project: item, horizontal: true)
+			}
+		}
+	}
 }
 
 let work = [
@@ -65,4 +73,22 @@ let work = [
 		href: "https://yourtempo.co",
 		description: "Mobile Developer ⋅ 2021"
 	)
+]
+
+let connect = [
+	Project(
+		title: "Email",
+		href: "mailto:hi@alexandersandberg.com",
+		description: "hi@alexandersandberg.com"
+	),
+	Project(
+		title: "GitHub",
+		href: "https://github.com/alexandersandberg",
+		description: "@alexandersandberg"
+	),
+	Project(
+		title: "Twitter",
+		href: "https://twitter.com/alexandberg",
+		description: "@alexandberg"
+	),
 ]
