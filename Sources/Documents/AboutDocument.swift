@@ -39,6 +39,8 @@ let aboutDocument = Document(.html) {
 		P(#"For my self-published indie apps, take a look at my <a href="/apps">apps page</a>."#)
 			.class("callout")
 	}
+
+	Img(src: "https://cdn.alexandersandberg.com/desk.png", alt: "Photo of my desk where I work from home")
 }
 
 let work = [
