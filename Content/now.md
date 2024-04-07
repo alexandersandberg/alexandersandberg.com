@@ -8,7 +8,7 @@ updatedAt: 2024-04-07
 
 ## Reworking this website
 
-I just did a complete redesign and rewrite of this website. It’s now generated using a custom static website generator that I built myself with Swift.
+I just finished redoing this website. It’s now generated using a custom static website generator that I built myself with Swift. Everything from design to content to hosting is also quite a bit simpler. I love simple things.
 
 ## Working on Balance 2.0
 
