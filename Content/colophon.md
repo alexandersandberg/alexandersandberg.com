@@ -1,5 +1,6 @@
 ---
 title: Colophon
+description: A brief summary of why this website exists and the inner workings of it.
 layout: page
 ---
 
