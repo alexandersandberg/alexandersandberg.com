@@ -3,9 +3,11 @@ title: Colophon
 layout: page
 ---
 
-This website is my personal _home on the internet_.
+Welcome to my personal _home on the internet_ where I share things about myself—what I’m thinking about, what I’m working on, what I aspire towards, etc.
 
-I still publish some content elsewhere, like on Twitter at [@alexandberg](https://twitter.com/alexandberg), but I one day hope to break free from that. I’m still trying to figure out how.
+I still publish some content elsewhere, like on Twitter at [@alexandberg](https://twitter.com/alexandberg), but I [someday](/someday/) hope to break free from that. I’m still trying to figure out how.
+
+Like life itself, this website is forever a _work in progress_.
 
 ## Technology
 
