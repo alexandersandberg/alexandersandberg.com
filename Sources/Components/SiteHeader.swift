@@ -32,7 +32,7 @@ struct SiteHeader: TagRepresentable {
 	private var timeTitle: String? {
 		guard let publishedAt, updatedAt != nil else { return nil }
 
-		return "First published \(publishedAt.formatted(date: .abbreviated, time: .omitted))"
+		return "First published \(publishedAt.dayMonthYear)"
 	}
 
 	func build() -> Tag {
@@ -63,7 +63,7 @@ struct SiteHeader: TagRepresentable {
 					if let date, let datetimeString {
 						P {
 							Span(updatedAt != nil ? "Updated " : "Published ")
-							Time(date.formatted(date: .abbreviated, time: .omitted))
+							Time(date.dayMonthYear)
 								.datetime(datetimeString)
 								.title(timeTitle ?? "")
 						}
