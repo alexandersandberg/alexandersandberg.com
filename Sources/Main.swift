@@ -30,7 +30,7 @@ let documentPages = [
 	),
 	Page(
 		path: "about",
-		layout: .page(title: "About me"),
+		layout: .page(title: "About"),
 		contentHtmlString: documentRenderer.render(aboutDocument, convertingExternalLinks: true)
 	),
 	Page(
