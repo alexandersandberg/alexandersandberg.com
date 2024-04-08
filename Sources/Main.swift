@@ -96,7 +96,7 @@ func prepareAssets() async {
 	do {
 		let contentFiles = fileManager.walkDirectory(at: assetsDirectory)
 		for await contentFile in contentFiles {
-			try fileManager.copyItem(at: contentFile, to: outputDirectory.appending(path: contentFile.lastPathComponent))
+			try fileManager.copyItem(at: contentFile, to: outputDirectory.appendingPathComponent(contentFile.lastPathComponent))
 
 			if contentFile.pathExtension == "css" {
 				let cssString = try String(contentsOf: contentFile)
