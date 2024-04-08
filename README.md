@@ -1,13 +1,21 @@
 # alexandersandberg.com
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b4d850f4-f6da-46e0-8299-33656adb0394/deploy-status)](https://app.netlify.com/sites/alexandersandberg/deploys)
+Now built with _Swift_!
 
-This is the source code for my personal website, where I occasionally share some interesting stuff with the world.
+## Build
 
-The website is built with [11ty](http://11ty.dev) and [Contentful](https://contentful.com), and is hosted on [Netlify](https://www.netlify.com/).
+```zsh
+swift run
+```
+
+## Preview
+
+```zsh
+brew install http-server
+http-server .output
+```
 
 ---
 
-<small>
-	This website was previously built with <a href="https://gohugo.io">Hugo</a>. You can find the source code <a href="https://github.com/alexandersandberg/alexandersandberg.com/tree/7d829fab12a3907ee88989aca41202e71d578d8a">here</a>.
-</small>
+<small>This website was previously built with <a href="https://www.11ty.dev">11ty</a>: <a href="https://github.com/alexandersandberg/alexandersandberg.com/tree/d77c9fce8c9a4d1754f43de3f4426ebdce0aba13"><code>d77c9fc</code></a></small><br>
+<small>And before that, it was built with <a href="https://gohugo.io">Hugo</a>: <a href="https://github.com/alexandersandberg/alexandersandberg.com/tree/7d829fab12a3907ee88989aca41202e71d578d8a"><code>7d829fa</code></a></small>

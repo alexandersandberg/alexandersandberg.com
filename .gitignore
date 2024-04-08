@@ -1,10 +1,5 @@
 .DS_Store
-.vscode
+.swiftpm/
+.build/
 
-node_modules/
-
-.env
-
-_site/
-_temp/
-.cache
+.output/
