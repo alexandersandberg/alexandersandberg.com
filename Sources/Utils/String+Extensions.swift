@@ -45,7 +45,7 @@ extension String: LocalizedError {
 	}
 
 	func writeToOutputDirectory(path: String, prettyURL: Bool) throws {
-		let url = outputDirectory.appending(path: path)
+		let url = outputDirectory.appendingPathComponent(path)
 
 		let directory = prettyURL ? url : url.deletingLastPathComponent()
 		if !fileManager.fileExists(atPath: directory.path) {
@@ -53,7 +53,7 @@ extension String: LocalizedError {
 		}
 
 		let file = if prettyURL {
-			url.appending(path: "index.html")
+			url.appendingPathComponent("index.html")
 		} else if !url.lastPathComponent.contains(".") {
 			url.appendingPathExtension("html")
 		} else {
