@@ -178,7 +178,7 @@ You have quick access to your previous session notes in the log; activate the Se
 
 With Balance Pro, sessions can be “categorized” using workspaces and projects. This allows you to get a more detailed look into how you spend your time.
 
-Keep in mind that this is completely optional. If you like to keep things simple, you can just use the default ‘My Workspace’ for all your sessions and not think more about it.
+Keep in mind that this is completely optional. If you like to keep things simple, you can just use the default My Workspace for all your sessions and not think more about it.
 
 In the Project Management view, you can manage your workspaces and projects. Here you can also see the amount of time clocked for each project (Total and Active). You can also view the stats for a specific workspace or project in the [Log](#log) using the log filters.
 
@@ -251,7 +251,7 @@ There are some slight differences between workspaces and projects you might want
 
 Balance has support for Focus filters, which allows you to show or hide specific workspaces based on an active filter. You can set this up in System Settings → Focus.
 
-This is useful if you, for instance, only want to show your work/client workspaces while your ‘Work’ focus is active, or hide them during your ‘Weekend’ focus.
+This is useful if you, for instance, only want to show your work/client workspaces while your Work focus is active, or hide them during your Weekend focus.
 
 ![Balance in system Focus filters](https://cdn.alexandersandberg.com/balance/focus-filter.png)
 
@@ -275,7 +275,7 @@ Also, check that you don’t have any active macOS Focus filters—like Do Not D
 
 <p class="callout">In <strong>System Settings → Focus</strong> you can add Balance to the filters’ Allowed Apps lists, to prevent the notifications from being blocked.</p>
 
-<p class="callout">Keep in mind that, if the Balance window is active, you will not receive any notifications, unless the notification style in System Settings is set to ‘Alerts’ instead of the default ‘Banners’.</p>
+<p class="callout">Keep in mind that, if the Balance window is active, you will not receive any notifications, unless the notification style in System Settings is set to Alerts instead of the default Banners.</p>
 
 ### What other features are you planning to add to Balance?
 
