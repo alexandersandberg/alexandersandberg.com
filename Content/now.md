@@ -14,6 +14,10 @@ I just finished redoing this website. It’s now generated using a custom static
 
 I’m working on a complete redesign and rewrite of Balance that will hopefully launch sometime later this year.
 
+## Launching Composer iOS
+
+After a few months of hard work, we’re getting close to releasing the first version of the [Composer iOS](https://www.composer.trade/ios) app to the App Store.
+
 ## Phasing out social media
 
 I’ve felt distracted by social media lately. I want to figure out a way to move all my online interactions to email (because I love email). I’m just not sure yet how to do this without losing the ability to meet new people online.
