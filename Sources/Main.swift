@@ -52,7 +52,7 @@ let indieApps = [
 	LinkedResource(
 		title: "Balance",
 		href: "/balance/",
-		description: "Time-tracking app with a focus on work-life balance.",
+		description: "A time tracking app that helps you balance work and life.",
 		highlightedText: "My latest indie app!"
 	),
 	LinkedResource(
