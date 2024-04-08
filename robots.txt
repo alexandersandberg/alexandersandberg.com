@@ -1,4 +1,0 @@
-Sitemap: https://alexandersandberg.com/sitemap.xml
-
-User-agent: *
-Disallow:
