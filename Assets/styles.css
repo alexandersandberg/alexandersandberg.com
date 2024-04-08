@@ -251,6 +251,7 @@ a.button:hover {
 	color: var(--primary);
 }
 
+/* External link icon */
 a + .link-external-icon::after {
 	content: "↗";
 	position: relative;
