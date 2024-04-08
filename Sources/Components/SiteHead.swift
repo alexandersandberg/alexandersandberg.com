@@ -40,11 +40,11 @@ struct SiteHead: TagRepresentable {
 				Meta().property("og:type").content("article")
 
 				if let publishedAt {
-					Meta().property("article:published_time").content(publishedAt.formatted(date: .abbreviated, time: .omitted))
+					Meta().property("article:published_time").content(publishedAt.dayMonthYear)
 				}
 
 				if let updatedAt {
-					Meta().property("article:modified_time").content(updatedAt.formatted(date: .abbreviated, time: .omitted))
+					Meta().property("article:modified_time").content(updatedAt.dayMonthYear)
 				}
 			}
 

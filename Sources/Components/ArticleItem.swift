@@ -21,7 +21,7 @@ struct ArticleItem: TagRepresentable {
 				.class("title3 serif")
 
 				if let publishedAt = page.publishedAt {
-					P(publishedAt.formatted(date: .abbreviated, time: .omitted))
+					P(publishedAt.dayMonthYear)
 						.class("footnote secondary")
 				}
 			}

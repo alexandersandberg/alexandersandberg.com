@@ -36,7 +36,7 @@ struct SiteFooter: TagRepresentable {
 						Spacer()
 
 						Span {
-							A("Updated \(Date.now.formatted(date: .abbreviated, time: .omitted))")
+							A("Updated \(Date.now.dayMonthYear)")
 								.class("plain")
 								.href("https://github.com/alexandersandberg/alexandersandberg.com/commits/main/")
 						}
