@@ -38,16 +38,17 @@ I like to know how people find my website, so I use [Plausible](https://plausibl
 
 An unordered list of websites that have inspired me in some way or another to make this website look and behave the way it does.
 
-- [sive.rs](https://sive.rs/)
-- [rsms.me](https://rsms.me/)
-- [sfcompute.com](https://sfcompute.com/)
+- [sive.rs](https://sive.rs)
+- [rsms.me](https://rsms.me)
+- [manuelmoreale.com](https://manuelmoreale.com)
+- [sfcompute.com](https://sfcompute.com)
 - [nytimes.com](https://www.nytimes.com)
-- [paco.me](https://paco.me/)
-- [teenage.engineering](https://teenage.engineering/)
+- [paco.me](https://paco.me)
+- [teenage.engineering](https://teenage.engineering)
 - [slrncl.com](https://slrncl.com)
-- [linusrogge.com](https://linusrogge.com/)
+- [linusrogge.com](https://linusrogge.com)
 - [endless.design](https://endless.design)
-- [johnnyrodgers.is](https://johnnyrodgers.is/)
+- [johnnyrodgers.is](https://johnnyrodgers.is)
 
 If you like the design of my website, you can find some more great inspiration at [deadsimplesites.com](https://deadsimplesites.com).
 
