@@ -49,6 +49,19 @@ let aboutDocument = Document(.html) {
 		.class("prose")
 	}
 
+	Hr()
+
+	Section(title: "Work") {
+		VStack(alignment: .stretch, spacing: .s24) {
+			for resource in work {
+				LinkedResourceItem(resource: resource, horizontal: true)
+			}
+		}
+
+		P(#"You can find my self-published indie apps on <a href="/apps/">my apps page</a>."#)
+			.class("callout")
+	}
+
 	Img(src: "https://cdn.alexandersandberg.com/desk.png", alt: "Photo of my desk where I work from home")
 
 	Section(title: "Connect") {
@@ -59,6 +72,35 @@ let aboutDocument = Document(.html) {
 		}
 	}
 }
+
+let work = [
+	LinkedResource(
+		title: "Composer",
+		href: "https://composer.trade",
+		description: "Senior iOS Engineer ⋅ 2023–Now",
+		highlightedText: "hello there somewhere!"
+	),
+	LinkedResource(
+		title: "Swift Website Workgroup",
+		href: "https://www.swift.org/website-workgroup/",
+		description: "Inaugural member ⋅ 2022–Now"
+	),
+	LinkedResource(
+		title: "Practice",
+		href: "https://practice.do",
+		description: "Senior iOS Engineer ⋅ 2021–2023"
+	),
+	LinkedResource(
+		title: "Tempo",
+		href: "https://yourtempo.co",
+		description: "Mobile Developer ⋅ 2021"
+	),
+	LinkedResource(
+		title: "Newsadoo",
+		href: "https://newsadoo.com",
+		description: "Mobile Developer ⋅ 2019–2021"
+	)
+]
 
 let connect = [
 	LinkedResource(
