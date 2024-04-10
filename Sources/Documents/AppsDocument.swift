@@ -15,7 +15,7 @@ let appsDocument = Document(.html) {
 			}
 		}
 
-		P(#"See my <a href="/about/#work">about page</a> for apps I’ve worked on together with other people."#)
+		P(#"See <a href="/about/#work">my about page</a> for apps I’ve worked on together with other people."#)
 			.class("callout")
 	}
 
