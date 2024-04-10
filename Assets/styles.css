@@ -568,6 +568,7 @@ a.button + .link-external-icon {
 	width: 1px;
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
+	bottom: 0;
 }
 
 .more-checkbox:focus ~ .more-label {
