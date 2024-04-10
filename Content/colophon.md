@@ -47,6 +47,7 @@ An unordered list of websites that have inspired me in some way or another to ma
 - [teenage.engineering](https://teenage.engineering)
 - [slrncl.com](https://slrncl.com)
 - [linusrogge.com](https://linusrogge.com)
+- [henribredt.de](https://henribredt.de)
 - [endless.design](https://endless.design)
 - [johnnyrodgers.is](https://johnnyrodgers.is)
 
