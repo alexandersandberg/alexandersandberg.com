@@ -432,6 +432,11 @@ let recognition: [Recognition] = [
 		]
 	),
 	Recognition(
+		title: "minimalism.com — Lifestyle",
+		subtitle: "April 9, 2024",
+		href: "https://minimalism.com/lifestyle"
+	),
+	Recognition(
 		title: "The Manual #31 by Oliur",
 		subtitle: "December 31, 2022",
 		href: "https://oliur.substack.com/p/the-manual-31-end-of-year-learnings"
