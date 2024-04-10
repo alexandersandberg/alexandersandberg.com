@@ -188,6 +188,7 @@ private struct ReviewsSection: TagRepresentable {
 					}
 				}
 				.class("masonry")
+				.style("position: relative;")
 			}
 		}
 	}
