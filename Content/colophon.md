@@ -22,7 +22,7 @@ As the website generator is built with Swift, I use [Xcode](https://developer.ap
 
 Updates to the website, including new articles and other content, are pushed to the website’s public GitHub repository at [github.com/alexandersandberg/alexandersandberg.com](https://github.com/alexandersandberg/alexandersandberg.com).
 
-When new changes land on the remote `main` branch, a GitHub Action is triggered which generates the new website files and uploads them to [Bunny Storage](https://bunny.net/storage/), which I use to host the files.
+When new changes land on the remote `main` branch, [a GitHub Action](https://github.com/alexandersandberg/alexandersandberg.com/blob/main/.github/workflows/deploy.yml) is triggered which generates the new website files and uploads them to [Bunny Storage](https://bunny.net/storage/), which I use to host the files.
 
 Website images are also hosted by Bunny, but in a separate storage zone. I upload those images manually using their web interface.
 
