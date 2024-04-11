@@ -8,7 +8,7 @@
 import SwiftHtml
 
 struct ExternalLinkArrow: TagRepresentable {
-	static let htmlString = documentRenderer.render(Document(.html) {
+	static let htmlString = documentRenderer.render(Document(.unspecified) {
 		ExternalLinkArrow()
 	})
 
