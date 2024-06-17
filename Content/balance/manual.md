@@ -284,9 +284,7 @@ The list is long, but here are some of the things you can look forward to:
 - iCloud syncing
 - Work-life balance reports
 - iOS and iPadOS companion app
-- Improved log
-    - Monthly/yearly overviews
-    - Graphs and charts
+- Improved log (monthly/yearly overviews, charts)
 - Improved Focus timer
 - Widgets
 - Goals
