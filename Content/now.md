@@ -3,24 +3,28 @@ title: Now
 layout: page
 description: What I’m up to right now.
 publishedAt: 2018-11-14
-updatedAt: 2024-04-07
+updatedAt: 2024-07-28
 ---
 
-## Reworking this website
+## Balance 2.0
 
-I just finished redoing this website. It’s now generated using a custom static website generator that I built myself with Swift. Everything from design to content to hosting is also quite a bit simpler. I love simple things.
-
-## Working on Balance 2.0
-
-I’m working on a complete redesign and rewrite of Balance that will hopefully launch sometime later this year.
-
-## Launching Composer iOS
-
-After a few months of hard work, we’re getting close to releasing the first version of the [Composer iOS](https://www.composer.trade/ios) app to the App Store.
+I’m making good progress on the complete redesign and rewrite of Balance. I might start sharing some more detailed progress updates publicly soon, although I don’t know where (see next point).
 
 ## Phasing out social media
 
 I’ve felt distracted by social media lately. I want to figure out a way to move all my online interactions to email (because I love email). I’m just not sure yet how to do this without losing the ability to meet new people online.
+
+Part of this is also because I want to distance myself from Twitter (no, I will not refer to it as “X”) as I do not support what it has become.
+
+At the same time, I want to keep the ability to share small life and project updates publicly somewhere, something I now use Twitter for. Maybe I can add an update feed to this website instead?
+
+## Swift.org redesign
+
+The Swift Website Workgroup that I’m a member of have started reworking the Swift.org website, and I spend a few hours a week on this. It’s a big project that will take a while, but I’m very excited about it!
+
+## Composer iOS
+
+After a successful launch of [Composer for iOS](https://www.composer.trade/ios), we’re hard at work improving the app and adding more features.
 
 ## Increasing indie MRR
 
@@ -32,7 +36,7 @@ We like it where my girlfriend and I live now, but it’s not the place we event
 
 ## Spending less time in front of the computer
 
-Now that summer is here, I would like to spend more time outside and away from the computer again. I _try_ to stick to at least one computer-free day every weekend, but it’s easier said than done.
+I would like to spend more time outside and away from the computer. I _try_ to stick to at least one computer-free day every weekend, but it’s easier said than done considering most of my hobbies are digital, not analog.
 
 <br/>
 <p class="callout">This page is part of the <a href="https://nownownow.com">now page</a> movement.</p>
