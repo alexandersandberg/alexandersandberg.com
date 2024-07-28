@@ -37,15 +37,35 @@ extension String {
 	}
 
 	var withLinkSuffixes: String {
-		let externalLinkPattern = "(<a [^>]*?href=[\"'](http[^\"']*?)[\"'])([^>]*>)(.*?)(</a>)"
-		let externalLinkTemplate = "$1 target=\"_blank\"$3$4$5" + ExternalLinkSuffix.htmlString
-		let externalLinkRegex = try! NSRegularExpression(pattern: externalLinkPattern, options: [])
+		let linkPattern = "(<a [^>]*?href=[\"']([^\"']*?)[\"'])([^>]*>)(.*?)(</a>)"
 
+		let linkRegex = try! NSRegularExpression(pattern: linkPattern, options: [])
 		let range = NSRange(location: 0, length: self.utf16.count)
 
-		let withExternalLinkSuffixes = externalLinkRegex.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: externalLinkTemplate)
+		let matches = linkRegex.matches(in: self, options: [], range: range)
 
-		return withExternalLinkSuffixes
+		var result = self
+
+		for match in matches.reversed() {
+			let linkRange = match.range(at: 0)
+			let urlRange = match.range(at: 2)
+
+			let linkString = (self as NSString).substring(with: linkRange)
+			let urlString = (self as NSString).substring(with: urlRange)
+
+			var convertedLinkString = linkString
+
+			if urlString.hasPrefix("http") {
+				convertedLinkString = convertedLinkString.replacingOccurrences(of: ">", with: " target=\"_blank\">")
+				convertedLinkString += ExternalLinkSuffix.htmlString
+			} else if urlString.hasPrefix("mailto:") {
+				convertedLinkString += MailtoLinkSuffix.htmlString
+			}
+
+			result = (result as NSString).replacingCharacters(in: linkRange, with: convertedLinkString)
+		}
+
+		return result
 	}
 
 	func writeToOutputDirectory(path: String, prettyURL: Bool) throws {
