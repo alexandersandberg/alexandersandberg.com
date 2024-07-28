@@ -10,7 +10,9 @@ import Crypto
 
 extension String: LocalizedError {
 	public var errorDescription: String? { return self }
+}
 
+extension String {
 	var slug: String {
 		self
 			.replacingOccurrences(of: " ", with: "-")
