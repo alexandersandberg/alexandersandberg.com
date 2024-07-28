@@ -50,7 +50,7 @@ struct SiteFooter: TagRepresentable {
 						if let commentSubject {
 							// Wrap in span to prevent link suffixes from affecting layout
 							Span {
-								A("Leave a comment")
+								A("Email a comment")
 									.class("plain")
 									.href("mailto:\(Site.email)?subject=Comment: \(commentSubject)")
 							}
