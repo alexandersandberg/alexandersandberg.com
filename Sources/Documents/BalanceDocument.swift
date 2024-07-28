@@ -106,8 +106,8 @@ private struct DetailsSection: TagRepresentable {
 			H2("Details")
 				.class("sr-only")
 
-			Grid(columns: .c2, spacing: .s32) {
-				VStack(spacing: .s16) {
+			Grid(columns: .c2, spacing: .s48) {
+				VStack(spacing: .s8) {
 					Spacer()
 
 					VStack {
@@ -115,7 +115,7 @@ private struct DetailsSection: TagRepresentable {
 							.class("title2 bold")
 						P("★★★★★")
 							.class("footnote")
-							.style("line-height: 1; margin-bottom: -0.3rem;")
+							.style("line-height: 1;")
 					}
 
 					P(#"Balance has received over <span class="nowrap">600 five-star</span> ratings worldwide"#)
@@ -123,7 +123,7 @@ private struct DetailsSection: TagRepresentable {
 						.style("max-width: 15rem;")
 				}
 
-				VStack(spacing: .s16) {
+				VStack(spacing: .s8) {
 					Spacer()
 
 					Icon(.privacy, size: "1.75rem")
@@ -133,7 +133,7 @@ private struct DetailsSection: TagRepresentable {
 						.style("max-width: 15rem;")
 				}
 
-				VStack(spacing: .s16) {
+				VStack(spacing: .s8) {
 					Spacer()
 
 					Icon(.devices, size: "1.75rem")
@@ -143,7 +143,7 @@ private struct DetailsSection: TagRepresentable {
 						.style("max-width: 15rem;")
 				}
 
-				VStack(spacing: .s16) {
+				VStack(spacing: .s8) {
 					Spacer()
 
 					Icon(.swift, size: "1.75rem")
