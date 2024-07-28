@@ -25,14 +25,7 @@ let appsDocument = Document(.html) {
 		Div {
 			P("I’m here to help with any questions or thoughts you might have. I also always love to hear feedback, suggestions, and new ideas for my apps.")
 
-			P {
-				Span("You can reach me by ")
-
-				A("sending me an email")
-					.href("mailto:\(Site.email)?subject=App support")
-
-				Span(".")
-			}
+			P("You can reach me by <a href='mailto:\(Site.email)?subject=App support'>sending me an email</a>.")
 
 			P(#"Balance questions? The <a href="/balance/manual/">Owner’s Manual</a> might be able to help."#)
 				.class("callout")
