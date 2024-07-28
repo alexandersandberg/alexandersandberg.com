@@ -35,6 +35,7 @@ struct SiteFooter: TagRepresentable {
 
 						Spacer()
 
+						// Wrap in span to prevent link suffixes from affecting layout
 						Span {
 							A("Updated \(Date.now.dayMonthYear)")
 								.class("plain")
@@ -47,6 +48,7 @@ struct SiteFooter: TagRepresentable {
 							.href("#top")
 
 						if let commentSubject {
+							// Wrap in span to prevent link suffixes from affecting layout
 							Span {
 								A("Leave a comment")
 									.class("plain")
