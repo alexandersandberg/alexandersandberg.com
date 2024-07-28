@@ -18,6 +18,6 @@ struct ExternalLinkSuffix: TagRepresentable {
 			.attribute("aria-hidden", "true")
 
 		Span(" (opens in new tab)")
-			.class("sr-only")
+			.class("sr-only unselectable")
 	}
 }
