@@ -36,14 +36,16 @@ extension String {
 		Insecure.MD5.hash(data: self.data(using: .utf8)!).map { String(format: "%02hhx", $0) }.joined()
 	}
 
-	var withConvertedExternalLinks: String {
-		let pattern = "(<a [^>]*?href=[\"'](http[^\"']*?)[\"'])([^>]*>)(.*?)(</a>)"
-		let template = "$1 target=\"_blank\"$3$4$5" + ExternalLinkArrow.htmlString
+	var withLinkSuffixes: String {
+		let externalLinkPattern = "(<a [^>]*?href=[\"'](http[^\"']*?)[\"'])([^>]*>)(.*?)(</a>)"
+		let externalLinkTemplate = "$1 target=\"_blank\"$3$4$5" + ExternalLinkSuffix.htmlString
+		let externalLinkRegex = try! NSRegularExpression(pattern: externalLinkPattern, options: [])
 
-		let regex = try! NSRegularExpression(pattern: pattern, options: [])
 		let range = NSRange(location: 0, length: self.utf16.count)
 
-		return regex.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: template)
+		let withExternalLinkSuffixes = externalLinkRegex.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: externalLinkTemplate)
+
+		return withExternalLinkSuffixes
 	}
 
 	func writeToOutputDirectory(path: String, prettyURL: Bool) throws {

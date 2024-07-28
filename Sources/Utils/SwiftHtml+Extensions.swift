@@ -9,11 +9,11 @@ import Foundation
 import SwiftHtml
 
 extension DocumentRenderer {
-	public func render(_ document: Document, convertingExternalLinks: Bool) -> String {
+	public func render(_ document: Document, withLinkSuffixes: Bool) -> String {
 		let html = render(document)
 
-		return if convertingExternalLinks {
-			html.withConvertedExternalLinks
+		return if withLinkSuffixes {
+			html.withLinkSuffixes
 		} else {
 			html
 		}

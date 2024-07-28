@@ -103,7 +103,7 @@ extension Page {
 		self.layout = layout
 		self.publishedAt = publishedAt
 		self.updatedAt = updatedAt
-		self.contentHtmlString = "<div class=\"prose\">\(markdown.html.withConvertedExternalLinks)</div>"
+		self.contentHtmlString = "<div class=\"prose\">\(markdown.html.withLinkSuffixes)</div>"
 		self.prettyURL = metadata["prettyURL"] != "false"
 
 		if case .article = layout {
