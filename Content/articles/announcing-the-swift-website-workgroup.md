@@ -2,6 +2,7 @@
 title: Announcing the Swift Website Workgroup
 layout: article
 publishedAt: 2022-05-12
+updatedAt: 2024-07-28
 ---
 
 I’m very excited to be one of the inaugural members of the [Swift Website Workgroup](https://forums.swift.org/t/swift-website-work-group/57273) (SWWG)!
@@ -20,7 +21,7 @@ You can learn more about our goals [here](https://www.swift.org/website-workgrou
 
 If you’re interested in contributing to the future of Swift.org, you can learn more about how you can participate [here](https://www.swift.org/website/).
 
-You can find (and star ⭐️) the Swift.org repository on GitHub at [apple/swift-org-website](https://github.com/apple/swift-org-website/).
+You can find (and star ⭐️) the Swift.org repository on GitHub at [swiftlang/swift-org-website](https://github.com/swiftlang/swift-org-website/).
 
 The Swift website was (and still is) my go-to resource for anything Swift-related, but there is a lot of potential for making it even better. I’m looking forward to working closely together with the Swift core team, the other SWWG members, and the Swift community on this.
 
