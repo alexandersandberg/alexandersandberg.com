@@ -7,14 +7,14 @@
 
 import SwiftHtml
 
-struct ExternalLinkArrow: TagRepresentable {
+struct ExternalLinkSuffix: TagRepresentable {
 	static let htmlString = documentRenderer.render(Document(.unspecified) {
-		ExternalLinkArrow()
+		ExternalLinkSuffix()
 	})
 
 	func build() -> Tag {
-		Span("")
-			.class("link-external-icon footnote tertiary")
+		Span("↗")
+			.class("link-suffix footnote tertiary unselectable")
 			.attribute("aria-hidden", "true")
 
 		Span(" (opens in new tab)")

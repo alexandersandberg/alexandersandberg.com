@@ -26,26 +26,26 @@ var assetsHashes: [String : String] = [:]
 let documentPages = [
 	Page(
 		path: "",
-		contentHtmlString: documentRenderer.render(homeDocument, convertingExternalLinks: true)
+		contentHtmlString: documentRenderer.render(homeDocument, withLinkSuffixes: true)
 	),
 	Page(
 		path: "about",
 		layout: .page(title: "About"),
-		contentHtmlString: documentRenderer.render(aboutDocument, convertingExternalLinks: true)
+		contentHtmlString: documentRenderer.render(aboutDocument, withLinkSuffixes: true)
 	),
 	Page(
 		path: "articles",
 		layout: .list(title: "Articles"),
-		contentHtmlString: documentRenderer.render(articleListDocument, convertingExternalLinks: true)
+		contentHtmlString: documentRenderer.render(articleListDocument, withLinkSuffixes: true)
 	),
 	Page(
 		path: "apps",
 		layout: .page(title: "Apps"),
-		contentHtmlString: documentRenderer.render(appsDocument, convertingExternalLinks: true)
+		contentHtmlString: documentRenderer.render(appsDocument, withLinkSuffixes: true)
 	),
 	Page(
 		path: "balance",
-		contentHtmlString: documentRenderer.render(balanceDocument, convertingExternalLinks: true)
+		contentHtmlString: documentRenderer.render(balanceDocument, withLinkSuffixes: true)
 	)
 ]
 let indieApps = [
@@ -115,7 +115,7 @@ func buildLifeLessons() {
 	let lifeLessonListPage = Page(
 		path: "life-lessons",
 		layout: .list(title: "Life lessons"),
-		contentHtmlString: documentRenderer.render(lifeLessonListDocument(categories: categories), convertingExternalLinks: true)
+		contentHtmlString: documentRenderer.render(lifeLessonListDocument(categories: categories), withLinkSuffixes: true)
 	)
 	pages.append(lifeLessonListPage)
 
@@ -125,7 +125,7 @@ func buildLifeLessons() {
 			let lessonDocument = Document(.html) {
 				LifeLessonItem(lesson: lesson, contentHtmlString: markdown.html)
 			}
-			return documentRenderer.render(lessonDocument, convertingExternalLinks: true)
+			return documentRenderer.render(lessonDocument, withLinkSuffixes: true)
 		}.joined()
 		let page = Page(
 			path: category.path,

@@ -56,7 +56,7 @@ enum Layout {
 			}
 		}
 
-		return documentRenderer.render(layout, convertingExternalLinks: true)
+		return documentRenderer.render(layout, withLinkSuffixes: true)
 	}
 }
 
