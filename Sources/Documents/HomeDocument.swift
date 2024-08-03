@@ -25,6 +25,10 @@ let homeDocument = Document(.html) {
 
 						Hr()
 
+						NotesSection()
+
+						Hr()
+
 						OtherProjectsSection()
 
 						Hr()
@@ -85,6 +89,18 @@ private struct IndieAppsSection: TagRepresentable {
 			Grid(columns: .c2, spacing: .s32) {
 				for resource in indieApps {
 					LinkedResourceItem(resource: resource)
+				}
+			}
+		}
+	}
+}
+
+private struct NotesSection: TagRepresentable {
+	func build() -> Tag {
+		Section(title: "Notes", moreLink: .notes("Archive")) {
+			VStack(alignment: .leading, spacing: .s32) {
+				for note in notes.sorted(by: >).prefix(3) {
+					NoteItem(note: note)
 				}
 			}
 		}

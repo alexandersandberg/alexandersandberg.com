@@ -560,6 +560,15 @@ a.button + .link-suffix {
 	border-radius: 0.5rem;
 }
 
+.comment-link {
+	opacity: 0;
+	transition: opacity var(--transition);
+}
+
+article:hover .comment-link {
+	opacity: 1;
+}
+
 /* More Toggle */
 .more-label {
 	display: block;

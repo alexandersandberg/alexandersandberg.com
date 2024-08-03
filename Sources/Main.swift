@@ -68,12 +68,14 @@ let indieApps = [
 ]
 var pages: [Page] = []
 var articles: [Page] = []
+var notes: [Note] = []
 
 @main
 struct Main {
 	static func main() async throws {
 		prepareOutputFolder()
 		await prepareAssets()
+		buildNotes()
 		buildLifeLessons()
 		await buildContent()
 		makePages()
@@ -106,6 +108,27 @@ func prepareAssets() async {
 	} catch {
 		fatalError("\(#function): \(error)")
 	}
+}
+
+func buildNotes() {
+	var noteItems = JSONDecoder().decode([Note].self, from: "notes.json")
+
+	noteItems = noteItems.map {
+		var note = $0
+		note.contentHtmlString = markdownParser.parse(note.markdown).html
+		return note
+	}
+	.sorted(by: >)
+
+	notes = noteItems
+
+	let noteListPage = Page(
+		path: "notes",
+		layout: .list(title: "Notes"),
+		updatedAt: noteItems.first?.publishedAt,
+		contentHtmlString: documentRenderer.render(noteListDocument(notes: noteItems), withLinkSuffixes: true)
+	)
+	pages.append(noteListPage)
 }
 
 func buildLifeLessons() {
