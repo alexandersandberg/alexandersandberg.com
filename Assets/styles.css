@@ -415,6 +415,11 @@ a.button + .link-suffix {
 	margin-block-end: var(--space-24);
 }
 
+.prose.compact > * {
+	margin-block-start: var(--space-16);
+	margin-block-end: var(--space-16);
+}
+
 .prose h1,
 .prose h2,
 .prose h3,

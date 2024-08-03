@@ -18,7 +18,7 @@ struct LifeLessonItem: TagRepresentable {
 					.class("sr-only")
 
 				Div(contentHtmlString)
-					.class("prose life-lesson-content")
+					.class("prose compact life-lesson-content")
 
 				P {
 					A("#\(lesson.id)")
