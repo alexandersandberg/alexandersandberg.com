@@ -121,25 +121,6 @@ You can disable this menu bar app in [Settings](#settings) if you don’t want i
 
 In the app settings, you have access to a few different configurations so that you can customize Balance to your liking. You can access the settings via the menus or using the shortcut `⌘` `,`.
 
-- Break reminders
-    - Break reminder interval
-- Count focus timer down
-- Clock-in reminder
-- Launch on login
-- Share anonymous usage data
-- Translucent windows
-- Menu bar app
-    - Information to display in the menu bar
-        - Session duration
-        - Active duration
-        - Time since the last break
-        - Total session duration today
-        - Total active duration today
-        - Nothing
-    - Break reminder in the menu bar
-    - Show Balance in the dock (only available with the menu bar app enabled)
-- Translucent windows
-
 ## <span id="log"></span>Log (Pro)
 
 ![Log](https://cdn.alexandersandberg.com/balance/log.png)
