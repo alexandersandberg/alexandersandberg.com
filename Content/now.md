@@ -3,12 +3,12 @@ title: Now
 layout: page
 description: What I’m up to right now.
 publishedAt: 2018-11-14
-updatedAt: 2024-07-28
+updatedAt: 2024-09-23
 ---
 
 ## Balance 2.0
 
-I’m making good progress on the complete redesign and rewrite of Balance. I might start sharing some more detailed progress updates publicly soon, although I don’t know where (see next point).
+I’m making good progress on the complete redesign and rewrite of Balance. I might start sharing some more detailed progress updates publicly soon.
 
 ## Phasing out social media
 
@@ -16,7 +16,7 @@ I’ve felt distracted by social media lately. I want to figure out a way to mov
 
 Part of this is also because I want to distance myself from Twitter (no, I will not refer to it as “X”) as I do not support what it has become.
 
-At the same time, I want to keep the ability to share small life and project updates publicly somewhere, something I now use Twitter for. Maybe I can add an update feed to this website instead?
+At the same time, I want to keep the ability to share small life and project updates publicly somewhere, something I now use Twitter for. ~~Maybe I can add an update feed to this website instead?~~ I have now started posting things in my new [/notes feed](/notes/). Will see how I like it.
 
 ## Swift.org redesign
 
