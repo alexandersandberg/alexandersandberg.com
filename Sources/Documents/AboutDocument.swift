@@ -25,7 +25,7 @@ let aboutDocument = Document(.html) {
 	Section(title: "What") {
 		Div {
 			P("I love turning ideas into reality—<em>making things</em>. Nowadays, I spend most of my time carefully crafting simple but beautiful apps and experiences with Swift and SwiftUI.")
-			P(#"I work as a Senior iOS Engineer at <a href="https://www.composer.trade/">Composer</a> where I’m in charge of our iOS app."#)
+			P(#"I work as the Lead iOS Engineer at <a href="https://www.composer.trade/">Composer</a> where I’m in charge of our iOS app."#)
 			P(#"I’m working on a time tracking app called <a href="/balance/">Balance</a> that helps you balance work and life."#)
 			P(#"I’m also a member of the <a href="https://www.swift.org/website-workgroup/">Swift Website Workgroup</a> where I help guide the evolution of the <a href="https://www.swift.org">Swift.org</a> website."#)
 			P(#"You can read more about what I’m up to right now on <a href="/now/">my now page</a>."#)
@@ -77,8 +77,7 @@ let work = [
 	LinkedResource(
 		title: "Composer",
 		href: "https://composer.trade",
-		description: "Senior iOS Engineer ⋅ 2023–Now",
-		highlightedText: "hello there somewhere!"
+		description: "Lead iOS Engineer ⋅ 2023–Now"
 	),
 	LinkedResource(
 		title: "Swift Website Workgroup",
@@ -93,7 +92,7 @@ let work = [
 	LinkedResource(
 		title: "Tempo",
 		href: "https://yourtempo.co",
-		description: "Mobile Developer ⋅ 2021"
+		description: "Mobile Developer ⋅ 2021–2021"
 	),
 	LinkedResource(
 		title: "Newsadoo",

@@ -12,7 +12,7 @@ With an inspiring mission, a beautiful product, and an amazing team, one opportu
 
 ## My next thing
 
-Today I’m thrilled to announce that I this week joined the team at [Practice](https://practice.do) as a *Senior iOS Engineer* to work on the Practice iOS app!
+Today I’m thrilled to announce that I this week joined the team at [Practice](https://practice.do) as a *Lead iOS Engineer* to work on the Practice iOS app!
 
 Practice is building a tool that helps individuals launch and run their entire coaching and consulting businesses in one place.
 
