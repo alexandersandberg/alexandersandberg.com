@@ -118,7 +118,7 @@ private struct DetailsSection: TagRepresentable {
 							.style("line-height: 1;")
 					}
 
-					P(#"Balance has received over <span class="nowrap">600 five-star</span> ratings worldwide"#)
+					P(#"Balance has received over <span class="nowrap">700 five-star</span> ratings worldwide"#)
 						.class("footnote secondary")
 						.style("max-width: 15rem;")
 				}
