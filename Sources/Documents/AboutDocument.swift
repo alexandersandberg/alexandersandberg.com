@@ -113,6 +113,11 @@ let connect = [
 		description: "@alexandersandberg"
 	),
 	LinkedResource(
+		title: "Bluesky",
+		href: "https://bsky.app/profile/alexandersandberg.com",
+		description: "@alexandbergsandberg.com"
+	),
+	LinkedResource(
 		title: "Twitter",
 		href: "https://twitter.com/alexandberg",
 		description: "@alexandberg"
