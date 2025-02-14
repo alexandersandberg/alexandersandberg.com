@@ -3,36 +3,24 @@ title: Now
 layout: page
 description: What I’m up to right now.
 publishedAt: 2018-11-14
-updatedAt: 2024-09-23
+updatedAt: 2025-02-14
 ---
 
-## Balance 2.0
+## Balance 2
 
-I’m making good progress on the complete redesign and rewrite of Balance. I might start sharing some more detailed progress updates publicly soon.
-
-## Phasing out social media
-
-I’ve felt distracted by social media lately. I want to figure out a way to move all my online interactions to email (because I love email). I’m just not sure yet how to do this without losing the ability to meet new people online.
-
-Part of this is also because I want to distance myself from Twitter (no, I will not refer to it as “X”) as I do not support what it has become.
-
-At the same time, I want to keep the ability to share small life and project updates publicly somewhere, something I now use Twitter for. ~~Maybe I can add an update feed to this website instead?~~ I have now started posting things in my new [/notes feed](/notes/). Will see how I like it.
-
-## Swift.org redesign
-
-The Swift Website Workgroup that I’m a member of have started reworking the Swift.org website, and I spend a few hours a week on this. It’s a big project that will take a while, but I’m very excited about it!
-
-## Composer iOS
-
-After a successful launch of [Composer for iOS](https://www.composer.trade/ios), we’re hard at work improving the app and adding more features.
+I’m making good progress on the complete redesign and rewrite of Balance. I have started sharing some previews in my [/notes feed](/notes/).
 
 ## Increasing indie MRR
 
 As part of [my strive for freedom and independence](/someday/), I want to someday have _the option_ of making my indie apps my full-time job. I’m currently ~10% of the way there in terms of MRR.
 
+## Getting married
+
+I got engaged to the love of my life at the end of last year, and this summer we’re getting married! I’ve quickly learned how much there is to do for the wedding, but it’s also really exciting!
+
 ## Planning to move somewhere else
 
-We like it where my girlfriend and I live now, but it’s not the place we eventually want to settle down at. We would like to figure this out in the next few years though, and have started planning for that.
+We like it where we live now, but it’s not the place we eventually want to settle down at. In the next few years, we would like to figure out where that is, and have started planning for that.
 
 ## Spending less time in front of the computer
 
