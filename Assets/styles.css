@@ -464,6 +464,11 @@ a.button + .link-suffix {
 	margin-block-end: var(--space-32);
 }
 
+.prose.compact img {
+	margin-block-start: var(--space-16);
+	margin-block-end: 0;
+}
+
 .prose .callout + .callout {
 	margin-block-start: calc(var(--space-32) * -1 + var(--space-8))
 }
