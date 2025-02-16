@@ -9,6 +9,16 @@
 	--caption: var(--weight-normal) 0.75rem/1.7 var(--sans-serif);
 }
 
+@media (max-width: 29.999rem) {
+	:root {
+		--caption: var(--footnote);
+	}
+
+	input {
+		--footnote: var(--weight-normal) 1rem/1.6 var(--sans-serif);
+	}
+}
+
 .large-title { font: var(--large-title); }
 .title1 { font: var(--title1); }
 .title2 { font: var(--title2); }
