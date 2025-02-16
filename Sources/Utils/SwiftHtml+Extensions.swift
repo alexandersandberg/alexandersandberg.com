@@ -10,7 +10,7 @@ import SwiftHtml
 
 extension DocumentRenderer {
 	public func render(_ document: Document, withLinkSuffixes: Bool) -> String {
-		let html = render(document)
+		let html = render(document).withVideoElements
 
 		return if withLinkSuffixes {
 			html.withLinkSuffixes
