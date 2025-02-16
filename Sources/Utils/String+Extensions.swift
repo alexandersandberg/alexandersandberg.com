@@ -90,7 +90,7 @@ extension String {
 			var convertedElementString = imgString
 
 			if srcString.hasSuffix(".mp4") {
-				convertedElementString = "<video controls autoplay loop aria-label='\(altString)'><source src='\(srcString)' type='video/\(srcString.split(separator: ".").last!)'></video>"
+				convertedElementString = "<video autoplay muted playsinline loop aria-label='\(altString)'><source src='\(srcString)' type='video/\(srcString.split(separator: ".").last!)'></video>"
 			}
 
 			result = (result as NSString).replacingCharacters(in: imgRange, with: convertedElementString)
