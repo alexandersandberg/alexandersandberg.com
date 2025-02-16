@@ -7,8 +7,7 @@
 
 import Foundation
 
-// TODO: proper fix for this?
-extension FileManager: @unchecked Sendable {}
+extension FileManager: @unchecked @retroactive Sendable {}
 
 extension FileManager {
 	func walkDirectory(at url: URL, options: DirectoryEnumerationOptions = [.skipsHiddenFiles, .skipsPackageDescendants]) -> AsyncStream<URL> {
