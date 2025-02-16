@@ -68,6 +68,37 @@ extension String {
 		return result
 	}
 
+	var withVideoElements: String {
+		let imgPattern = "(<img [^>]*?src=[\"']([^\"']*?)[\"'])([^>]*?alt=[\"']([^\"']*?)[\"'])([^>]*>)"
+
+		let imgRegex = try! NSRegularExpression(pattern: imgPattern, options: [])
+		let range = NSRange(location: 0, length: self.utf16.count)
+
+		let matches = imgRegex.matches(in: self, options: [], range: range)
+
+		var result = self
+
+		for match in matches.reversed() {
+			let imgRange = match.range(at: 0)
+			let srcRange = match.range(at: 2)
+			let altRange = match.range(at: 4)
+
+			let imgString = (self as NSString).substring(with: imgRange)
+			let srcString = (self as NSString).substring(with: srcRange)
+			let altString = (self as NSString).substring(with: altRange)
+
+			var convertedElementString = imgString
+
+			if srcString.hasSuffix(".mp4") {
+				convertedElementString = "<video controls autoplay loop aria-label='\(altString)'><source src='\(srcString)' type='video/\(srcString.split(separator: ".").last!)'></video>"
+			}
+
+			result = (result as NSString).replacingCharacters(in: imgRange, with: convertedElementString)
+		}
+
+		return result
+	}
+
 	func writeToOutputDirectory(path: String, prettyURL: Bool) throws {
 		let url = outputDirectory.appendingPathComponent(path)
 

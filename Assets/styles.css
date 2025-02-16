@@ -156,12 +156,14 @@ blockquote {
 	overflow-wrap: break-word;
 }
 
-img {
+img,
+video {
 	display: block;
 	max-width: 100%;
 }
 
-img:not(.plain) {
+img:not(.plain),
+video:not(.plain) {
 	box-sizing: border-box;
 	border-radius: 0.5rem;
 	border: 1px solid var(--quinary);
@@ -457,6 +459,7 @@ a.button + .link-suffix {
 
 .prose hr,
 .prose img,
+.prose video,
 .prose blockquote,
 .prose pre,
 .prose .callout {
@@ -464,7 +467,8 @@ a.button + .link-suffix {
 	margin-block-end: var(--space-32);
 }
 
-.prose.compact img {
+.prose.compact img,
+.prose.compact video {
 	margin-block-start: var(--space-16);
 	margin-block-end: 0;
 }
