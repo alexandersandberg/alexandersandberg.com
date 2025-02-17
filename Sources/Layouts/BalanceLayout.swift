@@ -25,7 +25,7 @@ public struct BalanceLayout: TagRepresentable {
 						}
 					}
 
-					SiteFooter(commentSubject: title)
+					SiteFooter(variant: .balance, commentSubject: title)
 				}
 			}
 		}
