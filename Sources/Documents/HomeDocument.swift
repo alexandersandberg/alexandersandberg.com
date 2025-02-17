@@ -98,7 +98,7 @@ private struct IndieAppsSection: TagRepresentable {
 private struct NotesSection: TagRepresentable {
 	func build() -> Tag {
 		Section(title: "Notes", moreLink: .notes("Archive")) {
-			VStack(alignment: .leading, spacing: .s32) {
+			VStack(alignment: .leading, spacing: .s48) {
 				for note in notes.sorted(by: >).prefix(3) {
 					NoteItem(note: note)
 				}
