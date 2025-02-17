@@ -74,6 +74,12 @@
 	--tertiary: rgba(var(--foreground), 45%);
 	--quaternary: rgba(var(--foreground), 15%);
 	--quinary: rgba(var(--foreground), 4%);
+
+	--primary-bg: rgba(var(--background), 100%);
+	--secondary-bg: rgba(var(--background), 60%);
+	--tertiary-bg: rgba(var(--background), 45%);
+	--quaternary-bg: rgba(var(--background), 15%);
+	--quinary-bg: rgba(var(--background), 4%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -150,7 +156,7 @@ body {
 	margin: calc(4vw + 6vh) auto calc(4vw + 10vh);
 	font: var(--body);
 	color: var(--primary);
-	background: rgb(var(--background));
+	background: var(--primary-bg);
 }
 
 h1,
@@ -586,6 +592,69 @@ a.button + .link-suffix {
 
 article:hover .comment-link {
 	opacity: 1;
+}
+
+/* Subscription Box */
+.subscription-box {
+	padding: 2rem 1.5rem;
+	background: var(--quinary);
+	font: var(--footnote);
+	border-radius: 0.5rem;
+	border: 1px solid var(--quinary);
+}
+
+@media (min-width: 30rem) {
+	.subscription-box {
+		padding: 2rem 3rem;
+	}
+}
+
+.subscription-box form {
+	position: relative;
+	width: 100%;
+	max-width: 22rem;
+}
+
+.subscription-box input,
+.subscription-box button {
+	appearance: none;
+	background: none;
+	border: none;
+}
+
+.subscription-box input {
+	box-sizing: border-box;
+	width: 100%;
+	height: 2.5rem;
+	background: var(--primary-bg);
+	padding: 0.25rem calc(0.25rem + 5.5rem /* button width */) 0.25rem 0.75rem;
+	border-radius: 0.5rem;
+	border: 1px solid var(--quaternary);
+	font: var(--footnote);
+	font-weight: var(--weight-medium);
+	caret-color: color(display-p3 var(--accent-p3));
+	outline: none;
+	transition: border-color var(--transition);
+}
+
+.subscription-box input:focus {
+	border-color: var(--secondary);
+}
+
+.subscription-box button {
+	position: absolute;
+	right: 0;
+	box-sizing: border-box;
+	width: 5.5rem;
+	height: calc(2.5rem - 2 * 0.25rem);
+	margin-right: 0.25rem;
+	padding: 0;
+	background: var(--primary);
+	border-radius: 0.3rem;
+	font: var(--footnote);
+	font-weight: var(--weight-bold);
+	color: var(--primary-bg);
+	cursor: pointer;
 }
 
 /* More Toggle */
