@@ -38,7 +38,7 @@ struct NewsletterSubscriptionBox: TagRepresentable {
 							A("/articles")
 								.href("/articles")
 
-							Span(", and other occasional life updates.")
+							Span(", private app beta invites, and other occasional life updates.")
 						}
 						.class("footnote secondary")
 					}
