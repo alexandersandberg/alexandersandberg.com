@@ -23,5 +23,10 @@
 		"id": 5,
 		"markdown": "First [Balance](/balance) 2 sneak peek.\n\nLet me know if you want access to the private beta once it’s open for testing!\n\n![A preview of the clock-in experience in Balance 2](https://cdn.alexandersandberg.com/balance/balance2-preview-clock-in.mp4)",
 		"publishedAt": "2025-02-14"
+	},
+	{
+		"id": 6,
+		"markdown": "Making the window translucency adjustable in Balance 2.\n\n![A preview of the window translucency setting in Balance 2](https://cdn.alexandersandberg.com/balance/balance2-preview-settings-translucency.mp4)",
+		"publishedAt": "2025-02-25"
 	}
 ]
