@@ -33,5 +33,10 @@
 		"id": 7,
 		"markdown": "Just signed up for the Lumon severance procedure so I can dogfood my products without bias.",
 		"publishedAt": "2025-03-25"
+	},
+	{
+		"id": 8,
+		"markdown": "Re: [iOS Dev Weekly #709 on the cost of Swift and SwiftUI](https://iosdevweekly.com/issues/709/)\n\nConsidering how much more friendly Swift and SwiftUI are to developers—especially those just starting out—compared to Objective-C and UIKit, long-term the cost was (or is, since we’re still not there yet) definitely worth it.\n\nI would not be building native Apple platform apps for a living had it not been for Swift and SwiftUI. I'm also having an _amazing_ time doing so. I owe Apple and the Swift community a massive thanks! ♥︎",
+		"publishedAt": "2025-04-26"
 	}
 ]
