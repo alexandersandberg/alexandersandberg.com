@@ -1,4 +1,4 @@
-/* Fonts */
+/* MARK: - Fonts */
 :root {
 	--large-title: var(--weight-medium) 2rem/1.25 var(--sans-serif);
 	--title1: var(--weight-medium) 1.5rem/1.25 var(--sans-serif);
@@ -27,7 +27,7 @@
 .footnote { font: var(--footnote); }
 .caption { font: var(--caption); }
 
-/* Font Families */
+/* MARK: - Font Families */
 :root {
 	--sans-serif: ui-sans-serif, system-ui, sans-serif, var(--emoji);
 	--serif: ui-serif, Charter, "Bitstream Charter", "Sitka Text", Cambria, serif,
@@ -44,7 +44,7 @@
 .monospace { font-family: var(--monospace); }
 .rounded { font-family: var(--rounded); }
 
-/* Font Weights */
+/* MARK: - Font Weights */
 :root {
 	--weight-normal: 400;
 	--weight-medium: 500;
@@ -63,7 +63,7 @@
 .medium { font-weight: var(--weight-medium); }
 .bold { font-weight: var(--weight-bold); }
 
-/* Colors */
+/* MARK: - Colors */
 :root {
 	--foreground: 0, 0, 0;
 	--background: 255, 255, 255;
@@ -103,7 +103,7 @@
 .quaternary { color: var(--quaternary); }
 .quinary { color: var(--quinary); }
 
-/* Spacing */
+/* MARK: - Spacing */
 :root {
 	--space-base: 0.25rem;
 	--space-0: calc(0 * var(--space-base));
@@ -129,7 +129,7 @@
 .s64 { --spacing: var(--space-64); }
 .s80 { --spacing: var(--space-80); }
 
-/* Animations */
+/* MARK: - Animations */
 :root {
 	--transition: 0.1s ease;
 }
@@ -140,7 +140,7 @@
 	}
 }
 
-/* Basics */
+/* MARK: - Basics */
 :root {
 	color-scheme: light dark;
 	touch-action: manipulation;
@@ -233,7 +233,7 @@ hr {
 	border-top: 1px dashed var(--quaternary);
 }
 
-/* Links */
+/* MARK: - Links */
 a {
 	color: inherit;
 	text-decoration: none;
@@ -269,7 +269,7 @@ a.button:hover {
 	color: var(--primary);
 }
 
-/* Link suffix */
+/* MARK: - Link suffix */
 a + .link-suffix {
 	position: relative;
 	margin-right: 0.2em;
@@ -306,7 +306,7 @@ a.button + .link-suffix {
 	display: none;
 }
 
-/* Stack */
+/* MARK: - Stack */
 .stack {
 	display: flex;
 	justify-content: space-between;
@@ -359,7 +359,7 @@ a.button + .link-suffix {
 	text-align: right;
 }
 
-/* Spacer */
+/* MARK: - Spacer */
 .spacer {
 	display: none;
 }
@@ -386,7 +386,7 @@ a.button + .link-suffix {
 	}
 }
 
-/* Grid */
+/* MARK: - Grid */
 .grid {
 	display: grid;
 	gap: var(--spacing);
@@ -403,7 +403,7 @@ a.button + .link-suffix {
 	}
 }
 
-/* Masonry */
+/* MARK: - Masonry */
 .masonry {
 	column-count: 1;
 	column-gap: var(--space-8);
@@ -420,7 +420,7 @@ a.button + .link-suffix {
 	}
 }
 
-/* Prose */
+/* MARK: - Prose */
 .prose h1 { font: var(--title1); }
 .prose h2 { font: var(--title2); }
 .prose h3 { font: var(--title3); }
@@ -510,7 +510,7 @@ a.button + .link-suffix {
 	color: var(--tertiary);
 }
 
-/* Table of Contents */
+/* MARK: - Table of Contents */
 .prose > ol:first-child {
 	list-style-type: none;
 	padding-left: 0;
@@ -523,7 +523,7 @@ a.button + .link-suffix {
 	text-decoration: none;
 }
 
-/* Utilities */
+/* MARK: - Utilities */
 .uppercase {
 	text-transform: uppercase;
 }
@@ -562,7 +562,7 @@ a.button + .link-suffix {
 	width: 1px;
 }
 
-/* Components */
+/* MARK: - Components */
 .callout {
 	padding: 0.75rem 1rem;
 	background: var(--quinary);
@@ -594,7 +594,7 @@ article:hover .comment-link {
 	opacity: 1;
 }
 
-/* Subscription Box */
+/* MARK: - Subscription Box */
 .subscription-box {
 	padding: 2rem 1.5rem;
 	background: var(--quinary);
@@ -657,7 +657,7 @@ article:hover .comment-link {
 	cursor: pointer;
 }
 
-/* More Toggle */
+/* MARK: - More Toggle */
 .more-label {
 	display: block;
 	column-span: all;
