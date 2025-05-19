@@ -51,5 +51,6 @@ struct NoteItem: TagRepresentable {
 			}
 		}
 		.id("\(note.id)")
+		.class("note")
 	}
 }

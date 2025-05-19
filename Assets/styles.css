@@ -594,6 +594,20 @@ article:hover .comment-link {
 	opacity: 1;
 }
 
+/* MARK: - Notes */
+@media (min-width: 30rem) {
+	.note .prose img {
+		display: inline-block;
+		vertical-align: top;
+		width: calc(50% - var(--space-8));
+		max-width: calc(50% - var(--space-8));
+	}
+
+	.note .prose img:first-of-type {
+		margin-right: var(--space-16);
+	}
+}
+
 /* MARK: - Subscription Box */
 .subscription-box {
 	padding: 2rem 1.5rem;
