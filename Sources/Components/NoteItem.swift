@@ -26,7 +26,7 @@ struct NoteItem: TagRepresentable {
 					.class("sr-only")
 
 				Div(note.contentHtmlString)
-					.class("prose compact life-lesson-content")
+					.class("prose compact")
 
 				P {
 					A("#\(note.id)")
