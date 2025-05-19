@@ -38,5 +38,10 @@
 		"id": 8,
 		"markdown": "Re: [iOS Dev Weekly #709 on the cost of Swift and SwiftUI](https://iosdevweekly.com/issues/709/)\n\nConsidering how much more friendly Swift and SwiftUI are to developers—especially those just starting out—compared to Objective-C and UIKit, long-term the cost was (or is, since we’re still not there yet) definitely worth it.\n\nI would not be building native Apple platform apps for a living had it not been for Swift and SwiftUI. I'm also having an _amazing_ time doing so. I owe Apple and the Swift community a massive thanks! ♥︎",
 		"publishedAt": "2025-04-26"
+	},
+	{
+		"id": 9,
+		"markdown": "Just received my copy of the Internet Phone Book! Happy to support such a cool project.\n\n[Call me](https://internetphonebook.net/#dial-a-site) maybe? #307\n\n![The Internet Phone Book cover](https://cdn.alexandersandberg.com/internetphonebook-1.png) ![My website featured in the Internet Phone Book on page 37](https://cdn.alexandersandberg.com/internetphonebook-2.png)",
+		"publishedAt": "2025-05-19"
 	}
 ]
