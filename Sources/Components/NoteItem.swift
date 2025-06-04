@@ -45,7 +45,7 @@ struct NoteItem: TagRepresentable {
 							.class("plain")
 							.href("mailto:\(Site.email)?subject=Reply: Note #\(note.id)")
 					}
-					.class("@sm comment-link footnote tertiary")
+					.class("footnote tertiary")
 				}
 				.class("footnote tertiary")
 			}
