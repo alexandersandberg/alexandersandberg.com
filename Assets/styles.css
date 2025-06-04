@@ -585,15 +585,6 @@ a.button + .link-suffix {
 	border-radius: 0.5rem;
 }
 
-.comment-link {
-	opacity: 0;
-	transition: opacity var(--transition);
-}
-
-article:hover .comment-link {
-	opacity: 1;
-}
-
 /* MARK: - Notes */
 @media (min-width: 30rem) {
 	.note .prose img {
