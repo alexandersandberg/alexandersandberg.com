@@ -43,5 +43,10 @@
 		"id": 9,
 		"markdown": "Just received my copy of the Internet Phone Book! Happy to support such a cool project.\n\n[Call me](https://internetphonebook.net/#dial-a-site) maybe? #307\n\n![The Internet Phone Book cover](https://cdn.alexandersandberg.com/internetphonebook-1.png) ![My website featured in the Internet Phone Book on page 37](https://cdn.alexandersandberg.com/internetphonebook-2.png)",
 		"publishedAt": "2025-05-19"
+	},
+	{
+		"id": 10,
+		"markdown": "The [Swift.org](https://swift.org/) redesign we’ve been working on just landed!\n\n![The new Swift.org landing page](https://cdn.alexandersandberg.com/swift-org-redesign.png)",
+		"publishedAt": "2025-06-04"
 	}
 ]
