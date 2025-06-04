@@ -587,14 +587,15 @@ a.button + .link-suffix {
 
 /* MARK: - Notes */
 @media (min-width: 30rem) {
-	.note .prose img {
+	.note .prose img:first-of-type:nth-last-of-type(2),
+	.note .prose img:first-of-type:nth-last-of-type(2) + img {
 		display: inline-block;
 		vertical-align: top;
 		width: calc(50% - var(--space-8));
 		max-width: calc(50% - var(--space-8));
 	}
 
-	.note .prose img:first-of-type {
+	.note .prose img:first-of-type:nth-last-of-type(2) {
 		margin-right: var(--space-16);
 	}
 }
