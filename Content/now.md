@@ -3,20 +3,20 @@ title: Now
 layout: page
 description: What I’m up to right now.
 publishedAt: 2018-11-14
-updatedAt: 2025-02-14
+updatedAt: 2025-08-11
 ---
+
+## Got married
+
+At the end of July I married the love of my life and best friend. It was an absolutely amazing day that I will cherish forever! 🤍
 
 ## Balance 2
 
-I’m making good progress on the complete redesign and rewrite of Balance. I have started sharing some previews in my [/notes feed](/notes/).
+The private beta is live and I'm making good progress towards the official release of Balance 2. If everything goes as planned, I hope to align the release with Apple's release of macOS 26, to hopefully increase my chances of getting featured in the App Store.
 
 ## Increasing indie MRR
 
 As part of [my strive for freedom and independence](/someday/), I want to someday have _the option_ of making my indie apps my full-time job. I’m currently ~10% of the way there in terms of MRR.
-
-## Getting married
-
-I got engaged to the love of my life at the end of last year, and this summer we’re getting married! I’ve quickly learned how much there is to do for the wedding, but it’s also really exciting!
 
 ## Planning to move somewhere else
 
