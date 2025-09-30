@@ -56,7 +56,7 @@ private struct HeaderSection: TagRepresentable {
 	func build() -> Tag {
 		Header {
 			VStack(spacing: .s32) {
-				Img(src: Site.cdn + "/balance/icon.png", alt: "Balance app icon")
+				Img(src: Site.cdn + "/balance/balance2-icon.png", alt: "Balance app icon")
 					.width(120)
 					.class("plain")
 
@@ -74,6 +74,9 @@ private struct HeaderSection: TagRepresentable {
 				}
 
 				DownloadButton()
+
+				Span("The complete redesign is finally here!")
+					.class("highlighted-text big")
 			}
 		}
 	}
@@ -86,15 +89,9 @@ private struct ScreenshotsSection: TagRepresentable {
 				.class("sr-only")
 
 			VStack(spacing: .s8) {
-				Img(src: Site.cdn + "/balance/landing-session.png", alt: "Balance clocked-in view")
+				Img(src: Site.cdn + "/balance/screenshot-1.png", alt: "App store screenshot for Balance")
 
-				VStack(spacing: .s8, horizontalFrom: .sm) {
-					Img(src: Site.cdn + "/balance/landing-menu-bar-app.png", alt: "Balance menu bar app")
-
-					Img(src: Site.cdn + "/balance/landing-focus-timer.png", alt: "Balance focus timer")
-				}
-
-				Img(src: Site.cdn + "/balance/landing-log-summary.png", alt: "Balance log summary")
+				Img(src: Site.cdn + "/balance/screenshot-2.png", alt: "App store screenshot for Balance showcasing features")
 			}
 		}
 	}
@@ -222,7 +219,7 @@ private struct FooterSection: TagRepresentable {
 		Footer {
 			VStack(spacing: .s48) {
 				VStack(spacing: .s32) {
-					Img(src: Site.cdn + "/balance/icon.png", alt: "Balance app icon")
+					Img(src: Site.cdn + "/balance/balance2-icon.png", alt: "Balance app icon")
 						.width(100)
 						.class("plain")
 

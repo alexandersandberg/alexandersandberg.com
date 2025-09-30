@@ -585,6 +585,11 @@ a.button + .link-suffix {
 	border-radius: 0.5rem;
 }
 
+.highlighted-text.big {
+	padding: 0.5rem 1rem;
+	border-radius: 999em;
+}
+
 /* MARK: - Notes */
 @media (min-width: 30rem) {
 	.note .prose img:first-of-type:nth-last-of-type(2),
