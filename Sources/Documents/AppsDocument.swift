@@ -27,7 +27,7 @@ let appsDocument = Document(.html) {
 
 			P("You can reach me by <a href='mailto:\(Site.email)?subject=App support'>sending me an email</a>.")
 
-			P(#"Balance questions? The <a href="/balance/manual/">Owner’s Manual</a> might be able to help."#)
+			P(#"Balance questions? The <a href="/balance/manual/">Manual</a> might be able to help."#)
 				.class("callout")
 		}
 		.class("prose")
