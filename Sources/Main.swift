@@ -53,7 +53,7 @@ let indieApps = [
 		title: "Balance",
 		href: "/balance/",
 		description: "A time tracking app that helps you balance work and life.",
-		highlightedText: "My latest indie app!"
+		highlightedText: "The redesign is here!"
 	),
 	LinkedResource(
 		title: "Tiny Softbox",
