@@ -47,7 +47,7 @@ let balanceDocument = Document(.html) {
 private struct DownloadButton: TagRepresentable {
 	func build() -> Tag {
 		A("&ensp;Download")
-			.href("https://apps.apple.com/app/id1637311725")
+			.href("https://apps.apple.com/app/apple-store/id1637311725?pt=121705464&ct=website&mt=8")
 			.class("button plain")
 	}
 }
