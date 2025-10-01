@@ -39,7 +39,7 @@ The list of new features and improvements in Balance 2 is _very_ long, but here�
 - Workspace work windows
 - Billable time tracking
 - Advanced exports (more formats, options, and data)
-- Localization in 40 (!) languages
+- Translated to 33 (!) languages
 - Deep system integration (Spotlight, Shortcuts, Focus Filters, Siri)
 - Lifetime plans
 
@@ -51,7 +51,7 @@ While Balance is still a side project, my goal is for it to grow into a sustaina
 
 Despite my utter lack of marketing efforts with Balance 1, the organic growth has been quite steady. It’s very clear to me that there’s potential for Balance to grow a lot, so I’m excited to see what I can do here.
 
-I’m not yet sure where to start though.
+Oh, and don’t worry, Balance for iOS and iPadOS (by far the most common request I get) is high up on my TODO list! :)
 
 ---
 
