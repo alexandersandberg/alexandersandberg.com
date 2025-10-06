@@ -3,7 +3,7 @@ title: Now
 layout: page
 description: What I’m up to right now.
 publishedAt: 2018-11-14
-updatedAt: 2025-08-11
+updatedAt: 2025-10-06
 ---
 
 ## Got married
@@ -12,7 +12,7 @@ At the end of July I married the love of my life and best friend. It was an abso
 
 ## Balance 2
 
-The private beta is live and I'm making good progress towards the official release of Balance 2. If everything goes as planned, I hope to align the release with Apple's release of macOS 26, to hopefully increase my chances of getting featured in the App Store.
+The complete redesign and rewrite of Balance is finally live! I wrote [a short article about it](/articles/balance-2/).
 
 ## Increasing indie MRR
 
