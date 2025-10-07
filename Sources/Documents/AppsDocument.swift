@@ -56,9 +56,9 @@ let appsDocument = Document(.html) {
 		Div {
 			H3("Balance")
 
-			P("Balance is a “freemium” app which means it’s completely free to install and use, but gives you the option to subscribe to a Pro version to unlock more features.")
+			P("Balance is a “freemium” app which means it’s completely free to install and use, but gives you the option to unlock more features with subscriptions or lifetime purchases.")
 
-			P(#"These subscriptions are processed and managed by Apple, and you can read more about that in <a href="https://support.apple.com/en-us/HT202023">Apple’s support article</a>."#)
+			P(#"These subscriptions and purchases are processed and managed by Apple, and you can read more about that in <a href="https://support.apple.com/en-us/HT202023">Apple’s support article</a>."#)
 
 			P(#"<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple’s Terms of Use (EULA)</a> applies."#)
 
