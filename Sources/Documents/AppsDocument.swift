@@ -39,11 +39,9 @@ let appsDocument = Document(.html) {
 		Div {
 			H3("Balance")
 
-			P("To help me improve the app, some <em>anonymous</em> usage data is collected. No personal data is collected—it’s only stored on your own device.")
+			P("Your Balance data is synced to your personal iCloud. I do not collect or store any of your data.")
 
-			P(#"I use Mixpanel for this. See <a href="https://mixpanel.com/legal/privacy-policy/">Mixpanel’s Privacy Statement</a> for more information. If you opted-in during the onboarding, you can opt-out anytime in the Balance app settings."#)
-
-			P(#"I use RevenueCat to help me manage Balance Pro subscriptions. This is also processed <em>anonymously</em>. See <a href="https://www.revenuecat.com/privacy/">RevenueCat’s Privacy Policy</a> for more information."#)
+			P(#"I use RevenueCat to help me manage purchases. This is processed <em>anonymously</em>. See <a href="https://www.revenuecat.com/privacy/">RevenueCat’s Privacy Policy</a> for more information."#)
 
 			H3("Tiny Softbox and Tiny Weather")
 
