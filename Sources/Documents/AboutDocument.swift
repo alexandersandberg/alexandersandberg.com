@@ -123,6 +123,11 @@ let connect = [
 		description: "@alexandberg"
 	),
 	LinkedResource(
+		title: "LinkedIn",
+		href: "https://www.linkedin.com/in/alexandberg/",
+		description: "alexandberg"
+	),
+	LinkedResource(
 		title: "Stack Overflow",
 		href: "https://stackoverflow.com/users/780291",
 		description: "user:780291"
