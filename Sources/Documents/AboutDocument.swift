@@ -122,4 +122,9 @@ let connect = [
 		href: "https://twitter.com/alexandberg",
 		description: "@alexandberg"
 	),
+	LinkedResource(
+		title: "Stack Overflow",
+		href: "https://stackoverflow.com/users/780291",
+		description: "user:780291"
+	),
 ]
