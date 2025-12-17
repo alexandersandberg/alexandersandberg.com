@@ -9,6 +9,9 @@ import SwiftHtml
 
 let aboutDocument = Document(.html) {
 	Section(title: "Who") {
+		Img(src: Site.cdn + "/alex.png", alt: "Alexander Sandberg")
+			.width(128)
+
 		Div {
 			P("I’m Alex, a self-taught software engineer born and raised in northern Sweden. I currently live in Austria.")
 			P("I’m very much driven by curiosity. I’ve always loved creating things, exploring new ideas, and seeking new knowledge to learn from.")
