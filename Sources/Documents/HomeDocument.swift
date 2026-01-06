@@ -13,7 +13,7 @@ let homeDocument = Document(.html) {
 
 		Body {
 			VStack(alignment: .stretch, spacing: .s48) {
-				SiteHeader(supertitle: "Carl William", title: "Alexander Sandberg")
+				SiteHeader(supertitle: "Hi, my name is", title: "Alexander Sandberg")
 
 				SwiftHtml.Main {
 					VStack(alignment: .stretch, spacing: .s48) {
