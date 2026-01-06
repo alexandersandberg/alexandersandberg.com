@@ -12,19 +12,14 @@ struct NewsletterSubscriptionBox: TagRepresentable {
 		Aside {
 			VStack(alignment: .center, spacing: .s24) {
 				VStack(alignment: .center, spacing: .s16) {
-					VStack(alignment: .center, spacing: .s8) {
-						Span("New!")
-							.class("caption highlighted-text")
-
-						H2("Follow me via email")
-							.class("title2 serif medium")
-					}
+					H2("Follow me via email")
+						.class("title2 serif medium")
 
 					VStack(alignment: .center, spacing: .s8) {
 						P("I dream of the day I can delete all my social media accounts.")
 							.class("footnote secondary")
 
-						P("I don’t want to lose the connections though, so I’m launching a <em>very casual</em> email newsletter.")
+						P("I don’t want to lose the connections though, so I run a <em>very casual</em> email newsletter as a way to stay in touch with me.")
 							.class("footnote secondary")
 
 						P {
