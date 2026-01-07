@@ -51,8 +51,14 @@ struct SiteHead: TagRepresentable {
 			SwiftHtml.Link(rel: .appleTouchIcon)
 				.href("/apple-touch-icon.png")
 
+			let cssHref = "/\(Site.cssFileName)?v=\(assetsHashes[Site.cssFileName] ?? "0")"
+
+			SwiftHtml.Link(rel: .preload)
+				.href(cssHref)
+				.attribute("as", "style")
+
 			SwiftHtml.Link(rel: .stylesheet)
-				.href("/\(Site.cssFileName)?v=\(assetsHashes[Site.cssFileName] ?? "0")")
+				.href(cssHref)
 
 			SwiftHtml.Link(rel: .alternate)
 				.type("application/rss+xml")
