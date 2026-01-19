@@ -32,7 +32,7 @@ The main reason why I still have a LinkedIn account is because of my fear of mis
 
 As long as I have to work for money, I probably won’t be ready to burn that bridge and delete my LinkedIn account. 
 
-The same goes for my Twitter account. I love connecting with and meeting new people on there, but the main reason I haven’t deleted it yet is because it significantly helps the success of my indie apps, which in turn brings me more income.
+The same goes for my social media accounts. I love connecting with and meeting new people on there, but the main reason I haven’t deleted them yet is because it significantly helps the success of my indie apps, which in turn brings me more income.
 
 Even though I don’t spend that much time on these social media services anymore, I still feel like a slave to them. And I hate that.
 
