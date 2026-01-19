@@ -4,9 +4,9 @@ description: A brief summary of why this website exists and the inner workings o
 layout: page
 ---
 
-Welcome to my personal _home on the internet_ where I share things about myself—what I’m thinking about, what I’m working on, what I aspire towards, etc.
+Welcome to my personal _home on the internet_ where I share things about myself: what I’m thinking about, what I’m working on, what I aspire towards, etc.
 
-I still publish some content elsewhere, like on Twitter at [@alexandberg](https://twitter.com/alexandberg), but I [someday](/someday/) hope to break free from that. I’m still trying to figure out how.
+I still publish content elsewhere, like on social media, but I [someday](/someday/) hope to break free from that. I’m still trying to figure out how.
 
 Like life itself, this website is forever a _work in progress_.
 
@@ -46,9 +46,7 @@ An unordered list of websites that have inspired me in some way or another to ma
 - [paco.me](https://paco.me)
 - [teenage.engineering](https://teenage.engineering)
 - [slrncl.com](https://slrncl.com)
-- [linusrogge.com](https://linusrogge.com)
 - [henribredt.de](https://henribredt.de)
-- [endless.design](https://endless.design)
 - [johnnyrodgers.is](https://johnnyrodgers.is)
 
 If you like the design of my website, you can find some more great inspiration at [deadsimplesites.com](https://deadsimplesites.com).
