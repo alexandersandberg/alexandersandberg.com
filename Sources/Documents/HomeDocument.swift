@@ -156,5 +156,10 @@ let otherProjects = [
 		title: "Life lessons",
 		href: "/life-lessons/",
 		description: "Collection of knowledge I’ve gathered over the years."
+	),
+	LinkedResource(
+		title: "Quitting social media",
+		href: "/quitting-social-media/",
+		description: "Notes on my work-in-progress path to freedom from social media."
 	)
 ]
