@@ -16,7 +16,7 @@ struct NewsletterSubscriptionBox: TagRepresentable {
 						.class("title2 serif medium")
 
 					VStack(alignment: .center, spacing: .s8) {
-						P("I dream of the day I can delete all my social media accounts.")
+						P(#"I <a href="/quitting-social-media/">dream</a> of the day I can delete all my social media accounts."#)
 							.class("footnote secondary")
 
 						P("I don’t want to lose the connections though, so I run a <em>very casual</em> email newsletter as a way to stay in touch with me.")
