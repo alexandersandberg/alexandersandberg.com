@@ -56,14 +56,14 @@ let indieApps = [
 		highlightedText: "The redesign is here!"
 	),
 	LinkedResource(
-		title: "Tiny Softbox",
-		href: "https://apps.apple.com/app/id1599476381",
-		description: "Simple softbox for video calls, photography, reading, etc."
-	),
-	LinkedResource(
 		title: "Tiny Weather",
 		href: "https://apps.apple.com/app/id1522059185",
 		description: "Minimal weather app that protects your privacy."
+	),
+	LinkedResource(
+		title: "Tiny Softbox",
+		href: "https://apps.apple.com/app/id1599476381",
+		description: "Simple softbox for video calls, photography, reading, etc."
 	),
 ]
 var pages: [Page] = []
