@@ -21,11 +21,19 @@ struct LinkedResourceItem: TagRepresentable {
 	func build() -> Tag {
 		Article {
 			VStack(alignment: .leading, spacing: .s8, horizontalFrom: horizontal ? .sm : nil) {
-				H3 {
-					A(resource.title)
-						.href(resource.href)
+				HStack(spacing: .s16) {
+					H3 {
+						A(resource.title)
+							.href(resource.href)
+					}
+					.class("title3 serif")
+
+					if let highlightedText = resource.highlightedText, horizontal {
+						Span(highlightedText)
+							.style("transform: rotate(-2deg);")
+							.class("caption highlighted-text")
+					}
 				}
-				.class("title3 serif")
 
 				if let highlightedText = resource.highlightedText, !horizontal {
 					Span(highlightedText)

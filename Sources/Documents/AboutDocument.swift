@@ -70,6 +70,9 @@ let aboutDocument = Document(.html) {
 				LinkedResourceItem(resource: resource, horizontal: true)
 			}
 		}
+
+		P(#"I plan to one day <a href="/quitting-social-media/">quit social media</a>, but until then you can still find me there."#)
+			.class("callout")
 	}
 }
 
@@ -105,7 +108,13 @@ let connect = [
 	LinkedResource(
 		title: "Email",
 		href: "mailto:hi@alexandersandberg.com",
-		description: "hi@alexandersandberg.com"
+		description: "hi@alexandersandberg.com",
+		highlightedText: "Preferred!"
+	),
+	LinkedResource(
+		title: "LinkedIn",
+		href: "https://www.linkedin.com/in/alexandberg/",
+		description: "@alexandberg"
 	),
 	LinkedResource(
 		title: "GitHub",
@@ -113,13 +122,13 @@ let connect = [
 		description: "@alexandersandberg"
 	),
 	LinkedResource(
-		title: "Bluesky",
-		href: "https://bsky.app/profile/alexandersandberg.com",
-		description: "@alexandbergsandberg.com"
+		title: "Twitter",
+		href: "https://twitter.com/alexandersandberg.com",
+		description: "@alexandberg"
 	),
 	LinkedResource(
-		title: "LinkedIn",
-		href: "https://www.linkedin.com/in/alexandberg/",
-		description: "alexandberg"
+		title: "Bluesky",
+		href: "https://bsky.app/profile/alexandersandberg.com",
+		description: "@alexandersandberg.com"
 	),
 ]
