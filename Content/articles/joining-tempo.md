@@ -22,7 +22,7 @@ This resonated very well with my own mission of creating products that don’t m
 
 As you’ve already read the title of this post, you know where this is going...
 
-I’m happy to announce that I’m today *joining Tempo as a Mobile Developer* to work full-time on the long-awaited Tempo mobile app.
+I’m happy to announce that I’m today *joining Tempo as a Mobile Engineer* to work full-time on the long-awaited Tempo mobile app.
 
 Working on an exciting product together with like-minded people that share my own values is such a great source of inspiration and motivation. There is also a great community around Tempo that I can’t wait to engage more in.
 

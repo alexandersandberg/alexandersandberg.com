@@ -92,12 +92,12 @@ let work = [
 	LinkedResource(
 		title: "Tempo",
 		href: "https://yourtempo.co",
-		description: "Mobile Developer ⋅ 2021–2021"
+		description: "Mobile Engineer ⋅ 2021"
 	),
 	LinkedResource(
 		title: "Newsadoo",
 		href: "https://newsadoo.com",
-		description: "Mobile Developer ⋅ 2019–2021"
+		description: "Mobile + Frontend ⋅ 2019–2021"
 	)
 ]
 
