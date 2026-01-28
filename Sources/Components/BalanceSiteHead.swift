@@ -37,6 +37,11 @@ struct BalanceSiteHead: TagRepresentable {
 
 			SwiftHtml.Link(rel: .icon)
 				.href("/balance-favicon.ico")
+				.sizes("48x48")
+			SwiftHtml.Link(rel: .icon)
+				.href("/balance-favicon.svg")
+				.sizes("any")
+				.type("image/svg+xml")
 			SwiftHtml.Link(rel: .appleTouchIcon)
 				.href("/balance-apple-touch-icon.png")
 
