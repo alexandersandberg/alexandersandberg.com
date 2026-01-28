@@ -34,7 +34,7 @@ struct SiteHead: TagRepresentable {
 
 			Meta().property("og:title").content(title ?? Site.author)
 			Meta().property("og:author").content(Site.author)
-			Meta().property("og:image").content("\(Site.cdn)/og.png")
+			Meta().property("og:image").content("\(Site.cdn)/og.jpg")
 
 			if publishedAt != nil || updatedAt != nil {
 				Meta().property("og:type").content("article")

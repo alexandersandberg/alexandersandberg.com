@@ -31,7 +31,7 @@ struct BalanceSiteHead: TagRepresentable {
 			Meta().name(.description).content(metaDescription)
 			Meta().property("og:description").content(metaDescription)
 			Meta().property("og:title").content(title)
-			Meta().property("og:image").content("\(Site.cdn)/balance/og.png")
+			Meta().property("og:image").content("\(Site.cdn)/balance/og.jpg")
 
 			Meta().name("apple-itunes-app").content("app-id=1637311725")
 
