@@ -45,8 +45,14 @@ struct BalanceSiteHead: TagRepresentable {
 			SwiftHtml.Link(rel: .appleTouchIcon)
 				.href("/balance-apple-touch-icon.png")
 
+			let cssHref = "/\(Site.cssFileName)?v=\(assetsHashes[Site.cssFileName] ?? "0")"
+
+			SwiftHtml.Link(rel: .preload)
+				.href(cssHref)
+				.attribute("as", "style")
+
 			SwiftHtml.Link(rel: .stylesheet)
-				.href("/\(Site.cssFileName)?v=\(assetsHashes[Site.cssFileName] ?? "0")")
+				.href(cssHref)
 
 			Script()
 				.defer()
