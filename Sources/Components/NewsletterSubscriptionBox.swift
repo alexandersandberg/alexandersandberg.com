@@ -59,17 +59,10 @@ struct NewsletterSubscriptionBox: TagRepresentable {
 					.src("/newsletter-subscription.js")
 					.defer()
 
-				P {
-					Span("Subscribed! Feel free to ")
-
-					A("introduce yourself")
-						.href("mailto:hi@alexandersandberg.com?subject=Hi!")
-
-					Span(" if you want.")
-				}
-				.id("success-message")
-				.class("footnote secondary")
-				.style("display: none;")
+				P("Great! Please click the link in the email sent to your inbox to confirm your subscription.")
+					.id("success-message")
+					.class("footnote secondary prose")
+					.style("display: none;")
 
 				P {
 					Span("Something went wrong. Please ")

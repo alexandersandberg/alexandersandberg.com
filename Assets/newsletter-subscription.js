@@ -19,8 +19,12 @@ document.getElementById("subscription-form").addEventListener("submit", async (e
 	errorMessage.style.display = "none";
 
 	try {
-		const response = await fetch("https://newsletter-subscription-k6spv.bunny.run/?email=" + encodeURIComponent(email), {
-			method: "POST"
+		const response = await fetch("https://www.rumicat.com/api/subscribe/alexander", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json"
+			},
+			body: JSON.stringify({ email })
 		});
 
 		if (!response.ok) {
