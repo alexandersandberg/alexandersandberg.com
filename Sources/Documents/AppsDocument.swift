@@ -26,9 +26,6 @@ let appsDocument = Document(.html) {
 			P("I’m here to help with any questions or thoughts you might have. I also always love to hear feedback, suggestions, and new ideas for my apps.")
 
 			P("You can reach me by <a href='mailto:\(Site.email)?subject=App support'>sending me an email</a>.")
-
-			P(#"Balance questions? See the <a href="https://balance.software/help">Balance help page</a>."#)
-				.class("callout")
 		}
 		.class("prose")
 	}
@@ -39,9 +36,7 @@ let appsDocument = Document(.html) {
 		Div {
 			H3("Balance")
 
-			P("Your Balance data is synced to your personal iCloud. I do not collect or store any of your data.")
-
-			P(#"I use RevenueCat to help me manage purchases. This is processed <em>anonymously</em>. See <a href="https://www.revenuecat.com/privacy/">RevenueCat’s Privacy Policy</a> for more information."#)
+			P(#"See <a href="https://balance.software/privacy">balance.software/privacy</a>."#)
 
 			H3("Tiny Softbox and Tiny Weather")
 
@@ -56,11 +51,7 @@ let appsDocument = Document(.html) {
 		Div {
 			H3("Balance")
 
-			P("Balance is a “freemium” app which means it’s completely free to install and use, but gives you the option to unlock more features with subscriptions or lifetime purchases.")
-
-			P(#"These subscriptions and purchases are processed and managed by Apple, and you can read more about that in <a href="https://support.apple.com/en-us/HT202023">Apple’s support article</a>."#)
-
-			P(#"<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple’s Terms of Use (EULA)</a> applies."#)
+			P(#"See <a href="https://balance.software/terms">balance.software/terms</a>."#)
 
 			H3("Tiny Softbox and Tiny Weather")
 
