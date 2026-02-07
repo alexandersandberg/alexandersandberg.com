@@ -403,23 +403,6 @@ a.button + .link-suffix {
 	}
 }
 
-/* MARK: - Masonry */
-.masonry {
-	column-count: 1;
-	column-gap: var(--space-8);
-}
-
-.masonry > * {
-	break-inside: avoid-column;
-	margin: var(--space-8) 0;
-}
-
-@media (min-width: 40rem) {
-	.masonry {
-		column-count: 2;
-	}
-}
-
 /* MARK: - Prose */
 .prose {
 	text-wrap: pretty;
@@ -670,45 +653,4 @@ a.button + .link-suffix {
 	font-weight: var(--weight-bold);
 	color: var(--primary-bg);
 	cursor: pointer;
-}
-
-/* MARK: - More Toggle */
-.more-label {
-	display: block;
-	column-span: all;
-	font: var(--footnote);
-	color: var(--tertiary);
-	cursor: pointer;
-	transition: color var(--transition);
-	margin-top: var(--space-48);
-}
-
-.more-checkbox {
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
-	bottom: 0;
-}
-
-.more-checkbox:focus ~ .more-label {
-	outline-style: auto;
-	color: var(--primary);
-}
-
-.more-label:hover {
-	color: var(--primary);
-}
-
-.more-checkbox ~ *:not(.more-label) {
-	display: none;
-}
-
-.more-checkbox:checked ~ *:not(.more-label) {
-	display: revert;
-}
-
-.more-checkbox:checked ~ .more-label {
-	display: none;
 }

@@ -5,7 +5,7 @@ layout: article
 publishedAt: 2025-10-01
 ---
 
-Over the last year and a half, I’ve spent _more than 1,000 hours_ completely redesigning and rewriting [Balance](/balance/) from scratch. After obsessing over every small detail, from design to code, I’m really excited to finally release it to the world!
+Over the last year and a half, I’ve spent _more than 1,000 hours_ completely redesigning and rewriting [Balance](https://balance.software) from scratch. After obsessing over every small detail, from design to code, I’m really excited to finally release it to the world!
 
 ![App Store screenshot image for Balance](https://cdn.alexandersandberg.com/balance/screenshot-1.png)
 

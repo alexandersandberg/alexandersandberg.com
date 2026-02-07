@@ -42,16 +42,12 @@ let documentPages = [
 		path: "apps",
 		layout: .page(title: "Apps"),
 		contentHtmlString: documentRenderer.render(appsDocument, withLinkSuffixes: true)
-	),
-	Page(
-		path: "balance",
-		contentHtmlString: documentRenderer.render(balanceDocument, withLinkSuffixes: true)
 	)
 ]
 let indieApps = [
 	LinkedResource(
 		title: "Balance",
-		href: "/balance/",
+		href: "https://balance.software",
 		description: "A time tracking app that helps you balance work and life.",
 		highlightedText: "The redesign is here!"
 	),

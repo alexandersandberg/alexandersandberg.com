@@ -33,7 +33,7 @@ I can share my work and thoughts on this website too, and I do, but the problem 
 
 As long as I care about ”making it“ (which [I someday wish to no longer have to care about](/someday/)), the more people who discover what I share the better, as it leads to both recognition and app revenue.
 
-I owe a lot of [Balance’s](/balance/) success to Twitter, for instance. And while Twitter is no longer the place it was, I’m still holding on to it just in case a tweet of mine goes viral again. Same goes for the other social media platforms.
+I owe a lot of [Balance’s](https://balance.software) success to Twitter, for instance. And while Twitter is no longer the place it was, I’m still holding on to it just in case a tweet of mine goes viral again. Same goes for the other social media platforms.
 
 Me caring about making it is directly tied to my need for financial stability, so essentially social media is also a great way for me to make more money, which is not an easy thing to give up as long as I’m not financially independent.
 
