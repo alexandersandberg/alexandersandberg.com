@@ -123,7 +123,7 @@ let connect = [
 	),
 	LinkedResource(
 		title: "Twitter",
-		href: "https://twitter.com/alexandersandberg.com",
+		href: "https://twitter.com/alexandberg",
 		description: "@alexandberg"
 	),
 	LinkedResource(
