@@ -11,6 +11,7 @@ import SwiftHtml
 struct SiteHead: TagRepresentable {
 	var title: String?
 	var description: String?
+	var canonicalHref: String
 	var publishedAt: Date? = nil
 	var updatedAt: Date? = nil
 
@@ -26,6 +27,9 @@ struct SiteHead: TagRepresentable {
 			}
 
 			Meta().name(.author).content(Site.author)
+
+			SwiftHtml.Link(rel: .canonical).href(canonicalHref)
+			Meta().property("og:url").content(canonicalHref)
 
 			if let description {
 				Meta().name(.description).content(description)

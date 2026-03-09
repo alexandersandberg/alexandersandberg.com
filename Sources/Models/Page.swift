@@ -32,7 +32,7 @@ struct Page {
 
 	var htmlString: String {
 		if let layout {
-			layout.htmlString.replacing("<\(Content().name)>", with: contentHtmlString)
+			layout.htmlString(canonicalHref: canonicalHref).replacing("<\(Content().name)>", with: contentHtmlString)
 		} else {
 			contentHtmlString
 		}
@@ -40,6 +40,26 @@ struct Page {
 
 	var relativePath: String {
 		"/" + path + "/"
+	}
+
+	var canonicalPath: String {
+		if path.isEmpty {
+			return "/"
+		}
+
+		if prettyURL {
+			return "/" + path + "/"
+		}
+
+		if path.contains(".") {
+			return "/" + path
+		}
+
+		return "/" + path + ".html"
+	}
+
+	var canonicalHref: String {
+		Site.url + canonicalPath
 	}
 }
 

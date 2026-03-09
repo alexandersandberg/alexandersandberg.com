@@ -10,10 +10,11 @@ import SwiftHtml
 public struct LifeLessonCategoryLayout: TagRepresentable {
 	var title: String
 	var lessonCount: Int
+	var canonicalHref: String
 
 	func build() -> Tag {
 		Html {
-			SiteHead(title: title)
+			SiteHead(title: title, canonicalHref: canonicalHref)
 
 			Body {
 				VStack(alignment: .stretch, spacing: .s64) {

@@ -35,19 +35,19 @@ enum Layout {
 		}
 	}
 
-	var htmlString: String {
+	func htmlString(canonicalHref: String) -> String {
 		let layout = Document(.html) {
 			switch self {
 			case let .clean(title, description):
-				CleanLayout(title: title, description: description)
+				CleanLayout(title: title, description: description, canonicalHref: canonicalHref)
 			case let .list(title, description):
-				ListLayout(title: title, description: description)
+				ListLayout(title: title, description: description, canonicalHref: canonicalHref)
 			case let .page(title, description, publishedAt, updatedAt):
-				PageLayout(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
+				PageLayout(title: title, description: description, canonicalHref: canonicalHref, publishedAt: publishedAt, updatedAt: updatedAt)
 			case let .article(title, description, publishedAt, updatedAt):
-				ArticleLayout(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
+				ArticleLayout(title: title, description: description, canonicalHref: canonicalHref, publishedAt: publishedAt, updatedAt: updatedAt)
 			case let .lifeLessonCategory(title, lessonCount):
-				LifeLessonCategoryLayout(title: title, lessonCount: lessonCount)
+				LifeLessonCategoryLayout(title: title, lessonCount: lessonCount, canonicalHref: canonicalHref)
 			}
 		}
 

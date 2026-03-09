@@ -11,12 +11,13 @@ import SwiftHtml
 public struct PageLayout: TagRepresentable {
 	var title: String
 	var description: String?
+	var canonicalHref: String
 	var publishedAt: Date?
 	var updatedAt: Date?
 
 	func build() -> Tag {
 		Html {
-			SiteHead(title: title, description: description, publishedAt: publishedAt, updatedAt: updatedAt)
+			SiteHead(title: title, description: description, canonicalHref: canonicalHref, publishedAt: publishedAt, updatedAt: updatedAt)
 
 			Body {
 				VStack(alignment: .stretch, spacing: .s48) {

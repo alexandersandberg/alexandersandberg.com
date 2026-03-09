@@ -9,7 +9,7 @@ import SwiftHtml
 
 let homeDocument = Document(.html) {
 	Html {
-		SiteHead(description: Site.bio.strippedOfHtmlTags)
+		SiteHead(description: Site.bio.strippedOfHtmlTags, canonicalHref: Site.url + "/")
 
 		Body {
 			VStack(alignment: .stretch, spacing: .s48) {
