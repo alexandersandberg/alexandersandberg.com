@@ -85,7 +85,7 @@ let work = [
 	LinkedResource(
 		title: "Swift Website Workgroup",
 		href: "https://www.swift.org/website-workgroup/",
-		description: "Inaugural member ⋅ 2022–Now"
+		description: "Founding Member ⋅ 2022–Now"
 	),
 	LinkedResource(
 		title: "Practice",
