@@ -27,7 +27,6 @@ let aboutDocument = Document(.html) {
 			P("I love turning ideas into reality—<em>making things</em>. Nowadays, I spend most of my time carefully crafting simple but beautiful apps and experiences with Swift and SwiftUI.")
 			P(#"I work as the Lead iOS Engineer at <a href="https://www.composer.trade/">Composer</a> where I’m in charge of our iOS app."#)
 			P(#"I’m working on a time tracking app called <a href="https://balance.software">Balance</a> that helps you balance work and life."#)
-			P(#"I’m also a member of the <a href="https://www.swift.org/website-workgroup/">Swift Website Workgroup</a> where I help guide the evolution of the <a href="https://www.swift.org">Swift.org</a> website."#)
 			P(#"You can read more about what I’m up to right now on <a href="/now/">my now page</a>."#)
 				.class("callout")
 		}
@@ -85,7 +84,7 @@ let work = [
 	LinkedResource(
 		title: "Swift Website Workgroup",
 		href: "https://www.swift.org/website-workgroup/",
-		description: "Founding Member ⋅ 2022–Now"
+		description: "Founding Member ⋅ 2022–2026"
 	),
 	LinkedResource(
 		title: "Practice",
