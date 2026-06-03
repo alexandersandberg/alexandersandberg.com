@@ -73,5 +73,10 @@
 		"id": 15,
 		"markdown": "I added a new project to my website called [Quitting social media](/quitting-social-media/), where I share notes on my work-in-progress path to freedom from social media.\n\nIt’s unfortunately not as simple as it might sound—hence a project and not a note—which you can read more about on the project page.\n\nWould love to hear from others struggling with the same thing!",
 		"publishedAt": "2026-01-21"
+	},
+	{
+		"id": 16,
+		"markdown": "I have decided to [leave the Swift Website Workgroup](/articles/leaving-the-swift-website-workgroup/) after 4 years to focus on other things in life. I’ve had a lot of fun serving the Swift community over these years!",
+		"publishedAt": "2026-06-03"
 	}
 ]
