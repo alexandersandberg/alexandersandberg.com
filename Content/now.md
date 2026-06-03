@@ -10,6 +10,10 @@ updatedAt: 2026-06-03
 
 I’ve started working on the long-awaited iOS (and iPadOS) version of Balance and I’m really excited to start a private beta testing soon-ish. Join the [Balance community](https://balance.software/community) if you want to be invited!
 
+## Leaving the Swift Website Workgroup
+
+After 4 years, it was time for me to [leave the Swift Website Workgroup](/articles/leaving-the-swift-website-workgroup/) and focus on other things in life.
+
 ## Spending more time on analog hobbies
 
 The older I get, the more I appreciate my time away from the computer and the digital world. Nowadays, I try to stick to at least one computer-free day every weekend.
