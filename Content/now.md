@@ -3,8 +3,12 @@ title: Now
 layout: page
 description: What I’m up to right now.
 publishedAt: 2018-11-14
-updatedAt: 2026-06-03
+updatedAt: 2026-06-23
 ---
+
+## Composer acquired by SoFi
+
+[Composer](https://www.composer.trade) has been acquired by SoFi, and I’m really excited to join the [SoFi Invest](https://www.sofi.com/invest/) team to bring our intelligent trading tools into the hands of millions!
 
 ## Working on Balance for iOS
 

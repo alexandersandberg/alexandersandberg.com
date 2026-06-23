@@ -78,5 +78,10 @@
 		"id": 16,
 		"markdown": "I have decided to [leave the Swift Website Workgroup](/articles/leaving-the-swift-website-workgroup/) after 4 years to focus on other things in life. I’ve had a lot of fun serving the Swift community over these years!",
 		"publishedAt": "2026-06-03"
+	},
+	{
+		"id": 17,
+		"markdown": "Composer has been [acquired by SoFi](/articles/composer-is-joining-sofi/), and I’m really excited to join the SoFi Invest team to bring our intelligent trading tools into the hands of millions!\n\n![Composer by SoFi logo](https://cdn.alexandersandberg.com/articles/composer-by-sofi.png)",
+		"publishedAt": "2026-06-23"
 	}
 ]
