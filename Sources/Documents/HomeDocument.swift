@@ -21,15 +21,11 @@ let homeDocument = Document(.html) {
 
 						Hr()
 
-						IndieAppsSection()
+						ProjectsSection()
 
 						Hr()
 
 						NotesSection()
-
-						Hr()
-
-						OtherProjectsSection()
 
 						Hr()
 
@@ -83,11 +79,11 @@ private struct BioSection: TagRepresentable {
 	}
 }
 
-private struct IndieAppsSection: TagRepresentable {
+private struct ProjectsSection: TagRepresentable {
 	func build() -> Tag {
-		Section(title: "Indie apps", moreLink: .apps("Details")) {
+		Section(title: "Projects", moreLink: .projects("Show all")) {
 			Grid(columns: .c2, spacing: .s32) {
-				for resource in indieApps {
+				for resource in Projects.all where resource.isFeatured {
 					LinkedResourceItem(resource: resource)
 				}
 			}
@@ -107,18 +103,6 @@ private struct NotesSection: TagRepresentable {
 	}
 }
 
-private struct OtherProjectsSection: TagRepresentable {
-	func build() -> Tag {
-		Section(title: "Other projects") {
-			Grid(columns: .c2, spacing: .s32) {
-				for resource in otherProjects {
-					LinkedResourceItem(resource: resource)
-				}
-			}
-		}
-	}
-}
-
 private struct ArticlesSection: TagRepresentable {
 	func build() -> Tag {
 		Section(title: "Articles", moreLink: .articles("Archive")) {
@@ -130,36 +114,3 @@ private struct ArticlesSection: TagRepresentable {
 		}
 	}
 }
-
-let otherProjects = [
-	LinkedResource(
-		title: "Composer",
-		href: "https://composer.trade",
-		description: "Platform to build, backtest, and execute trading algorithms."
-	),
-	LinkedResource(
-		title: "Swift Website Workgroup",
-		href: "https://www.swift.org/website-workgroup",
-		description: "Steering team guiding the evolution of the Swift.org website."
-	),
-	LinkedResource(
-		title: "Tempo",
-		href: "https://yourtempo.co",
-		description: "Minimalistic email client that helps you focus. Sunset in 2021."
-	),
-	LinkedResource(
-		title: "someday.page",
-		href: "https://someday.page",
-		description: "Movement inspiring people to share their long-term goals."
-	),
-	LinkedResource(
-		title: "Life lessons",
-		href: "/life-lessons/",
-		description: "Collection of knowledge I’ve gathered over the years."
-	),
-	LinkedResource(
-		title: "Quitting social media",
-		href: "/quitting-social-media/",
-		description: "Notes on my work-in-progress path to freedom from social media."
-	)
-]

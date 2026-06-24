@@ -15,7 +15,7 @@ let outputDirectory = URL(fileURLWithPath: "\(rootPath)/.output", isDirectory: t
 enum Site {
 	static let url = "https://alexandersandberg.com"
 	static let author = "Alexander Sandberg"
-	static let bio = "<em>Software tinkerer</em>. Creating, exploring, learning. Keeping it simple. <span class='nowrap'>Building carefully</span> crafted Swift and SwiftUI apps."
+	static let bio = #"<em>Software tinkerer</em>. Creating, exploring, learning. Keeping it simple. <span class="nowrap">Carefully crafting</span> apps at <a href="https://www.sofi.com">SoFi</a> and on my own."#
 	static let email = "hi@alexandersandberg.com"
 	static let cdn = "https://cdn.alexandersandberg.com"
 	static let cssFileName = "styles.css"
@@ -39,32 +39,84 @@ let documentPages = [
 		contentHtmlString: documentRenderer.render(articleListDocument, withLinkSuffixes: true)
 	),
 	Page(
+		path: "projects",
+		layout: .page(title: "Projects"),
+		contentHtmlString: documentRenderer.render(projectsDocument, withLinkSuffixes: true)
+	),
+	Page(
 		path: "apps",
 		layout: .page(title: "Apps"),
 		contentHtmlString: documentRenderer.render(appsDocument, withLinkSuffixes: true)
-	)
-]
-let indieApps = [
-	LinkedResource(
-		title: "Balance",
-		href: "https://balance.software",
-		description: "A time tracking app that helps you balance work and life.",
-		highlightedText: "The redesign is here!"
-	),
-	LinkedResource(
-		title: "Tiny Weather",
-		href: "https://apps.apple.com/app/id1522059185",
-		description: "Minimal weather app that protects your privacy."
-	),
-	LinkedResource(
-		title: "Tiny Softbox",
-		href: "https://apps.apple.com/app/id1599476381",
-		description: "Simple softbox for video calls, photography, reading, etc."
 	),
 ]
 var pages: [Page] = []
 var articles: [Page] = []
 var notes: [Note] = []
+
+enum Projects {
+	static let all = apps + personal + other
+
+	static let apps = [
+		LinkedResource(
+			title: "Balance",
+			href: "https://balance.software",
+			description: "A time tracking app that helps you balance work and life.",
+			highlightedText: "iOS coming soon™!",
+			isFeatured: true
+		),
+		LinkedResource(
+			title: "Tiny Weather",
+			href: "https://apps.apple.com/app/id1522059185",
+			description: "Minimal weather app that protects your privacy.",
+			isFeatured: true
+		),
+		LinkedResource(
+			title: "Tiny Softbox",
+			href: "https://apps.apple.com/app/id1599476381",
+			description: "Simple softbox for video calls, photography, reading, etc."
+		),
+	]
+
+	static let personal = [
+		LinkedResource(
+			title: "Life lessons",
+			href: "/life-lessons/",
+			description: "Collection of knowledge I’ve gathered over the years.",
+			isFeatured: true
+		),
+		LinkedResource(
+			title: "Quitting social media",
+			href: "/quitting-social-media/",
+			description: "Notes on my work-in-progress path to freedom from social media.",
+			isFeatured: true
+		),
+		LinkedResource(
+			title: "someday.page",
+			href: "https://someday.page",
+			description: "Movement inspiring people to share their long-term goals."
+		),
+	]
+
+	static let other = [
+		LinkedResource(
+			title: "Composer",
+			href: "https://composer.trade",
+			description: "Platform to build, backtest, and execute trading algorithms.",
+			highlightedText: "Acquired by SoFi",
+			isFeatured: true
+		),
+		LinkedResource(
+			title: "Swift Website Workgroup",
+			href: "https://www.swift.org/website-workgroup",
+			description: "Steering team guiding the Swift.org website evolution. Left 2026."
+		),
+		LinkedResource(
+			title: "Tempo",
+			href: "https://yourtempo.co",
+			description: "Minimalistic email client that helps you focus. Sunset 2021."
+		),
+	]
+}
 
 @main
 struct Main {

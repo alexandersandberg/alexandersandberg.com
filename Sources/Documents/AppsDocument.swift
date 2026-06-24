@@ -8,14 +8,14 @@
 import SwiftHtml
 
 let appsDocument = Document(.html) {
-	Section(title: "Indie apps") {
+	VStack(alignment: .stretch, spacing: .s32) {
 		Grid(columns: .c2, spacing: .s32) {
-			for resource in indieApps {
+			for resource in Projects.apps {
 				LinkedResourceItem(resource: resource)
 			}
 		}
 
-		P(#"See <a href="/about/#work">my about page</a> for apps I’ve worked on together with other people."#)
+		P(#"See <a href="/projects/">my projects page</a> to learn more about other things keeping me busy."#)
 			.class("callout")
 	}
 

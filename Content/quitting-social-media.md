@@ -47,7 +47,7 @@ I relatively recently added my [notes](/notes/) feed. Here I can share brief tho
 
 For longer content pieces and bigger life updates, I write [articles](/articles/).
 
-For long-living thoughts and ideas that I update over time, like this one, I can publish [projects](/#other-projects).
+For long-living thoughts and ideas that I update over time, like this one, I can publish [projects](/#projects).
 
 For those who want to get notified once I have something new to share, they can sign up for my newsletter or subscribe via [RSS](/feed.rss).
 

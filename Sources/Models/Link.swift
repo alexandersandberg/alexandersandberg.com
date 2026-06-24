@@ -9,6 +9,7 @@ import Foundation
 
 enum Link {
 	case home
+	case projects(String)
 	case apps(String)
 	case notes(String)
 	case articles(String)
@@ -18,6 +19,8 @@ enum Link {
 		switch self {
 		case .home:
 			"Home"
+		case let .projects(label):
+			label
 		case let .apps(label):
 			label
 		case let .notes(label):
@@ -33,6 +36,8 @@ enum Link {
 		switch self {
 		case .home:
 			"/"
+		case .projects:
+			"/projects/"
 		case .apps:
 			"/apps/"
 		case .notes:

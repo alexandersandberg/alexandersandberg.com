@@ -12,6 +12,7 @@ struct LinkedResource {
 	var href: String
 	var description: String
 	var highlightedText: String?
+	var isFeatured: Bool = false
 }
 
 struct LinkedResourceItem: TagRepresentable {
