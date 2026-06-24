@@ -2,7 +2,7 @@
 title: Quitting social media
 description: Notes on my work-in-progress path to freedom from social media.
 layout: page
-publishedAt: 2025-01-20
+publishedAt: 2026-01-20
 ---
 
 I have long wanted to quit social media, and I regularly daydream about this seemingly simple act of freedom.
