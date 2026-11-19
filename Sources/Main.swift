@@ -61,7 +61,7 @@ enum Projects {
 			title: "Balance",
 			href: "https://balance.software",
 			description: "A time tracking app that helps you balance work and life.",
-			highlightedText: "iOS coming soon™!",
+			highlightedText: "iOS is here!",
 			isFeatured: true
 		),
 		LinkedResource(
