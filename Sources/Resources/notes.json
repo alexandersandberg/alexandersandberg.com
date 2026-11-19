@@ -88,5 +88,10 @@
 		"id": 18,
 		"markdown": "I was asked to be the guest author of [this month’s What’s New in Swift post](https://www.swift.org/blog/whats-new-in-swift-july-2026/) on Swift.org. I reflected a bit on my time in the Swift Website Workgroup after having recently left.\n\n![Preview of blog post contribution](https://cdn.alexandersandberg.com/whats-new-in-swift-guest-post.png)",
 		"publishedAt": "2026-08-08"
+	},
+	{
+		"id": 19,
+		"markdown": "Balance on iPhone and iPad is finally here! 📱 This has by far been the most frequent request, and I’m really excited to finally ship it.\n\nDownload for free → [https://balance.software](balance.software)\n\n![Balance on a Mac laptop and on an iPhone, side-by-side](https://cdn.alexandersandberg.com/balance/balance-on-ios.jpeg)",
+		"publishedAt": "2026-08-08"
 	}
 ]
